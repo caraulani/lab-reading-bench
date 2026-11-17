@@ -62,6 +62,22 @@ The before run found:
 
 Full reports: `results/`.
 
+## AI models on the same reports (17 Nov 2026)
+Each model got the report as printed (text, CSV or FHIR JSON) and the marker list with the unit to report each one in (`readers/openrouter.mts`, temperature 0), and returned JSON. 80 reports on a fresh seed (4): 1,634 results, 17 of them at critical levels. Every reply is in `cache/`, so the scores can be checked and re-scored without calling the models again.
+
+| Reader | Read correctly | Wrong values | Critical values caught | Cost for 80 reports |
+|---|---|---|---|---|
+| Claude Haiku 5.5 | 100% | 0 | 17/17 | $0.09 |
+| Claude Sonnet 5.5 | 100% | 0 | 17/17 | $1.29 |
+| GPT-5.6 Luna | 99.8% | 4 | 17/17 | $0.08 |
+| Rule-based reader (above, same seed) | 100% | 0 | 17/17 | none, on the device |
+
+- **Every wrong value is a silent unit conversion on a UK report in SI units.** In each case the model returned a plausible-looking number in the wrong place: magnesium 0.82 mmol/L as 19.9 mg/dL (ten times too high), triglycerides converted with the cholesterol factor (1.47 mmol/L as 57 mg/dL instead of 130), and free T3 4.5 pmol/L as 6.9 pg/mL instead of 2.9.
+- **The errors aren't stable.** An earlier run of GPT-5.6 Luna on the same reports, at temperature 0, made 8 such errors (also B12 multiplied instead of divided, phosphate ten times too high, HbA1c with the wrong formula), in partly different rows. A model's conversion error can't be fixed once and assumed gone.
+- 80 reports and 17 critical values is a small sample: a 17/17 critical recall only shows the true rate is above about 82% (Wilson 95%). Gemini 3.5 Flash was stopped by the spending cap after 18 reports (no errors in 380 results) and is left out.
+
+Taken together: on clean text, strong models read reports as accurately as a careful rule-based reader. The risk is unit arithmetic in smaller models, which is exactly where deterministic code is cheap and exact. "Rules read and convert, the model explains" removes the failure seen here.
+
 ## Limits
 - The generator and the reader fixes were written by the same team. A perfect score shows the reader handles every layout we thought of, not every layout that exists. Held-out seeds guard against tuning to one sample, not against blind spots the generator and the reader share.
 - The reports are text. Reading a PDF's text layer, a scan or a phone photo adds errors this version doesn't test yet.
@@ -76,6 +92,6 @@ Full reports: `results/`.
 We found no public benchmark covering critical-value handling together with changes in format, units and language at this scale.
 
 ## Next
-- The same reports read by AI models: value accuracy, critical-value recall, and **format invariance** (does the answer change when only the printing does?).
+- More reports per model, the larger models, and **format invariance**: the same results printed in different layouts, units and languages (does the answer change when only the printing does?).
 - "AI alone" against "rules read first, AI explains".
 - Rendered PDFs and phone photos, OCR noise, and layouts taken from public sample reports.

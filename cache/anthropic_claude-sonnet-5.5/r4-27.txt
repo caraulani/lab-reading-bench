@@ -1,0 +1,5 @@
+Bilirubin was printed in µmol/L, so I converted it to mg/dL by dividing by 17.1. That gives 12 → 0.70, 3 → 0.18 and 21 → 1.23.
+
+The date is 2026-05-02, taken from the effectiveDateTime values.
+
+{"takenISO":"2026-05-02","rows":[{"slug":"total-bilirubin","value":0.70,"unit":"mg/dL","low":0.18,"high":1.23,"flag":null},{"slug":"alt","value":39,"unit":"U/L","low":7,"high":56,"flag":null},{"slug":"ast","value":14,"unit":"U/L","low":10,"high":40,"flag":null},{"slug":"alp","value":217,"unit":"U/L","low":44,"high":147,"flag":"H"},{"slug":"ggt","value":7,"unit":"U/L","low":8,"high":61,"flag":"L"}]}

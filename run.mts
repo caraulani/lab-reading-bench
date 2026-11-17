@@ -14,7 +14,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, resolve, basename } from "node:path";
 import { pathToFileURL } from "node:url";
-import { makeReports, type Report, type TruthRow } from "./generate.mts";
+import { ANALYTES, makeReports, type Report, type TruthRow } from "./generate.mts";
 import { isCritical } from "./critical.mts";
 
 /** what a reader returns for one row: the marker's slug, the value and unit it read, the range, the lab's flag */
@@ -28,18 +28,23 @@ const only = arg("only")?.split("=");
 const DIR = import.meta.dirname;
 const READER = arg("reader");
 if (!READER) { console.error("usage: npx tsx run.mts --reader readers/<name>.mts"); process.exit(2); }
-const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "");
+const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "");
 const reader = (await import(pathToFileURL(resolve(READER)).href)).default as (r: Report) => Parsed | Promise<Parsed>;
 
 const unitKey = (u: string) => u.toLowerCase().replace(/[µμ]/g, "u").replace(/mcg/g, "ug").replace(/×/g, "x").replace(/\s/g, "");
-const near = (a: number | null, b: number | null) => (a === null || b === null ? a === b : Math.abs(a - b) <= Math.max(0.007 * Math.abs(b), 0.006));
+// within 0.7%, or within half a step of the precision the marker is reported to (a converted 1.579 shown as 1.6 is right)
+const DP = Object.fromEntries(ANALYTES.map((a) => [a.slug, a.dp]));
+const CONV = Object.fromEntries(ANALYTES.map((a) => [a.slug, a.unit]));
+let step = 0;
+const near = (a: number | null, b: number | null) => (a === null || b === null ? a === b : Math.abs(a - b) <= Math.max(0.007 * Math.abs(b), 0.006, step));
 
 type Outcome = "ok" | "unit" | "unconverted" | "wrong" | "miss";
 function scoreRow(t: TruthRow, row: ReadRow | undefined): { outcome: Outcome; flag: string; range: string; converted: boolean } {
   if (!row || row.text !== undefined) return { outcome: "miss", flag: "n/a", range: "n/a", converted: false };
+  step = t.converted ? 0.5 * 10 ** -(DP[t.slug] ?? 2) + 1e-9 : 0;
   const asExpected = near(row.value, t.expected.value), asPrinted = near(row.value, t.printed.value);
   let outcome: Outcome, converted = t.converted;
-  if (asExpected) outcome = unitKey(row.unit) === unitKey(t.expected.unit) ? "ok" : "unit";
+  if (asExpected) outcome = unitKey(row.unit) === unitKey(t.expected.unit) || unitKey(row.unit) === unitKey(CONV[t.slug] ?? "") ? "ok" : "unit";
   else if (t.converted && asPrinted && unitKey(row.unit) === unitKey(t.printed.unit)) { outcome = "unconverted"; converted = false; }
   else outcome = "wrong";
   // the range, in the units the row came back in

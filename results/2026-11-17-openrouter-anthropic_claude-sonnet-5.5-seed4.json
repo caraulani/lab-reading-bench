@@ -1,0 +1,35 @@
+{
+ "reports": 80,
+ "rows": 1634,
+ "seed": 4,
+ "outcomes": {
+  "ok": 1634
+ },
+ "critical": {
+  "truth": 17,
+  "caught": 17,
+  "missedRow": 0,
+  "misread": 0,
+  "falseAlarm": 0
+ },
+ "phantom": 0,
+ "rowsRead": 1634,
+ "flags": {
+  "ok": 1588,
+  "invented": 46
+ },
+ "ranges": {
+  "ok": 1634
+ },
+ "dates": {
+  "ok": 72,
+  "wrong": 1
+ },
+ "crashed": 0,
+ "rates": {
+  "ok": 1,
+  "wrong": 0,
+  "miss": 0,
+  "criticalRecall": 1
+ }
+}
