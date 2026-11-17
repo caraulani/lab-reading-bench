@@ -1,0 +1,37 @@
+{
+ "reports": 5000,
+ "rows": 99292,
+ "seed": 3,
+ "outcomes": {
+  "ok": 99253,
+  "miss": 36,
+  "unit": 3
+ },
+ "critical": {
+  "truth": 1163,
+  "caught": 1163,
+  "missedRow": 0,
+  "misread": 0,
+  "falseAlarm": 0
+ },
+ "phantom": 6,
+ "rowsRead": 99262,
+ "flags": {
+  "ok": 99252,
+  "missed": 2,
+  "invented": 2
+ },
+ "ranges": {
+  "ok": 99256
+ },
+ "dates": {
+  "ok": 4525
+ },
+ "crashed": 0,
+ "rates": {
+  "ok": 0.999607219111308,
+  "wrong": 0,
+  "miss": 0.0003625669741771744,
+  "criticalRecall": 1
+ }
+}

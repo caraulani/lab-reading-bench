@@ -1,0 +1,7 @@
+{
+  "maxWrong": 0.0005,
+  "maxMiss": 0.002,
+  "minCriticalRecall": 1.0,
+  "maxFalseCritical": 0,
+  "maxPhantomRate": 0.001
+}

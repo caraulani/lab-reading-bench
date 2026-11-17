@@ -1,0 +1,7 @@
+{
+  "name": "lab-reading-bench",
+  "private": true,
+  "type": "module",
+  "scripts": { "bench": "tsx run.mts" },
+  "devDependencies": { "tsx": "^4.19.0" }
+}
