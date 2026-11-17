@@ -1,12 +1,16 @@
-/* An AI model as the reader, through OpenRouter. The model gets the report as printed (text lines, the CSV, or the FHIR
-   JSON) and the list of markers with the conventional unit each is reported in, the way an app would hold its catalog, and
-   returns every result it finds as JSON. Values are asked for in the conventional unit, so a model that converts SI units
-   has to get the arithmetic right, and the critical-value check runs on what it returned.
+/* An AI model as the reader, through OpenRouter. The model gets the report as printed (the text lines, the CSV, the FHIR
+   JSON, or, with INPUT=image, a picture of the printed page) and the list of markers with the conventional unit each is
+   reported in, the way an app would hold its catalog, and returns every result it finds as JSON. Values are asked for in the
+   conventional unit, so a model that converts SI units has to get the arithmetic right, and the critical-value check runs
+   on what it returned.
 
      OPENROUTER_API_KEY=… MODEL=anthropic/claude-sonnet-5.5 BUDGET_USD=1 npx tsx run.mts --reader readers/openrouter.mts --n 40 --seed 4
+     … INPUT=image IMAGE_STYLE=photo …   reads images/<style>/<report id>.png or .jpg (made by images.mts)
 
-   Spend is counted from OpenRouter's reported cost per call; past BUDGET_USD every further report fails fast (and is left
-   out of the scores, counted as a crash). Temperature 0, one retry. */
+   Spend is counted from OpenRouter's reported cost per call. Past BUDGET_USD, or when the account's balance falls below
+   MIN_BALANCE_USD (default 5), every further report fails fast and is left out of the scores (counted as a crash).
+   Temperature 0, one retry. Every reply is kept in cache/<model>[-<image style>]/<report id>.txt: a re-run reads the reply
+   instead of paying for it again, and anyone can check what the model said. */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ANALYTES, type Report } from "../generate.mts";
@@ -15,9 +19,15 @@ import type { Parsed, ReadRow } from "../run.mts";
 const KEY = process.env.OPENROUTER_API_KEY;
 const MODEL = process.env.MODEL;
 const BUDGET = Number(process.env.BUDGET_USD ?? "1");
+const MIN_BALANCE = Number(process.env.MIN_BALANCE_USD ?? "5");
+const IMAGE = process.env.INPUT === "image" ? process.env.IMAGE_STYLE ?? "clean" : null;
 if (!KEY || !MODEL) throw new Error("set OPENROUTER_API_KEY and MODEL");
-let spent = 0, calls = 0;
-process.on("exit", () => console.error(`[${MODEL}] ${calls} calls, $${spent.toFixed(3)}`));
+let spent = 0, calls = 0, stopped = "";
+process.on("exit", () => console.error(`[${MODEL}${IMAGE ? ` ${IMAGE}` : ""}] ${calls} calls, $${spent.toFixed(3)}${stopped ? ` (stopped: ${stopped})` : ""}`));
+
+const ROOT = join(import.meta.dirname, "..");
+const CACHE = join(ROOT, "cache", MODEL.replace(/\//g, "_") + (IMAGE ? `-${IMAGE}` : ""));
+mkdirSync(CACHE, { recursive: true });
 
 const CATALOG = ANALYTES.map((a) => `${a.slug}: ${a.names.US[a.names.US.length - 1]} (report in ${a.unit})`).join("\n");
 const SYSTEM = `You read laboratory reports. Extract every test result printed on the report.
@@ -32,14 +42,33 @@ ${CATALOG}
 - takenISO: the date the sample was collected, if printed.
 Return nothing but the JSON object.`;
 
+const imageUrl = (id: string) => {
+  const png = join(ROOT, "images", IMAGE!, `${id}.png`), jpg = join(ROOT, "images", IMAGE!, `${id}.jpg`);
+  const f = existsSync(png) ? png : jpg;
+  return `data:image/${f.endsWith(".png") ? "png" : "jpeg"};base64,${readFileSync(f).toString("base64")}`;
+};
 const textOf = (r: Report) => (r.kind === "lines" ? r.lines!.join("\n") : r.kind === "csv" ? r.text! : JSON.stringify(r.json));
 
+// the account's balance, checked every 20 calls: the eval stops before it can starve anything else using the account
+async function balanceOk(): Promise<boolean> {
+  try {
+    const j = (await (await fetch("https://openrouter.ai/api/v1/credits", { headers: { Authorization: `Bearer ${KEY}` } })).json()) as { data?: { total_credits: number; total_usage: number } };
+    if (!j.data) return true;
+    return j.data.total_credits - j.data.total_usage >= MIN_BALANCE;
+  } catch { return true; }
+}
+
 async function call(r: Report): Promise<string> {
-  if (spent >= BUDGET) throw new Error("budget reached");
+  if (stopped) throw new Error(stopped);
+  if (spent >= BUDGET) { stopped = "budget reached"; throw new Error(stopped); }
+  if (calls % 20 === 0 && !(await balanceOk())) { stopped = `account balance below $${MIN_BALANCE}`; throw new Error(stopped); }
+  const user = IMAGE
+    ? [{ type: "text", text: "The lab report:" }, { type: "image_url", image_url: { url: imageUrl(r.id) } }]
+    : textOf(r);
   const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-    method: "POST", signal: AbortSignal.timeout(180_000),
+    method: "POST", signal: AbortSignal.timeout(240_000),
     headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json", "X-Title": "lab-reading-bench" },
-    body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 8000, usage: { include: true }, messages: [{ role: "system", content: SYSTEM }, { role: "user", content: textOf(r) }] }),
+    body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 8000, usage: { include: true }, messages: [{ role: "system", content: SYSTEM }, { role: "user", content: user }] }),
   });
   const j = (await res.json()) as { choices?: { message?: { content?: string } }[]; usage?: { cost?: number }; error?: { message?: string } };
   calls++;
@@ -48,20 +77,16 @@ async function call(r: Report): Promise<string> {
   return j.choices?.[0]?.message?.content ?? "";
 }
 
-// every reply is kept (cache/<model>/<report id>.txt): a re-run reads the reply instead of paying for it again, and anyone
-// can check what the model said
-const CACHE = join(import.meta.dirname, "..", "cache", MODEL.replace(/\//g, "_"));
-mkdirSync(CACHE, { recursive: true });
-
 export default async function read(r: Report): Promise<Parsed> {
   const file = join(CACHE, `${r.id}.txt`);
   let text = existsSync(file) ? readFileSync(file, "utf8") : "";
   if (!text) for (let attempt = 0; attempt < 2; attempt++) {
-    try { text = await call(r); writeFileSync(file, text); break; } catch (e) { if (attempt || /budget/.test(String(e))) throw e; }
+    try { text = await call(r); if (text) writeFileSync(file, text); break; } catch (e) { if (attempt || stopped) throw e; }
   }
+  // a reply with no usable JSON reads nothing: every result on the report counts as missed (not left out of the scores)
   const m = text.match(/\{[\s\S]*\}/);
-  if (!m) throw new Error("no JSON in the reply");
-  const j = JSON.parse(m[0]) as { takenISO?: string | null; rows?: Partial<ReadRow>[] };
+  let j: { takenISO?: string | null; rows?: Partial<ReadRow>[] } = {};
+  try { if (m) j = JSON.parse(m[0]); } catch { j = {}; }
   const n = (x: unknown) => (typeof x === "number" && Number.isFinite(x) ? x : typeof x === "string" && x.trim() && Number.isFinite(Number(x)) ? Number(x) : null);
   const rows: ReadRow[] = (j.rows ?? []).filter((x) => x && typeof x.slug === "string" && n(x.value) !== null).map((x) => ({
     slug: x.slug!, printed: x.slug!, value: n(x.value)!, unit: String(x.unit ?? ""), low: n(x.low), high: n(x.high),

@@ -14,7 +14,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, resolve, basename } from "node:path";
 import { pathToFileURL } from "node:url";
-import { ANALYTES, makeReports, type Report, type TruthRow } from "./generate.mts";
+import { ANALYTES, makeReports, makeVariants, type Report, type TruthRow } from "./generate.mts";
 import { isCritical } from "./critical.mts";
 
 /** what a reader returns for one row: the marker's slug, the value and unit it read, the range, the lab's flag */
@@ -58,7 +58,9 @@ function scoreRow(t: TruthRow, row: ReadRow | undefined): { outcome: Outcome; fl
 
 const read = (r: Report) => reader(r);
 
-let reports = makeReports(N, SEED);
+// --variants K: N sets of results, each printed K ways (format invariance); otherwise N independent reports
+const K = Number(arg("variants", "0"));
+let reports = K > 1 ? makeVariants(N, K, SEED) : makeReports(N, SEED);
 if (only) reports = reports.filter((r) => r.tags[only[0]] === only[1]);
 const dump = arg("dump");
 if (dump) {
@@ -81,15 +83,33 @@ const crit = { truth: 0, caught: 0, missedRow: 0, misread: 0, falseAlarm: 0 };
 let phantom = 0, rowsRead = 0, crashed = 0;
 const t0 = performance.now();
 
+// read every report first, several at a time (--concurrency), then score in order
+const C = Math.max(1, Number(arg("concurrency", "1")));
+const got = new Map<string, Parsed | Error>();
+{
+  let next = 0, done = 0;
+  await Promise.all(Array.from({ length: C }, async () => {
+    while (next < reports.length) {
+      const r = reports[next++];
+      try { got.set(r.id, await read(r)); } catch (e) { got.set(r.id, e as Error); }
+      if (++done % 25 === 0 && C > 1) console.error(`  ${done}/${reports.length} read`);
+    }
+  }));
+}
+// format invariance: for each set of results and marker, whether each printing of it was read right
+const inv = new Map<string, { ok: boolean; critical: boolean; caught: boolean }[]>();
+
 for (const r of reports) {
-  let p: Parsed;
-  try { p = await read(r); } catch (e) { crashed++; cluster(`crash | ${(e as Error).message.slice(0, 80)}`, r.id); continue; }
+  const res = got.get(r.id)!;
+  if (res instanceof Error) { crashed++; cluster(`crash | ${res.message.slice(0, 80)}`, r.id); continue; }
+  const p: Parsed = res;
   rowsRead += p.rows.length;
   const tagList = Object.entries(r.tags);
   for (const t of r.truth) {
     const row = p.rows.find((x) => x.slug === t.slug);
     const s = scoreRow(t, row);
     bump(total, s.outcome);
+    if (r.tags.group) { const k = `${r.tags.group}|${t.slug}`; const caught = !!row && row.text === undefined && isCritical(t.slug, row.value); (inv.get(k) ?? inv.set(k, []).get(k)!).push({ ok: s.outcome === "ok", critical: t.critical, caught }); }
     for (const [k, v] of tagList) bump(((slices[k] ??= {})[v] ??= {}), s.outcome);
     bump(((slices.marker ??= {})[t.slug] ??= {}), s.outcome);
     if (s.flag !== "n/a") bump(flags, s.flag);
@@ -135,6 +155,17 @@ say(`- **Lab's flag:** ${Object.entries(flags).map(([k, v]) => `${k} ${v}`).join
 say(`- **Reference range:** ${Object.entries(ranges).map(([k, v]) => `${k} ${v}`).join(", ")}.`);
 say(`- **Collection date:** ${Object.entries(dates).map(([k, v]) => `${k} ${v}`).join(", ")}.`);
 if (crashed) say(`- **Crashes:** ${crashed}.`);
+// a marker's readings across the printings of one set of results: right every time, right only sometimes, or never
+const invT = { all: 0, some: 0, none: 0, pairs: 0, critSets: 0, critAll: 0, critSome: 0 };
+for (const rs of inv.values()) {
+  if (rs.length < 2) continue;
+  invT.pairs++;
+  const k = rs.filter((x) => x.ok).length;
+  if (k === rs.length) invT.all++; else if (k) invT.some++; else invT.none++;
+  const crits = rs.filter((x) => x.critical);
+  if (crits.length === rs.length) { invT.critSets++; const c = crits.filter((x) => x.caught).length; if (c === crits.length) invT.critAll++; else if (c) invT.critSome++; }
+}
+if (invT.pairs) say(`- **Format invariance** (${K} printings of each set of results): of ${invT.pairs} markers, read right in every printing ${invT.all} (${pct(invT.all, invT.pairs)}), right in some printings but not others ${invT.some} (${pct(invT.some, invT.pairs)}), never right ${invT.none}. Critical results caught in every printing: ${invT.critAll} of ${invT.critSets}${invT.critSome ? `; caught in some printings only: ${invT.critSome}` : ""}.`);
 for (const dim of ["locale", "kind", "variant", "units", "decimal", "sep", "order", "marker"]) {
   say();
   say(`## By ${dim}`);
@@ -151,10 +182,11 @@ for (const [key, c] of sorted.slice(0, Number(arg("top", "80")))) { say(); say(`
 if (sorted.length > 80) say(`\n…and ${sorted.length - 80} smaller groups.`);
 
 const summary = {
+  invariance: invT.pairs ? invT : undefined, variants: K || undefined,
   reports: reports.length, rows, seed: SEED, outcomes: total, critical: crit, phantom, rowsRead, flags, ranges, dates, crashed,
   rates: { ok: o("ok") / rows, wrong: o("wrong") / rows, miss: o("miss") / rows, criticalRecall: crit.truth ? crit.caught / crit.truth : 1 },
 };
-console.log(lines.slice(0, 14).join("\n"));
+console.log(lines.slice(0, lines.findIndex((l, i) => i > 2 && l.startsWith("## "))).join("\n"));
 console.log(`\n${sorted.length} failure groups; top 12:`);
 for (const [key, c] of sorted.slice(0, 12)) console.log(`  ${String(c.n).padStart(5)}  ${key}`);
 if (!has("no-write")) {

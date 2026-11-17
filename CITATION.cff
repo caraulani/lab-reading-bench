@@ -1,0 +1,25 @@
+# Citation metadata. GitHub reads this file to render the "Cite this repository" button.
+cff-version: 1.2.0
+type: software
+message: "If you use this benchmark, its generator or its results, please cite it as below."
+title: "lab-reading-bench: synthetic lab reports with a computed answer key for measuring rule-based and AI readers"
+abstract: "A generator of synthetic laboratory reports printed in five national lab styles, conventional and SI units, decimal points and commas, varied flag and range conventions, as text, CSV, FHIR, PDF, page images and phone-style photos, each with an exact answer key; a harness that scores any reader on value accuracy, silent wrong values, critical-value recall and format invariance (the same results printed several ways); and results for a rule-based reader and current LLMs."
+version: 0.1.0
+date-released: 2026-11-17
+license: MIT
+repository-code: "https://github.com/caraulani/lab-reading-bench"
+url: "https://github.com/caraulani/lab-reading-bench"
+authors:
+  - family-names: Caraulani
+    given-names: Julian
+    alias: caraulani
+    orcid: "https://orcid.org/0009-0006-3889-3563"
+keywords:
+  - clinical laboratory
+  - lab report parsing
+  - large language models
+  - evaluation
+  - benchmark
+  - critical values
+  - format invariance
+  - OCR

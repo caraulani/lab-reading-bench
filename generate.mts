@@ -102,7 +102,7 @@ export type TruthRow = {
   expected: { value: number; unit: string; low: number | null; high: number | null }; // in the reader's conventional units
   converted: boolean; // printed in a unit whose number differs from the conventional one
   flag: "H" | "L" | null; flagPrinted: "direction" | "mark" | null; // "mark": a star, which says abnormal but not which way
-  critical: boolean; status: string;
+  critical: boolean; status: string; trueValue: number; // the true result, in conventional units
 };
 export type Report = {
   id: string; kind: "lines" | "csv" | "fhir"; lines?: string[]; text?: string; json?: unknown;
@@ -213,9 +213,13 @@ const dateIn = (iso: string, l: Locale) => { const [y, m, d] = iso.split("-"); r
 /* UCUM units, as a patient portal's FHIR export writes them */
 const UCUM: Record<string, string[]> = { "Thousand/uL": ["10*3/uL", "K/uL"], "Million/uL": ["10*6/uL", "M/uL"], "mIU/L": ["m[IU]/L", "mIU/L", "u[IU]/mL"], "mL/min/1.73m2": ["mL/min/{1.73_m2}", "mL/min/1.73m2"], "mcg/dL": ["ug/dL"] };
 
-export function makeReport(seed: number, index: number): Report {
-  const r = rng(seed * 100003 + index * 7919 + 17);
-  const locale = r.weighted<Locale>([["US", 34], ["UK", 16], ["DE", 16], ["ES", 16], ["RO", 18]]);
+/** the same results printed again in another lab's style: what a format-invariance test holds fixed */
+export type Given = { rows: { slug: string; v: number; status: string }[]; takenISO: string; locale: Locale; salt: number };
+
+export function makeReport(seed: number, index: number, given?: Given): Report {
+  const r = rng(seed * 100003 + index * 7919 + 17 + (given ? given.salt * 104729 : 0));
+  const drawnLocale = r.weighted<Locale>([["US", 34], ["UK", 16], ["DE", 16], ["ES", 16], ["RO", 18]]);
+  const locale = given?.locale ?? drawnLocale;
   const kind = r.weighted<Report["kind"]>([["lines", 78], ["csv", 11], ["fhir", 11]]);
   const st: Style = {
     locale,
@@ -233,16 +237,20 @@ export function makeReport(seed: number, index: number): Report {
   if (kind !== "lines") { st.sep = "wide"; }
 
   // the panels on this report, and which of their tests were run
-  const panels = ["chem", "liver", "lipid", "cbc", "iron", "thyroid", "vit"].filter(() => r.chance(0.55));
-  if (!panels.length) panels.push(r.pick(["chem", "lipid", "cbc"]));
-  const picked = ANALYTES.filter((a) => panels.includes(a.panel) && r.chance(0.85));
-  const month = r.int(1, 12), day = r.int(1, 28);
-  const takenISO = `2026-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+  let picked: Analyte[], takenISO: string;
+  if (given) { picked = given.rows.map((g) => ANALYTES.find((a) => a.slug === g.slug)!); takenISO = given.takenISO; }
+  else {
+    const panels = ["chem", "liver", "lipid", "cbc", "iron", "thyroid", "vit"].filter(() => r.chance(0.55));
+    if (!panels.length) panels.push(r.pick(["chem", "lipid", "cbc"]));
+    picked = ANALYTES.filter((a) => panels.includes(a.panel) && r.chance(0.85));
+    const month = r.int(1, 12), day = r.int(1, 28);
+    takenISO = `2026-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+  }
 
   const truth: TruthRow[] = [];
   const parts: { a: Analyte; t: TruthRow; cells: { name: string; value: string; flag: string; unit: string; range: string } }[] = [];
   for (const a of picked) {
-    const { v, status } = draw(a, r);
+    const { v, status } = given ? given.rows.find((g) => g.slug === a.slug)! : draw(a, r);
     // the unit this lab prints the result in
     let u: Unit = { unit: a.unit, f: 1, dp: a.dp };
     if (st.units === "SI" && a.si) u = a.si;
@@ -265,7 +273,7 @@ export function makeReport(seed: number, index: number): Report {
     const t: TruthRow = {
       slug: a.slug, name, printed: { value: pv, text, unit, low: plo, high: phi },
       expected: { value: ev, unit: converted ? a.unit : unit, low: back(plo), high: back(phi) },
-      converted, flag, flagPrinted: ft.printed, critical, status,
+      converted, flag, flagPrinted: ft.printed, critical, status, trueValue: v,
     };
     truth.push(t);
     parts.push({ a, t, cells: { name, value: text, flag: ft.tok, unit, range: rangeText(plo, phi, u.dp + (st.dpExtra && kind !== "fhir" ? st.dpExtra : 0), st, r) } });
@@ -347,6 +355,25 @@ export function makeReport(seed: number, index: number): Report {
   }
   const lines = [...HEAD[locale](dateIn(takenISO, locale), r), ...(r.chance(0.6) ? [COLS[locale]] : []), ...out, ...FOOT[locale]];
   return { id, kind, lines, truth, takenISO, tags };
+}
+
+/** n sets of results, each printed k ways: the first as drawn, then in each other lab style in turn (ids r<seed>-<i>v<k>) */
+export function makeVariants(n: number, k: number, seed = 1): Report[] {
+  const out: Report[] = [];
+  const LOCALES: Locale[] = ["US", "UK", "DE", "ES", "RO"];
+  for (let i = 0; i < n; i++) {
+    const first = makeReport(seed, i);
+    // the collection date: the first printing's, or (a CSV export that printed none) a fixed one for the set
+    const takenISO = first.takenISO ?? `2026-${String((i % 12) + 1).padStart(2, "0")}-${String((i % 28) + 1).padStart(2, "0")}`;
+    const base = { rows: first.truth.map((t) => ({ slug: t.slug, v: t.trueValue, status: t.status })), takenISO };
+    const others = LOCALES.filter((l) => l !== first.tags.locale);
+    out.push({ ...first, id: `r${seed}-${i}v0`, tags: { ...first.tags, group: `r${seed}-${i}` } });
+    for (let j = 1; j < k; j++) {
+      const v = makeReport(seed, i, { ...base, locale: others[(j - 1) % others.length], salt: j });
+      out.push({ ...v, id: `r${seed}-${i}v${j}`, tags: { ...v.tags, group: `r${seed}-${i}` } });
+    }
+  }
+  return out;
 }
 
 export function makeReports(n: number, seed = 1): Report[] {

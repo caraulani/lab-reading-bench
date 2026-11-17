@@ -1,5 +1,7 @@
 # lab-reading-bench
 
+*By [Julian Caraulani](https://github.com/caraulani) ([ORCID 0009-0006-3889-3563](https://orcid.org/0009-0006-3889-3563)), November 2026. Code MIT, results and write-up CC BY 4.0 ([LICENSING.md](LICENSING.md)). The model tests are preregistered: [PREREGISTRATION.md](PREREGISTRATION.md), timestamped before any model read the test reports.*
+
 Synthetic lab reports with a **computed answer key**. The benchmark measures how well a reader (rule-based software or an AI model) gets the values, units, flags and critical results off a lab report, across lab formats and languages.
 
 Reading the report is the step everything else depends on. An explanation, a trend or an alert built on a misread value is wrong however good it sounds. Reading can also be measured exactly: each report here is generated from known true values and then printed the way real labs print, so the correct reading of every row is known. No human or model grades anything.

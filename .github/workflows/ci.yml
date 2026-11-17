@@ -1,0 +1,13 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm i
+      # the generator is deterministic and the harness runs end to end (the empty reader misses every row by design)
+      - run: npx tsx run.mts --reader readers/empty.mts --n 50 --no-write
+      - run: npx tsx run.mts --reader readers/empty.mts --variants 5 --n 10 --no-write
