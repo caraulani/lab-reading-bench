@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 (18 Nov 2026)
+- HL7 v2.5.1 ORU^R01 tier (`--format hl7`, `toHl7` in generate.mts): any report as a lab-to-EHR message, LOINC or local codes, same answer key. Added to CI.
+- Rule-based reader on HL7: 100% read on seeds 1 to 3, after fixing a "24 H" read as "24 hours" bug that the tier found.
+
 ## 0.3.0 (18 Nov 2026)
 - Preregistered test, step 3: Claude Sonnet 5.5 and Gemini 3.8 Flash on 150 text reports, and Gemini on clean and photo images. Neither made a wrong value. H2 is not supported for these two (they matched the rules).
 

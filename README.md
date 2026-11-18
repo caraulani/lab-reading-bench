@@ -80,7 +80,7 @@ Not tested: frontier models (GPT-5.6 Sol and Terra, Claude Opus).
 - **Flags:** H/L, HH/LL, HIGH/LOW, ↑↓, +/−, `*` (abnormal without a direction), `(H)`, or none. They may come right after the value or at the end of the line.
 - **Ranges:** `a-b`, `[a - b]`, `(a - b)`, `a – b`, `< b`, `bis b`, `hasta b`, `> OR = a`.
 - **Layout noise:** dotted leaders, colons, two results side by side, names wrapped onto their own line, spaced units ("mg / dL"), values glued to units.
-- **Formats:** printed text lines, CSV exports (comma or semicolon, quoted cells, separate low/high columns), and FHIR R4 bundles (LOINC and UCUM, with or without the text name).
+- **Formats:** printed text lines, CSV exports (comma or semicolon, quoted cells, separate low/high columns), FHIR R4 bundles (LOINC and UCUM, with or without the text name), and HL7 v2.5.1 ORU^R01 messages (`--format hl7`), the format lab systems send results to EHRs in: OBX value, unit, range and flag, coded in LOINC on most messages and with a lab's local codes on the rest.
 - **The truth:** 41 common markers. About 70% of values are in range, 25% outside, and 5% at critical levels, kept clear of the threshold so rounding can't move them across it.
 
 Everything is drawn from one seeded generator, so a seed always gives the same reports. Conversion factors are the published ones, written out in `generate.mts`, so a reader with a wrong factor produces wrong values here.
@@ -146,6 +146,9 @@ Each model got the report as printed (text, CSV or FHIR JSON) and the marker lis
 - 80 reports and 17 critical values is a small sample: a 17/17 critical recall only shows the true rate is above about 82% (Wilson 95%). Gemini 3.5 Flash was stopped by the spending cap after 18 reports (no errors in 380 results) and is left out.
 
 Taken together: on clean text, strong models read reports as accurately as a careful rule-based reader. The risk is unit arithmetic in smaller models, which is exactly where deterministic code is cheap and exact. "Rules read and convert, the model explains" removes the failure seen here.
+
+## HL7 v2 tier (18 Nov 2026)
+The same reports can be sent as HL7 v2 ORU^R01 messages (`--format hl7`) with the same answer key. Adding the tier found one more bug in the rule-based reader: a value of 24 with a high flag ("Bilirubin 24 H") was taken for "24 hours", treated as a 24-hour urine test, and dropped. It's fixed: only "24 hour", "24 hr", or "24 h" followed by "urine" or "collection" counts as hours now. After the fix, the rule-based reader read all 38,869 results on seed 1 correctly as HL7 (0 wrong, 0 missed, 405 of 405 critical values), and the same on seeds 2 and 3 (5,000 messages each). Models have not been run on this tier yet.
 
 ## Limits
 - The generator and the reader fixes were written by the same team. A perfect score shows the reader handles every layout we thought of, not every layout that exists. Held-out seeds guard against tuning to one sample, not against blind spots the generator and the reader share.

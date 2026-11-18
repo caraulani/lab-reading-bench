@@ -14,7 +14,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, resolve, basename } from "node:path";
 import { pathToFileURL } from "node:url";
-import { ANALYTES, makeReports, makeVariants, type Report, type TruthRow } from "./generate.mts";
+import { ANALYTES, makeReports, makeVariants, toHl7, type Report, type TruthRow } from "./generate.mts";
 import { isCritical } from "./critical.mts";
 
 /** what a reader returns for one row: the marker's slug, the value and unit it read, the range, the lab's flag */
@@ -61,6 +61,8 @@ const read = (r: Report) => reader(r);
 // --variants K: N sets of results, each printed K ways (format invariance); otherwise N independent reports
 const K = Number(arg("variants", "0"));
 let reports = K > 1 ? makeVariants(N, K, SEED) : makeReports(N, SEED);
+// --format hl7: the same reports sent as HL7 v2 ORU^R01 messages (same answer key)
+if (arg("format") === "hl7") reports = reports.map(toHl7);
 if (only) reports = reports.filter((r) => r.tags[only[0]] === only[1]);
 const dump = arg("dump");
 if (dump) {

@@ -47,7 +47,7 @@ const imageUrl = (id: string) => {
   const f = existsSync(png) ? png : jpg;
   return `data:image/${f.endsWith(".png") ? "png" : "jpeg"};base64,${readFileSync(f).toString("base64")}`;
 };
-const textOf = (r: Report) => (r.kind === "lines" ? r.lines!.join("\n") : r.kind === "csv" ? r.text! : JSON.stringify(r.json));
+const textOf = (r: Report) => (r.kind === "lines" ? r.lines!.join("\n") : r.kind === "csv" || r.kind === "hl7" ? r.text!.replace(/\r/g, "\n") : JSON.stringify(r.json));
 
 // the account's balance, checked every 20 calls: the eval stops before it can starve anything else using the account
 async function balanceOk(): Promise<boolean> {

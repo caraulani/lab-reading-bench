@@ -105,7 +105,7 @@ export type TruthRow = {
   critical: boolean; status: string; trueValue: number; // the true result, in conventional units
 };
 export type Report = {
-  id: string; kind: "lines" | "csv" | "fhir"; lines?: string[]; text?: string; json?: unknown;
+  id: string; kind: "lines" | "csv" | "fhir" | "hl7"; lines?: string[]; text?: string; json?: unknown;
   truth: TruthRow[]; takenISO: string | null; tags: Record<string, string>;
 };
 
@@ -378,4 +378,37 @@ export function makeVariants(n: number, k: number, seed = 1): Report[] {
 
 export function makeReports(n: number, seed = 1): Report[] {
   return Array.from({ length: n }, (_, i) => makeReport(seed, i));
+}
+
+/* ---------- HL7 v2 (18 Nov 2026) ---------- */
+/** The same results as an HL7 v2.5.1 ORU^R01 message, the way a lab system sends them to an EHR: one OBX per result with the
+ *  value as printed (decimal point), the unit written the HL7 way (u for µ, L for litre), the reference range, and the lab's
+ *  flag in OBX-8 (H, L, HH, LL; N when normal). Tests are coded in LOINC on most messages and with the lab's own local codes on
+ *  some, so a reader can't rely on the codes alone. The answer key is unchanged. */
+export function toHl7(r: Report): Report {
+  const g = rng([...r.id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7));
+  const coded = g.chance(0.6);
+  const taken = r.takenISO ?? "2026-06-15";
+  const ts = `${taken.replace(/-/g, "")}${String(g.int(7, 11)).padStart(2, "0")}${String(g.int(0, 59)).padStart(2, "0")}`;
+  const hesc = (x: string) => x.replace(/\\/g, "\\E\\").replace(/\|/g, "\\F\\").replace(/\^/g, "\\S\\").replace(/&/g, "\\T\\").replace(/~/g, "\\R\\");
+  const unitOf = (u: string) => u.replace(/[µμ]/g, "u").replace(/\/l$/, "/L").replace(/\/dl$/, "/dL").replace(/\/ml$/, "/mL").replace(/^fl$/, "fL");
+  const dps = (txt: string) => (txt.replace(",", ".").split(".")[1] ?? "").length;
+  const num = (v: number, dp: number) => v.toFixed(dp);
+  const segs = [
+    `MSH|^~\\&|LAB|Synthetic Reference Lab|EHR|Clinic|${ts}||ORU^R01^ORU_R01|${r.id.replace(/[^a-z0-9]/gi, "")}|P|2.5.1`,
+    `PID|1||${g.int(100000, 999999)}^^^LAB^MR||SAMPLE^PATIENT||19790512|U`,
+    `OBR|1||${g.int(1000000, 9999999)}^LAB|24357-6^Laboratory results^LN|||${ts}`,
+  ];
+  const truth = r.truth.map((t, i) => {
+    const a = ANALYTES.find((x) => x.slug === t.slug)!;
+    const dp = dps(t.printed.text);
+    const rdp = Math.max(dp, 0);
+    const lo = t.printed.low, hi = t.printed.high;
+    const range = lo !== null && hi !== null ? `${num(lo, rdp)}-${num(hi, rdp)}` : hi !== null ? `<${num(hi, rdp)}` : lo !== null ? `>${num(lo, rdp)}` : "";
+    const flag = t.flag ? (t.critical ? `${t.flag}${t.flag}` : t.flag) : "N";
+    const id = coded ? `${a.loinc}^${hesc(t.name)}^LN` : `L${String(1000 + ANALYTES.indexOf(a))}^${hesc(t.name)}^L`;
+    segs.push(`OBX|${i + 1}|NM|${id}||${num(t.printed.value, dp)}|${hesc(unitOf(t.printed.unit))}|${range}|${flag}|||F|||${ts}`);
+    return { ...t, flagPrinted: (t.flag ? "direction" : null) as TruthRow["flagPrinted"], line: segs[segs.length - 1], printed: { ...t.printed, unit: unitOf(t.printed.unit) }, expected: { ...t.expected, unit: t.converted ? t.expected.unit : unitOf(t.expected.unit) } };
+  });
+  return { id: `${r.id}h`, kind: "hl7", text: segs.join("\r"), truth, takenISO: taken, tags: { ...r.tags, kind: "hl7", variant: coded ? "hl7:loinc" : "hl7:local", group: r.tags.group ?? r.id } };
 }

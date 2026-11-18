@@ -11,3 +11,4 @@ jobs:
       # the generator is deterministic and the harness runs end to end (the empty reader misses every row by design)
       - run: npx tsx run.mts --reader readers/empty.mts --n 50 --no-write
       - run: npx tsx run.mts --reader readers/empty.mts --variants 5 --n 10 --no-write
+      - run: npx tsx run.mts --reader readers/empty.mts --n 20 --format hl7 --no-write
