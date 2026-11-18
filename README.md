@@ -6,6 +6,58 @@ Synthetic lab reports with a **computed answer key**. The benchmark measures how
 
 Reading the report is the step everything else depends on. An explanation, a trend or an alert built on a misread value is wrong however good it sounds. Reading can also be measured exactly: each report here is generated from known true values and then printed the way real labs print, so the correct reading of every row is known. No human or model grades anything.
 
+## Key findings (preregistered test, 18 Nov 2026)
+1. **When models read lab reports as text, every wrong value was a unit conversion.** That was 168 of 168 across four models (Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash, Llama 4 Maverick). No model misread a printed number. They got the arithmetic wrong turning SI units into US units, for example magnesium ten times too high, or triglycerides converted with the cholesterol factor. The number looked plausible and nothing marked it.
+2. **Models aren't format-invariant.** For the same results printed five ways, the share of markers read right every time was:
+   - rule-based reader: 99.6%;
+   - Claude Haiku 5.5: 99.5%;
+   - GPT-5.6 Luna: 98.2% (−1.4 points, 95% CI −2.5 to −0.5);
+   - Llama 4 Maverick: 88.5%;
+   - DeepSeek V4 Flash: 48.6%.
+3. **Photos break the on-device OCR pipeline, not the vision models.** From clean page images to phone-style photos, OCR followed by rules dropped 4.6 points (95% CI −7.3 to −1.9), with false critical alarms. The vision models didn't move measurably.
+4. **Critical values are where failures matter.** DeepSeek V4 Flash caught 44 of 60 critical values (mostly through empty replies) and raised 7 false critical alarms. Every other model caught all 60.
+
+The practical conclusion is a division of labour. Deterministic code should do the reading and the unit arithmetic, which are exact and cheap. A strong vision model should handle photos. The language model should explain, never convert. The details, the intervals and every raw reply are below and in `results/` and `cache/`.
+
+## Preregistered test, step 2 (seed 5; held-out images on seed 6)
+Hypotheses, readers and analysis were fixed in [PREREGISTRATION.md](PREREGISTRATION.md) and timestamped before any model read these reports. Text: 60 sets of results × 5 printings = 300 reports, 4,950 results, 60 critical. Images: 97 printed reports as clean page images and phone-style photos (1,792 results, 31 critical), plus 43 held-out reports on seed 6.
+
+**Text (300 reports)**
+
+| Reader | Correct | Wrong | Missed | Critical caught | False critical | Same answer in all 5 printings | Cost |
+|---|---|---|---|---|---|---|---|
+| Rule-based reader | 99.9% | 0 | 0.08% | 60/60 | 0 | 99.6% | none |
+| Claude Haiku 5.5 | 99.9% | 4 (0.08%) | 0.02% | 60/60 | 0 | 99.5% | $0.30 |
+| GPT-5.6 Luna | 99.6% | 18 (0.4%) | 0 | 60/60 | 0 | 98.2% | $0.39 |
+| Llama 4 Maverick | 97.5% | 120 (2.4%) | 0.06% | 60/60 | 0 | 88.5% | $0.32 |
+| DeepSeek V4 Flash | 86.4% | 26 (0.5%) | 12.7% | 44/60 | 7 | 48.6% | $0.25 |
+
+DeepSeek V4 Flash returned 17 empty replies out of 300. As preregistered, each counts as every result on that report missed. Qwen 3.5 (397B) is not in the table: its reasoning made each call about 20 times dearer than Haiku's, and its preregistered budget stopped it after 50 of 300 reports.
+
+**Images (seed 5: 97 reports; correct, with wrong values in brackets)**
+
+| Reader | PDF | Clean image | Phone photo | Photo minus clean |
+|---|---|---|---|---|
+| Rule-based reader (PDF text layer; OCR, Tesseract English, for images) | 99.9% (0) | 80.0% (10) | 75.4% (42) | −4.6 points (95% CI −7.3 to −1.9) |
+| Claude Haiku 5.5 | | 99.9% (0) | 100% (0) | +0.1 (−0.2 to +0.3) |
+| GPT-5.6 Luna | | 99.4% (10) | 99.6% (6) | +0.2 (−0.3 to +0.7) |
+| Llama 4 Maverick | | 96.1% (59) | 95.5% (69) | −0.6 (−1.9 to +0.7) |
+
+Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% → 81.3% (−2.1 points, CI −5.8 to +1.6); Haiku, Luna and Llama within ±0.4 points. On images, most wrong values are still conversions (Luna 10 of 10 clean, 4 of 6 photo; Llama 57 of 59 and 62 of 69). The photo adds the first real misreads of printed numbers.
+
+**Hypotheses**
+
+| | Prediction | Result |
+|---|---|---|
+| H1 | At least half of each model's wrong values on text are unit conversions | **Supported:** 100% for all four models with ≥5 wrong values (Luna 18/18, DeepSeek 26/26, Llama 120/120; Haiku 4/4) |
+| H2 | Every model less format-invariant than the rule-based reader; at least one below 99% | **Supported for Luna, Llama and DeepSeek. Undecided for Haiku** (−0.1 points, CI −0.8 to +0.6) |
+| H3 | Vision models drop less from clean to photo than OCR + rules | **Supported on seed 5. Same direction, undecided on held-out seed 6** (the OCR drop's interval crosses zero) |
+| H4 | At least one model misses a critical value or raises a false critical | **Supported:** DeepSeek V4 Flash (16 missed, 7 false) |
+
+**What we changed in our own product because of it.** The image tier showed that LifeFrom's photo path read "µmol/L" as "pmol/L". A creatinine of 149 µmol/L then stayed unconverted and raised a false critical alarm. We fixed the OCR unit handling, which took wrong values on clean images from 2.7% to 0.6% and false critical alarms from 10 to 1. The 80% clean-image accuracy above is after that fix.
+
+Not yet run (step 3, budget permitting): Gemini 3.8 Flash and Claude Sonnet 5.5 on text, and frontier models (GPT-5.6 Sol and Terra, Claude Opus) not at all.
+
 ## What the reports vary
 - **Five lab styles:** US, UK, German, Spanish and Romanian, with their own marker names, column orders and headers (patient lines, dates, phone numbers and notes full of numbers that aren't results).
 - **Units:** conventional (mg/dL) or SI (mmol/L, µmol/L), and each country's blood-count spellings (K/uL, ×10⁹/L, Tsd/µl, mil/mm³, mii/µL …).

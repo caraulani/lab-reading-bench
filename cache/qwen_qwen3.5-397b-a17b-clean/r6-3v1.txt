@@ -1,0 +1,97 @@
+
+
+```json
+{
+  "takenISO": "2026-07-09",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 127.6,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.1,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 77.3,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.5,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 73.9,
+      "unit": "mg/dL",
+      "low": 39.8,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "triglycerides",
+      "value": 128.4,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 149.7,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 13.2,
+      "unit": "g/dL",
+      "low": 12.0,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 48,
+      "unit": "%",
+      "low": 36,
+      "high": 50,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 99.9,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 33.8,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 1225,
+      "unit": "Thousand/uL",
+      "low": 150,
+      "high": 400,
+      "flag": "H"
+    },
+    {
+      "slug": "serum-iron",
+      "value": 67.0,
+      "unit": "mcg/dL",
+      "low": 50.3,
+      "high": 169.8,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 412,
+      "unit": "ng/mL",
+      "low": 30,
+      "high": 300,
+      "flag": "H"
+    }
+  ]
+}
+```

@@ -1,0 +1,97 @@
+
+
+{
+  "takenISO": "2026-05-11",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 135.0,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.1,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 152.0,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.5,
+      "flag": "H"
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 46.0,
+      "unit": "mg/dL",
+      "low": 39.8,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "triglycerides",
+      "value": 118.0,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 149.7,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 6.20,
+      "unit": "Thousand/uL",
+      "low": 4.00,
+      "high": 11.00,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 4.21,
+      "unit": "Million/uL",
+      "low": 4.20,
+      "high": 5.90,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 31.9,
+      "unit": "%",
+      "low": 36.0,
+      "high": 50.0,
+      "flag": "L"
+    },
+    {
+      "slug": "mcv",
+      "value": 80.2,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 32.3,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 34.2,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 28.0,
+      "unit": "Thousand/uL",
+      "low": 150.0,
+      "high": 400.0,
+      "flag": "L"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 40.9,
+      "unit":

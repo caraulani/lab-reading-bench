@@ -1,0 +1,1 @@
+{"takenISO": null, "rows": [{"slug": "serum-iron", "value": 558.5, "unit": "mcg/dL", "low": 502.7, "high": 1697.8, "flag": null}, {"slug": "ferritin", "value": 182, "unit": "ng/mL", "low": 30, "high": 300, "flag": null}]}

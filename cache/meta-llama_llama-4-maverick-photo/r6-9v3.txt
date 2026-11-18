@@ -1,0 +1,26 @@
+```json
+{
+  "takenISO": "2026-04-01",
+  "rows": [
+    {"slug": "glucose-fasting", "value": 81.0, "unit": "mg/dL", "low": 70.2, "high": 99.0, "flag": null},
+    {"slug": "hba1c", "value": 5.8, "unit": "%", "low": 4.3, "high": 5.7, "flag": null},
+    {"slug": "blood-urea-nitrogen", "value": 20.0, "unit": "mg/dL", "low": 7.0, "high": 25.0, "flag": null},
+    {"slug": "egfr", "value": 86.0, "unit": "mL/min/1.73m2", "low": 60.0, "high": null, "flag": null},
+    {"slug": "sodium-serum", "value": 139.0, "unit": "mmol/L", "low": 135.0, "high": 145.0, "flag": null},
+    {"slug": "potassium-serum", "value": 3.9, "unit": "mmol/L", "low": 3.5, "high": 5.1, "flag": null},
+    {"slug": "chloride-serum", "value": 105.0, "unit": "mmol/L", "low": 98.0, "high": 107.0, "flag": null},
+    {"slug": "calcium-total", "value": 6.2, "unit": "mg/dL", "low": 8.6, "high": 10.28, "flag": "L"},
+    {"slug": "magnesium-serum", "value": 1.29, "unit": "mg/dL", "low": 1.7, "high": 2.4, "flag": "L"},
+    {"slug": "phosphorus-serum", "value": 3.0, "unit": "mg/dL", "low": 2.5, "high": 4.5, "flag": null},
+    {"slug": "total-protein", "value": 8.1, "unit": "g/dL", "low": 6.0, "high": 8.3, "flag": null},
+    {"slug": "hs-crp", "value": 2.8, "unit": "mg/L", "low": null, "high": 3.0, "flag": null},
+    {"slug": "total-cholesterol", "value": 189.6, "unit": "mg/dL", "low": null, "high": 201.3, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 92.9, "unit": "mg/dL", "low": null, "high": 100.7, "flag": null},
+    {"slug": "hdl-cholesterol", "value": 22.1, "unit": "mg/dL", "low": 39.1, "high": null, "flag": "L"},
+    {"slug": "triglycerides", "value": 133.7, "unit": "mg/dL", "low": null, "high": 150.4, "flag": null},
+    {"slug": "tsh", "value": 3.13, "unit": "mIU/L", "low": 0.4, "high": 4.0, "flag": null},
+    {"slug": "free-t4", "value": 1.71, "unit": "ng/dL", "low": 0.77, "high": 1.79, "flag": null},
+    {"slug": "free-t3", "value": 4.4, "unit": "pg/mL", "low": 2.7, "high": 5.0, "flag": null}
+  ]
+}
+```

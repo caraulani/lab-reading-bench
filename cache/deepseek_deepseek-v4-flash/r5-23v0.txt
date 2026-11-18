@@ -1,0 +1,26 @@
+{
+  "takenISO": "2026-02-10",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 86,
+      "unit": "mg/dL",
+      "low": 70,
+      "high": 99,
+      "flag": null
+    },
+    {
+      "slug": "hba1c",
+      "value": 5.3,
+      "unit": "%",
+      "low": 4.0,
+      "high": 5.6,
+      "flag": null
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 4.49,
+      "unit": "mg/dL",
+      "low": 0.60,
+      "high": 1.30,
+      "flag":

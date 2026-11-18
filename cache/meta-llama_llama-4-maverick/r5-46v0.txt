@@ -1,0 +1,17 @@
+{"takenISO": "2026-05-06", "rows": [
+  {"slug": "wbc", "value": 10.5, "unit": "Thousand/uL", "low": 4.0, "high": 11.0, "flag": "H"},
+  {"slug": "rbc", "value": 5.76, "unit": "Million/uL", "low": 4.20, "high": 5.90, "flag": null},
+  {"slug": "hemoglobin", "value": 14.7, "unit": "g/dL", "low": 12.0, "high": 17.5, "flag": null},
+  {"slug": "hematocrit", "value": 45.6, "unit": "%", "low": 36.0, "high": 50.0, "flag": null},
+  {"slug": "mcv", "value": 111.5, "unit": "fL", "low": 80.0, "high": 100.0, "flag": "H"},
+  {"slug": "mch", "value": 30.2, "unit": "pg", "low": 27.0, "high": 33.0, "flag": null},
+  {"slug": "mchc", "value": 32.7, "unit": "g/dL", "low": 32.0, "high": 36.0, "flag": null},
+  {"slug": "ferritin", "value": 289, "unit": "ng/mL", "low": 30, "high": 300, "flag": null},
+  {"slug": "transferrin-saturation", "value": 42, "unit": "%", "low": 20, "high": 50, "flag": null},
+  {"slug": "tsh", "value": 0.740, "unit": "mIU/L", "low": 0.40, "high": 4.00, "flag": null},
+  {"slug": "free-t3", "value": 5.2, "unit": "pg/mL", "low": 2.3, "high": 4.2, "flag": "H"},
+  {"slug": "vitamin-d-25-oh", "value": 46, "unit": "ng/mL", "low": 30, "high": 100, "flag": null},
+  {"slug": "vitamin-b12", "value": 149, "unit": "pg/mL", "low": 200, "high": 900, "flag": "L"},
+  {"slug": "folate-serum", "value": 6.5, "unit": "ng/mL", "low": 3.0, "high": 20.0, "flag": null},
+  {"slug": "testosterone-total", "value": 593, "unit": "ng/dL", "low": 264, "high": 916, "flag": null}
+]}

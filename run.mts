@@ -28,7 +28,7 @@ const only = arg("only")?.split("=");
 const DIR = import.meta.dirname;
 const READER = arg("reader");
 if (!READER) { console.error("usage: npx tsx run.mts --reader readers/<name>.mts"); process.exit(2); }
-const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "");
+const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "");
 const reader = (await import(pathToFileURL(resolve(READER)).href)).default as (r: Report) => Parsed | Promise<Parsed>;
 
 const unitKey = (u: string) => u.toLowerCase().replace(/[µμ]/g, "u").replace(/mcg/g, "ug").replace(/×/g, "x").replace(/\s/g, "");
@@ -80,7 +80,7 @@ const slices: Record<string, Record<string, Tally>> = {};
 const clusters = new Map<string, { n: number; examples: string[] }>();
 const cluster = (key: string, example: string) => { const c = clusters.get(key) ?? { n: 0, examples: [] }; c.n++; if (c.examples.length < SHOW && !c.examples.includes(example)) c.examples.push(example); clusters.set(key, c); };
 const crit = { truth: 0, caught: 0, missedRow: 0, misread: 0, falseAlarm: 0 };
-let phantom = 0, rowsRead = 0, crashed = 0;
+let phantom = 0, rowsRead = 0, crashed = 0, wrongN = 0, wrongConverted = 0; // wrong values, and how many were printed in a unit that needs converting
 const t0 = performance.now();
 
 // read every report first, several at a time (--concurrency), then score in order
@@ -109,6 +109,7 @@ for (const r of reports) {
     const row = p.rows.find((x) => x.slug === t.slug);
     const s = scoreRow(t, row);
     bump(total, s.outcome);
+    if (s.outcome === "wrong") { wrongN++; if (t.converted) wrongConverted++; }
     if (r.tags.group) { const k = `${r.tags.group}|${t.slug}`; const caught = !!row && row.text === undefined && isCritical(t.slug, row.value); (inv.get(k) ?? inv.set(k, []).get(k)!).push({ ok: s.outcome === "ok", critical: t.critical, caught }); }
     for (const [k, v] of tagList) bump(((slices[k] ??= {})[v] ??= {}), s.outcome);
     bump(((slices.marker ??= {})[t.slug] ??= {}), s.outcome);
@@ -155,6 +156,7 @@ say(`- **Lab's flag:** ${Object.entries(flags).map(([k, v]) => `${k} ${v}`).join
 say(`- **Reference range:** ${Object.entries(ranges).map(([k, v]) => `${k} ${v}`).join(", ")}.`);
 say(`- **Collection date:** ${Object.entries(dates).map(([k, v]) => `${k} ${v}`).join(", ")}.`);
 if (crashed) say(`- **Crashes:** ${crashed}.`);
+if (wrongN) say(`- **Wrong values printed in a unit that needs converting:** ${wrongConverted} of ${wrongN} (${pct(wrongConverted, wrongN)}).`);
 // a marker's readings across the printings of one set of results: right every time, right only sometimes, or never
 const invT = { all: 0, some: 0, none: 0, pairs: 0, critSets: 0, critAll: 0, critSome: 0 };
 for (const rs of inv.values()) {
@@ -182,7 +184,7 @@ for (const [key, c] of sorted.slice(0, Number(arg("top", "80")))) { say(); say(`
 if (sorted.length > 80) say(`\n…and ${sorted.length - 80} smaller groups.`);
 
 const summary = {
-  invariance: invT.pairs ? invT : undefined, variants: K || undefined,
+  invariance: invT.pairs ? invT : undefined, variants: K || undefined, wrongConverted, wrongN,
   reports: reports.length, rows, seed: SEED, outcomes: total, critical: crit, phantom, rowsRead, flags, ranges, dates, crashed,
   rates: { ok: o("ok") / rows, wrong: o("wrong") / rows, miss: o("miss") / rows, criticalRecall: crit.truth ? crit.caught / crit.truth : 1 },
 };
@@ -210,3 +212,6 @@ if (has("gate")) {
   if (fails.length) { console.error("\nGATE FAILED: " + fails.join("; ")); process.exit(1); }
   console.log("\nGate passed.");
 }
+
+// a reader may hold workers open (OCR); the run is over
+process.exit(0);

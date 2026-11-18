@@ -1,0 +1,113 @@
+
+
+```json
+{
+  "takenISO": "2026-04-21",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 1.00,
+      "unit": "mg/dL",
+      "low": 0.20,
+      "high": 1.20,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 4.0,
+      "unit": "U/L",
+      "low": 7.0,
+      "high": 56.0,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 14.0,
+      "unit": "U/L",
+      "low": 10.0,
+      "high": 40.0,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 136.0,
+      "unit": "U/L",
+      "low": 44.0,
+      "high": 147.0,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 14.0,
+      "unit": "U/L",
+      "low": 8.0,
+      "high": 61.0,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 2.40,
+      "unit": "Thousand/uL",
+      "low": 4.00,
+      "high": 11.00,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 4.330,
+      "unit": "Million/uL",
+      "low": 4.200,
+      "high": 5.900,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 15.50,
+      "unit": "g/dL",
+      "low": 12.00,
+      "high": 17.50,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 23.80,
+      "unit": "%",
+      "low": 36.00,
+      "high": 50.00,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 35.00,
+      "unit": "g/dL",
+      "low": 32.00,
+      "high": 36.00,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 3.330,
+      "unit": "mIU/L",
+      "low": 0.400,
+      "high": 4.000,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 2.110,
+      "unit": "ng/dL",
+      "low": 0.800,
+      "high": 1.800,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 4.00,
+      "unit": "pg/mL",
+      "low": 2.30,
+      "high": 4.20,
+      "flag": null
+    }
+  ]
+}
+```

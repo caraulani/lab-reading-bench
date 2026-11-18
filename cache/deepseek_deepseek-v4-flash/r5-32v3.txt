@@ -1,0 +1,93 @@
+{
+  "takenISO": "2026-07-05",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 1.1,
+      "unit": "mg/dL",
+      "low": 0.2,
+      "high": 1.2,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 44,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 35,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 195,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 38.0,
+      "unit": "%",
+      "low": 36.0,
+      "high": 50.0,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 94.3,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 32.3,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 35.3,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 232,
+      "unit": "Thousand/uL",
+      "low": 150,
+      "high": 400,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 2.42,
+      "unit": "mIU/L",
+      "low": 0.4,
+      "high": 4.0,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.7,
+      "unit": "pg/mL",
+      "low": 2.3,
+      "high": 4.2,
+      "flag": null
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "takenISO": "2026-09-23",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 98.00,
+      "unit": "mg/dL",
+      "low": 70.00,
+      "high": 99.00,
+      "flag": null
+    },
+    {
+      "slug": "hba1c",
+      "value": 5.500,
+      "unit": "%",
+      "low": 4.000,
+      "high": 5.600,
+      "flag": null
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 0.6400,
+      "unit": "mg/dL",
+      "low": 0.6000,
+      "high": 1.3000,
+      "flag": null
+    },
+    {
+      "slug": "blood-urea-nitrogen",
+      "value": 15.00,
+      "unit": "mg/dL",
+      "low": 7.00,
+      "high": 25.00,
+      "flag": null
+    },
+    {
+      "slug": "uric-acid",
+      "value": 2.100,
+      "unit": "mg/dL",
+      "low": 2.500,
+      "high": 7.000,
+      "flag": "L"
+    },
+    {
+      "slug": "sodium-serum",
+      "value": 147.00,
+      "unit": "mmol/L",
+      "low": 135.00,
+      "high": 145.00,
+      "flag": "H"
+    },
+    {
+      "slug": "potassium-serum",
+      "value": 1.900,
+      "unit": "mmol/L",
+      "low": 3.500,
+      "high": 5.100,
+      "flag": "L"
+    },
+    {
+      "slug": "chloride-serum",
+      "value": 103.00,
+      "unit": "mmol/L",
+      "low": 98.00,
+      "high": 107.00,
+      "flag": null
+    },
+    {
+      "slug": "calcium-total",
+      "value": 9.600,
+      "unit": "mg/dL",
+      "low": 8.600,
+      "high": 10.300,
+      "flag": null
+    },
+    {
+      "slug": "magnesium-serum",
+      "value": 1.800,
+      "unit": "mg/dL",
+      "low": 1.700,
+      "high": 2.400,
+      "flag": null
+    },
+    {
+      "slug": "total-protein",
+      "value": 6.200,
+      "unit": "g/dL",
+      "low": 6.000,
+      "high": 8.300,
+      "flag": null
+    },
+    {
+      "slug": "albumin-serum",
+      "value": 4.000,
+      "unit": "g/dL",
+      "low": 3.500,
+      "high": 5.000,
+      "flag": null
+    },
+    {
+      "slug": "hs-crp",
+      "value": 1.600,
+      "unit": "mg/L",
+      "low": null,
+      "high": 3.000,
+      "flag": null
+    },
+    {
+      "slug": "total-bilirubin",
+      "value": 0.100,
+      "unit": "mg/dL",
+      "low": 0.200,
+      "high": 1.200,
+      "flag": "L"
+    },
+    {
+      "slug": "alt",
+      "value": 33.00,
+      "unit": "U/L",
+      "low": 7.00,
+      "high": 56.00,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 24.00,
+      "unit": "U/L",
+      "low": 10.00,
+      "high": 40.00,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 95.00,
+      "unit": "U/L",
+      "low": 44.00,
+      "high": 147.00,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 35.00,
+      "unit": "U/L",
+      "low": 8.00,
+      "high": 61.00,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 198.00,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 200.00,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 68.00,
+      "unit": "mg/dL",
+      "low": 40.00,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 5.250,
+      "unit": "mIU/L",
+      "low": 0.4000,
+      "high": 4.0000,
+      "flag": "H"
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.3000,
+      "unit": "ng/dL",
+      "low": 0.8000,
+      "high": 1.8000,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.200,
+      "unit": "pg/mL",
+      "low": 2.300,
+      "high": 4.200,
+      "flag": null
+    }
+  ]
+}

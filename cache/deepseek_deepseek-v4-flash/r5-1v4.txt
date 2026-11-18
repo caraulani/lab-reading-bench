@@ -1,0 +1,213 @@
+{
+  "takenISO": "2026-02-02",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 75.00,
+      "unit": "mg/dL",
+      "low": 70.00,
+      "high": 99.00,
+      "flag": null
+    },
+    {
+      "slug": "hba1c",
+      "value": 4.900,
+      "unit": "%",
+      "low": 4.000,
+      "high": 5.600,
+      "flag": null
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 1.6800,
+      "unit": "mg/dL",
+      "low": 0.6000,
+      "high": 1.3000,
+      "flag": null
+    },
+    {
+      "slug": "egfr",
+      "value": 107.00,
+      "unit": "mL/min/1.73m2",
+      "low": 60.00,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "uric-acid",
+      "value": 3.200,
+      "unit": "mg/dL",
+      "low": 2.500,
+      "high": 7.000,
+      "flag": null
+    },
+    {
+      "slug": "sodium-serum",
+      "value": 137.00,
+      "unit": "mmol/L",
+      "low": 135.00,
+      "high": 145.00,
+      "flag": null
+    },
+    {
+      "slug": "potassium-serum",
+      "value": 2.800,
+      "unit": "mmol/L",
+      "low": 3.500,
+      "high": 5.100,
+      "flag": null
+    },
+    {
+      "slug": "chloride-serum",
+      "value": 104.00,
+      "unit": "mmol/L",
+      "low": 98.00,
+      "high": 107.00,
+      "flag": null
+    },
+    {
+      "slug": "calcium-total",
+      "value": 9.200,
+      "unit": "mg/dL",
+      "low": 8.600,
+      "high": 10.300,
+      "flag": null
+    },
+    {
+      "slug": "magnesium-serum",
+      "value": 1.900,
+      "unit": "mg/dL",
+      "low": 1.700,
+      "high": 2.400,
+      "flag": null
+    },
+    {
+      "slug": "phosphorus-serum",
+      "value": 3.600,
+      "unit": "mg/dL",
+      "low": 2.500,
+      "high": 4.500,
+      "flag": null
+    },
+    {
+      "slug": "albumin-serum",
+      "value": 3.900,
+      "unit": "g/dL",
+      "low": 3.500,
+      "high": 5.000,
+      "flag": null
+    },
+    {
+      "slug": "hs-crp",
+      "value": 2.700,
+      "unit": "mg/L",
+      "low": null,
+      "high": 3.000,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 8.500,
+      "unit": "Thousand/uL",
+      "low": 4.000,
+      "high": 11.000,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.3500,
+      "unit": "Million/uL",
+      "low": 4.2000,
+      "high": 5.9000,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 12.700,
+      "unit": "g/dL",
+      "low": 12.000,
+      "high": 17.500,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 84.600,
+      "unit": "fL",
+      "low": 80.000,
+      "high": 100.000,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 31.100,
+      "unit": "pg",
+      "low": 27.000,
+      "high": 33.000,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 340.00,
+      "unit": "Thousand/uL",
+      "low": 150.00,
+      "high": 400.00,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 106.00,
+      "unit": "mcg/dL",
+      "low": 50.00,
+      "high": 170.00,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 150.00,
+      "unit": "ng/mL",
+      "low": 30.00,
+      "high": 300.00,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 35.00,
+      "unit": "%",
+      "low": 20.00,
+      "high": 50.00,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 24.00,
+      "unit": "ng/mL",
+      "low": 30.00,
+      "high": 100.00,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 754.00,
+      "unit": "pg/mL",
+      "low": 200.00,
+      "high": 900.00,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 15.300,
+      "unit": "ng/mL",
+      "low": 3.000,
+      "high": 20.000,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 899.00,
+      "unit": "ng/dL",
+      "low": 264.00,
+      "high": 916.00,
+      "flag": null
+    }
+  ]
+}

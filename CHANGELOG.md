@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 (18 Nov 2026)
+- Preregistered test, step 2: Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash and Llama 4 Maverick on 300 text reports (format invariance), and the vision models on clean page images and phone-style photos (seeds 5 and 6). Qwen 3.5 was stopped by its budget and is reported as incomplete.
+- The rule-based reader on PDFs and, through OCR, on images.
+- Findings: every wrong value on text was a unit conversion (168 of 168); models are less format-invariant than rules; photos degrade OCR + rules, not vision models; one model misses critical values. H1, H2 and H4 supported; H3 supported on seed 5 and undecided on seed 6.
+- Harness: wrong values split by conversion; empty replies cached; `OFFLINE=1` re-scores from the cache without calling any model; results named by image style; the run exits cleanly when a reader holds workers.
+
 ## 0.1.0 (17 Nov 2026)
 - Generator: synthetic lab reports with a computed answer key. 41 markers; US, UK, German, Spanish and Romanian lab styles; conventional and SI units; decimal points and commas; flag and range conventions; layout noise; text lines, CSV and FHIR.
 - `makeVariants`: the same results printed several ways, for format invariance.

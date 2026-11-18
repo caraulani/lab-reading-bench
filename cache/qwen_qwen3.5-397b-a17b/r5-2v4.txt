@@ -1,0 +1,133 @@
+{
+  "takenISO": "2026-08-03",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.6,
+      "unit": "mg/dL",
+      "low": 0.2,
+      "high": 1.2,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 53,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 38,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 133,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 6,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 184,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 200,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 98,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 42,
+      "unit": "mg/dL",
+      "low": 40,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.25,
+      "unit": "Million/uL",
+      "low": 4.2,
+      "high": 5.9,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 15.2,
+      "unit": "g/dL",
+      "low": 12,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 41.7,
+      "unit": "%",
+      "low": 36,
+      "high": 50,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 89.5,
+      "unit": "fL",
+      "low": 80,
+      "high": 100,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 32.6,
+      "unit": "g/dL",
+      "low": 32,
+      "high": 36,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 246,
+      "unit": "Thousand/uL",
+      "low": 150,
+      "high": 400,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 165,
+      "unit": "ng/mL",
+      "low": 30,
+      "high": 300,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 24,
+      "unit": "%",
+      "low": 20,
+      "high": 50,
+      "flag": null
+    }
+  ]
+}

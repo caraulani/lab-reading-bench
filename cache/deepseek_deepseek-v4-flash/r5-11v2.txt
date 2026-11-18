@@ -1,0 +1,1 @@
+{"takenISO":"2026-12-12","rows":[{"slug":"total-bilirubin","value":0.409,"unit":"mg/dL","low":0.175,"high":1.228,"flag":null},{"slug":"alt","value":662,"unit":"U/L","low":7,"high":56,"flag":null},{"slug":"ggt","value":52,"unit":"U/L","

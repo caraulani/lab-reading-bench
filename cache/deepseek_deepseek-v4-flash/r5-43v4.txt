@@ -1,0 +1,18 @@
+{
+  "takenISO": "2026-05-26",
+  "rows": [
+    {"slug": "glucose-fasting", "value": 80.00, "unit": "mg/dL", "low": 70.00, "high": 99.00, "flag": null},
+    {"slug": "hba1c", "value": 3.600, "unit": "%", "low": 4.000, "high": 5.600, "flag": "L"},
+    {"slug": "creatinine-serum", "value": 0.8000, "unit": "mg/dL", "low": 0.6000, "high": 1.3000, "flag": null},
+    {"slug": "blood-urea-nitrogen", "value": 28.00, "unit": "mg/dL", "low": 7.00, "high": 25.00, "flag": "H"},
+    {"slug": "egfr", "value": 73.00, "unit": "mL/min/1.73m2", "low": 60.00, "high": null, "flag": null},
+    {"slug": "uric-acid", "value": 6.500, "unit": "mg/dL", "low": 2.500, "high": 7.000, "flag": null},
+    {"slug": "sodium-serum", "value": 133.00, "unit": "mmol/L", "low": 135.00, "high": 145.00, "flag": "L"},
+    {"slug": "potassium-serum", "value": 4.800, "unit": "mmol/L", "low": 3.500, "high": 5.100, "flag": null},
+    {"slug": "chloride-serum", "value": 149.00, "unit": "mmol/L", "low": 98.00, "high": 107.00, "flag": "H"},
+    {"slug": "calcium-total", "value": 10.200, "unit": "mg/dL", "low": 8.600, "high": 10.300, "flag": null},
+    {"slug": "magnesium-serum", "value": 1.300, "unit": "mg/dL", "low": 1.700, "high": 2.400, "flag": "L"},
+    {"slug": "phosphorus-serum", "value": 2.600, "unit": "mg/dL", "low": 2.500, "high": 4.500, "flag": null},
+    {"slug": "total-protein", "value": 11.900, "unit": "g/dL", "low": 6.000, "high": 8.300, "flag": "H"},
+    {"slug": "albumin-serum", "value": 3.100, "unit": "g/dL", "low": 3.500, "high": 5.000, "flag": "L"},
+    {"slug": "hs-crp", "value": 3.700, "unit": "mg/L", "low": null, "

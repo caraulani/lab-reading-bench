@@ -1,0 +1,73 @@
+
+
+{
+  "takenISO": "2026-08-03",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.58,
+      "unit": "mg/dL",
+      "low": 0.18,
+      "high": 1.23,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 53,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 38,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 133,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 6,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": "L"
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 185.6,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.1,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 96.7,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.5,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 42.2,
+      "unit": "mg/dL",
+      "low": 39.8,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.25,
+      "unit

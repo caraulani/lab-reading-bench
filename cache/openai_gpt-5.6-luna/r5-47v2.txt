@@ -1,0 +1,1 @@
+{"takenISO":"2026-10-13","rows":[{"slug":"total-cholesterol","value":239.75,"unit":"mg/dL","low":null,"high":201.08,"flag":"H"},{"slug":"ldl-cholesterol","value":154.68,"unit":"mg/dL","low":null,"high":100.54,"flag":"H"},{"slug":"hdl-cholesterol","value":52.98,"unit":"mg/dL","low":39.83,"high":null,"flag":null}]}

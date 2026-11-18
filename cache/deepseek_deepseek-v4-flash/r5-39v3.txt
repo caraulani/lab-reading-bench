@@ -1,0 +1,157 @@
+{
+  "takenISO": null,
+  "rows": [
+    {
+      "slug": "alt",
+      "value": 54.00,
+      "unit": "U/L",
+      "low": 7.00,
+      "high": 56.00,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 68.00,
+      "unit": "U/L",
+      "low": 44.00,
+      "high": 147.00,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 32.00,
+      "unit": "U/L",
+      "low": 8.00,
+      "high": 61.00,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 188.00,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 200.00,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 124.00,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.00,
+      "flag": "H"
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 48.00,
+      "unit": "mg/dL",
+      "low": 40.00,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 4.800,
+      "unit": "Thousand/uL",
+      "low": 4.000,
+      "high": 11.000,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.8600,
+      "unit": "Million/uL",
+      "low": 4.2000,
+      "high": 5.9000,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 21.000,
+      "unit": "g/dL",
+      "low": 12.000,
+      "high": 17.500,
+      "flag": "H"
+    },
+    {
+      "slug": "hematocrit",
+      "value": 45.500,
+      "unit": "%",
+      "low": 36.000,
+      "high": 50.000,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 31.100,
+      "unit": "pg",
+      "low": 27.000,
+      "high": 33.000,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 32.200,
+      "unit": "g/dL",
+      "low": 32.000,
+      "high": 36.000,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 219.00,
+      "unit": "mcg/dL",
+      "low": 50.00,
+      "high": 170.00,
+      "flag": "H"
+    },
+    {
+      "slug": "ferritin",
+      "value": 256.00,
+      "unit": "ng/mL",
+      "low": 30.00,
+      "high": 300.00,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 37.00,
+      "unit": "%",
+      "low": 20.00,
+      "high": 50.00,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 60.00,
+      "unit": "ng/mL",
+      "low": 30.00,
+      "high": 100.00,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 421.00,
+      "unit": "pg/mL",
+      "low": 200.00,
+      "high": 900.00,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 21.600,
+      "unit": "ng/mL",
+      "low": 3.000,
+      "high": 20.000,
+      "flag": "H"
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 510.00,
+      "unit": "ng/dL",
+      "low": 264.00,
+      "high": 916.00,
+      "flag": null
+    }
+  ]
+}

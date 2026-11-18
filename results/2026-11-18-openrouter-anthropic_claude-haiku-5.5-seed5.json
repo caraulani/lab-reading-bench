@@ -1,0 +1,48 @@
+{
+ "invariance": {
+  "all": 985,
+  "some": 5,
+  "none": 0,
+  "pairs": 990,
+  "critSets": 12,
+  "critAll": 12,
+  "critSome": 0
+ },
+ "variants": 5,
+ "reports": 300,
+ "rows": 4950,
+ "seed": 5,
+ "outcomes": {
+  "ok": 4945,
+  "miss": 1,
+  "wrong": 4
+ },
+ "critical": {
+  "truth": 60,
+  "caught": 60,
+  "missedRow": 0,
+  "misread": 0,
+  "falseAlarm": 0
+ },
+ "phantom": 1,
+ "rowsRead": 4950,
+ "flags": {
+  "ok": 4830,
+  "invented": 111,
+  "missed": 4
+ },
+ "ranges": {
+  "ok": 4942,
+  "wrong": 3
+ },
+ "dates": {
+  "ok": 279
+ },
+ "crashed": 0,
+ "rates": {
+  "ok": 0.998989898989899,
+  "wrong": 0.0008080808080808081,
+  "miss": 0.00020202020202020202,
+  "criticalRecall": 1
+ }
+}

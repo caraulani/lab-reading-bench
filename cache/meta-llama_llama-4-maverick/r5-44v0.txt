@@ -1,0 +1,1 @@
+{"takenISO": "2026-06-19", "rows": [{"slug": "vitamin-d-25-oh", "value": 49.25, "unit": "ng/mL", "low": 18.75, "high": 62.5, "flag": null}, {"slug": "folate-serum", "value": 10.875, "unit": "ng/mL", "low": 1.7, "high": 11.325, "flag": "H"}, {"slug": "testosterone-total", "value": 8.6, "unit": "ng/dL", "low": 9.2, "high": 31.8, "flag": "L"}]}

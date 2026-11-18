@@ -1,0 +1,85 @@
+{
+  "takenISO": "2026-07-17",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 154.68,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.08,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 139.21,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.54,
+      "flag": "H"
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 73.09,
+      "unit": "mg/dL",
+      "low": 39.83,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 0.22,
+      "unit": "mIU/L",
+      "low": 0.40,
+      "high": 4.00,
+      "flag": "L"
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.34,
+      "unit": "ng/dL",
+      "low": 0.80,
+      "high": 1.80,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.78,
+      "unit": "pg/mL",
+      "low": 2.28,
+      "high": 4.23,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 52.0,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 685.63,
+      "unit": "pg/mL",
+      "low": 200.54,
+      "high": 899.72,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 2.38,
+      "unit": "ng/mL",
+      "low": 3.00,
+      "high": 19.98,
+      "flag": "L"
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 1367.49,
+      "unit": "ng/dL",
+      "low": 265.42,
+      "high": 917.43,
+      "flag": "H"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{"takenISO": "2026-03-27", "rows": [
+  {"slug": "total-bilirubin", "value": 0.1, "unit": "mg/dL", "low": 0.2, "high": 1.2, "flag": "L"},
+  {"slug": "alt", "value": 24, "unit": "U/L", "low": 7, "high": 56, "flag": null},
+  {"slug": "alp", "value": 130, "unit": "U/L", "low": 44, "high": 147, "flag": null},
+  {"slug": "ggt", "value": 46, "unit": "U/L", "low": 8, "high": 61, "flag": null},
+  {"slug": "total-cholesterol", "value": 92, "unit": "mg/dL", "low": null, "high": 200, "flag": null},
+  {"slug": "ldl-cholesterol", "value": 56, "unit": "mg/dL", "low": null, "high": 100, "flag": null},
+  {"slug": "hdl-cholesterol", "value": 54, "unit": "mg/dL", "low": 40, "high": null, "flag": null},
+  {"slug": "triglycerides", "value": 125, "unit": "mg/dL", "low": null, "high": 150, "flag": null},
+  {"slug": "serum-iron", "value": 165, "unit": "mcg/dL", "low": 50, "high": 170, "flag": null},
+  {"slug": "ferritin", "value": 195, "unit": "ng/mL", "low": 30, "high": 300, "flag": null},
+  {"slug": "transferrin-saturation", "value": 37, "unit": "%", "low": 20, "high": 50, "flag": null},
+  {"slug": "vitamin-d-25-oh", "value": 90, "unit": "ng/mL", "low": 30, "high": 100, "flag": null},
+  {"slug": "vitamin-b12", "value": 391, "unit": "pg/mL", "low": 200, "high": 900, "flag": null},
+  {"slug": "folate-serum", "value": 10.8, "unit": "ng/mL", "low": 3, "high": 20, "flag": null},
+  {"slug": "testosterone-total", "value": 216, "unit": "ng/dL", "low": 264, "high": 916, "flag": "L"}
+]}

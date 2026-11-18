@@ -1,0 +1,125 @@
+{
+  "takenISO": "2026-03-27",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.117,
+      "unit": "mg/dL",
+      "low": 0.175,
+      "high": 1.228,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 24,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 130,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 46,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 92.8,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.0,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 54.1,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.5,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 54.1,
+      "unit": "mg/dL",
+      "low": 39.8,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "triglycerides",
+      "value": 124.8,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 149.6,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 165,
+      "unit": "mcg/dL",
+      "low": 50,
+      "high": 170,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 195,
+      "unit": "ng/mL",
+      "low": 30,
+      "high": 300,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 37,
+      "unit": "%",
+      "low": 20,
+      "high": 50,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 90.0,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 391,
+      "unit": "pg/mL",
+      "low": 200,
+      "high": 900,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 10.8,
+      "unit": "ng/mL",
+      "low": 3.0,
+      "high": 20.0,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 216,
+      "unit": "ng/dL",
+      "low": 265,
+      "high": 916,
+      "flag": "L"
+    }
+  ]
+}

@@ -79,9 +79,13 @@ async function call(r: Report): Promise<string> {
 
 export default async function read(r: Report): Promise<Parsed> {
   const file = join(CACHE, `${r.id}.txt`);
+  const EMPTY = "<empty reply>";
   let text = existsSync(file) ? readFileSync(file, "utf8") : "";
-  if (!text) for (let attempt = 0; attempt < 2; attempt++) {
-    try { text = await call(r); if (text) writeFileSync(file, text); break; } catch (e) { if (attempt || stopped) throw e; }
+  const cached = existsSync(file);
+  if (!cached && process.env.OFFLINE) throw new Error("not in the cache (offline)");
+  if (text === EMPTY) text = "";
+  else if (!cached) for (let attempt = 0; attempt < 2; attempt++) {
+    try { text = await call(r); writeFileSync(file, text || EMPTY); break; } catch (e) { if (attempt || stopped) throw e; }
   }
   // a reply with no usable JSON reads nothing: every result on the report counts as missed (not left out of the scores)
   const m = text.match(/\{[\s\S]*\}/);

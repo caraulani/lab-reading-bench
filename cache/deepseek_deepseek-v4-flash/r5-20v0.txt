@@ -1,0 +1,61 @@
+{
+  "takenISO": null,
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 154.6,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.0,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 61.8,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.5,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 54.1,
+      "unit": "mg/dL",
+      "low": 39.8,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "triglycerides",
+      "value": 138.2,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 149.7,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 1.85,
+      "unit": "mIU/L",
+      "low": 0.40,
+      "high": 4.00,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.71,
+      "unit": "ng/dL",
+      "low": 0.80,
+      "high": 1.80,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 2.1,
+      "unit": "pg/mL",
+      "low": 2.3,
+      "high": 4.2,
+      "flag": "L"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{"takenISO": "2026-07-11", "rows": [
+  {"slug": "total-cholesterol", "value": 177.892, "unit": "mg/dL", "low": null, "high": 201.064, "flag": null},
+  {"slug": "ldl-cholesterol", "value": 65.734, "unit": "mg/dL", "low": null, "high": 100.532, "flag": null},
+  {"slug": "hdl-cholesterol", "value": 59.158, "unit": "mg/dL", "low": 39.8063, "high": null, "flag": null},
+  {"slug": "wbc", "value": 7.2, "unit": "Thousand/uL", "low": 4.0, "high": 11.0, "flag": null},
+  {"slug": "hemoglobin", "value": 15.3, "unit": "g/dL", "low": 12.0, "high": 17.5, "flag": null},
+  {"slug": "hematocrit", "value": 40.0, "unit": "%", "low": 36.0, "high": 50.0, "flag": null},
+  {"slug": "mcv", "value": 87.7, "unit": "fL", "low": 80.0, "high": 100.0, "flag": null},
+  {"slug": "mchc", "value": 32.2, "unit": "g/dL", "low": 32.0, "high": 36.0, "flag": null}
+]}

@@ -1,0 +1,189 @@
+{
+  "takenISO": "2026-07-02",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 4.6,
+      "unit": "mmol/L",
+      "low": 3.9,
+      "high": 5.5,
+      "flag": null
+    },
+    {
+      "slug": "hba1c",
+      "value": 23,
+      "unit": "mmol/mol",
+      "low": 20,
+      "high": 38,
+      "flag": null
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 59,
+      "unit": "µmol/L",
+      "low": 53,
+      "high": 115,
+      "flag": null
+    },
+    {
+      "slug": "egfr",
+      "value": 66,
+      "unit": "mL/min/1.73m2",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "sodium-serum",
+      "value": 139,
+      "unit": "mmol/L",
+      "low": 135,
+      "high": 145,
+      "flag": null
+    },
+    {
+      "slug": "potassium-serum",
+      "value": 4.5,
+      "unit": "mmol/L",
+      "low": 3.5,
+      "high": 5.1,
+      "flag": null
+    },
+    {
+      "slug": "chloride-serum",
+      "value": 103,
+      "unit": "mmol/L",
+      "low": 98,
+      "high": 107,
+      "flag": null
+    },
+    {
+      "slug": "magnesium-serum",
+      "value": 0.91,
+      "unit": "mmol/L",
+      "low": 0.70,
+      "high": 0.99,
+      "flag": null
+    },
+    {
+      "slug": "phosphorus-serum",
+      "value": 0.52,
+      "unit": "mmol/L",
+      "low": 0.81,
+      "high": 1.45,
+      "flag": "L"
+    },
+    {
+      "slug": "total-protein",
+      "value": 74,
+      "unit": "g/L",
+      "low": 60,
+      "high": 83,
+      "flag": null
+    },
+    {
+      "slug": "albumin-serum",
+      "value": 53,
+      "unit": "g/L",
+      "low": 35,
+      "high": 50,
+      "flag": "H"
+    },
+    {
+      "slug": "hs-crp",
+      "value": 1.7,
+      "unit": "mg/L",
+      "low": null,
+      "high": 3.0,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 6.8,
+      "unit": "Thousand/uL",
+      "low": 4.0,
+      "high": 11.0,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 88,
+      "unit": "g/L",
+      "low": 120,
+      "high": 175,
+      "flag": "L"
+    },
+    {
+      "slug": "mcv",
+      "value": 87.8,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 32.3,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 355,
+      "unit": "g/L",
+      "low": 320,
+      "high": 360,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 195,
+      "unit": "Thousand/uL",
+      "low": 150,
+      "high": 400,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 10.2,
+      "unit": "µmol/L",
+      "low": 9.0,
+      "high": 30.4,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 260,
+      "unit": "µg/L",
+      "low": 30,
+      "high": 300,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 42,
+      "unit": "%",
+      "low": 20,
+      "high": 50,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 0.500,
+      "unit": "mIU/L",
+      "low": 0.40,
+      "high": 4.00,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 23.0,
+      "unit": "pmol/L",
+      "low": 10.3,
+      "high": 23.2,
+      "flag": null
+    }
+  ]
+}

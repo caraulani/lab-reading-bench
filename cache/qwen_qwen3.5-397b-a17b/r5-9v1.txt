@@ -1,0 +1,17 @@
+
+
+{
+  "takenISO": "2026-03-14",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 81.1,
+      "unit": "mg/dL",
+      "low": 70.3,
+      "high": 99.1,
+      "flag": null
+    },
+    {
+      "slug": "hba1c",
+      "value": 4.6,
+      "unit
