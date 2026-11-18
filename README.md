@@ -157,7 +157,7 @@ Models on HL7 (seed 4, 80 messages, exploratory, not preregistered):
 
 ## Limits
 - The generator and the reader fixes were written by the same team. A perfect score shows the reader handles every layout we thought of, not every layout that exists. Extra seeds guard against overfitting one sample, not against blind spots the generator and the reader share. For the rule-based reader, seeds 1 to 4 are not held out (see PREREGISTRATION.md). The only held-out sets are seed 5 for the models and the seed 6 images.
-- The reports are text. Reading a PDF's text layer, a scan or a phone photo adds errors this version doesn't test yet.
+- PDFs, page images and phone-style photos are covered (from v0.2.0), but they are rendered from the same synthetic text. Real scans, handwriting, multi-page hospital printouts and poor phone photos are not tested yet.
 - 41 markers and five lab styles. Real reports carry hundreds of markers and many more formats.
 
 ## Related work
