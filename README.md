@@ -63,7 +63,7 @@ Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% â†’ 81.3% (â
 |---|---|---|---|---|---|---|---|
 | Rule-based reader (same 150 reports) | 100.0% | 0 | 45/45 | 99.8% | 80.0% | 75.4% | none |
 | Claude Sonnet 5.5 | 100% | 0 | 45/45 | 100% | (not run) | (not run) | $2.27 |
-| Gemini 3.8 Flash | 100% | 0 | 45/45 | 100% | 100% (0 wrong) | 100% (0 wrong) | $4.17 |
+| Gemini 3.8 Flash | 100% | 0 | 45/45 | 100% | 100% (0 wrong) | 100% (0 wrong) | $4.21 |
 
 Gemini 3.8 Flash's preregistered caps stopped it before it finished: 7 of 150 text reports, 10 of 97 clean and 13 of 97 photo images (seed 5), and about half of the held-out seed-6 images were not read. These are reported, not imputed. Everything it did read was correct, including all 30 critical values in the images it read. Sonnet on images was cut from the plan for cost.
 
