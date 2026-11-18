@@ -111,7 +111,7 @@ A reader is any module with a default export from a report to the rows it read (
 ## First results: a rule-based reader, before and after (17 Nov 2026)
 The first system measured is the rule-based reader behind [LifeFrom](https://lifefrom.ai)'s free lab-report reader, which runs on the person's device. Its code is not part of this repository.
 
-| | Before | After, seed 1 (tuned on) | After, seeds 2 and 3 (held out, 5,000 reports each) |
+| | Before | After, seed 1 (fixes made on it) | After, seeds 2 and 3 (5,000 reports each; checked after the fixes, but not held out: the preregistration counts the reader as tuned on seeds 1 to 4) |
 |---|---|---|---|
 | Rows read correctly | 78.1% | 99.98% | 99.96% |
 | Wrong values | 3.8% (1,483 rows) | 0 | 0 |
@@ -148,10 +148,15 @@ Each model got the report as printed (text, CSV or FHIR JSON) and the marker lis
 Taken together: on clean text, strong models read reports as accurately as a careful rule-based reader. The risk is unit arithmetic in smaller models, which is exactly where deterministic code is cheap and exact. "Rules read and convert, the model explains" removes the failure seen here.
 
 ## HL7 v2 tier (18 Nov 2026)
-The same reports can be sent as HL7 v2 ORU^R01 messages (`--format hl7`) with the same answer key. Adding the tier found one more bug in the rule-based reader: a value of 24 with a high flag ("Bilirubin 24 H") was taken for "24 hours", treated as a 24-hour urine test, and dropped. It's fixed: only "24 hour", "24 hr", or "24 h" followed by "urine" or "collection" counts as hours now. After the fix, the rule-based reader read all 38,869 results on seed 1 correctly as HL7 (0 wrong, 0 missed, 405 of 405 critical values), and the same on seeds 2 and 3 (5,000 messages each). Models have not been run on this tier yet.
+The same reports can be sent as HL7 v2 ORU^R01 messages (`--format hl7`) with the same answer key. Adding the tier found one more bug in the rule-based reader: a value of 24 with a high flag ("Bilirubin 24 H") was taken for "24 hours", treated as a 24-hour urine test, and dropped. It's fixed: only "24 hour", "24 hr", or "24 h" followed by "urine" or "collection" counts as hours now. After the fix, the rule-based reader read every HL7 result correctly on seeds 1, 2 and 3: 236,603 values, 0 wrong, 0 missed, all 2,719 critical values (results/*-hl7-seed1 to seed3). The fix was made with seed 1 in view, so these are not held-out numbers.
+
+Models on HL7 (seed 4, 80 messages, exploratory, not preregistered):
+- Claude Haiku 5.5 and Claude Sonnet 5.5 read every value they returned correctly.
+- GPT-5.6 Luna made 6 wrong values, all unit conversions, as on text.
+- Not every message was read: some calls were refused because the account ran low on credit, and Sonnet hit its cap. The counts are in results/*-hl7-seed4.
 
 ## Limits
-- The generator and the reader fixes were written by the same team. A perfect score shows the reader handles every layout we thought of, not every layout that exists. Held-out seeds guard against tuning to one sample, not against blind spots the generator and the reader share.
+- The generator and the reader fixes were written by the same team. A perfect score shows the reader handles every layout we thought of, not every layout that exists. Extra seeds guard against overfitting one sample, not against blind spots the generator and the reader share. For the rule-based reader, seeds 1 to 4 are not held out (see PREREGISTRATION.md). The only held-out sets are seed 5 for the models and the seed 6 images.
 - The reports are text. Reading a PDF's text layer, a scan or a phone photo adds errors this version doesn't test yet.
 - 41 markers and five lab styles. Real reports carry hundreds of markers and many more formats.
 

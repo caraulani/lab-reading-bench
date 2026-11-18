@@ -1,0 +1,1 @@
+{"takenISO":"2026-01-20","rows":[{"slug":"serum-iron","value":105,"unit":"mcg/dL","low":50,"high":170,"flag":null},{"slug":"ferritin","value":200,"unit":"ng/mL","low":30,"high":300,"flag":null},{"slug":"transferrin-saturation","value":21,"unit":"%","low":20,"high":50,"flag":null}]}

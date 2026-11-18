@@ -28,7 +28,7 @@ const only = arg("only")?.split("=");
 const DIR = import.meta.dirname;
 const READER = arg("reader");
 if (!READER) { console.error("usage: npx tsx run.mts --reader readers/<name>.mts"); process.exit(2); }
-const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "");
+const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "") + (arg("format") ? `-${arg("format")}` : "");
 const reader = (await import(pathToFileURL(resolve(READER)).href)).default as (r: Report) => Parsed | Promise<Parsed>;
 
 const unitKey = (u: string) => u.toLowerCase().replace(/[µμ]/g, "u").replace(/mcg/g, "ug").replace(/×/g, "x").replace(/\s/g, "");

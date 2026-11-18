@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.1 (18 Nov 2026)
+- HL7 results for seeds 2 and 3 published (236,603 values in total across seeds 1 to 3).
+- Wording corrected: seeds 2 and 3 are not held out for the rule-based reader (the preregistration counts it as tuned on seeds 1 to 4).
+- Exploratory model results on HL7 (seed 4).
+- Licences declared in CITATION.cff: MIT for code, CC BY 4.0 for data, results and write-up.
+
 ## 0.4.0 (18 Nov 2026)
 - HL7 v2.5.1 ORU^R01 tier (`--format hl7`, `toHl7` in generate.mts): any report as a lab-to-EHR message, LOINC or local codes, same answer key. Added to CI.
 - Rule-based reader on HL7: 100% read on seeds 1 to 3, after fixing a "24 H" read as "24 hours" bug that the tier found.

@@ -1,0 +1,8 @@
+{
+  "title": "lab-reading-bench: synthetic lab reports with a computed answer key for measuring rule-based and AI readers",
+  "upload_type": "software",
+  "creators": [{ "name": "Caraulani, Julian", "orcid": "0009-0006-3889-3563" }],
+  "license": "cc-by-4.0",
+  "keywords": ["clinical laboratory", "lab report parsing", "large language models", "evaluation", "benchmark", "critical values", "format invariance", "OCR", "HL7", "FHIR"],
+  "notes": "Code (generate.mts, run.mts, images.mts, critical.mts, readers/) is MIT-licensed (LICENSE). Data, results, model replies, preregistration and write-up are CC BY 4.0 (LICENSE-CC-BY-4.0). See LICENSING.md."
+}

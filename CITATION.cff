@@ -4,9 +4,11 @@ type: software
 message: "If you use this benchmark, its generator or its results, please cite it as below."
 title: "lab-reading-bench: synthetic lab reports with a computed answer key for measuring rule-based and AI readers"
 abstract: "A generator of synthetic laboratory reports printed in five national lab styles, conventional and SI units, decimal points and commas, varied flag and range conventions, as text, CSV, FHIR, PDF, page images and phone-style photos, each with an exact answer key; a harness that scores any reader on value accuracy, silent wrong values, critical-value recall and format invariance (the same results printed several ways); and results for a rule-based reader and current LLMs."
-version: 0.4.0
+version: 0.4.1
 date-released: 2026-11-18
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 identifiers:
   - type: doi
     value: 10.5281/zenodo.24341108

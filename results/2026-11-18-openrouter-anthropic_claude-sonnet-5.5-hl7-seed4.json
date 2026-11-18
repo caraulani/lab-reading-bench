@@ -1,0 +1,35 @@
+{
+ "wrongConverted": 0,
+ "wrongN": 0,
+ "reports": 80,
+ "rows": 971,
+ "seed": 4,
+ "outcomes": {
+  "ok": 971
+ },
+ "critical": {
+  "truth": 15,
+  "caught": 15,
+  "missedRow": 0,
+  "misread": 0,
+  "falseAlarm": 0
+ },
+ "phantom": 0,
+ "rowsRead": 971,
+ "flags": {
+  "ok": 971
+ },
+ "ranges": {
+  "ok": 971
+ },
+ "dates": {
+  "ok": 46
+ },
+ "crashed": 34,
+ "rates": {
+  "ok": 1,
+  "wrong": 0,
+  "miss": 0,
+  "criticalRecall": 1
+ }
+}
