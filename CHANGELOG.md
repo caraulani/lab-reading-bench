@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.0 (18 Nov 2026)
+- Preregistered test, step 3: Claude Sonnet 5.5 and Gemini 3.8 Flash on 150 text reports, and Gemini on clean and photo images. Neither made a wrong value. H2 is not supported for these two (they matched the rules).
+
 ## 0.2.0 (18 Nov 2026)
 - Preregistered test, step 2: Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash and Llama 4 Maverick on 300 text reports (format invariance), and the vision models on clean page images and phone-style photos (seeds 5 and 6). Qwen 3.5 was stopped by its budget and is reported as incomplete.
 - The rule-based reader on PDFs and, through OCR, on images.

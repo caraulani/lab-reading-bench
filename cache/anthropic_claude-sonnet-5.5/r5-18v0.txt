@@ -1,0 +1,5 @@
+Flags: the star alone has no direction, so I set each flag from the range. ALT 5 is below 7, so L. Ferritin 395 is above 300, so H. Free T3 6.1 is above 4.2, so H.
+
+Unit conversions: Sideremie in µg/dl is the same as mcg/dL, so no conversion. The collection date 23.10.2026 becomes 2026-10-23.
+
+{"takenISO":"2026-10-23","rows":[{"slug":"total-bilirubin","value":1.0,"unit":"mg/dL","low":0.2,"high":1.2,"flag":null},{"slug":"alt","value":5,"unit":"U/L","low":7,"high":56,"flag":"L"},{"slug":"ast","value":22,"unit":"U/L","low":10,"high":40,"flag":null},{"slug":"ggt","value":42,"unit":"U/L","low":8,"high":61,"flag":null},{"slug":"serum-iron","value":79,"unit":"mcg/dL","low":50,"high":170,"flag":null},{"slug":"ferritin","value":395,"unit":"ng/mL","low":30,"high":300,"flag":"H"},{"slug":"transferrin-saturation","value":31,"unit":"%","low":20,"high":50,"flag":null},{"slug":"tsh","value":2.64,"unit":"mIU/L","low":0.4,"high":4.0,"flag":null},{"slug":"free-t4","value":1.06,"unit":"ng/dL","low":0.8,"high":1.8,"flag":null},{"slug":"free-t3","value":6.1,"unit":"pg/mL","low":2.3,"high":4.2,"flag":"H"}]}

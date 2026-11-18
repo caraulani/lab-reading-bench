@@ -1,0 +1,30 @@
+Collected date: 12/05/2026. The format is ambiguous (DD/MM or MM/DD). The DOB is 05/12/1979 and the age is 47. A 47-year-old in 2026 means the birthday has already passed at the collection date. If the DOB is May 12 and collection is Dec 5, the age is 47 (2026-1979 = 47), which fits. If the DOB is 5 Dec and collection is 12 May 2026, the age would be 46, which does not fit. So the format is MM/DD, and the collection date is 2026-12-05.
+
+Reference ranges:
+- Total cholesterol "<200": low null, high 200.
+- LDL "< OR = 100": high 100.
+- HDL "> OR = 40": low 40.
+- Triglycerides "<150": high 150.
+- TSH unit uIU/mL is equivalent to mIU/L, so the value stays 3.25 with range 0.40 - 4.00.
+
+Flag: bilirubin printed "High", so H.
+
+```json
+{"takenISO":"2026-12-05","rows":[
+{"slug":"total-bilirubin","value":1.6,"unit":"mg/dL","low":0.2,"high":1.2,"flag":"H"},
+{"slug":"alt","value":52,"unit":"U/L","low":7,"high":56,"flag":null},
+{"slug":"ast","value":26,"unit":"U/L","low":10,"high":40,"flag":null},
+{"slug":"alp","value":84,"unit":"U/L","low":44,"high":147,"flag":null},
+{"slug":"ggt","value":35,"unit":"U/L","low":8,"high":61,"flag":null},
+{"slug":"total-cholesterol","value":105,"unit":"mg/dL","low":null,"high":200,"flag":null},
+{"slug":"ldl-cholesterol","value":47,"unit":"mg/dL","low":null,"high":100,"flag":null},
+{"slug":"hdl-cholesterol","value":41,"unit":"mg/dL","low":40,"high":null,"flag":null},
+{"slug":"triglycerides","value":73,"unit":"mg/dL","low":null,"high":150,"flag":null},
+{"slug":"serum-iron","value":63,"unit":"mcg/dL","low":50,"high":170,"flag":null},
+{"slug":"ferritin","value":225,"unit":"ng/mL","low":30,"high":300,"flag":null},
+{"slug":"transferrin-saturation","value":24,"unit":"%","low":20,"high":50,"flag":null},
+{"slug":"tsh","value":3.25,"unit":"mIU/L","low":0.4,"high":4.0,"flag":null},
+{"slug":"free-t4","value":1.44,"unit":"ng/dL","low":0.8,"high":1.8,"flag":null},
+{"slug":"free-t3","value":3.3,"unit":"pg/mL","low":2.3,"high":4.2,"flag":null}
+]}
+```

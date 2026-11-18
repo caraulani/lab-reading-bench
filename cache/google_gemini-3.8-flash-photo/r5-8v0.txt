@@ -1,0 +1,127 @@
+```json
+{
+  "takenISO": "2026-05-11",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 134.96,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.08,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 46.02,
+      "unit": "mg/dL",
+      "low": 39.83,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 151.97,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.54,
+      "flag": "H"
+    },
+    {
+      "slug": "triglycerides",
+      "value": 117.98,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 149.68,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 6.2,
+      "unit": "Thousand/uL",
+      "low": 4.0,
+      "high": 11.0,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 4.21,
+      "unit": "Million/uL",
+      "low": 4.2,
+      "high": 5.9,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 31.9,
+      "unit": "%",
+      "low": 36.0,
+      "high": 50.0,
+      "flag": "L"
+    },
+    {
+      "slug": "mcv",
+      "value": 80.2,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 32.3,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 34.2,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 28.0,
+      "unit": "Thousand/uL",
+      "low": 150.0,
+      "high": 400.0,
+      "flag": "L"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 40.99,
+      "unit": "ng/mL",
+      "low": 30.05,
+      "high": 100.16,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 295.05,
+      "unit": "pg/mL",
+      "low": 200.58,
+      "high": 899.92,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 9.7,
+      "unit": "ng/mL",
+      "low": 3.0,
+      "high": 20.0,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 370.33,
+      "unit": "ng/dL",
+      "low": 265.35,
+      "high": 917.18,
+      "flag": null
+    }
+  ]
+}
+```

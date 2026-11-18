@@ -7,17 +7,18 @@ Synthetic lab reports with a **computed answer key**. The benchmark measures how
 Reading the report is the step everything else depends on. An explanation, a trend or an alert built on a misread value is wrong however good it sounds. Reading can also be measured exactly: each report here is generated from known true values and then printed the way real labs print, so the correct reading of every row is known. No human or model grades anything.
 
 ## Key findings (preregistered test, 18 Nov 2026)
-1. **When models read lab reports as text, every wrong value was a unit conversion.** That was 168 of 168 across four models (Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash, Llama 4 Maverick). No model misread a printed number. They got the arithmetic wrong turning SI units into US units, for example magnesium ten times too high, or triglycerides converted with the cholesterol factor. The number looked plausible and nothing marked it.
-2. **Models aren't format-invariant.** For the same results printed five ways, the share of markers read right every time was:
+1. **The two strongest models tested made no mistakes.** Claude Sonnet 5.5 and Gemini 3.8 Flash read every value right, on text and on phone photos, in every layout. Their critical-value recall was 45/45 on text and 100% on images.
+2. **The smaller models' mistakes were silent unit conversions.** On text, every wrong value was a conversion: 168 of 168 across four models (Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash, Llama 4 Maverick). No model misread a printed number. They got the arithmetic wrong turning SI units into US units, for example magnesium ten times too high, or triglycerides converted with the cholesterol factor. The number looked plausible and nothing marked it.
+3. **Smaller models aren't format-invariant.** For the same results printed five ways, the share of markers read right every time was:
    - rule-based reader: 99.6%;
    - Claude Haiku 5.5: 99.5%;
    - GPT-5.6 Luna: 98.2% (−1.4 points, 95% CI −2.5 to −0.5);
    - Llama 4 Maverick: 88.5%;
    - DeepSeek V4 Flash: 48.6%.
-3. **Photos break the on-device OCR pipeline, not the vision models.** From clean page images to phone-style photos, OCR followed by rules dropped 4.6 points (95% CI −7.3 to −1.9), with false critical alarms. The vision models didn't move measurably.
-4. **Critical values are where failures matter.** DeepSeek V4 Flash caught 44 of 60 critical values (mostly through empty replies) and raised 7 false critical alarms. Every other model caught all 60.
+4. **Photos break the on-device OCR pipeline, not the vision models.** From clean page images to phone-style photos, OCR followed by rules dropped 4.6 points (95% CI −7.3 to −1.9), with false critical alarms. The vision models didn't move measurably.
+5. **Critical values are where failures matter.** DeepSeek V4 Flash caught 44 of 60 critical values (mostly through empty replies) and raised 7 false critical alarms. Every other model caught all of them.
 
-The practical conclusion is a division of labour. Deterministic code should do the reading and the unit arithmetic, which are exact and cheap. A strong vision model should handle photos. The language model should explain, never convert. The details, the intervals and every raw reply are below and in `results/` and `cache/`.
+The practical conclusion: choose the model by measurement, not by price, because the cheap models failed in exactly the place that matters. Either use a strong model, or let deterministic code do the reading and the unit arithmetic (exact and free) and let the model explain. For photos, a strong vision model beats on-device OCR. The details, the intervals and every raw reply are below and in `results/` and `cache/`.
 
 ## Preregistered test, step 2 (seed 5; held-out images on seed 6)
 Hypotheses, readers and analysis were fixed in [PREREGISTRATION.md](PREREGISTRATION.md) and timestamped before any model read these reports. Text: 60 sets of results × 5 printings = 300 reports, 4,950 results, 60 critical. Images: 97 printed reports as clean page images and phone-style photos (1,792 results, 31 critical), plus 43 held-out reports on seed 6.
@@ -56,7 +57,19 @@ Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% → 81.3% (�
 
 **What we changed in our own product because of it.** The image tier showed that LifeFrom's photo path read "µmol/L" as "pmol/L". A creatinine of 149 µmol/L then stayed unconverted and raised a false critical alarm. We fixed the OCR unit handling, which took wrong values on clean images from 2.7% to 0.6% and false critical alarms from 10 to 1. The 80% clean-image accuracy above is after that fix.
 
-Not yet run (step 3, budget permitting): Gemini 3.8 Flash and Claude Sonnet 5.5 on text, and frontier models (GPT-5.6 Sol and Terra, Claude Opus) not at all.
+## Preregistered test, step 3 (seed 5, first 30 sets; images as in step 2)
+
+| Reader | Text: correct | Wrong | Critical caught | Same answer in all 5 printings | Clean image | Photo | Cost |
+|---|---|---|---|---|---|---|---|
+| Rule-based reader (same 150 reports) | 100.0% | 0 | 45/45 | 99.8% | 80.0% | 75.4% | none |
+| Claude Sonnet 5.5 | 100% | 0 | 45/45 | 100% | (not run) | (not run) | $2.27 |
+| Gemini 3.8 Flash | 100% | 0 | 45/45 | 100% | 100% (0 wrong) | 100% (0 wrong) | $4.17 |
+
+Gemini 3.8 Flash's preregistered caps stopped it before it finished: 7 of 150 text reports, 10 of 97 clean and 13 of 97 photo images (seed 5), and about half of the held-out seed-6 images were not read. These are reported, not imputed. Everything it did read was correct, including all 30 critical values in the images it read. Sonnet on images was cut from the plan for cost.
+
+**Hypotheses, updated with step 3.** H2 is **not supported for Sonnet 5.5 and Gemini 3.8 Flash.** Both were at 100% against the rules' 99.8% on the same reports, so they matched or beat the rules, though the intervals overlap. H3 holds for Gemini (photo minus clean: 0 points). H1 and H4 are unchanged: neither model made a wrong value or missed a critical one.
+
+Not tested: frontier models (GPT-5.6 Sol and Terra, Claude Opus).
 
 ## What the reports vary
 - **Five lab styles:** US, UK, German, Spanish and Romanian, with their own marker names, column orders and headers (patient lines, dates, phone numbers and notes full of numbers that aren't results).
