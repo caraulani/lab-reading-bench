@@ -170,7 +170,7 @@ Models on HL7 (seed 4, 80 messages, exploratory, not preregistered):
 `corpus/` extends the generator into a document-AI and OCR dataset: 4,000 fictional reports in US, UK, German, Spanish,
 Romanian and French conventions, 14 layouts, born-digital PDFs and page pictures (clean scan, noisy scan, phone photo
 with perspective, blur, shadow and JPEG), multi-page and cumulative reports, internally consistent values, and an answer
-key with boxes and tagged hard cases. See [corpus/README.md](corpus/README.md) and [corpus/METHODS.md](corpus/METHODS.md).
+key with boxes and tagged hard cases. See [corpus/README.md](corpus/README.md) and [corpus/METHODS.md](corpus/METHODS.md). The full corpus is on Hugging Face: https://huggingface.co/datasets/lifefrom/lab-report-corpus.
 `run.mts --corpus` scores a corpus split with this harness; `corpus/score.mts` scores the full key, including abstention
 and reading separately from unit conversion. The reports above are unchanged (checked by hash in `corpus/tests/run.mts`).
 

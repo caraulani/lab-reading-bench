@@ -6,7 +6,7 @@ medical lab reports. Version 1.0.0, 25 November 2026. By LifeFrom (https://lifef
 Data CC BY 4.0, code MIT.
 
 **Every person, laboratory and value is invented.** Every page says "SYNTHETIC — not a real lab" at the top and
-carries a synthetic-document footer. Nothing here is patient data, and nothing here is medical advice.
+carries a synthetic-document footer. Nothing here is patient data.
 
 ## What it is
 
