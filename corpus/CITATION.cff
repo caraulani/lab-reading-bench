@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+type: dataset
+message: "If you use this corpus, its generator or its baseline scores, please cite it as below."
+title: "lab-report-corpus: synthetic laboratory reports with a computed answer key for document AI and OCR"
+abstract: "4,000 fictional laboratory reports in US, UK, German, Spanish, Romanian and French conventions, 14 page layouts, as born-digital PDFs and as page pictures in three conditions (clean scan, noisy scan, phone photo), each with a machine-readable answer key: printed name, LifeFrom marker_slug, value, unit, reference interval as printed, flag, page, boxes, specimen and date, and tagged hard cases (ambiguous names, missing units, unit changes between dates, percent and absolute differentials, censored values, comments in the value column, method-change footnotes, lines to abstain on). An extension of lab-reading-bench v0.4.1."
+version: 1.0.0
+date-released: 2026-11-25
+license:
+  - CC-BY-4.0
+  - MIT
+authors:
+  - name: LifeFrom
+    website: "https://lifefrom.ai"
+  - family-names: Caraulani
+    given-names: Julian
+    affiliation: LifeFrom
+references:
+  - type: software
+    title: "lab-reading-bench: synthetic lab reports with a computed answer key for measuring rule-based and AI readers"
+    version: 0.4.1
+    doi: 10.5281/zenodo.24350904
+    authors:
+      - family-names: Caraulani
+        given-names: Julian
+keywords:
+  - document AI
+  - OCR
+  - key information extraction
+  - clinical laboratory
+  - lab reports
+  - synthetic data
+  - benchmark

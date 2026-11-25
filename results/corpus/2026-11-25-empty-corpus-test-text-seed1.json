@@ -1,0 +1,31 @@
+{
+ "wrongConverted": 0,
+ "wrongN": 0,
+ "reports": 385,
+ "rows": 11262,
+ "seed": 1,
+ "outcomes": {
+  "miss": 11262
+ },
+ "critical": {
+  "truth": 33,
+  "caught": 0,
+  "missedRow": 33,
+  "misread": 0,
+  "falseAlarm": 0
+ },
+ "phantom": 0,
+ "rowsRead": 0,
+ "flags": {},
+ "ranges": {},
+ "dates": {
+  "missed": 385
+ },
+ "crashed": 0,
+ "rates": {
+  "ok": 0,
+  "wrong": 0,
+  "miss": 1,
+  "criticalRecall": 0
+ }
+}

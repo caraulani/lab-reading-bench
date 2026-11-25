@@ -1,0 +1,10 @@
+lab-report-corpus is released under two licences, the same as lab-reading-bench.
+
+- Data: the generated reports (PDFs, page pictures), answer keys, tables, statistics and baseline results are licensed
+  under the Creative Commons Attribution 4.0 International licence (CC BY 4.0). Full text: ../LICENSE-CC-BY-4.0
+  and https://creativecommons.org/licenses/by/4.0/legalcode
+- Code: corpus/*.mts, corpus/*.py, corpus/scripts/, corpus/tests/ and readers/ are licensed under the MIT licence.
+  Full text: ../LICENSE
+
+No third-party material is redistributed. The reference intervals printed on the synthetic reports are numbers taken
+from the public sources listed in METHODS.md (facts, cited there); no text, layout or branding of those sources is copied.

@@ -1,0 +1,5 @@
+text: 8 s
+pdf: 18 s
+scan_clean: 217 s
+scan_noisy: 217 s
+photo: 197 s

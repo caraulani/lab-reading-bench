@@ -10,6 +10,7 @@
 // a critical level is still caught after reading (critical.mts).
 //
 //   npx tsx run.mts --reader readers/your-reader.mts [--n 2000] [--seed 1] [--only locale=DE] [--dump r1-17] [--no-write] [--gate]
+//   npx tsx run.mts --reader readers/your-reader.mts --corpus corpus-out/full --split test --input pdf   (a built lab-report-corpus; corpus/load.mts)
 // Exit code 1 when any gate in thresholds.json fails (with --gate).
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, resolve, basename } from "node:path";
@@ -28,7 +29,7 @@ const only = arg("only")?.split("=");
 const DIR = import.meta.dirname;
 const READER = arg("reader");
 if (!READER) { console.error("usage: npx tsx run.mts --reader readers/<name>.mts"); process.exit(2); }
-const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "") + (arg("format") ? `-${arg("format")}` : "");
+const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (arg("corpus") ? `-corpus-${arg("split", "test")}-${arg("input", "text")}` : "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "") + (arg("format") ? `-${arg("format")}` : "");
 const reader = (await import(pathToFileURL(resolve(READER)).href)).default as (r: Report) => Parsed | Promise<Parsed>;
 
 const unitKey = (u: string) => u.toLowerCase().replace(/[µμ]/g, "u").replace(/mcg/g, "ug").replace(/×/g, "x").replace(/\s/g, "");
@@ -63,6 +64,8 @@ const K = Number(arg("variants", "0"));
 let reports = K > 1 ? makeVariants(N, K, SEED) : makeReports(N, SEED);
 // --format hl7: the same reports sent as HL7 v2 ORU^R01 messages (same answer key)
 if (arg("format") === "hl7") reports = reports.map(toHl7);
+// --corpus DIR: a built lab-report-corpus split instead of generated reports (the scoring below is unchanged)
+if (arg("corpus")) { const { loadCorpus } = await import("./corpus/load.mts"); reports = loadCorpus(resolve(arg("corpus")!), arg("split", "test")!, arg("input", "text")!); if (arg("limit")) reports = reports.slice(0, Number(arg("limit"))); }
 if (only) reports = reports.filter((r) => r.tags[only[0]] === only[1]);
 const dump = arg("dump");
 if (dump) {
@@ -146,7 +149,7 @@ const lines: string[] = [];
 const say = (s = "") => lines.push(s);
 say(`# Lab-report reader stress test`);
 say();
-say(`${reports.length} generated reports, ${rows} rows with a known answer, seed ${SEED}${only ? `, only ${only.join("=")}` : ""}. Read in ${(ms / 1000).toFixed(1)} s (${(ms / reports.length).toFixed(1)} ms a report).`);
+say(`${reports.length} ${arg("corpus") ? `corpus reports (${arg("split", "test")} split, input ${arg("input", "text")})` : "generated reports"}, ${rows} rows with a known answer, seed ${SEED}${only ? `, only ${only.join("=")}` : ""}. Read in ${(ms / 1000).toFixed(1)} s (${(ms / reports.length).toFixed(1)} ms a report).`);
 say();
 say(`| Outcome | Rows | Share | 95% interval |`);
 say(`|---|---|---|---|`);
@@ -170,7 +173,7 @@ for (const rs of inv.values()) {
   if (crits.length === rs.length) { invT.critSets++; const c = crits.filter((x) => x.caught).length; if (c === crits.length) invT.critAll++; else if (c) invT.critSome++; }
 }
 if (invT.pairs) say(`- **Format invariance** (${K} printings of each set of results): of ${invT.pairs} markers, read right in every printing ${invT.all} (${pct(invT.all, invT.pairs)}), right in some printings but not others ${invT.some} (${pct(invT.some, invT.pairs)}), never right ${invT.none}. Critical results caught in every printing: ${invT.critAll} of ${invT.critSets}${invT.critSome ? `; caught in some printings only: ${invT.critSome}` : ""}.`);
-for (const dim of ["locale", "kind", "variant", "units", "decimal", "sep", "order", "marker"]) {
+for (const dim of arg("corpus") ? ["locale", "layout", "heldout", "units", "decimal", "marker"] : ["locale", "kind", "variant", "units", "decimal", "sep", "order", "marker"]) {
   say();
   say(`## By ${dim}`);
   say(`| ${dim} | rows | ok | unit | unconverted | wrong | miss |`);
@@ -196,9 +199,11 @@ for (const [key, c] of sorted.slice(0, 12)) console.log(`  ${String(c.n).padStar
 if (!has("no-write")) {
   mkdirSync(join(DIR, "results"), { recursive: true });
   const stamp = new Date().toISOString().slice(0, 10);
-  writeFileSync(join(DIR, "results", `${stamp}-${NAME}-seed${SEED}${only ? `-${only.join("-")}` : ""}.md`), lines.join("\n") + "\n");
-  if (!only) writeFileSync(join(DIR, "results", `${stamp}-${NAME}-seed${SEED}.json`), JSON.stringify(summary, null, 1) + "\n");
-  console.log(`\nFull report: results/${stamp}-${NAME}-seed${SEED}${only ? `-${only.join("-")}` : ""}.md`);
+  const sub = arg("corpus") ? "results/corpus" : "results";
+  mkdirSync(join(DIR, sub), { recursive: true });
+  writeFileSync(join(DIR, sub, `${stamp}-${NAME}-seed${SEED}${only ? `-${only.join("-")}` : ""}.md`), lines.join("\n") + "\n");
+  if (!only) writeFileSync(join(DIR, sub, `${stamp}-${NAME}-seed${SEED}.json`), JSON.stringify(summary, null, 1) + "\n");
+  console.log(`\nFull report: ${sub}/${stamp}-${NAME}-seed${SEED}${only ? `-${only.join("-")}` : ""}.md`);
 }
 if (has("gate")) {
   const f = join(DIR, "thresholds.json");

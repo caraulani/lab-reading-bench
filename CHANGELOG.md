@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased (corpus-v1 branch, 25 Nov 2026)
+- `corpus/`: lab-report-corpus 1.0.0, a document-AI and OCR dataset built on the generator (its own CHANGELOG in
+  `corpus/CHANGELOG.md`). `run.mts --corpus` scores a corpus split; `readers/lifefrom-local.mts` and
+  `readers/corpus-oracle.mts` added. `generate.mts` unchanged (hash-checked).
+- README: key finding 1 states exactly what was measured; finding 2 says conversions were required by the task; the
+  preregistration deviation (rule-based reader fixed after its seed-5 errors were seen) and the pending OpenTimestamps
+  proof are stated; the old photo condition, the independent value draws and the real-sounding lab names are listed
+  as limits of v0.4.x. Licences stated the same way in CITATION.cff, .zenodo.json and LICENSING.md.
+
 ## 0.4.1 (18 Nov 2026)
 - HL7 results for seeds 2 and 3 published (236,603 values in total across seeds 1 to 3).
 - Wording corrected: seeds 2 and 3 are not held out for the rule-based reader (the preregistration counts it as tuned on seeds 1 to 4).

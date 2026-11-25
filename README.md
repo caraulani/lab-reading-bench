@@ -1,6 +1,6 @@
 # lab-reading-bench
 
-*By [Julian Caraulani](https://github.com/caraulani) ([ORCID 0009-0006-3889-3563](https://orcid.org/0009-0006-3889-3563)), November 2026. Code MIT, results and write-up CC BY 4.0 ([LICENSING.md](LICENSING.md)). The model tests are preregistered: [PREREGISTRATION.md](PREREGISTRATION.md), timestamped before any model read the test reports.*
+*By [Julian Caraulani](https://github.com/caraulani) ([ORCID 0009-0006-3889-3563](https://orcid.org/0009-0006-3889-3563)), November 2026. Code MIT, results and write-up CC BY 4.0 ([LICENSING.md](LICENSING.md)). The model tests are preregistered: [PREREGISTRATION.md](PREREGISTRATION.md), committed before any model read the test reports. Its OpenTimestamps proof (`PREREGISTRATION.md.ots`) holds only pending calendar attestations: it has not been upgraded to a Bitcoin attestation (the `ots` client was not available when this was checked on 25 Nov 2026), so for now the git commit date is the evidence of when it was written. Deviations from it are listed under "Deviations from the preregistration" below.*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24341108.svg)](https://doi.org/10.5281/zenodo.24341108) [![CI](https://github.com/caraulani/lab-reading-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/caraulani/lab-reading-bench/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/code-MIT-black.svg)](LICENSE) [![Results: CC BY 4.0](https://img.shields.io/badge/results-CC%20BY%204.0-black.svg)](LICENSE-CC-BY-4.0)
 
@@ -9,15 +9,15 @@ Synthetic lab reports with a **computed answer key**. The benchmark measures how
 Reading the report is the step everything else depends on. An explanation, a trend or an alert built on a misread value is wrong however good it sounds. Reading can also be measured exactly: each report here is generated from known true values and then printed the way real labs print, so the correct reading of every row is known. No human or model grades anything.
 
 ## Key findings (preregistered test, 18 Nov 2026)
-1. **The two strongest models tested made no mistakes.** Claude Sonnet 5.5 and Gemini 3.8 Flash read every value right, on text and on phone photos, in every layout. Their critical-value recall was 45/45 on text and 100% on images.
-2. **The smaller models' mistakes were silent unit conversions.** On text, every wrong value was a conversion: 168 of 168 across four models (Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash, Llama 4 Maverick). No model misread a printed number. They got the arithmetic wrong turning SI units into US units, for example magnesium ten times too high, or triglycerides converted with the cholesterol factor. The number looked plausible and nothing marked it.
+1. **The two strongest models tested made no mistakes in what they read.** On text (the first 30 sets, 150 reports), Claude Sonnet 5.5 read all 150 and Gemini 3.8 Flash read 143 before its preregistered cap stopped it; neither returned a wrong value, and both caught 45 of 45 critical values. Only Gemini was run on images: it read 87 of 97 clean images and 84 of 97 phone-style photos (seed 5) before its caps, with no wrong value and every critical value in them caught. Sonnet was not run on images. The unread reports are reported, not imputed.
+2. **The smaller models' mistakes were silent unit conversions.** The task asked every model to return each value in a stated conventional unit, so a report printed in SI units required a conversion; errors could only be conversions where the task demanded one, and reading and converting were scored together. On text, every wrong value was on a result that needed converting: 168 of 168 across four models (Claude Haiku 5.5, GPT-5.6 Luna, DeepSeek V4 Flash, Llama 4 Maverick). No model misread a printed number. They got the arithmetic wrong turning SI units into US units, for example magnesium ten times too high, or triglycerides converted with the cholesterol factor. The number looked plausible and nothing marked it.
 3. **Smaller models aren't format-invariant.** For the same results printed five ways, the share of markers read right every time was:
    - rule-based reader: 99.6%;
    - Claude Haiku 5.5: 99.5%;
    - GPT-5.6 Luna: 98.2% (−1.4 points, 95% CI −2.5 to −0.5);
    - Llama 4 Maverick: 88.5%;
    - DeepSeek V4 Flash: 48.6%.
-4. **Photos break the on-device OCR pipeline, not the vision models.** From clean page images to phone-style photos, OCR followed by rules dropped 4.6 points (95% CI −7.3 to −1.9), with false critical alarms. The vision models didn't move measurably.
+4. **Photos break the on-device OCR pipeline, not the vision models.** ("Phone-style photo" here is a mild rendering, not a physical photo simulation: the page tilted by at most 1.5°, a 3° perspective, a 0.6 px blur, a gradient shadow and JPEG quality 62; see Limits.) From clean page images to these photo-style images, OCR followed by rules dropped 4.6 points (95% CI −7.3 to −1.9), with false critical alarms. The vision models didn't move measurably.
 5. **Critical values are where failures matter.** DeepSeek V4 Flash caught 44 of 60 critical values (mostly through empty replies) and raised 7 false critical alarms. Every other model caught all of them.
 
 The practical conclusion: choose the model by measurement, not by price, because the cheap models failed in exactly the place that matters. Either use a strong model, or let deterministic code do the reading and the unit arithmetic (exact and free) and let the model explain. For photos, a strong vision model beats on-device OCR. The details, the intervals and every raw reply are below and in `results/` and `cache/`.
@@ -56,6 +56,10 @@ Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% → 81.3% (�
 | H2 | Every model less format-invariant than the rule-based reader; at least one below 99% | **Supported for Luna, Llama and DeepSeek. Undecided for Haiku** (−0.1 points, CI −0.8 to +0.6) |
 | H3 | Vision models drop less from clean to photo than OCR + rules | **Supported on seed 5. Same direction, undecided on held-out seed 6** (the OCR drop's interval crosses zero) |
 | H4 | At least one model misses a critical value or raises a false critical | **Supported:** DeepSeek V4 Flash (16 missed, 7 false) |
+
+**Deviations from the preregistration.**
+- **The rule-based reader was changed after its seed-5 errors were seen.** Its OCR unit handling ("µmol/L" read as "pmol/L") was fixed after the seed-5 image results showed the error, and the seed-5 image numbers for the rule-based reader in the tables are from the fixed reader. The preregistration named this reader as a reference point tuned on the seed-5 image set, but the fix itself came after those images were scored, so the rule-based reader's seed-5 image results, and the H3 comparison that uses them, are not a preregistered test of that reader. The repository history does not show whether the seed-6 images were read before or after the fix, so the seed-6 rule-based numbers should not be counted as held out either.
+- **Steps 2 and 3 were cut by budget:** Qwen 3.5 stopped after 50 of 300 reports, Gemini 3.8 Flash stopped before finishing text and images, and Sonnet 5.5 was not run on images (as reported above).
 
 **What we changed in our own product because of it.** The image tier showed that LifeFrom's photo path read "µmol/L" as "pmol/L". A creatinine of 149 µmol/L then stayed unconverted and raised a false critical alarm. We fixed the OCR unit handling, which took wrong values on clean images from 2.7% to 0.6% and false critical alarms from 10 to 1. The 80% clean-image accuracy above is after that fix.
 
@@ -157,8 +161,18 @@ Models on HL7 (seed 4, 80 messages, exploratory, not preregistered):
 
 ## Limits
 - The generator and the reader fixes were written by the same team. A perfect score shows the reader handles every layout we thought of, not every layout that exists. Extra seeds guard against overfitting one sample, not against blind spots the generator and the reader share. For the rule-based reader, seeds 1 to 4 are not held out (see PREREGISTRATION.md). The only held-out sets are seed 5 for the models and the seed 6 images.
-- PDFs, page images and phone-style photos are covered (from v0.2.0), but they are rendered from the same synthetic text. Real scans, handwriting, multi-page hospital printouts and poor phone photos are not tested yet.
+- PDFs, page images and phone-style photos are covered (from v0.2.0), but they are rendered from the same synthetic text. The "photo" condition of v0.2.0 to v0.4.x is mild: a tilt of at most 1.5°, `rotateX(3deg)` perspective, a 0.6 px CSS blur, a gradient shadow and JPEG quality 62 (`images.mts`). It is not a simulation of a hand-held phone photo. Real scans, handwriting, multi-page hospital printouts and poor phone photos are not tested yet. The lab-report-corpus (below) adds a stronger photo simulation.
+- **The v0.4.x generator draws each value independently.** Results that are tied in real reports are not tied here: a creatinine of 149 µmol/L can be printed beside an eGFR of 107, a transferrin saturation does not follow from iron and TIBC, and total cholesterol does not follow from LDL, HDL and triglycerides. Reference intervals are not sex-specific, so a female report can carry the male testosterone interval. This does not affect the reading scores (the key is computed from what is printed) but the reports are not clinically plausible as a whole. The corpus generator fixes this (corpus/METHODS.md §5).
+- **Lab names in the v0.4.x reports** ("Riverside Pathology", "Summit Diagnostics" and others) are invented but sound like real laboratories, and the US test names follow common US commercial-lab printouts. They are kept unchanged so that published results stay reproducible. Corpus reports use unmistakably invented names and print "SYNTHETIC — not a real lab" on every page.
 - 41 markers and five lab styles. Real reports carry hundreds of markers and many more formats.
+
+## lab-report-corpus (v1.0.0 of the corpus, 25 Nov 2026)
+`corpus/` extends the generator into a document-AI and OCR dataset: 4,000 fictional reports in US, UK, German, Spanish,
+Romanian and French conventions, 14 layouts, born-digital PDFs and page pictures (clean scan, noisy scan, phone photo
+with perspective, blur, shadow and JPEG), multi-page and cumulative reports, internally consistent values, and an answer
+key with boxes and tagged hard cases. See [corpus/README.md](corpus/README.md) and [corpus/METHODS.md](corpus/METHODS.md).
+`run.mts --corpus` scores a corpus split with this harness; `corpus/score.mts` scores the full key, including abstention
+and reading separately from unit conversion. The reports above are unchanged (checked by hash in `corpus/tests/run.mts`).
 
 ## Related work
 - Synthetic laboratory measurements for evaluating LLM reference-range classification (JMIR preprint, 2026): https://preprints.jmir.org/preprint/113569

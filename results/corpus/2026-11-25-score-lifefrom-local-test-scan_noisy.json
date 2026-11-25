@@ -1,0 +1,356 @@
+{
+ "readingAndConversion": {
+  "asPrinted": 2774,
+  "convertedRight": 220,
+  "convertedWrong": 59,
+  "misread": 2221,
+  "earlierColumn": 260,
+  "needConv": 1012,
+  "returnedConventional": 297
+ },
+ "reader": "lifefrom-local",
+ "split": "test",
+ "input": "scan_noisy",
+ "reports": 385,
+ "rows": 11329,
+ "readRows": 11262,
+ "absRows": 67,
+ "crashed": 0,
+ "total": {
+  "wrong": 2540,
+  "ok": 2994,
+  "miss": 5728,
+  "abstained": 48,
+  "read_when_abstain_expected": 19
+ },
+ "units": {
+  "ok": 1604,
+  "of": 2994
+ },
+ "comparators": {
+  "ok": 0,
+  "of": 31,
+  "unreported": 31
+ },
+ "phantom": 283,
+ "slices": {
+  "locale": {
+   "UK": {
+    "wrong": 539,
+    "ok": 471,
+    "miss": 533,
+    "abstained": 3,
+    "read_when_abstain_expected": 5
+   },
+   "ES": {
+    "miss": 723,
+    "wrong": 343,
+    "ok": 439,
+    "abstained": 4,
+    "read_when_abstain_expected": 5
+   },
+   "US": {
+    "ok": 558,
+    "miss": 687,
+    "wrong": 505,
+    "abstained": 12,
+    "read_when_abstain_expected": 1
+   },
+   "RO": {
+    "miss": 1126,
+    "ok": 640,
+    "wrong": 309,
+    "abstained": 14,
+    "read_when_abstain_expected": 3
+   },
+   "DE": {
+    "ok": 630,
+    "wrong": 564,
+    "miss": 942,
+    "abstained": 6,
+    "read_when_abstain_expected": 3
+   },
+   "FR": {
+    "abstained": 9,
+    "wrong": 280,
+    "miss": 1717,
+    "ok": 256,
+    "read_when_abstain_expected": 2
+   }
+  },
+  "layout": {
+   "uk-cum": {
+    "wrong": 439,
+    "ok": 70,
+    "miss": 253,
+    "abstained": 1,
+    "read_when_abstain_expected": 5
+   },
+   "es-cum": {
+    "miss": 358,
+    "wrong": 210,
+    "ok": 257,
+    "abstained": 1,
+    "read_when_abstain_expected": 3
+   },
+   "us-b": {
+    "ok": 169,
+    "miss": 222,
+    "wrong": 136,
+    "abstained": 5,
+    "read_when_abstain_expected": 1
+   },
+   "ro-b": {
+    "miss": 627,
+    "ok": 268,
+    "wrong": 172,
+    "abstained": 9,
+    "read_when_abstain_expected": 2
+   },
+   "uk-a": {
+    "ok": 401,
+    "miss": 280,
+    "wrong": 100,
+    "abstained": 2
+   },
+   "de-cum": {
+    "ok": 146,
+    "wrong": 251,
+    "miss": 306,
+    "abstained": 2,
+    "read_when_abstain_expected": 1
+   },
+   "ro-a": {
+    "miss": 499,
+    "ok": 372,
+    "wrong": 137,
+    "abstained": 5,
+    "read_when_abstain_expected": 1
+   },
+   "fr-b": {
+    "abstained": 4,
+    "wrong": 159,
+    "miss": 1088,
+    "ok": 159,
+    "read_when_abstain_expected": 1
+   },
+   "us-cum": {
+    "wrong": 101,
+    "miss": 82,
+    "ok": 105,
+    "abstained": 1
+   },
+   "us-a": {
+    "ok": 284,
+    "wrong": 268,
+    "miss": 383,
+    "abstained": 6
+   },
+   "fr-a": {
+    "ok": 97,
+    "wrong": 121,
+    "miss": 629,
+    "abstained": 5,
+    "read_when_abstain_expected": 1
+   },
+   "de-a": {
+    "miss": 279,
+    "wrong": 97,
+    "ok": 140
+   },
+   "es-a": {
+    "miss": 365,
+    "wrong": 133,
+    "ok": 182,
+    "abstained": 3,
+    "read_when_abstain_expected": 2
+   },
+   "de-mono": {
+    "miss": 357,
+    "wrong": 216,
+    "abstained": 4,
+    "ok": 344,
+    "read_when_abstain_expected": 2
+   }
+  },
+  "heldout_layout": {
+   "false": {
+    "wrong": 2324,
+    "ok": 2650,
+    "miss": 5371,
+    "abstained": 44,
+    "read_when_abstain_expected": 17
+   },
+   "true": {
+    "miss": 357,
+    "wrong": 216,
+    "abstained": 4,
+    "ok": 344,
+    "read_when_abstain_expected": 2
+   }
+  },
+  "page": {
+   "1": {
+    "wrong": 2385,
+    "ok": 2664,
+    "miss": 5192,
+    "abstained": 47,
+    "read_when_abstain_expected": 18
+   },
+   "2+": {
+    "ok": 330,
+    "miss": 536,
+    "wrong": 155,
+    "abstained": 1,
+    "read_when_abstain_expected": 1
+   }
+  },
+  "action": {
+   "read": {
+    "wrong": 2540,
+    "ok": 2994,
+    "miss": 5728
+   },
+   "abstain": {
+    "abstained": 48,
+    "read_when_abstain_expected": 19
+   }
+  },
+  "date": {
+   "current": {
+    "wrong": 2540,
+    "ok": 2994,
+    "miss": 5728,
+    "abstained": 48,
+    "read_when_abstain_expected": 19
+   }
+  },
+  "hard_case": {
+   "(none)": {
+    "wrong": 952,
+    "ok": 973,
+    "miss": 1106
+   },
+   "pct_abs_differential": {
+    "wrong": 215,
+    "abstained": 5,
+    "miss": 1076,
+    "ok": 144
+   },
+   "comment_in_value": {
+    "abstained": 47,
+    "ok": 6,
+    "miss": 13,
+    "read_when_abstain_expected": 19,
+    "wrong": 6
+   },
+   "abstain": {
+    "abstained": 48,
+    "read_when_abstain_expected": 19
+   },
+   "calculated": {
+    "wrong": 142,
+    "miss": 423,
+    "ok": 220,
+    "abstained": 2,
+    "read_when_abstain_expected": 6
+   },
+   "footnote_method_change": {
+    "wrong": 17,
+    "miss": 17,
+    "ok": 20,
+    "abstained": 1,
+    "read_when_abstain_expected": 1
+   },
+   "decimal_comma": {
+    "miss": 4164,
+    "wrong": 1396,
+    "ok": 1807,
+    "abstained": 28,
+    "read_when_abstain_expected": 11
+   },
+   "pct_abs_same_name": {
+    "miss": 309,
+    "wrong": 18,
+    "ok": 20,
+    "abstained": 3
+   },
+   "ambiguous_name": {
+    "miss": 127
+   },
+   "split_table": {
+    "ok": 84,
+    "miss": 110,
+    "wrong": 35,
+    "abstained": 1
+   },
+   "missing_unit": {
+    "miss": 38,
+    "ok": 17,
+    "wrong": 21,
+    "abstained": 1
+   },
+   "critical_value": {
+    "ok": 11,
+    "miss": 15,
+    "wrong": 7
+   },
+   "flag_by_typography": {
+    "ok": 26,
+    "miss": 58,
+    "wrong": 19,
+    "abstained": 3
+   },
+   "censored_value": {
+    "miss": 94,
+    "ok": 31,
+    "wrong": 24
+   },
+   "thousands_separator": {
+    "abstained": 1,
+    "wrong": 13,
+    "miss": 57,
+    "ok": 3
+   },
+   "pct_abs_same_line": {
+    "miss": 279,
+    "wrong": 52,
+    "ok": 8,
+    "abstained": 1
+   },
+   "dual_unit": {
+    "miss": 468,
+    "ok": 117,
+    "wrong": 102,
+    "abstained": 3
+   },
+   "unit_change_between_dates": {
+    "ok": 5,
+    "wrong": 12,
+    "miss": 17
+   }
+  },
+  "earlier_result_on_line": {
+   "yes": {
+    "wrong": 1277,
+    "ok": 932,
+    "miss": 1845,
+    "abstained": 14,
+    "read_when_abstain_expected": 12
+   },
+   "no": {
+    "ok": 2062,
+    "miss": 3883,
+    "wrong": 1263,
+    "abstained": 34,
+    "read_when_abstain_expected": 7
+   }
+  }
+ },
+ "rates": {
+  "ok": 0.2658497602557272,
+  "wrong": 0.22553720475936778,
+  "miss": 0.508613034984905,
+  "abstainRecall": 0.7164179104477612
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "lab-report-corpus: synthetic laboratory reports with a computed answer key for document AI and OCR",
+  "upload_type": "dataset",
+  "version": "1.0.0",
+  "publication_date": "2026-11-25",
+  "creators": [{ "name": "LifeFrom" }, { "name": "Caraulani, Julian", "affiliation": "LifeFrom" }],
+  "description": "4,000 fictional laboratory reports in six national conventions and 14 layouts, as born-digital PDFs and page pictures in three conditions, each with a machine-readable answer key and tagged hard cases. All people, laboratories and values are invented. An extension of lab-reading-bench v0.4.1.",
+  "license": "cc-by-4.0",
+  "keywords": ["document AI", "OCR", "key information extraction", "clinical laboratory", "lab reports", "synthetic data", "benchmark"],
+  "related_identifiers": [{ "identifier": "10.5281/zenodo.24350904", "relation": "isDerivedFrom", "resource_type": "software" }],
+  "notes": "Data (PDFs, pictures, answer keys, tables, baseline results) under CC BY 4.0; code (corpus/*.mts, corpus/*.py, readers/) under MIT."
+}

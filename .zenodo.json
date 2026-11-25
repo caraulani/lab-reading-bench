@@ -4,5 +4,5 @@
   "creators": [{ "name": "Caraulani, Julian", "orcid": "0009-0006-3889-3563" }],
   "license": "cc-by-4.0",
   "keywords": ["clinical laboratory", "lab report parsing", "large language models", "evaluation", "benchmark", "critical values", "format invariance", "OCR", "HL7", "FHIR"],
-  "notes": "Code (generate.mts, run.mts, images.mts, critical.mts, readers/) is MIT-licensed (LICENSE). Data, results, model replies, preregistration and write-up are CC BY 4.0 (LICENSE-CC-BY-4.0). See LICENSING.md."
+  "notes": "Two licences, by path (LICENSING.md). Code (generate.mts, run.mts, images.mts, critical.mts, readers/, corpus/*.mts, corpus/*.py, corpus/scripts/, corpus/tests/) is MIT (LICENSE). Data and reports (generated reports, pdf/, images/, results/, cache/, the built corpus, preregistration and write-up) are CC BY 4.0 (LICENSE-CC-BY-4.0). The licence field of this record is the data licence; earlier records of this concept DOI that listed only one licence are superseded by this statement."
 }

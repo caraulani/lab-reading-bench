@@ -1,0 +1,242 @@
+{
+ "readingAndConversion": {
+  "asPrinted": 12973,
+  "convertedRight": 3211,
+  "convertedWrong": 0,
+  "misread": 0,
+  "earlierColumn": 0,
+  "needConv": 3211,
+  "returnedConventional": 3211
+ },
+ "reader": "corpus-oracle",
+ "split": "test",
+ "input": "text",
+ "reports": 385,
+ "rows": 16251,
+ "readRows": 16184,
+ "absRows": 67,
+ "crashed": 0,
+ "total": {
+  "ok": 16184,
+  "abstained": 67
+ },
+ "units": {
+  "ok": 16184,
+  "of": 16184
+ },
+ "comparators": {
+  "ok": 202,
+  "of": 202,
+  "unreported": 0
+ },
+ "phantom": 0,
+ "slices": {
+  "locale": {
+   "UK": {
+    "ok": 2954,
+    "abstained": 8
+   },
+   "ES": {
+    "ok": 2268,
+    "abstained": 9
+   },
+   "US": {
+    "ok": 2289,
+    "abstained": 13
+   },
+   "RO": {
+    "ok": 2075,
+    "abstained": 17
+   },
+   "DE": {
+    "ok": 3619,
+    "abstained": 9
+   },
+   "FR": {
+    "abstained": 11,
+    "ok": 2979
+   }
+  },
+  "layout": {
+   "uk-cum": {
+    "ok": 2173,
+    "abstained": 6
+   },
+   "es-cum": {
+    "ok": 1588,
+    "abstained": 4
+   },
+   "us-b": {
+    "ok": 527,
+    "abstained": 6
+   },
+   "ro-b": {
+    "ok": 1067,
+    "abstained": 11
+   },
+   "uk-a": {
+    "ok": 781,
+    "abstained": 2
+   },
+   "de-cum": {
+    "ok": 1337,
+    "abstained": 3
+   },
+   "ro-a": {
+    "ok": 1008,
+    "abstained": 6
+   },
+   "fr-b": {
+    "abstained": 5,
+    "ok": 1406
+   },
+   "us-cum": {
+    "ok": 827,
+    "abstained": 1
+   },
+   "us-a": {
+    "ok": 935,
+    "abstained": 6
+   },
+   "fr-a": {
+    "ok": 1573,
+    "abstained": 6
+   },
+   "de-a": {
+    "ok": 516
+   },
+   "es-a": {
+    "ok": 680,
+    "abstained": 5
+   },
+   "de-mono": {
+    "ok": 1766,
+    "abstained": 6
+   }
+  },
+  "heldout_layout": {
+   "false": {
+    "ok": 14418,
+    "abstained": 61
+   },
+   "true": {
+    "ok": 1766,
+    "abstained": 6
+   }
+  },
+  "page": {
+   "1": {
+    "ok": 14932,
+    "abstained": 65
+   },
+   "2+": {
+    "ok": 1252,
+    "abstained": 2
+   }
+  },
+  "action": {
+   "read": {
+    "ok": 16184
+   },
+   "abstain": {
+    "abstained": 67
+   }
+  },
+  "date": {
+   "current": {
+    "ok": 11262,
+    "abstained": 67
+   },
+   "earlier": {
+    "ok": 4922
+   }
+  },
+  "hard_case": {
+   "(none)": {
+    "ok": 3031
+   },
+   "prior_date_column": {
+    "ok": 4922
+   },
+   "pct_abs_differential": {
+    "ok": 2001,
+    "abstained": 5
+   },
+   "comment_in_value": {
+    "abstained": 66,
+    "ok": 25
+   },
+   "abstain": {
+    "abstained": 67
+   },
+   "calculated": {
+    "ok": 785,
+    "abstained": 8
+   },
+   "footnote_method_change": {
+    "ok": 54,
+    "abstained": 2
+   },
+   "decimal_comma": {
+    "ok": 10339,
+    "abstained": 39
+   },
+   "pct_abs_same_name": {
+    "ok": 347,
+    "abstained": 3
+   },
+   "ambiguous_name": {
+    "ok": 192
+   },
+   "split_table": {
+    "ok": 275,
+    "abstained": 1
+   },
+   "missing_unit": {
+    "ok": 115,
+    "abstained": 1
+   },
+   "critical_value": {
+    "ok": 33
+   },
+   "flag_by_typography": {
+    "ok": 103,
+    "abstained": 3
+   },
+   "censored_value": {
+    "ok": 202
+   },
+   "thousands_separator": {
+    "abstained": 1,
+    "ok": 73
+   },
+   "pct_abs_same_line": {
+    "ok": 339,
+    "abstained": 1
+   },
+   "dual_unit": {
+    "ok": 687,
+    "abstained": 3
+   },
+   "unit_change_between_dates": {
+    "ok": 78
+   }
+  },
+  "earlier_result_on_line": {
+   "yes": {
+    "ok": 4054,
+    "abstained": 26
+   },
+   "no": {
+    "ok": 12130,
+    "abstained": 41
+   }
+  }
+ },
+ "rates": {
+  "ok": 1,
+  "wrong": 0,
+  "miss": 0,
+  "abstainRecall": 1
+ }
+}

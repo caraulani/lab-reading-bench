@@ -1,0 +1,17 @@
+---
+pretty_name: "lab-report-corpus: synthetic laboratory reports with a computed answer key"
+license: cc-by-4.0
+language: [en, de, es, ro, fr]
+task_categories: [image-to-text, object-detection, document-question-answering]
+tags: [document-ai, ocr, key-information-extraction, medical, laboratory-results, synthetic, tables, multilingual]
+size_categories: [1K<n<10K]
+configs:
+- config_name: pages
+  data_files:
+  - split: train
+    path: [data/train/*.png, data/train/*.jpg, data/train/metadata.parquet]
+  - split: validation
+    path: [data/validation/*.png, data/validation/*.jpg, data/validation/metadata.parquet]
+  - split: test
+    path: [data/test/*.png, data/test/*.jpg, data/test/metadata.parquet]
+---

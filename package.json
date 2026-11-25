@@ -2,6 +2,17 @@
   "name": "lab-reading-bench",
   "private": true,
   "type": "module",
-  "scripts": { "bench": "tsx run.mts" },
-  "devDependencies": { "tsx": "^4.19.0" }
+  "scripts": {
+    "bench": "tsx run.mts",
+    "corpus": "corpus/scripts/build.sh",
+    "corpus:sample": "corpus/scripts/build.sh sample",
+    "corpus:test": "tsx corpus/tests/run.mts"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^6.1.200",
+    "playwright": "^1.65.1",
+    "sharp": "^0.35.5",
+    "tesseract.js": "^5.1.1",
+    "tsx": "^4.19.0"
+  }
 }

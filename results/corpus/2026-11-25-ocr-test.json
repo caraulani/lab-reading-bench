@@ -1,0 +1,68 @@
+{
+ "all": {
+  "pictures": 1560,
+  "values": 48753,
+  "exact": 0.7076,
+  "cer": 0.172
+ },
+ "photo": {
+  "pictures": 520,
+  "values": 16251,
+  "exact": 0.5324,
+  "cer": 0.3133
+ },
+ "photo/heavy": {
+  "pictures": 98,
+  "values": 3273,
+  "exact": 0.0385,
+  "cer": 0.8555
+ },
+ "photo/light": {
+  "pictures": 222,
+  "values": 6664,
+  "exact": 0.7784,
+  "cer": 0.096
+ },
+ "photo/medium": {
+  "pictures": 200,
+  "values": 6314,
+  "exact": 0.5288,
+  "cer": 0.2599
+ },
+ "scan_clean": {
+  "pictures": 520,
+  "values": 16251,
+  "exact": 0.9228,
+  "cer": 0.0282
+ },
+ "scan_clean/none": {
+  "pictures": 520,
+  "values": 16251,
+  "exact": 0.9228,
+  "cer": 0.0282
+ },
+ "scan_noisy": {
+  "pictures": 520,
+  "values": 16251,
+  "exact": 0.6678,
+  "cer": 0.1746
+ },
+ "scan_noisy/heavy": {
+  "pictures": 99,
+  "values": 3444,
+  "exact": 0.592,
+  "cer": 0.2031
+ },
+ "scan_noisy/light": {
+  "pictures": 235,
+  "values": 7135,
+  "exact": 0.7367,
+  "cer": 0.1365
+ },
+ "scan_noisy/medium": {
+  "pictures": 186,
+  "values": 5672,
+  "exact": 0.6271,
+  "cer": 0.2049
+ }
+}

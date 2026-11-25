@@ -1,0 +1,228 @@
+{
+ "schema": "lifefrom-open/release-summary/1",
+ "id": "lab-report-corpus",
+ "version": "1.0.0",
+ "released": "2026-11-25",
+ "doi": null,
+ "title": "lab-report-corpus: synthetic laboratory reports with a computed answer key",
+ "licence": {
+  "data": "CC-BY-4.0",
+  "code": "MIT"
+ },
+ "derived_from_doi": "10.5281/zenodo.24350904",
+ "counts": {
+  "reports": 4000,
+  "reports_by_split": {
+   "test": 385,
+   "train": 3249,
+   "validation": 366
+  },
+  "pages": 5331,
+  "pictures": 6371,
+  "pdfs": 4000,
+  "results": 165538,
+  "results_to_abstain": 730,
+  "markers": 60
+ },
+ "by_locale": {
+  "DE": 699,
+  "ES": 673,
+  "FR": 652,
+  "RO": 689,
+  "UK": 592,
+  "US": 695
+ },
+ "by_layout": {
+  "de-a": 346,
+  "de-cum": 321,
+  "de-mono": 32,
+  "es-a": 329,
+  "es-cum": 344,
+  "fr-a": 326,
+  "fr-b": 326,
+  "ro-a": 342,
+  "ro-b": 347,
+  "uk-a": 307,
+  "uk-cum": 285,
+  "us-a": 235,
+  "us-b": 233,
+  "us-cum": 227
+ },
+ "by_condition": {
+  "photo": 2203,
+  "scan_clean": 1999,
+  "scan_noisy": 2169
+ },
+ "by_pages": {
+  "1": 2697,
+  "2": 1275,
+  "3": 28
+ },
+ "hard_case_results": {
+  "abstain": 730,
+  "ambiguous_name": 2078,
+  "calculated": 7900,
+  "censored_value": 2072,
+  "comment_in_value": 946,
+  "critical_value": 309,
+  "decimal_comma": 94313,
+  "dual_unit": 5624,
+  "flag_by_typography": 801,
+  "footnote_method_change": 686,
+  "missing_unit": 1192,
+  "pct_abs_differential": 20456,
+  "pct_abs_same_line": 2550,
+  "pct_abs_same_name": 3340,
+  "prior_date_column": 52675,
+  "split_table": 3031,
+  "thousands_separator": 629,
+  "unit_change_between_dates": 827
+ },
+ "bytes": {
+  "answers": 134683517,
+  "data": 1007018123,
+  "documents": 2297154,
+  "kaggle": 1051860175,
+  "pages": 9851355,
+  "pdf": 713497121,
+  "tables": 4378586,
+  "test_answers": 18009710,
+  "total_without_kaggle": 1889735566
+ },
+ "baselines_test": [
+  {
+   "reader": "lifefrom-local",
+   "input": "pdf",
+   "reports": 385,
+   "rows_to_read": 11262,
+   "rows_to_abstain": 67,
+   "ok": 0.7182,
+   "wrong": 0.0574,
+   "miss": 0.2244,
+   "abstain_recall": 0.6567,
+   "misread": 45,
+   "converted_wrong": 3
+  },
+  {
+   "reader": "lifefrom-local",
+   "input": "photo",
+   "reports": 385,
+   "rows_to_read": 11262,
+   "rows_to_abstain": 67,
+   "ok": 0.1977,
+   "wrong": 0.2075,
+   "miss": 0.5947,
+   "abstain_recall": 0.7463,
+   "misread": 2102,
+   "converted_wrong": 54
+  },
+  {
+   "reader": "lifefrom-local",
+   "input": "scan_clean",
+   "reports": 385,
+   "rows_to_read": 11262,
+   "rows_to_abstain": 67,
+   "ok": 0.6305,
+   "wrong": 0.1041,
+   "miss": 0.2654,
+   "abstain_recall": 0.6567,
+   "misread": 605,
+   "converted_wrong": 13
+  },
+  {
+   "reader": "lifefrom-local",
+   "input": "scan_noisy",
+   "reports": 385,
+   "rows_to_read": 11262,
+   "rows_to_abstain": 67,
+   "ok": 0.2658,
+   "wrong": 0.2255,
+   "miss": 0.5086,
+   "abstain_recall": 0.7164,
+   "misread": 2221,
+   "converted_wrong": 59
+  },
+  {
+   "reader": "lifefrom-local",
+   "input": "text",
+   "reports": 385,
+   "rows_to_read": 11262,
+   "rows_to_abstain": 67,
+   "ok": 0.7147,
+   "wrong": 0.0574,
+   "miss": 0.2279,
+   "abstain_recall": 0.6567,
+   "misread": 46,
+   "converted_wrong": 3
+  }
+ ],
+ "ocr_value_test": {
+  "all": {
+   "pictures": 1560,
+   "values": 48753,
+   "exact": 0.7076,
+   "cer": 0.172
+  },
+  "photo": {
+   "pictures": 520,
+   "values": 16251,
+   "exact": 0.5324,
+   "cer": 0.3133
+  },
+  "photo/heavy": {
+   "pictures": 98,
+   "values": 3273,
+   "exact": 0.0385,
+   "cer": 0.8555
+  },
+  "photo/light": {
+   "pictures": 222,
+   "values": 6664,
+   "exact": 0.7784,
+   "cer": 0.096
+  },
+  "photo/medium": {
+   "pictures": 200,
+   "values": 6314,
+   "exact": 0.5288,
+   "cer": 0.2599
+  },
+  "scan_clean": {
+   "pictures": 520,
+   "values": 16251,
+   "exact": 0.9228,
+   "cer": 0.0282
+  },
+  "scan_clean/none": {
+   "pictures": 520,
+   "values": 16251,
+   "exact": 0.9228,
+   "cer": 0.0282
+  },
+  "scan_noisy": {
+   "pictures": 520,
+   "values": 16251,
+   "exact": 0.6678,
+   "cer": 0.1746
+  },
+  "scan_noisy/heavy": {
+   "pictures": 99,
+   "values": 3444,
+   "exact": 0.592,
+   "cer": 0.2031
+  },
+  "scan_noisy/light": {
+   "pictures": 235,
+   "values": 7135,
+   "exact": 0.7367,
+   "cer": 0.1365
+  },
+  "scan_noisy/medium": {
+   "pictures": 186,
+   "values": 5672,
+   "exact": 0.6271,
+   "cer": 0.2049
+  }
+ },
+ "note": "Synthetic reports: invented people, invented laboratories. Values follow NHANES percentiles where available; not reference intervals, not a population sample."
+}
