@@ -1,0 +1,56 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv
+1 | COMPLETE BLOOD COUNT (CBC) | Hemoglobin | 14 | g/dl | 13 - 17 | | hemoglobin | |
+1 | COMPLETE BLOOD COUNT (CBC) | Total Leukocyte Count | 12,000 | cumm | 4,000 - 11,000 | H | wbc | | 12.0
+1 | Differential Leucocyte Count | Neutrophils | 45 | % | 40 - 80 | | | |
+1 | Differential Leucocyte Count | Lymphocyte | 45 | % | 20 - 40 | H | | |
+1 | Differential Leucocyte Count | Eosinophils | 05 | % | 1 - 6 | | | |
+1 | Differential Leucocyte Count | Monocytes | 05 | % | 2 - 10 | | | |
+1 | Differential Leucocyte Count | Basophils | 00 | % | < 2 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | Platelet Count | 4.0 | lakhs/cumm | 1.5 - 4.5 | | platelet-count | | 400
+1 | COMPLETE BLOOD COUNT (CBC) | Total RBC Count | 5.1 | million/cumm | 4.5 - 5.5 | | rbc | |
+1 | COMPLETE BLOOD COUNT (CBC) | Hematocrit Value, Hct | 56 | % | 40 - 50 | H | hematocrit | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Corpuscular Volume, MCV | 109.8 | fL | 83 - 101 | H | mcv | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Cell Haemoglobin, MCH | 27.5 | Pg | 27 - 32 | | mch | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Cell Haemoglobin CON, MCHC | 25.0 | % | 31.5 - 34.5 | L | mchc | MCHC printed in % |
+2 | LIVER FUNCTION TEST (LFT) | Serum Bilirubin (Total) | 1.0 | mg/dl | 0.2 - 1.2 | | total-bilirubin | |
+2 | LIVER FUNCTION TEST (LFT) | Serum Bilirubin (Direct) | 0.2 | mg/dl | 0 - 0.3 | | | |
+2 | LIVER FUNCTION TEST (LFT) | Serum Bilirubin (Indirect) | 0.80 | mg/dl | 0.2 - 1 | | | |
+2 | LIVER FUNCTION TEST (LFT) | SGPT (ALT) | 17 | U/I | 13 - 40 | | alt | unit printed 'U/I' (capital i) for U/l |
+2 | LIVER FUNCTION TEST (LFT) | SGOT (AST) | 30 | U/I | 0 - 37 | | ast | printed 'U/I' |
+2 | LIVER FUNCTION TEST (LFT) | Serum Alkaline Phosphatase | 67 | U/I | | | alp | printed 'U/I'; no reference range printed |
+2 | LIVER FUNCTION TEST (LFT) | Serum Protein | 6.0 | g/dl | 6.4 - 8.3 | L | total-protein | |
+2 | LIVER FUNCTION TEST (LFT) | Serum Albumin | 3.7 | g/dl | 3.5 - 5.2 | | albumin-serum | |
+2 | LIVER FUNCTION TEST (LFT) | Globulin | 2.30 | g/dl | 1.8 - 3.6 | | | |
+2 | LIVER FUNCTION TEST (LFT) | A/G Ratio | 1.61 | | 1.1 - 2.1 | | | |
+2 | KIDNEY FUNCTION TEST (KFT) | BUN | 9.34 | mg/dl | 7.9 - 20 | | blood-urea-nitrogen | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Urea | 20 | mg/dl | 19 - 45 | | | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Creatinine | 0.5 | mg/dl | 0.6 - 1.1 | L | creatinine-serum | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Calcium | 8.9 | mg/dl | 8.8 - 10.6 | | calcium-total | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Potassium | 3.7 | mmol/L | 3.5 - 5.1 | | potassium-serum | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Sodium | 138 | mmol/L | 136 - 146 | | sodium-serum | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Uric Acid | 6.0 | mg/dl | 3.5 - 7.2 | | uric-acid | |
+2 | KIDNEY FUNCTION TEST (KFT) | Urea / Creatinine Ratio | 40.00 | | | | | |
+2 | KIDNEY FUNCTION TEST (KFT) | BUN / Creatinine Ratio | 18.68 | | | | | |
+3 | LIPID PROFILE | Total Cholesterol | 130 | mg/dl | 125 - 200 | | total-cholesterol | |
+3 | LIPID PROFILE | Triglycerides | 190 | mg/dl | 25 - 200 | | triglycerides | |
+3 | LIPID PROFILE | HDL Cholesterol | 56 | mg/dl | 35 - 80 | | hdl-cholesterol | |
+3 | LIPID PROFILE | LDL Cholesterol | 36.00 | mg/dl | 85 - 130 | L | ldl-cholesterol | |
+3 | LIPID PROFILE | VLDL Cholesterol | 38.00 | mg/dl | 5 - 40 | | | |
+3 | LIPID PROFILE | LDL / HDL | 0.64 | | 1.5 - 3.5 | L | | |
+3 | LIPID PROFILE | Total Cholesterol / HDL | 2.32 | | 3.5 - 5 | L | | |
+3 | LIPID PROFILE | TG / HDL | 3.39 | | | | | |
+3 | LIPID PROFILE | Non-HDL cholesterol | 74.00 | | | | | no unit printed |
+5 | Semen Examination | Quantity | 3 | ml | 2 - 3 | | | semen |
+5 | Semen Examination | Liquefaction Time | 30 | min | | | | semen |
+5 | Semen Examination | Total Sperm Count | 155 | million/cumm | 60 - 200 | | | semen |
+5 | Semen Examination | Rapid Progressive | 40 | % | | | | semen |
+5 | Semen Examination | Sluggish Progressive | 30 | % | | | | semen |
+5 | Semen Examination | Non Progressive | 10 | % | | | | semen |
+5 | Semen Examination | Immotile | 10 | % | | | | semen |
+5 | Semen Examination | Abnormal Forms | 10 | % | | | | semen |
+5 | Semen Examination | Epithelial Cells | 01 | /HPF | | | | semen |
+5 | Semen Examination | R.B.C. | 01 | /HPF | | | | semen |
+5 | Semen Examination | Pus cell | 00 | /HPF | | | | semen |
+7 | THYROID FUNCTION TEST (TFT) | Serum Triiodothyronine, T3 | 2.10 | ng/mL | 0.69 - 2.15 | | | total T3 (not free T3) |
+7 | THYROID FUNCTION TEST (TFT) | Serum thyroxine, T4 | 59 | ng/mL | 52 - 127 | | | total T4 (not free T4) |
+7 | THYROID FUNCTION TEST (TFT) | Thyroid-Stimulating Hormone, TSH | 3.0 | µIU/mL | 0.3 - 4.5 | | tsh | |

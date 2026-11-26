@@ -1,0 +1,19 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv (in the catalog unit, only when it differs from value)
+1 | COMPLETE BLOOD COUNT (CBC) | Hemoglobin | 10.0 | g/dl | 12 - 15 | L | hemoglobin | |
+1 | COMPLETE BLOOD COUNT (CBC) | Total Leukocyte Count | 5,700 | cumm | 4,000 - 11,000 | | wbc | per cu mm, thousands separator comma | 5.7
+1 | Differential Leucocyte Count | Neutrophils | 55 | % | 40 - 80 | | | |
+1 | Differential Leucocyte Count | Lymphocyte | 40 | % | 20 - 40 | | | |
+1 | Differential Leucocyte Count | Eosinophils | 02 | % | 1 - 6 | | | |
+1 | Differential Leucocyte Count | Monocytes | 03 | % | 2 - 10 | | | watermark crosses the value |
+1 | Differential Leucocyte Count | Basophils | 00 | % | < 2 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | Platelet Count | 2.8 | lakhs/cumm | 1.5 - 4.5 | | platelet-count | lakhs = 100,000 | 280
+1 | COMPLETE BLOOD COUNT (CBC) | Total RBC Count | 4.7 | million/cumm | 3.9 - 4.8 | | rbc | |
+1 | COMPLETE BLOOD COUNT (CBC) | Hematocrit Value, Hct | 45 | % | 36 - 46 | | hematocrit | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Corpuscular Volume, MCV | 95.7 | fL | 83 - 101 | | mcv | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Cell Haemoglobin, MCH | 21.3 | Pg | 27 - 32 | L | mch | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Cell Haemoglobin CON, MCHC | 22.2 | % | 31.5 - 34.5 | L | mchc | MCHC printed in %, numerically equal to g/dL |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Platelet Volume, MPV | 11 | fL | 6.5 - 12 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | R.D.W. - SD | 40 | fL | 39 - 46 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | R.D.W. - CV | 12 | % | 11.6 - 14 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | P-LCR | 33 | % | 19.7 - 42.4 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | P.D.W. | 10.8 | fL | 9.6 - 15.2 | | | |

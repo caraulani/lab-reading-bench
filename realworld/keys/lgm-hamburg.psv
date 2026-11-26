@@ -1,0 +1,52 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv
+1 | BLUTBILD | Leukozyten | 5.3 | /nl | 3.9-10.0 | | wbc | |
+1 | BLUTBILD | Erythrozyten | 4.5 | /pl | 4.5-5.9 | | rbc | |
+1 | BLUTBILD | Hämoglobin | 13.3 | g/dl | 13.0-18.0 | | hemoglobin | |
+1 | BLUTBILD | Hämatokrit | 0.42 | l/l | 0.40-0.52 | | hematocrit | SI fraction | 42
+1 | BLUTBILD | MCV | 90 | fl | 82-98 | | mcv | |
+1 | BLUTBILD | MCH | 32 | pg | 28-32 | | mch | graphic marker sits at the top edge; no printed flag |
+1 | BLUTBILD | MCHC | 33 | g/dl | 32-36 | | mchc | |
+1 | BLUTBILD | Thrombozyten | 350 | /nl | 140-440 | | platelet-count | |
+1 | BLUTBILD | Seg. Granulozyten | 60.0 | % | 50.0-70.0 | | | |
+1 | BLUTBILD | Lymphozyten | 33.0 | % | 25.0-40.0 | | | |
+1 | BLUTBILD | Eosinophile Gran. | 2.0 | % | 1.0-5.0 | | | |
+1 | BLUTBILD | Basophile Gran. | 1.0 | % | 0.1-3.0 | | | |
+1 | BLUTBILD | Monozyten | 4.0 | % | 2.0-8.0 | | | |
+1 | BLUTBILD | Seg. Granulozyten abs. | 3.2 | /nl | 1.9-7.0 | | | |
+1 | BLUTBILD | Lymphozyten abs. | 1.7 | /nl | 1.0-4.0 | | | |
+1 | BLUTBILD | Eosinophile Gran. abs. | 0.1 | /nl | 0.0-0.5 | | | |
+1 | BLUTBILD | Basophile Gran. abs. | 0.1 | /nl | 0.0-0.3 | | | |
+1 | BLUTBILD | Monozyten abs. | 0.2 | /nl | 0.1-0.8 | | | |
+2 | BIOCHEMIE | Kalium | 4.5 | mmol/l | 3.5-5.1 | | potassium-serum | |
+2 | BIOCHEMIE | Natrium | 141 | mmol/l | 136-145 | | sodium-serum | |
+2 | BIOCHEMIE | Calcium | 2.39 | mmol/l | 2.20-2.65 | | calcium-total | SI unit |
+2 | BIOCHEMIE | Magnesium | 1.03 | mmol/l | 0.65-1.07 | | magnesium-serum | SI unit |
+2 | BIOCHEMIE | Phosphor anorg. | 0.93 | mmol/l | 0.87-1.45 | | phosphorus-serum | SI unit |
+2 | BIOCHEMIE | Eisen | 8 | µmol/l | 10-25 | - | serum-iron | '-' printed before the value, value in red |
+2 | BIOCHEMIE | Kupfer | 12.0 | µmol/l | 11.0-22.0 | | | |
+2 | BIOCHEMIE | Fe/Cu Quotient | 0.7 | | 0.6-1.4 | | | |
+2 | STOFFWECHSEL | Bilirubin ges. | 0.9 | mg/dl | 0.2-1.1 | | total-bilirubin | |
+2 | STOFFWECHSEL | Gamma-GT | 34 | U/l | < 60 | | ggt | |
+2 | STOFFWECHSEL | GOT | 26 | U/l | 10-50 | | ast | |
+2 | STOFFWECHSEL | GPT | 24 | U/l | 10-50 | | alt | |
+2 | STOFFWECHSEL | Cholinesterase | 6.70 | U/ml | 4.62-11.50 | | | |
+2 | STOFFWECHSEL | Alk.Phosphatase | 56 | U/l | 25-124 | | alp | |
+2 | STOFFWECHSEL | LDH | 105 | U/l | 100-250 | | | |
+2 | STOFFWECHSEL | Amylase | 89 | U/l | 20-104 | | | |
+2 | STOFFWECHSEL | Lipase | 25 | U/l | 11-70 | | | |
+2 | STOFFWECHSEL | HbA1c | 5.3 | % | 4.1-6.1 | | hba1c | |
+2 | STOFFWECHSEL | HbA1c (mol) | 32 | mmol/mol | 20-44 | | | same HbA1c in IFCC units; the catalog slug goes to the % row |
+2 | STOFFWECHSEL | Glukose im Serum | 89 | mg/dl | 60-115 | | glucose-fasting | fasting state not printed |
+2 | STOFFWECHSEL | EAG (durchschn. BZ) | 105 | mg/dl | 60-126 | | | estimated average glucose |
+2 | STOFFWECHSEL | CK gesamt (CK-NAC) | 56 | U/l | < 190 | | | |
+2 | STOFFWECHSEL | CK-MB | 4 | U/l | < 25 | | | |
+2 | STOFFWECHSEL | Triglyceride | 228 | mg/dl | 40-175 | + | triglycerides | '+' printed before the value, value in red |
+2 | STOFFWECHSEL | Cholesterin | 202 | mg/dl | 150-280 | | total-cholesterol | |
+2 | STOFFWECHSEL | HDL-Cholesterin | 69 | mg/dl | > 55 | | hdl-cholesterol | |
+2 | STOFFWECHSEL | LDL-Chol.rech | 115 | mg/dl | < 150 | | ldl-cholesterol | |
+2 | STOFFWECHSEL | Risikofaktor | 2.9 | | < 5.0 | | | |
+2 | STOFFWECHSEL | Harnsäure | 5.2 | mg/dl | 3.5-7.2 | | uric-acid | |
+3 | NIERE | Harnstoff | 26 | mg/dl | 13-43 | | | urea, not urea nitrogen |
+3 | NIERE | Kreatinin | 0.9 | mg/dl | 0.5-1.2 | | creatinine-serum | |
+3 | PLASMA-PROTEINE | Ges.Eiweiß | 7.6 | g/dl | 6.4-8.3 | | total-protein | |
+3 | SCHILDDRÜSE | TSH (hypersensitiv) | 0.98 | µIU/ml | 0.35-2.50 | | tsh | |

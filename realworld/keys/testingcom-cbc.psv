@@ -1,0 +1,21 @@
+# page | section | analyte | value | unit | ref | flag | slug | note
+1 | COMPLETE BLOOD COUNT | White Blood Cell (WBC) | 6.9 | K/mcL | 4.8-10.8 | | wbc | value in 'Normal' column
+1 | COMPLETE BLOOD COUNT | Red Blood Cell (RBC) | 1.8 | M/mcL | 4.7-6.1 | L | rbc | value in 'Abnormal' column
+1 | COMPLETE BLOOD COUNT | Hemoglobin (HB/Hgb)) | 6.5 | g/dL | 14.0-18.0 | L** | hemoglobin | ** = critical value (flag key); name printed with a doubled ')'
+1 | COMPLETE BLOOD COUNT | Hematocrit (HCT) | 19.5 | % | 42-52 | L** | hematocrit |
+1 | COMPLETE BLOOD COUNT | Mean Cell Volume (MCV) | 109.6 | fL | 80-100 | H | mcv |
+1 | COMPLETE BLOOD COUNT | Mean Cell Hemoglobin (MCH) | 36.5 | pg | 27.0-32.0 | H | mch |
+1 | COMPLETE BLOOD COUNT | Mean Cell Hb Conc (MCHC) | 33.3 | g/dL | 32.0-36.0 | | mchc |
+1 | COMPLETE BLOOD COUNT | Red Cell Dist Width (RDW) | 16.0 | % | 11.5-14.5 | H | |
+1 | COMPLETE BLOOD COUNT | Platelet count | 180 | K/mcL | 150-450 | | platelet-count |
+1 | COMPLETE BLOOD COUNT | Mean Platelet Volume | 7.9 | fL | 7.5-11.0 | | |
+1 | WBC Differential | Neutrophil (Neut) | 50 | % | 33-73 | | |
+1 | WBC Differential | Lymphocyte (Lymph) | 36 | % | 13-52 | | |
+1 | WBC Differential | Monocyte (Mono) | 8 | % | 0-10 | | |
+1 | WBC Differential | Eosinophil (Eos) | 5 | % | 0-5 | | |
+1 | WBC Differential | Basophil (Baso) | 1 | % | 0-2 | | |
+1 | WBC Differential | Neutrophil, Absolute | 3.5 | K/mcL | 1.8-7.8 | | |
+1 | WBC Differential | Lymphocyte, Absolute | 2.5 | K/mcL | 1.0-4.8 | | |
+1 | WBC Differential | Monocyte, Absolute | 0.6 | K/mcL | 0-0.8 | | |
+1 | WBC Differential | Eosinophil, Absolute | 0.4 | K/mcL | 0-0.45 | | |
+1 | WBC Differential | Basophil, Absolute | 0.1 | K/mcL | 0-0.2 | | |

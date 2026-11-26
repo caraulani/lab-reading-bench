@@ -1,0 +1,717 @@
+{
+ "rulebased-image": {
+  "reportsMissing": [],
+  "catalog": {
+   "rows": 201,
+   "outcomes": {
+    "unit": 18,
+    "ok": 126,
+    "miss": 42,
+    "wrong": 15
+   },
+   "flags": {
+    "ok": 132,
+    "missed": 10,
+    "invented": 2
+   },
+   "ranges": {
+    "ok": 127,
+    "wrong": 12,
+    "missed": 5
+   },
+   "critical": {
+    "truth": 1,
+    "caught": 0,
+    "falseAlarm": 6
+   },
+   "notOnReport": 0,
+   "notOnReportExamples": [],
+   "wrongExamples": [
+    "labcorp-1724: MCHC printed 32.5 g/dL → read 32 g/dL",
+    "labcorp-1724: Platelets printed 232 x10E3/uL → read 0.23 ×10⁹/L",
+    "labsmart-cbc: Platelet Count printed 2.8 lakhs/cumm → read 2.8 ",
+    "labsmart-cbc: Mean Cell Haemoglobin, MCH printed 21.3 Pg → read 213 pg",
+    "labsmart-preop: Platelet Count printed 2.35 lakhs/cumm → read 2.35 ",
+    "labsmart-preop: Serum Creatinine printed 0.9 mg/dl → read 9 mg/dL",
+    "labsmart-sample1: Platelet Count printed 4.0 lakhs/cumm → read 4 ",
+    "labsmart-sample1: Serum Creatinine printed 0.5 mg/dl → read 5 mg/dL",
+    "lgm-hamburg: Hämatokrit printed 0.42 l/l → read 0.42 ",
+    "praxisdd-blutbild: Hämatokrit printed 0.45 l/l → read 0.45 ",
+    "praxisdd-blutbild: Harnsäure printed 4.5 mg/dl → read 45 mg/dL",
+    "quest-drpws: HDL Cholesterol printed 81 mg/dL → read 46 mg/dL",
+    "quest-drpws: Triglycerides printed 45 mg/dL → read 150 mg/dL",
+    "testingcom-cbc: Hemoglobin (HB/Hgb)) printed 6.5 g/dL → read 65 ",
+    "testingcom-cbc: Hematocrit (HCT) printed 19.5 % → read 195 %"
+   ],
+   "perReport": {
+    "gesundheit-at": {
+     "n": 32,
+     "ok": 23
+    },
+    "labcorp-1724": {
+     "n": 8,
+     "ok": 4
+    },
+    "labsmart-cbc": {
+     "n": 8,
+     "ok": 3
+    },
+    "labsmart-preop": {
+     "n": 15,
+     "ok": 9
+    },
+    "labsmart-sample1": {
+     "n": 25,
+     "ok": 18
+    },
+    "lgm-hamburg": {
+     "n": 29,
+     "ok": 15
+    },
+    "lifeext-lcx00001": {
+     "n": 31,
+     "ok": 31
+    },
+    "praxisdd-blutbild": {
+     "n": 37,
+     "ok": 18
+    },
+    "quest-drpws": {
+     "n": 6,
+     "ok": 3
+    },
+    "quest-vitd-in": {
+     "n": 1,
+     "ok": 1
+    },
+    "quest-vitd-out": {
+     "n": 1,
+     "ok": 1
+    },
+    "testingcom-cbc": {
+     "n": 8,
+     "ok": 0
+    }
+   }
+  },
+  "printed": {
+   "rows": 411,
+   "value": {
+    "ok": 238,
+    "miss": 155,
+    "wrong": 18
+   },
+   "unit": {
+    "wrong": 53,
+    "ok": 184,
+    "n/a": 173,
+    "converted": 1
+   },
+   "range": {
+    "ok": 208,
+    "n/a": 173,
+    "wrong": 29,
+    "converted": 1
+   },
+   "flag": {
+    "ok": 225,
+    "n/a": 173,
+    "missed": 10,
+    "invented": 3
+   },
+   "perReport": {
+    "gesundheit-at": {
+     "n": 53,
+     "ok": 36
+    },
+    "labcorp-1724": {
+     "n": 26,
+     "ok": 15
+    },
+    "labcorp-273-normal": {
+     "n": 1,
+     "ok": 0
+    },
+    "labcorp-273-abnormal": {
+     "n": 1,
+     "ok": 0
+    },
+    "labsmart-cbc": {
+     "n": 18,
+     "ok": 9
+    },
+    "labsmart-preop": {
+     "n": 33,
+     "ok": 19
+    },
+    "labsmart-sample1": {
+     "n": 55,
+     "ok": 33
+    },
+    "lgm-hamburg": {
+     "n": 51,
+     "ok": 30
+    },
+    "lifeext-lcx00001": {
+     "n": 52,
+     "ok": 45
+    },
+    "praxisdd-blutbild": {
+     "n": 83,
+     "ok": 42
+    },
+    "quest-drpws": {
+     "n": 8,
+     "ok": 5
+    },
+    "quest-vitd-in": {
+     "n": 1,
+     "ok": 1
+    },
+    "quest-vitd-out": {
+     "n": 1,
+     "ok": 1
+    },
+    "testingcom-cbc": {
+     "n": 20,
+     "ok": 0
+    },
+    "wisplinghoff-allergy": {
+     "n": 8,
+     "ok": 2
+    }
+   },
+   "byLanguage": {
+    "de": {
+     "n": 195,
+     "ok": 110
+    },
+    "en": {
+     "n": 216,
+     "ok": 128
+    }
+   },
+   "unmatchedReaderRows": 4,
+   "unmatchedExamples": [
+    "labcorp-273-normal: se = 7  [selenium]",
+    "labcorp-273-abnormal: se = 7  [selenium]",
+    "labsmart-preop: HBsAg = Negative  [hbsag]",
+    "labsmart-preop: Colour = Pale yellow  [urine-color]"
+   ],
+   "misses": [
+    "gesundheit-at: Alk. Phosphatase 98",
+    "gesundheit-at: Cholinesterase 10835",
+    "gesundheit-at: Alpha-Amylase 65",
+    "gesundheit-at: Gesamteiweiß 8.2",
+    "gesundheit-at: Phosphor 1.1",
+    "gesundheit-at: Normotest 107",
+    "gesundheit-at: Segmentkernige% 60",
+    "gesundheit-at: Lymphozyten% 30",
+    "gesundheit-at: Segmentkernige 5.24",
+    "gesundheit-at: Lymphozyten 2.64",
+    "gesundheit-at: Monozyten 0.67",
+    "gesundheit-at: Eosinophile 0.11",
+    "gesundheit-at: Basophile 0.0",
+    "gesundheit-at: Thyroidea Stimulierendes Hormo 3.22",
+    "labcorp-1724: Absolute CD 4 Helper 987",
+    "labcorp-1724: % CD 4 Pos. Lymph. 42.9",
+    "labcorp-1724: Abs. CD 8 Suppressor 1024",
+    "labcorp-1724: % CD 8 Pos. Lymph. 44.5",
+    "labcorp-1724: CD4/CD8 Ratio 0.96",
+    "labcorp-1724: Lymphs 42",
+    "labcorp-1724: Basos 1",
+    "labcorp-1724: Lymphs (Absolute) 2.3",
+    "labcorp-1724: Eos (Absolute) 0.1",
+    "labcorp-1724: Immature Grans (Abs) 0.0",
+    "labcorp-273-normal: Leukocyte Alkaline Phos Score 50",
+    "labcorp-273-abnormal: Leukocyte Alkaline Phos Score 150",
+    "labsmart-cbc: Total Leukocyte Count 5,700",
+    "labsmart-cbc: Lymphocyte 40",
+    "labsmart-cbc: Total RBC Count 4.7",
+    "labsmart-cbc: Mean Cell Haemoglobin CON, MCHC 22.2",
+    "labsmart-cbc: R.D.W. - SD 40",
+    "labsmart-cbc: R.D.W. - CV 12",
+    "labsmart-cbc: P-LCR 33",
+    "labsmart-cbc: P.D.W. 10.8",
+    "labsmart-preop: Total Leukocyte Count 5,000",
+    "labsmart-preop: Lymphocyte 45",
+    "labsmart-preop: Total RBC Count 4.0",
+    "labsmart-preop: Mean Cell Haemoglobin CON, MCHC 33.8",
+    "labsmart-preop: R.D.W. - SD 42",
+    "labsmart-preop: R.D.W. - CV 12.1",
+    "labsmart-preop: P-LCR 22",
+    "labsmart-preop: P.D.W. 11.5",
+    "labsmart-preop: Bleeding Time 3.0",
+    "labsmart-preop: Clotting Time 5.2",
+    "labsmart-preop: BUN / Creatinine Ratio 7.79",
+    "labsmart-preop: Random Blood Sugar 97",
+    "labsmart-preop: Quantity 30",
+    "labsmart-sample1: Total Leukocyte Count 12,000",
+    "labsmart-sample1: Lymphocyte 45",
+    "labsmart-sample1: Total RBC Count 5.1",
+    "labsmart-sample1: Mean Cell Haemoglobin CON, MCHC 25.0",
+    "labsmart-sample1: Serum Protein 6.0",
+    "labsmart-sample1: BUN / Creatinine Ratio 18.68",
+    "labsmart-sample1: LDL / HDL 0.64",
+    "labsmart-sample1: Total Cholesterol / HDL 2.32",
+    "labsmart-sample1: Quantity 3",
+    "labsmart-sample1: Liquefaction Time 30",
+    "labsmart-sample1: Total Sperm Count 155",
+    "labsmart-sample1: Rapid Progressive 40",
+    "labsmart-sample1: Sluggish Progressive 30",
+    "labsmart-sample1: Non Progressive 10",
+    "labsmart-sample1: Immotile 10",
+    "labsmart-sample1: Abnormal Forms 10",
+    "labsmart-sample1: Epithelial Cells 01",
+    "labsmart-sample1: R.B.C. 01",
+    "labsmart-sample1: Pus cell 00",
+    "labsmart-sample1: Serum Triiodothyronine, T3 2.10",
+    "labsmart-sample1: Serum thyroxine, T4 59",
+    "lgm-hamburg: Hämoglobin 13.3",
+    "lgm-hamburg: Seg. Granulozyten 60.0",
+    "lgm-hamburg: Lymphozyten 33.0",
+    "lgm-hamburg: Eosinophile Gran. 2.0",
+    "lgm-hamburg: Basophile Gran. 1.0",
+    "lgm-hamburg: Monozyten 4.0",
+    "lgm-hamburg: Seg. Granulozyten abs. 3.2",
+    "lgm-hamburg: Lymphozyten abs. 1.7",
+    "lgm-hamburg: Eosinophile Gran. abs. 0.1",
+    "lgm-hamburg: Basophile Gran. abs. 0.1",
+    "lgm-hamburg: Monozyten abs. 0.2",
+    "lgm-hamburg: Phosphor anorg. 0.93",
+    "lgm-hamburg: Fe/Cu Quotient 0.7",
+    "lgm-hamburg: Cholinesterase 6.70",
+    "lgm-hamburg: Alk.Phosphatase 56",
+    "lgm-hamburg: HbA1c (mol) 32",
+    "lgm-hamburg: Cholesterin 202",
+    "lgm-hamburg: Risikofaktor 2.9",
+    "lgm-hamburg: Harnsäure 5.2",
+    "lgm-hamburg: Ges.Eiweiß 7.6",
+    "lifeext-lcx00001: Lymphs 43",
+    "lifeext-lcx00001: Basos 1",
+    "lifeext-lcx00001: Lymphs (Absolute) 2.0",
+    "lifeext-lcx00001: Eos (Absolute) 0.1",
+    "lifeext-lcx00001: Immature Grans (Abs) 0.0",
+    "praxisdd-blutbild: Seg. Granulozyten 54.0",
+    "praxisdd-blutbild: Lymphozyten 34.6",
+    "praxisdd-blutbild: Eosinophile Gran. 1.7",
+    "praxisdd-blutbild: Basophile Gran. 1.0",
+    "praxisdd-blutbild: Monozyten 6.0",
+    "praxisdd-blutbild: Seg. Granulozyten abs. 2.8",
+    "praxisdd-blutbild: Lymphozyten abs. 1.8",
+    "praxisdd-blutbild: Eosinophile Gran. abs. 0.1",
+    "praxisdd-blutbild: Basophile Gran. abs. 0.1",
+    "praxisdd-blutbild: Monozyten abs. 0.3",
+    "praxisdd-blutbild: Phosphor anorg. 1.28",
+    "praxisdd-blutbild: Transferrin Sättigungsgrad 42",
+    "praxisdd-blutbild: Fe/Cu Quotient 2.1",
+    "praxisdd-blutbild: Cholinesterase 9.21",
+    "praxisdd-blutbild: Alk.Phosphatase 62",
+    "praxisdd-blutbild: GLDH 1.4",
+    "praxisdd-blutbild: HbA1c (mol) 38",
+    "praxisdd-blutbild: HBDH 93",
+    "praxisdd-blutbild: Cholesterin 185",
+    "praxisdd-blutbild: Folsäure 8.9",
+    "praxisdd-blutbild: Glutathion gesamt 984",
+    "praxisdd-blutbild: Glutathion oxi. 224",
+    "praxisdd-blutbild: Glutathion red. 537",
+    "praxisdd-blutbild: Glut.red./Glut.ges. 55",
+    "praxisdd-blutbild: Cystatin C im Serum 0.97",
+    "praxisdd-blutbild: Glom. Filtrationsrate (CKD-Epi) 86",
+    "praxisdd-blutbild: Ges.Eiweiß 7.5",
+    "praxisdd-blutbild: Immunglobulin E gesamt 142",
+    "praxisdd-blutbild: Antistreptolysintiter 234",
+    "praxisdd-blutbild: Kalium (Vollblut) 1636",
+    "praxisdd-blutbild: Natrium (Vollblut) 2040",
+    "praxisdd-blutbild: Calcium (Vollblut) 75.8",
+    "praxisdd-blutbild: Magnesium (Vollblut) 30.0",
+    "praxisdd-blutbild: K (HCT-korr.) 1656",
+    "praxisdd-blutbild: Na (HCT-korr.) 2019",
+    "praxisdd-blutbild: Ca (HCT-korr.) 75.1",
+    "praxisdd-blutbild: Mg (HCT-korr.) 29.7",
+    "quest-drpws: Total Cholesterol 164",
+    "testingcom-cbc: White Blood Cell (WBC) 6.9",
+    "testingcom-cbc: Red Blood Cell (RBC) 1.8",
+    "testingcom-cbc: Mean Cell Volume (MCV) 109.6",
+    "testingcom-cbc: Mean Cell Hemoglobin (MCH) 36.5",
+    "testingcom-cbc: Mean Cell Hb Conc (MCHC) 33.3",
+    "testingcom-cbc: Red Cell Dist Width (RDW) 16.0",
+    "testingcom-cbc: Platelet count 180",
+    "testingcom-cbc: Mean Platelet Volume 7.9",
+    "testingcom-cbc: Neutrophil (Neut) 50",
+    "testingcom-cbc: Lymphocyte (Lymph) 36",
+    "testingcom-cbc: Monocyte (Mono) 8",
+    "testingcom-cbc: Eosinophil (Eos) 5",
+    "testingcom-cbc: Basophil (Baso) 1",
+    "testingcom-cbc: Neutrophil, Absolute 3.5",
+    "testingcom-cbc: Lymphocyte, Absolute 2.5",
+    "testingcom-cbc: Monocyte, Absolute 0.6",
+    "testingcom-cbc: Eosinophil, Absolute 0.4",
+    "testingcom-cbc: Basophil, Absolute 0.1",
+    "wisplinghoff-allergy: g6 Lieschgras <0.10",
+    "wisplinghoff-allergy: g12 Roggen <0.10",
+    "wisplinghoff-allergy: w6 Beifuß 12.00",
+    "wisplinghoff-allergy: e5 Hundeschuppen 2.00",
+    "wisplinghoff-allergy: m2 Cladosporium herbarum 2.00",
+    "wisplinghoff-allergy: d1 Dermatophagoides pteroniss. 52.00"
+   ],
+   "wrongs": [
+    "gesundheit-at: Erythrozyten 5.59",
+    "gesundheit-at: MCHC 36.1",
+    "gesundheit-at: Retikulozyten % 1.52",
+    "labcorp-1724: MCHC 32.5",
+    "labsmart-cbc: Mean Cell Haemoglobin, MCH 21.3",
+    "labsmart-preop: Serum Creatinine 0.9",
+    "labsmart-sample1: Serum Creatinine 0.5",
+    "lgm-hamburg: Triglyceride 228",
+    "lifeext-lcx00001: T. Chol/HDL Ratio 2.3",
+    "lifeext-lcx00001: Neutrophils (Absolute) 2.0",
+    "praxisdd-blutbild: Eisen 29",
+    "praxisdd-blutbild: Harnsäure 4.5",
+    "praxisdd-blutbild: Zonulin im Serum 34.5",
+    "praxisdd-blutbild: Vitamin B12 1509",
+    "quest-drpws: HDL Cholesterol 81",
+    "quest-drpws: Triglycerides 45",
+    "testingcom-cbc: Hemoglobin (HB/Hgb)) 6.5",
+    "testingcom-cbc: Hematocrit (HCT) 19.5"
+   ]
+  }
+ },
+ "rulebased-pdf": {
+  "reportsMissing": [],
+  "catalog": {
+   "rows": 201,
+   "outcomes": {
+    "ok": 159,
+    "miss": 34,
+    "wrong": 4,
+    "unit": 4
+   },
+   "flags": {
+    "ok": 150,
+    "missed": 13
+   },
+   "ranges": {
+    "ok": 163
+   },
+   "critical": {
+    "truth": 1,
+    "caught": 1,
+    "falseAlarm": 3
+   },
+   "notOnReport": 0,
+   "notOnReportExamples": [],
+   "wrongExamples": [
+    "labsmart-cbc: Platelet Count printed 2.8 lakhs/cumm → read 2.8 ",
+    "labsmart-preop: Platelet Count printed 2.35 lakhs/cumm → read 2.35 ",
+    "labsmart-sample1: Platelet Count printed 4.0 lakhs/cumm → read 4 ",
+    "testingcom-cbc: White Blood Cell (WBC) printed 6.9 K/mcL → read 16 "
+   ],
+   "perReport": {
+    "gesundheit-at": {
+     "n": 32,
+     "ok": 25
+    },
+    "labcorp-1724": {
+     "n": 8,
+     "ok": 8
+    },
+    "labsmart-cbc": {
+     "n": 8,
+     "ok": 4
+    },
+    "labsmart-preop": {
+     "n": 15,
+     "ok": 10
+    },
+    "labsmart-sample1": {
+     "n": 25,
+     "ok": 17
+    },
+    "lgm-hamburg": {
+     "n": 29,
+     "ok": 24
+    },
+    "lifeext-lcx00001": {
+     "n": 31,
+     "ok": 31
+    },
+    "praxisdd-blutbild": {
+     "n": 37,
+     "ok": 28
+    },
+    "quest-drpws": {
+     "n": 6,
+     "ok": 6
+    },
+    "quest-vitd-in": {
+     "n": 1,
+     "ok": 1
+    },
+    "quest-vitd-out": {
+     "n": 1,
+     "ok": 1
+    },
+    "testingcom-cbc": {
+     "n": 8,
+     "ok": 4
+    }
+   }
+  },
+  "printed": {
+   "rows": 411,
+   "value": {
+    "ok": 259,
+    "miss": 144,
+    "wrong": 8
+   },
+   "unit": {
+    "ok": 247,
+    "n/a": 152,
+    "wrong": 12
+   },
+   "range": {
+    "ok": 259,
+    "n/a": 152
+   },
+   "flag": {
+    "ok": 246,
+    "n/a": 152,
+    "missed": 13
+   },
+   "perReport": {
+    "gesundheit-at": {
+     "n": 53,
+     "ok": 36
+    },
+    "labcorp-1724": {
+     "n": 26,
+     "ok": 16
+    },
+    "labcorp-273-normal": {
+     "n": 1,
+     "ok": 0
+    },
+    "labcorp-273-abnormal": {
+     "n": 1,
+     "ok": 0
+    },
+    "labsmart-cbc": {
+     "n": 18,
+     "ok": 10
+    },
+    "labsmart-preop": {
+     "n": 33,
+     "ok": 20
+    },
+    "labsmart-sample1": {
+     "n": 55,
+     "ok": 34
+    },
+    "lgm-hamburg": {
+     "n": 51,
+     "ok": 32
+    },
+    "lifeext-lcx00001": {
+     "n": 52,
+     "ok": 47
+    },
+    "praxisdd-blutbild": {
+     "n": 83,
+     "ok": 45
+    },
+    "quest-drpws": {
+     "n": 8,
+     "ok": 8
+    },
+    "quest-vitd-in": {
+     "n": 1,
+     "ok": 1
+    },
+    "quest-vitd-out": {
+     "n": 1,
+     "ok": 1
+    },
+    "testingcom-cbc": {
+     "n": 20,
+     "ok": 7
+    },
+    "wisplinghoff-allergy": {
+     "n": 8,
+     "ok": 2
+    }
+   },
+   "byLanguage": {
+    "de": {
+     "n": 195,
+     "ok": 115
+    },
+    "en": {
+     "n": 216,
+     "ok": 144
+    }
+   },
+   "unmatchedReaderRows": 2,
+   "unmatchedExamples": [
+    "labsmart-preop: HBsAg = Negative  [hbsag]",
+    "labsmart-preop: Colour = Pale yellow  [urine-color]"
+   ],
+   "misses": [
+    "gesundheit-at: Alk. Phosphatase 98",
+    "gesundheit-at: Cholinesterase 10835",
+    "gesundheit-at: Alpha-Amylase 65",
+    "gesundheit-at: Phosphor 1.1",
+    "gesundheit-at: Normotest 107",
+    "gesundheit-at: Segmentkernige% 60",
+    "gesundheit-at: Lymphozyten% 30",
+    "gesundheit-at: Segmentkernige 5.24",
+    "gesundheit-at: Lymphozyten 2.64",
+    "gesundheit-at: Monozyten 0.67",
+    "gesundheit-at: Eosinophile 0.11",
+    "gesundheit-at: Basophile 0.0",
+    "gesundheit-at: Thyroidea Stimulierendes Hormo 3.22",
+    "labcorp-1724: Absolute CD 4 Helper 987",
+    "labcorp-1724: % CD 4 Pos. Lymph. 42.9",
+    "labcorp-1724: Abs. CD 8 Suppressor 1024",
+    "labcorp-1724: % CD 8 Pos. Lymph. 44.5",
+    "labcorp-1724: CD4/CD8 Ratio 0.96",
+    "labcorp-1724: Lymphs 42",
+    "labcorp-1724: Basos 1",
+    "labcorp-1724: Lymphs (Absolute) 2.3",
+    "labcorp-1724: Eos (Absolute) 0.1",
+    "labcorp-1724: Immature Grans (Abs) 0.0",
+    "labcorp-273-normal: Leukocyte Alkaline Phos Score 50",
+    "labcorp-273-abnormal: Leukocyte Alkaline Phos Score 150",
+    "labsmart-cbc: Total Leukocyte Count 5,700",
+    "labsmart-cbc: Lymphocyte 40",
+    "labsmart-cbc: Total RBC Count 4.7",
+    "labsmart-cbc: Mean Cell Haemoglobin CON, MCHC 22.2",
+    "labsmart-cbc: R.D.W. - SD 40",
+    "labsmart-cbc: R.D.W. - CV 12",
+    "labsmart-cbc: P-LCR 33",
+    "labsmart-cbc: P.D.W. 10.8",
+    "labsmart-preop: Total Leukocyte Count 5,000",
+    "labsmart-preop: Lymphocyte 45",
+    "labsmart-preop: Total RBC Count 4.0",
+    "labsmart-preop: Mean Cell Haemoglobin CON, MCHC 33.8",
+    "labsmart-preop: R.D.W. - SD 42",
+    "labsmart-preop: R.D.W. - CV 12.1",
+    "labsmart-preop: P-LCR 22",
+    "labsmart-preop: P.D.W. 11.5",
+    "labsmart-preop: Bleeding Time 3.0",
+    "labsmart-preop: Clotting Time 5.2",
+    "labsmart-preop: BUN / Creatinine Ratio 7.79",
+    "labsmart-preop: Random Blood Sugar 97",
+    "labsmart-preop: Quantity 30",
+    "labsmart-sample1: Total Leukocyte Count 12,000",
+    "labsmart-sample1: Lymphocyte 45",
+    "labsmart-sample1: Total RBC Count 5.1",
+    "labsmart-sample1: Mean Cell Haemoglobin CON, MCHC 25.0",
+    "labsmart-sample1: Serum Protein 6.0",
+    "labsmart-sample1: BUN / Creatinine Ratio 18.68",
+    "labsmart-sample1: LDL / HDL 0.64",
+    "labsmart-sample1: Total Cholesterol / HDL 2.32",
+    "labsmart-sample1: Quantity 3",
+    "labsmart-sample1: Liquefaction Time 30",
+    "labsmart-sample1: Total Sperm Count 155",
+    "labsmart-sample1: Rapid Progressive 40",
+    "labsmart-sample1: Sluggish Progressive 30",
+    "labsmart-sample1: Non Progressive 10",
+    "labsmart-sample1: Immotile 10",
+    "labsmart-sample1: Abnormal Forms 10",
+    "labsmart-sample1: Epithelial Cells 01",
+    "labsmart-sample1: R.B.C. 01",
+    "labsmart-sample1: Pus cell 00",
+    "labsmart-sample1: Serum Triiodothyronine, T3 2.10",
+    "labsmart-sample1: Serum thyroxine, T4 59",
+    "lgm-hamburg: Seg. Granulozyten 60.0",
+    "lgm-hamburg: Lymphozyten 33.0",
+    "lgm-hamburg: Eosinophile Gran. 2.0",
+    "lgm-hamburg: Basophile Gran. 1.0",
+    "lgm-hamburg: Monozyten 4.0",
+    "lgm-hamburg: Seg. Granulozyten abs. 3.2",
+    "lgm-hamburg: Lymphozyten abs. 1.7",
+    "lgm-hamburg: Eosinophile Gran. abs. 0.1",
+    "lgm-hamburg: Basophile Gran. abs. 0.1",
+    "lgm-hamburg: Monozyten abs. 0.2",
+    "lgm-hamburg: Phosphor anorg. 0.93",
+    "lgm-hamburg: Fe/Cu Quotient 0.7",
+    "lgm-hamburg: Cholinesterase 6.70",
+    "lgm-hamburg: Alk.Phosphatase 56",
+    "lgm-hamburg: HbA1c (mol) 32",
+    "lgm-hamburg: Cholesterin 202",
+    "lgm-hamburg: Risikofaktor 2.9",
+    "lgm-hamburg: Ges.Eiweiß 7.6",
+    "lifeext-lcx00001: Lymphs 43",
+    "lifeext-lcx00001: Basos 1",
+    "lifeext-lcx00001: Lymphs (Absolute) 2.0",
+    "lifeext-lcx00001: Eos (Absolute) 0.1",
+    "lifeext-lcx00001: Immature Grans (Abs) 0.0",
+    "praxisdd-blutbild: Seg. Granulozyten 54.0",
+    "praxisdd-blutbild: Lymphozyten 34.6",
+    "praxisdd-blutbild: Eosinophile Gran. 1.7",
+    "praxisdd-blutbild: Basophile Gran. 1.0",
+    "praxisdd-blutbild: Monozyten 6.0",
+    "praxisdd-blutbild: Seg. Granulozyten abs. 2.8",
+    "praxisdd-blutbild: Lymphozyten abs. 1.8",
+    "praxisdd-blutbild: Eosinophile Gran. abs. 0.1",
+    "praxisdd-blutbild: Basophile Gran. abs. 0.1",
+    "praxisdd-blutbild: Monozyten abs. 0.3",
+    "praxisdd-blutbild: Phosphor anorg. 1.28",
+    "praxisdd-blutbild: Transferrin Sättigungsgrad 42",
+    "praxisdd-blutbild: Fe/Cu Quotient 2.1",
+    "praxisdd-blutbild: Cholinesterase 9.21",
+    "praxisdd-blutbild: Alk.Phosphatase 62",
+    "praxisdd-blutbild: GLDH 1.4",
+    "praxisdd-blutbild: HbA1c (mol) 38",
+    "praxisdd-blutbild: HBDH 93",
+    "praxisdd-blutbild: Cholesterin 185",
+    "praxisdd-blutbild: Glutathion gesamt 984",
+    "praxisdd-blutbild: Glutathion oxi. 224",
+    "praxisdd-blutbild: Glutathion red. 537",
+    "praxisdd-blutbild: Glut.red./Glut.ges. 55",
+    "praxisdd-blutbild: Cystatin C im Serum 0.97",
+    "praxisdd-blutbild: Glom. Filtrationsrate (CKD-Epi) 86",
+    "praxisdd-blutbild: Ges.Eiweiß 7.5",
+    "praxisdd-blutbild: Immunglobulin E gesamt 142",
+    "praxisdd-blutbild: Antistreptolysintiter 234",
+    "praxisdd-blutbild: Kalium (Vollblut) 1636",
+    "praxisdd-blutbild: Natrium (Vollblut) 2040",
+    "praxisdd-blutbild: Calcium (Vollblut) 75.8",
+    "praxisdd-blutbild: Magnesium (Vollblut) 30.0",
+    "praxisdd-blutbild: K (HCT-korr.) 1656",
+    "praxisdd-blutbild: Na (HCT-korr.) 2019",
+    "praxisdd-blutbild: Ca (HCT-korr.) 75.1",
+    "praxisdd-blutbild: Mg (HCT-korr.) 29.7",
+    "testingcom-cbc: Mean Cell Hb Conc (MCHC) 33.3",
+    "testingcom-cbc: Red Cell Dist Width (RDW) 16.0",
+    "testingcom-cbc: Neutrophil (Neut) 50",
+    "testingcom-cbc: Lymphocyte (Lymph) 36",
+    "testingcom-cbc: Monocyte (Mono) 8",
+    "testingcom-cbc: Eosinophil (Eos) 5",
+    "testingcom-cbc: Basophil (Baso) 1",
+    "testingcom-cbc: Neutrophil, Absolute 3.5",
+    "testingcom-cbc: Lymphocyte, Absolute 2.5",
+    "testingcom-cbc: Monocyte, Absolute 0.6",
+    "testingcom-cbc: Eosinophil, Absolute 0.4",
+    "testingcom-cbc: Basophil, Absolute 0.1",
+    "wisplinghoff-allergy: g6 Lieschgras <0.10",
+    "wisplinghoff-allergy: g12 Roggen <0.10",
+    "wisplinghoff-allergy: w6 Beifuß 12.00",
+    "wisplinghoff-allergy: e5 Hundeschuppen 2.00",
+    "wisplinghoff-allergy: m2 Cladosporium herbarum 2.00",
+    "wisplinghoff-allergy: d1 Dermatophagoides pteroniss. 52.00"
+   ],
+   "wrongs": [
+    "gesundheit-at: Gesamteiweiß 8.2",
+    "gesundheit-at: Erythrozyten 5.59",
+    "gesundheit-at: MCHC 36.1",
+    "gesundheit-at: Retikulozyten % 1.52",
+    "lgm-hamburg: Triglyceride 228",
+    "praxisdd-blutbild: Eisen 29",
+    "praxisdd-blutbild: Vitamin B12 1509",
+    "testingcom-cbc: White Blood Cell (WBC) 6.9"
+   ]
+  }
+ }
+}

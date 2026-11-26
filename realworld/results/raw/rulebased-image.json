@@ -1,0 +1,3945 @@
+{
+ "labcorp-1724": {
+  "rows": [
+   {
+    "slug": "wbc",
+    "printed": "WBC",
+    "value": 5.4,
+    "unit": "x10E3/uL",
+    "low": 3.4,
+    "high": 10.8,
+    "asPrinted": {
+     "value": "5.4",
+     "unit": "x10E3/uL",
+     "low": 3.4,
+     "high": 10.8,
+     "range": "3.4-10.8"
+    }
+   },
+   {
+    "slug": "rbc",
+    "printed": "RBC",
+    "value": 4.96,
+    "unit": "",
+    "low": 3.77,
+    "high": 5.28,
+    "asPrinted": {
+     "value": "4.96",
+     "unit": "",
+     "low": 3.77,
+     "high": 5.28,
+     "range": "3.77-5.28"
+    }
+   },
+   {
+    "slug": "hemoglobin",
+    "printed": "Hemoglobin",
+    "value": 14.9,
+    "unit": "g/dL",
+    "low": 11.1,
+    "high": 15.9,
+    "asPrinted": {
+     "value": "14.9",
+     "unit": "g/dL",
+     "low": 11.1,
+     "high": 15.9,
+     "range": "11.1-15.9"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hematocrit",
+    "value": 45.8,
+    "unit": "%",
+    "low": 34,
+    "high": 46.6,
+    "asPrinted": {
+     "value": "45.8",
+     "unit": "%",
+     "low": 34,
+     "high": 46.6,
+     "range": "34.0-46.6"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "MCV",
+    "value": 92,
+    "unit": "fL",
+    "low": 79,
+    "high": 97,
+    "asPrinted": {
+     "value": "92",
+     "unit": "fL",
+     "low": 79,
+     "high": 97,
+     "range": "79-97"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "MCH",
+    "value": 30,
+    "unit": "",
+    "low": 26.6,
+    "high": 33,
+    "asPrinted": {
+     "value": "30",
+     "unit": "",
+     "low": 26.6,
+     "high": 33,
+     "range": "26.6-33.0"
+    }
+   },
+   {
+    "slug": "mchc",
+    "printed": "MCHC",
+    "value": 32,
+    "unit": "g/dL",
+    "low": 31.5,
+    "high": 35.7,
+    "asPrinted": {
+     "value": "32",
+     "unit": "g/dL",
+     "low": 31.5,
+     "high": 35.7,
+     "range": "31.5-35.7"
+    }
+   },
+   {
+    "slug": "rdw-cv",
+    "printed": "RDW",
+    "value": 12.7,
+    "unit": "%",
+    "low": 11.7,
+    "high": 15.4,
+    "asPrinted": {
+     "value": "12.7",
+     "unit": "%",
+     "low": 11.7,
+     "high": 15.4,
+     "range": "11.7-15.4"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Platelets",
+    "value": 0.23,
+    "unit": "×10⁹/L",
+    "low": 0.15,
+    "high": 0.45,
+    "asPrinted": {
+     "value": "232",
+     "unit": "/uL",
+     "low": 150,
+     "high": 450,
+     "range": "150-450"
+    }
+   },
+   {
+    "slug": "neutrophils-percent",
+    "printed": "Neutrophils",
+    "value": 47,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "47",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "monocytes-percent",
+    "printed": "Monocytes",
+    "value": 7,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "7",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "eosinophils-absolute",
+    "printed": "Eos",
+    "value": 3,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "3",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "neutrophils-absolute",
+    "printed": "Neutrophils (Absolute)",
+    "value": 2.5,
+    "unit": "x10E3/uL",
+    "low": 1.4,
+    "high": 7,
+    "asPrinted": {
+     "value": "2.5",
+     "unit": "x10E3/uL",
+     "low": 1.4,
+     "high": 7,
+     "range": "1.4-7.0"
+    }
+   },
+   {
+    "slug": "monocytes-absolute",
+    "printed": "Monocytes(Absolute)",
+    "value": 0.4,
+    "unit": "/uL",
+    "low": 0.1,
+    "high": 0.9,
+    "asPrinted": {
+     "value": "0.4",
+     "unit": "/uL",
+     "low": 0.1,
+     "high": 0.9,
+     "range": "0.1-0.9"
+    }
+   },
+   {
+    "slug": "basophils-absolute",
+    "printed": "Baso (Absolute)",
+    "value": 0.1,
+    "unit": "x10E3/uL",
+    "low": 0,
+    "high": 0.2,
+    "asPrinted": {
+     "value": "0.1",
+     "unit": "x10E3/uL",
+     "low": 0,
+     "high": 0.2,
+     "range": "0.0-0.2"
+    }
+   },
+   {
+    "slug": "immature-granulocytes-percent",
+    "printed": "Immature Granulocytes",
+    "value": 0,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "0",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   }
+  ],
+  "takenISO": "2025-01-21"
+ },
+ "labcorp-273-normal": {
+  "rows": [
+   {
+    "slug": "selenium",
+    "printed": "se",
+    "value": 7,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "7",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "labcorp-273-abnormal": {
+  "rows": [
+   {
+    "slug": "selenium",
+    "printed": "se",
+    "value": 7,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "7",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "lifeext-lcx00001": {
+  "rows": [
+   {
+    "slug": "glucose-fasting",
+    "printed": "Glucose",
+    "value": 92,
+    "unit": "mg/dL",
+    "low": 70,
+    "high": 99,
+    "asPrinted": {
+     "value": "92",
+     "unit": "mg/dL",
+     "low": 70,
+     "high": 99,
+     "range": "70-99"
+    }
+   },
+   {
+    "slug": "uric-acid",
+    "printed": "Uric Acid",
+    "value": 4.2,
+    "unit": "mg/dL",
+    "low": 3.8,
+    "high": 84,
+    "asPrinted": {
+     "value": "4.2",
+     "unit": "mg/dL",
+     "low": 3.8,
+     "high": 84,
+     "range": "3.8-84"
+    }
+   },
+   {
+    "slug": "blood-urea-nitrogen",
+    "printed": "BUN",
+    "value": 24,
+    "unit": "mg/dL",
+    "low": 8,
+    "high": 27,
+    "asPrinted": {
+     "value": "24",
+     "unit": "mg/dL",
+     "low": 8,
+     "high": 27,
+     "range": "8-27"
+    }
+   },
+   {
+    "slug": "creatinine-serum",
+    "printed": "Creatinine",
+    "value": 0.98,
+    "unit": "mg/dL",
+    "low": 0.76,
+    "high": 1.27,
+    "asPrinted": {
+     "value": "0.98",
+     "unit": "mg/dL",
+     "low": 0.76,
+     "high": 1.27,
+     "range": "0.76-1.27"
+    }
+   },
+   {
+    "slug": "egfr",
+    "printed": "eGFR",
+    "value": 81,
+    "unit": "mL/min/1.73",
+    "low": 59,
+    "high": null,
+    "asPrinted": {
+     "value": "81",
+     "unit": "mL/min/1.73",
+     "low": 59,
+     "high": null,
+     "range": ">59"
+    }
+   },
+   {
+    "slug": "bun-creatinine-ratio",
+    "printed": "BUN/Creatinine Ratio",
+    "value": 24,
+    "unit": "",
+    "low": 10,
+    "high": 24,
+    "asPrinted": {
+     "value": "24",
+     "unit": "",
+     "low": 10,
+     "high": 24,
+     "range": "10-24"
+    }
+   },
+   {
+    "slug": "sodium-serum",
+    "printed": "Sodium",
+    "value": 136,
+    "unit": "mmol/L",
+    "low": 134,
+    "high": 144,
+    "asPrinted": {
+     "value": "136",
+     "unit": "mmol/L",
+     "low": 134,
+     "high": 144,
+     "range": "134-144"
+    }
+   },
+   {
+    "slug": "potassium-serum",
+    "printed": "Potassium",
+    "value": 4.8,
+    "unit": "mmol/L",
+    "low": 3.5,
+    "high": 5.2,
+    "asPrinted": {
+     "value": "4.8",
+     "unit": "mmol/L",
+     "low": 3.5,
+     "high": 5.2,
+     "range": "3.5-5.2"
+    }
+   },
+   {
+    "slug": "chloride-serum",
+    "printed": "Chloride",
+    "value": 100,
+    "unit": "mmol/L",
+    "low": 96,
+    "high": 106,
+    "asPrinted": {
+     "value": "100",
+     "unit": "mmol/L",
+     "low": 96,
+     "high": 106,
+     "range": "96-106"
+    }
+   },
+   {
+    "slug": "bicarbonate-co2",
+    "printed": "Carbon Dioxide, Total",
+    "value": 25,
+    "unit": "mmol/L",
+    "low": 20,
+    "high": 29,
+    "asPrinted": {
+     "value": "25",
+     "unit": "mmol/L",
+     "low": 20,
+     "high": 29,
+     "range": "20-29"
+    }
+   },
+   {
+    "slug": "calcium-total",
+    "printed": "Calcium",
+    "value": 9.6,
+    "unit": "mg/dL",
+    "low": 8.6,
+    "high": 10.2,
+    "asPrinted": {
+     "value": "9.6",
+     "unit": "mg/dL",
+     "low": 8.6,
+     "high": 10.2,
+     "range": "8.6-10.2"
+    }
+   },
+   {
+    "slug": "phosphorus-serum",
+    "printed": "Phosphorus",
+    "value": 3.8,
+    "unit": "mg/dL",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "3.8",
+     "unit": "mg/dL",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "total-protein",
+    "printed": "Protein, Total",
+    "value": 7.1,
+    "unit": "g/dL",
+    "low": 6,
+    "high": 8.5,
+    "asPrinted": {
+     "value": "7.1",
+     "unit": "g/dL",
+     "low": 6,
+     "high": 8.5,
+     "range": "6.0-8.5"
+    }
+   },
+   {
+    "slug": "albumin-serum",
+    "printed": "Albumin",
+    "value": 4.7,
+    "unit": "g/dL",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "4.7",
+     "unit": "g/dL",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "globulin-serum",
+    "printed": "Globulin, Total",
+    "value": 2.4,
+    "unit": "g/dL",
+    "low": 1.5,
+    "high": 4.5,
+    "asPrinted": {
+     "value": "2.4",
+     "unit": "g/dL",
+     "low": 1.5,
+     "high": 4.5,
+     "range": "1.5-4.5"
+    }
+   },
+   {
+    "slug": "total-bilirubin",
+    "printed": "Bilirubin, Total",
+    "value": 0.3,
+    "unit": "mg/dL",
+    "low": 0,
+    "high": 1.2,
+    "asPrinted": {
+     "value": "0.3",
+     "unit": "mg/dL",
+     "low": 0,
+     "high": 1.2,
+     "range": "0.0-1.2"
+    }
+   },
+   {
+    "slug": "alp",
+    "printed": "Alkaline Phosphatase",
+    "value": 54,
+    "unit": "U/L",
+    "low": 44,
+    "high": 121,
+    "asPrinted": {
+     "value": "54",
+     "unit": "U/L",
+     "low": 44,
+     "high": 121,
+     "range": "44-121"
+    }
+   },
+   {
+    "slug": "ldh",
+    "printed": "LDH",
+    "value": 131,
+    "unit": "U/L",
+    "low": 121,
+    "high": 224,
+    "asPrinted": {
+     "value": "131",
+     "unit": "U/L",
+     "low": 121,
+     "high": 224,
+     "range": "121-224"
+    }
+   },
+   {
+    "slug": "ast",
+    "printed": "AST (SGOT)",
+    "value": 16,
+    "unit": "U/L",
+    "low": 0,
+    "high": 40,
+    "asPrinted": {
+     "value": "16",
+     "unit": "U/L",
+     "low": 0,
+     "high": 40,
+     "range": "0-40"
+    }
+   },
+   {
+    "slug": "alt",
+    "printed": "ALT (SGPT)",
+    "value": 17,
+    "unit": "IU/L",
+    "low": 0,
+    "high": 44,
+    "asPrinted": {
+     "value": "17",
+     "unit": "IU/L",
+     "low": 0,
+     "high": 44,
+     "range": "0-44"
+    }
+   },
+   {
+    "slug": "serum-iron",
+    "printed": "Iron",
+    "value": 125,
+    "unit": "ug/dL",
+    "low": 38,
+    "high": 169,
+    "asPrinted": {
+     "value": "125",
+     "unit": "ug/dL",
+     "low": 38,
+     "high": 169,
+     "range": "38-169"
+    }
+   },
+   {
+    "slug": "total-cholesterol",
+    "printed": "Cholesterol, Total",
+    "value": 220,
+    "unit": "mg/dL",
+    "low": 100,
+    "high": 199,
+    "flag": "H",
+    "asPrinted": {
+     "value": "220",
+     "unit": "mg/dL",
+     "low": 100,
+     "high": 199,
+     "range": "100-199"
+    }
+   },
+   {
+    "slug": "triglycerides",
+    "printed": "Triglycerides",
+    "value": 45,
+    "unit": "mg/dL",
+    "low": 0,
+    "high": 149,
+    "asPrinted": {
+     "value": "45",
+     "unit": "mg/dL",
+     "low": 0,
+     "high": 149,
+     "range": "0-149"
+    }
+   },
+   {
+    "slug": "hdl-cholesterol",
+    "printed": "HDL Cholesterol",
+    "value": 95,
+    "unit": "mg/dL",
+    "low": 39,
+    "high": null,
+    "asPrinted": {
+     "value": "95",
+     "unit": "mg/dL",
+     "low": 39,
+     "high": null,
+     "range": ">39"
+    }
+   },
+   {
+    "slug": "vldl-cholesterol",
+    "printed": "VLDL Cholesterol",
+    "value": 8,
+    "unit": "mg/dL",
+    "low": 5,
+    "high": 40,
+    "asPrinted": {
+     "value": "8",
+     "unit": "mg/dL",
+     "low": 5,
+     "high": 40,
+     "range": "5-40"
+    }
+   },
+   {
+    "slug": "ldl-cholesterol",
+    "printed": "LDL Chol Calc (NIH)",
+    "value": 117,
+    "unit": "mg/dL",
+    "low": 0,
+    "high": 99,
+    "flag": "H",
+    "asPrinted": {
+     "value": "117",
+     "unit": "mg/dL",
+     "low": 0,
+     "high": 99,
+     "range": "0-99"
+    }
+   },
+   {
+    "slug": "total-cholesterol-hdl-ratio",
+    "printed": "T. Chol/HDL Ratio",
+    "value": 2.3,
+    "unit": "ratio",
+    "low": 0,
+    "high": 5,
+    "asPrinted": {
+     "value": "23",
+     "unit": "ratio",
+     "low": 0,
+     "high": 5,
+     "range": "0.0-5.0"
+    }
+   },
+   {
+    "slug": "eag",
+    "printed": "Estimated",
+    "value": 0.5,
+    "unit": "",
+    "low": 0,
+    "high": 1,
+    "asPrinted": {
+     "value": "<0.5",
+     "unit": "",
+     "low": 0,
+     "high": 1,
+     "range": "0.0-1.0"
+    }
+   },
+   {
+    "slug": "wbc",
+    "printed": "WBC",
+    "value": 4.5,
+    "unit": "x10E3/uL",
+    "low": 3.4,
+    "high": 10.8,
+    "asPrinted": {
+     "value": "4.5",
+     "unit": "x10E3/uL",
+     "low": 3.4,
+     "high": 10.8,
+     "range": "3.4-10.8"
+    }
+   },
+   {
+    "slug": "rbc",
+    "printed": "RBC",
+    "value": 4.58,
+    "unit": "x10E6/uL",
+    "low": 4.14,
+    "high": 5.8,
+    "asPrinted": {
+     "value": "4.58",
+     "unit": "x10E6/uL",
+     "low": 4.14,
+     "high": 5.8,
+     "range": "4.14-5.80"
+    }
+   },
+   {
+    "slug": "hemoglobin",
+    "printed": "Hemoglobin",
+    "value": 14.4,
+    "unit": "g/dL",
+    "low": 13,
+    "high": 17.7,
+    "asPrinted": {
+     "value": "14.4",
+     "unit": "g/dL",
+     "low": 13,
+     "high": 17.7,
+     "range": "13.0-17.7"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hematocrit",
+    "value": 42.6,
+    "unit": "%",
+    "low": 37.5,
+    "high": 51,
+    "asPrinted": {
+     "value": "42.6",
+     "unit": "%",
+     "low": 37.5,
+     "high": 51,
+     "range": "37.5-51.0"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "MCV",
+    "value": 93,
+    "unit": "fL",
+    "low": 79,
+    "high": 97,
+    "asPrinted": {
+     "value": "93",
+     "unit": "fL",
+     "low": 79,
+     "high": 97,
+     "range": "79-97"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "MCH",
+    "value": 31.4,
+    "unit": "pg",
+    "low": 26.6,
+    "high": 33,
+    "asPrinted": {
+     "value": "31.4",
+     "unit": "pg",
+     "low": 26.6,
+     "high": 33,
+     "range": "26.6-33.0"
+    }
+   },
+   {
+    "slug": "mchc",
+    "printed": "MCHC",
+    "value": 33.8,
+    "unit": "g/dL",
+    "low": 31.5,
+    "high": 35.7,
+    "asPrinted": {
+     "value": "33.8",
+     "unit": "g/dL",
+     "low": 31.5,
+     "high": 35.7,
+     "range": "31.5-35.7"
+    }
+   },
+   {
+    "slug": "rdw-cv",
+    "printed": "RDW",
+    "value": 12.8,
+    "unit": "%",
+    "low": 11.6,
+    "high": 15.4,
+    "asPrinted": {
+     "value": "12.8",
+     "unit": "%",
+     "low": 11.6,
+     "high": 15.4,
+     "range": "11.6-15.4"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Platelets",
+    "value": 229,
+    "unit": "x10E3/uL",
+    "low": 150,
+    "high": 450,
+    "asPrinted": {
+     "value": "229",
+     "unit": "x10E3/uL",
+     "low": 150,
+     "high": 450,
+     "range": "150-450"
+    }
+   },
+   {
+    "slug": "neutrophils-percent",
+    "printed": "Neutrophils",
+    "value": 45,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "45",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "monocytes-percent",
+    "printed": "Monocytes",
+    "value": 10,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "10",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "eosinophils-absolute",
+    "printed": "Eos",
+    "value": 1,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "1",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "neutrophils-absolute",
+    "printed": "Neutrophils (Absolute)",
+    "value": 20,
+    "unit": "x10E3/uL",
+    "low": 1.4,
+    "high": 7,
+    "asPrinted": {
+     "value": "20",
+     "unit": "x10E3/uL",
+     "low": 1.4,
+     "high": 7,
+     "range": "1.4-7.0"
+    }
+   },
+   {
+    "slug": "monocytes-absolute",
+    "printed": "Monocytes(Absolute)",
+    "value": 0.4,
+    "unit": "x10E3/uL",
+    "low": 0.1,
+    "high": 0.9,
+    "asPrinted": {
+     "value": "0.4",
+     "unit": "x10E3/uL",
+     "low": 0.1,
+     "high": 0.9,
+     "range": "0.1-0.9"
+    }
+   },
+   {
+    "slug": "basophils-absolute",
+    "printed": "Baso (Absolute)",
+    "value": 0.1,
+    "unit": "x10E3/uL",
+    "low": 0,
+    "high": 0.2,
+    "asPrinted": {
+     "value": "0.1",
+     "unit": "x10E3/uL",
+     "low": 0,
+     "high": 0.2,
+     "range": "0.0-0.2"
+    }
+   },
+   {
+    "slug": "immature-granulocytes-percent",
+    "printed": "Immature Granulocytes",
+    "value": 0,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "0",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "hba1c",
+    "printed": "Hemoglobin A1c",
+    "value": 5.9,
+    "unit": "%",
+    "low": 4.8,
+    "high": 5.6,
+    "flag": "H",
+    "asPrinted": {
+     "value": "5.9",
+     "unit": "%",
+     "low": 4.8,
+     "high": 5.6,
+     "range": "4.8-5.6"
+    }
+   },
+   {
+    "slug": "hs-crp",
+    "printed": "C-Reactive Protein, Cardiac",
+    "value": 0.38,
+    "unit": "mg/L",
+    "low": 0,
+    "high": 3,
+    "asPrinted": {
+     "value": "0.38",
+     "unit": "mg/L",
+     "low": 0,
+     "high": 3,
+     "range": "0.00-3.00"
+    }
+   },
+   {
+    "slug": "fasting-insulin",
+    "printed": "Insulin",
+    "value": 4.7,
+    "unit": "",
+    "low": 2.6,
+    "high": 24.9,
+    "asPrinted": {
+     "value": "4.7",
+     "unit": "",
+     "low": 2.6,
+     "high": 24.9,
+     "range": "2.6-24.9"
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "quest-drpws": {
+  "rows": [
+   {
+    "slug": "glucose-fasting",
+    "printed": "Glucose",
+    "value": 115,
+    "unit": "mg/dL",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "115",
+     "unit": "mg/dL",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "hba1c",
+    "printed": "HbA1c",
+    "value": 6.1,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "6.1",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "hdl-cholesterol",
+    "printed": "HDL Cholesterol",
+    "value": 46,
+    "unit": "mg/dL",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "46",
+     "unit": "mg/dL",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "triglycerides",
+    "printed": "Triglycerides",
+    "value": 150,
+    "unit": "mg/dL",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "<150",
+     "unit": "mg/dL",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "ldl-cholesterol",
+    "printed": "LDL Cholesterol (Calculated)",
+    "value": 74,
+    "unit": "mg/dL",
+    "low": null,
+    "high": 130,
+    "asPrinted": {
+     "value": "74",
+     "unit": "mg/dL",
+     "low": null,
+     "high": 130,
+     "range": "<130"
+    }
+   },
+   {
+    "slug": "non-hdl-cholesterol",
+    "printed": "Non-HDL Cholesterol",
+    "value": 83,
+    "unit": "mg/dL",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "83",
+     "unit": "mg/dL",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "total-cholesterol-hdl-ratio",
+    "printed": "Cholesterol/HDL Ratio",
+    "value": 2,
+    "unit": "",
+    "low": null,
+    "high": 5,
+    "asPrinted": {
+     "value": "2",
+     "unit": "",
+     "low": null,
+     "high": 5,
+     "range": "≤5.0"
+    }
+   }
+  ],
+  "takenISO": "2014-04-28"
+ },
+ "quest-vitd-in": {
+  "rows": [
+   {
+    "slug": "vitamin-d-25-oh",
+    "printed": "VITAMIN D",
+    "value": 36,
+    "unit": "ng/mL",
+    "low": 30,
+    "high": 100,
+    "asPrinted": {
+     "value": "36",
+     "unit": "ng/mL",
+     "low": 30,
+     "high": 100,
+     "range": "30-100"
+    }
+   }
+  ],
+  "takenISO": "2022-09-23"
+ },
+ "quest-vitd-out": {
+  "rows": [
+   {
+    "slug": "vitamin-d-25-oh",
+    "printed": "VITAMIN D, 25-OH, TOTAL, IA",
+    "value": 21,
+    "unit": "ng/mL",
+    "low": 30,
+    "high": 100,
+    "flag": "L",
+    "asPrinted": {
+     "value": "21",
+     "unit": "ng/mL",
+     "low": 30,
+     "high": 100,
+     "range": "30-100"
+    }
+   }
+  ],
+  "takenISO": "2022-09-23"
+ },
+ "testingcom-cbc": {
+  "rows": [
+   {
+    "slug": "hemoglobin",
+    "printed": "[Hemoglobin (HB/Hgb)",
+    "value": 65,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "65",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "[Hematocrit(HCT)",
+    "value": 195,
+    "unit": "%",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "195",
+     "unit": "%",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "labsmart-cbc": {
+  "rows": [
+   {
+    "slug": "hemoglobin",
+    "printed": "Hemoglobin",
+    "value": 10,
+    "unit": "g/dL",
+    "low": 12,
+    "high": 15,
+    "asPrinted": {
+     "value": "10",
+     "unit": "g/dL",
+     "low": 12,
+     "high": 15,
+     "range": "12-15"
+    }
+   },
+   {
+    "slug": "neutrophils-percent",
+    "printed": "Neutrophils",
+    "value": 55,
+    "unit": "",
+    "low": 40,
+    "high": 80,
+    "asPrinted": {
+     "value": "55",
+     "unit": "",
+     "low": 40,
+     "high": 80,
+     "range": "40 - 80"
+    }
+   },
+   {
+    "slug": "eosinophils-percent",
+    "printed": "Eosinophils",
+    "value": 2,
+    "unit": "%",
+    "low": 1,
+    "high": 6,
+    "asPrinted": {
+     "value": "2",
+     "unit": "%",
+     "low": 1,
+     "high": 6,
+     "range": "1-6"
+    }
+   },
+   {
+    "slug": "monocytes-percent",
+    "printed": "Monocytes",
+    "value": 3,
+    "unit": "%",
+    "low": 2,
+    "high": 10,
+    "asPrinted": {
+     "value": "3",
+     "unit": "%",
+     "low": 2,
+     "high": 10,
+     "range": "2-10"
+    }
+   },
+   {
+    "slug": "basophils-percent",
+    "printed": "Basophils",
+    "value": 0,
+    "unit": "%",
+    "low": null,
+    "high": 2,
+    "asPrinted": {
+     "value": "0",
+     "unit": "%",
+     "low": null,
+     "high": 2,
+     "range": "<2"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Platelet Count",
+    "value": 2.8,
+    "unit": "",
+    "low": 15,
+    "high": 45,
+    "asPrinted": {
+     "value": "2.8",
+     "unit": "",
+     "low": 15,
+     "high": 45,
+     "range": "15-45"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hematocrit",
+    "value": 45,
+    "unit": "%",
+    "low": 36,
+    "high": 46,
+    "asPrinted": {
+     "value": "45",
+     "unit": "%",
+     "low": 36,
+     "high": 46,
+     "range": "36 - 46"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "Mean Corpuscular Volume",
+    "value": 95.7,
+    "unit": "fL",
+    "low": 83,
+    "high": 101,
+    "asPrinted": {
+     "value": "95.7",
+     "unit": "fL",
+     "low": 83,
+     "high": 101,
+     "range": "83-101"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "Mean Cell Haemoglobin",
+    "value": 213,
+    "unit": "pg",
+    "low": 27,
+    "high": 32,
+    "asPrinted": {
+     "value": "213",
+     "unit": "pg",
+     "low": 27,
+     "high": 32,
+     "range": "27-32"
+    }
+   },
+   {
+    "slug": "mpv",
+    "printed": "Mean Platelet Volume",
+    "value": 11,
+    "unit": "fL",
+    "low": 6.5,
+    "high": 12,
+    "asPrinted": {
+     "value": "11",
+     "unit": "fL",
+     "low": 6.5,
+     "high": 12,
+     "range": "6.5-12"
+    }
+   }
+  ],
+  "takenISO": "2022-08-09"
+ },
+ "labsmart-preop": {
+  "rows": [
+   {
+    "slug": "hemoglobin",
+    "printed": "Hemoglobin",
+    "value": 13.5,
+    "unit": "g/dL",
+    "low": 12,
+    "high": 15,
+    "asPrinted": {
+     "value": "13.5",
+     "unit": "g/dL",
+     "low": 12,
+     "high": 15,
+     "range": "12-15"
+    }
+   },
+   {
+    "slug": "neutrophils-percent",
+    "printed": "Neutrophils",
+    "value": 50,
+    "unit": "",
+    "low": 40,
+    "high": 80,
+    "asPrinted": {
+     "value": "50",
+     "unit": "",
+     "low": 40,
+     "high": 80,
+     "range": "40 - 80"
+    }
+   },
+   {
+    "slug": "eosinophils-percent",
+    "printed": "Eosinophils",
+    "value": 2,
+    "unit": "%",
+    "low": 1,
+    "high": 6,
+    "asPrinted": {
+     "value": "2",
+     "unit": "%",
+     "low": 1,
+     "high": 6,
+     "range": "1-6"
+    }
+   },
+   {
+    "slug": "monocytes-percent",
+    "printed": "Monocytes",
+    "value": 3,
+    "unit": "%",
+    "low": 2,
+    "high": 10,
+    "asPrinted": {
+     "value": "3",
+     "unit": "%",
+     "low": 2,
+     "high": 10,
+     "range": "2-10"
+    }
+   },
+   {
+    "slug": "basophils-percent",
+    "printed": "Basophils",
+    "value": 0,
+    "unit": "%",
+    "low": null,
+    "high": 2,
+    "asPrinted": {
+     "value": "0",
+     "unit": "%",
+     "low": null,
+     "high": 2,
+     "range": "<2"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Platelet Count",
+    "value": 2.35,
+    "unit": "",
+    "low": 15,
+    "high": 45,
+    "asPrinted": {
+     "value": "2.35",
+     "unit": "",
+     "low": 15,
+     "high": 45,
+     "range": "15-45"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hematocrit",
+    "value": 40,
+    "unit": "%",
+    "low": 36,
+    "high": 46,
+    "asPrinted": {
+     "value": "40",
+     "unit": "%",
+     "low": 36,
+     "high": 46,
+     "range": "36 - 46"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "Mean Corpuscular Volume",
+    "value": 100,
+    "unit": "fL",
+    "low": 83,
+    "high": 101,
+    "asPrinted": {
+     "value": "100",
+     "unit": "fL",
+     "low": 83,
+     "high": 101,
+     "range": "83-101"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "Mean Cell Haemoglobin",
+    "value": 33.8,
+    "unit": "pg",
+    "low": 27,
+    "high": 32,
+    "asPrinted": {
+     "value": "33.8",
+     "unit": "pg",
+     "low": 27,
+     "high": 32,
+     "range": "27-32"
+    }
+   },
+   {
+    "slug": "mpv",
+    "printed": "Mean Platelet Volume",
+    "value": 7,
+    "unit": "fL",
+    "low": 6.5,
+    "high": 12,
+    "asPrinted": {
+     "value": "7",
+     "unit": "fL",
+     "low": 6.5,
+     "high": 12,
+     "range": "6.5-12"
+    }
+   },
+   {
+    "slug": "blood-urea-nitrogen",
+    "printed": "BUN",
+    "value": 7.01,
+    "unit": "mg/dL",
+    "low": 79,
+    "high": 20,
+    "asPrinted": {
+     "value": "7.01",
+     "unit": "mg/dL",
+     "low": 79,
+     "high": 20,
+     "range": "79-20"
+    }
+   },
+   {
+    "slug": "urea",
+    "printed": "Serum Urea",
+    "value": 15,
+    "unit": "mg/dL",
+    "low": 13,
+    "high": 40,
+    "asPrinted": {
+     "value": "15",
+     "unit": "mg/dL",
+     "low": 13,
+     "high": 40,
+     "range": "13-40"
+    }
+   },
+   {
+    "slug": "creatinine-serum",
+    "printed": "Serum Creatinine",
+    "value": 9,
+    "unit": "mg/dL",
+    "low": 0.5,
+    "high": 0.8,
+    "asPrinted": {
+     "value": "9",
+     "unit": "mg/dL",
+     "low": 0.5,
+     "high": 0.8,
+     "range": "0.5-0.8"
+    }
+   },
+   {
+    "slug": "calcium-total",
+    "printed": "Serum Calcium",
+    "value": 9,
+    "unit": "mg/dL",
+    "low": 8.8,
+    "high": 10.6,
+    "asPrinted": {
+     "value": "9",
+     "unit": "mg/dL",
+     "low": 8.8,
+     "high": 10.6,
+     "range": "8.8-10.6"
+    }
+   },
+   {
+    "slug": "potassium-serum",
+    "printed": "Serum Potassium",
+    "value": 3.8,
+    "unit": "mmol/L",
+    "low": 3.5,
+    "high": 5.1,
+    "asPrinted": {
+     "value": "3.8",
+     "unit": "mmol/L",
+     "low": 3.5,
+     "high": 5.1,
+     "range": "3.5-5.1"
+    }
+   },
+   {
+    "slug": "sodium-serum",
+    "printed": "Serum Sodium",
+    "value": 137,
+    "unit": "mmol/L",
+    "low": 136,
+    "high": 146,
+    "asPrinted": {
+     "value": "137",
+     "unit": "mmol/L",
+     "low": 136,
+     "high": 146,
+     "range": "136 - 146"
+    }
+   },
+   {
+    "slug": "uric-acid",
+    "printed": "Serum Uric Acid",
+    "value": 7,
+    "unit": "mg/dL",
+    "low": 26,
+    "high": 6,
+    "asPrinted": {
+     "value": "7",
+     "unit": "mg/dL",
+     "low": 26,
+     "high": 6,
+     "range": "26-6"
+    }
+   },
+   {
+    "slug": "bun-creatinine-ratio",
+    "printed": "Urea/Creatinine Ratio",
+    "value": 16.67,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "16.67",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "hbsag",
+    "printed": "HBsAg",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "Negative",
+    "expect": "Negative"
+   },
+   {
+    "slug": "urine-color",
+    "printed": "Colour",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "Pale yellow",
+    "expect": "Pale yellow"
+   },
+   {
+    "slug": "urine-specific-gravity",
+    "printed": "Specific Gravity",
+    "value": 1.02,
+    "unit": "",
+    "low": 1.005,
+    "high": 1.03,
+    "asPrinted": {
+     "value": "1.02",
+     "unit": "",
+     "low": 1.005,
+     "high": 1.03,
+     "range": "1.005 - 1.03"
+    }
+   },
+   {
+    "slug": "urine-ph",
+    "printed": "pH",
+    "value": 6,
+    "unit": "",
+    "low": 5,
+    "high": 7,
+    "asPrinted": {
+     "value": "6",
+     "unit": "",
+     "low": 5,
+     "high": 7,
+     "range": "5-7"
+    }
+   }
+  ],
+  "takenISO": "2022-08-12"
+ },
+ "labsmart-sample1": {
+  "rows": [
+   {
+    "slug": "hemoglobin",
+    "printed": "Hemoglobin",
+    "value": 14,
+    "unit": "g/dL",
+    "low": 13,
+    "high": 17,
+    "asPrinted": {
+     "value": "14",
+     "unit": "g/dL",
+     "low": 13,
+     "high": 17,
+     "range": "13-17"
+    }
+   },
+   {
+    "slug": "neutrophils-percent",
+    "printed": "Neutrophils",
+    "value": 45,
+    "unit": "%",
+    "low": 40,
+    "high": 80,
+    "asPrinted": {
+     "value": "45",
+     "unit": "%",
+     "low": 40,
+     "high": 80,
+     "range": "40 - 80"
+    }
+   },
+   {
+    "slug": "eosinophils-percent",
+    "printed": "Eosinophils",
+    "value": 5,
+    "unit": "%",
+    "low": 1,
+    "high": 6,
+    "asPrinted": {
+     "value": "5",
+     "unit": "%",
+     "low": 1,
+     "high": 6,
+     "range": "1-6"
+    }
+   },
+   {
+    "slug": "monocytes-percent",
+    "printed": "Monocytes",
+    "value": 5,
+    "unit": "%",
+    "low": 2,
+    "high": 10,
+    "asPrinted": {
+     "value": "5",
+     "unit": "%",
+     "low": 2,
+     "high": 10,
+     "range": "2-10"
+    }
+   },
+   {
+    "slug": "basophils-percent",
+    "printed": "Basophils",
+    "value": 0,
+    "unit": "%",
+    "low": null,
+    "high": 2,
+    "asPrinted": {
+     "value": "0",
+     "unit": "%",
+     "low": null,
+     "high": 2,
+     "range": "<2"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Platelet Count",
+    "value": 4,
+    "unit": "",
+    "low": 15,
+    "high": 45,
+    "asPrinted": {
+     "value": "4",
+     "unit": "",
+     "low": 15,
+     "high": 45,
+     "range": "15-45"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hematocrit",
+    "value": 56,
+    "unit": "%",
+    "low": 40,
+    "high": 50,
+    "asPrinted": {
+     "value": "56",
+     "unit": "%",
+     "low": 40,
+     "high": 50,
+     "range": "40 - 50"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "Mean Corpuscular Volume",
+    "value": 109.8,
+    "unit": "fL",
+    "low": 83,
+    "high": 101,
+    "asPrinted": {
+     "value": "109.8",
+     "unit": "fL",
+     "low": 83,
+     "high": 101,
+     "range": "83-101"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "Mean Cell Haemoglobin",
+    "value": 27.5,
+    "unit": "pg",
+    "low": 27,
+    "high": 32,
+    "asPrinted": {
+     "value": "27.5",
+     "unit": "pg",
+     "low": 27,
+     "high": 32,
+     "range": "27-32"
+    }
+   },
+   {
+    "slug": "total-bilirubin",
+    "printed": "Serum Bilirubin (Total)",
+    "value": 1,
+    "unit": "mg/dL",
+    "low": 2,
+    "high": 12,
+    "asPrinted": {
+     "value": "1",
+     "unit": "mg/dL",
+     "low": 2,
+     "high": 12,
+     "range": "02-12"
+    }
+   },
+   {
+    "slug": "direct-bilirubin",
+    "printed": "Serum Bilirubin (Direct)",
+    "value": 0.2,
+    "unit": "mg/dL",
+    "low": 0,
+    "high": 3,
+    "asPrinted": {
+     "value": "0.2",
+     "unit": "mg/dL",
+     "low": 0,
+     "high": 3,
+     "range": "0-03"
+    }
+   },
+   {
+    "slug": "indirect-bilirubin",
+    "printed": "Serum Bilirubin (Indirect)",
+    "value": 0.8,
+    "unit": "mg/dL",
+    "low": 0.2,
+    "high": 1,
+    "asPrinted": {
+     "value": "0.8",
+     "unit": "mg/dL",
+     "low": 0.2,
+     "high": 1,
+     "range": "0.2-1"
+    }
+   },
+   {
+    "slug": "alt",
+    "printed": "SGPT (ALT)",
+    "value": 17,
+    "unit": "U/L",
+    "low": 13,
+    "high": 40,
+    "asPrinted": {
+     "value": "17",
+     "unit": "U/L",
+     "low": 13,
+     "high": 40,
+     "range": "13-40"
+    }
+   },
+   {
+    "slug": "ast",
+    "printed": "SGOT (AST)",
+    "value": 30,
+    "unit": "U/L",
+    "low": 0,
+    "high": 37,
+    "asPrinted": {
+     "value": "30",
+     "unit": "U/L",
+     "low": 0,
+     "high": 37,
+     "range": "0-37"
+    }
+   },
+   {
+    "slug": "alp",
+    "printed": "Serum Alkaline Phosphatase",
+    "value": 67,
+    "unit": "U/L",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "67",
+     "unit": "U/L",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "albumin-serum",
+    "printed": "Serum Albumin",
+    "value": 3.7,
+    "unit": "g/dL",
+    "low": 35,
+    "high": 52,
+    "asPrinted": {
+     "value": "3.7",
+     "unit": "g/dL",
+     "low": 35,
+     "high": 52,
+     "range": "35-52"
+    }
+   },
+   {
+    "slug": "globulin-serum",
+    "printed": "Globulin",
+    "value": 2.3,
+    "unit": "g/dL",
+    "low": 1.8,
+    "high": 3.6,
+    "asPrinted": {
+     "value": "2.3",
+     "unit": "g/dL",
+     "low": 1.8,
+     "high": 3.6,
+     "range": "1.8-3.6"
+    }
+   },
+   {
+    "slug": "albumin-globulin-ratio",
+    "printed": "A/G Ratio",
+    "value": 1.61,
+    "unit": "",
+    "low": 1.1,
+    "high": 2.1,
+    "asPrinted": {
+     "value": "1.61",
+     "unit": "",
+     "low": 1.1,
+     "high": 2.1,
+     "range": "1.1-2.1"
+    }
+   },
+   {
+    "slug": "blood-urea-nitrogen",
+    "printed": "BUN",
+    "value": 9.34,
+    "unit": "mg/dL",
+    "low": 79,
+    "high": 20,
+    "asPrinted": {
+     "value": "9.34",
+     "unit": "mg/dL",
+     "low": 79,
+     "high": 20,
+     "range": "79-20"
+    }
+   },
+   {
+    "slug": "urea",
+    "printed": "Serum Urea",
+    "value": 20,
+    "unit": "mg/dL",
+    "low": 19,
+    "high": 45,
+    "asPrinted": {
+     "value": "20",
+     "unit": "mg/dL",
+     "low": 19,
+     "high": 45,
+     "range": "19-45"
+    }
+   },
+   {
+    "slug": "creatinine-serum",
+    "printed": "Serum Creatinine",
+    "value": 5,
+    "unit": "mg/dL",
+    "low": 0.6,
+    "high": 1.1,
+    "asPrinted": {
+     "value": "5",
+     "unit": "mg/dL",
+     "low": 0.6,
+     "high": 1.1,
+     "range": "0.6-1.1"
+    }
+   },
+   {
+    "slug": "calcium-total",
+    "printed": "Serum Calcium",
+    "value": 8.9,
+    "unit": "mg/dL",
+    "low": 8.8,
+    "high": 10.6,
+    "asPrinted": {
+     "value": "8.9",
+     "unit": "mg/dL",
+     "low": 8.8,
+     "high": 10.6,
+     "range": "8.8-10.6"
+    }
+   },
+   {
+    "slug": "potassium-serum",
+    "printed": "Serum Potassium",
+    "value": 3.7,
+    "unit": "mmol/L",
+    "low": 3.5,
+    "high": 5.1,
+    "asPrinted": {
+     "value": "3.7",
+     "unit": "mmol/L",
+     "low": 3.5,
+     "high": 5.1,
+     "range": "3.5-5.1"
+    }
+   },
+   {
+    "slug": "sodium-serum",
+    "printed": "Serum Sodium",
+    "value": 138,
+    "unit": "mmol/L",
+    "low": 136,
+    "high": 146,
+    "asPrinted": {
+     "value": "138",
+     "unit": "mmol/L",
+     "low": 136,
+     "high": 146,
+     "range": "136 - 146"
+    }
+   },
+   {
+    "slug": "uric-acid",
+    "printed": "Serum Uric Acid",
+    "value": 6,
+    "unit": "mg/dL",
+    "low": 35,
+    "high": 72,
+    "asPrinted": {
+     "value": "6",
+     "unit": "mg/dL",
+     "low": 35,
+     "high": 72,
+     "range": "35-72"
+    }
+   },
+   {
+    "slug": "bun-creatinine-ratio",
+    "printed": "Urea/Creatinine Ratio",
+    "value": 40,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "40",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "total-cholesterol",
+    "printed": "Total Cholesterol",
+    "value": 130,
+    "unit": "mg/dL",
+    "low": 125,
+    "high": 200,
+    "asPrinted": {
+     "value": "130",
+     "unit": "mg/dL",
+     "low": 125,
+     "high": 200,
+     "range": "125 - 200"
+    }
+   },
+   {
+    "slug": "triglycerides",
+    "printed": "Triglycerides",
+    "value": 190,
+    "unit": "mg/dL",
+    "low": 25,
+    "high": 200,
+    "asPrinted": {
+     "value": "190",
+     "unit": "mg/dL",
+     "low": 25,
+     "high": 200,
+     "range": "25-200"
+    }
+   },
+   {
+    "slug": "hdl-cholesterol",
+    "printed": "HDL Cholesterol",
+    "value": 56,
+    "unit": "mg/dL",
+    "low": 35,
+    "high": 80,
+    "asPrinted": {
+     "value": "56",
+     "unit": "mg/dL",
+     "low": 35,
+     "high": 80,
+     "range": "35-80"
+    }
+   },
+   {
+    "slug": "ldl-cholesterol",
+    "printed": "LDL Cholesterol",
+    "value": 36,
+    "unit": "mg/dL",
+    "low": 85,
+    "high": 130,
+    "asPrinted": {
+     "value": "36",
+     "unit": "mg/dL",
+     "low": 85,
+     "high": 130,
+     "range": "85-130"
+    }
+   },
+   {
+    "slug": "vldl-cholesterol",
+    "printed": "VLDL Cholesterol",
+    "value": 38,
+    "unit": "mg/dL",
+    "low": 5,
+    "high": 40,
+    "asPrinted": {
+     "value": "38",
+     "unit": "mg/dL",
+     "low": 5,
+     "high": 40,
+     "range": "5-40"
+    }
+   },
+   {
+    "slug": "thyroglobulin",
+    "printed": "TG",
+    "value": 3.39,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "3.39",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "non-hdl-cholesterol",
+    "printed": "Non-HDL cholesterol",
+    "value": 74,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "74",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "tsh",
+    "printed": "Thyroid-Stimulating Hormone",
+    "value": 3,
+    "unit": "",
+    "low": 3,
+    "high": 45,
+    "asPrinted": {
+     "value": "3",
+     "unit": "",
+     "low": 3,
+     "high": 45,
+     "range": "03-45"
+    }
+   }
+  ],
+  "takenISO": "2021-05-14"
+ },
+ "gesundheit-at": {
+  "rows": [
+   {
+    "slug": "ast",
+    "printed": "GOT",
+    "value": 23,
+    "unit": "",
+    "low": null,
+    "high": 35,
+    "asPrinted": {
+     "value": "23",
+     "unit": "",
+     "low": null,
+     "high": 35,
+     "range": "<35"
+    }
+   },
+   {
+    "slug": "alt",
+    "printed": "GPT",
+    "value": 35,
+    "unit": "U/L",
+    "low": null,
+    "high": 45,
+    "asPrinted": {
+     "value": "35",
+     "unit": "U/L",
+     "low": null,
+     "high": 45,
+     "range": "<45"
+    }
+   },
+   {
+    "slug": "ggt",
+    "printed": "GGT",
+    "value": 27,
+    "unit": "",
+    "low": null,
+    "high": 55,
+    "asPrinted": {
+     "value": "27",
+     "unit": "",
+     "low": null,
+     "high": 55,
+     "range": "<55"
+    }
+   },
+   {
+    "slug": "ldh",
+    "printed": "LDH",
+    "value": 181,
+    "unit": "U/L",
+    "low": 125,
+    "high": 248,
+    "asPrinted": {
+     "value": "181",
+     "unit": "U/L",
+     "low": 125,
+     "high": 248,
+     "range": "125-248"
+    }
+   },
+   {
+    "slug": "ck-total",
+    "printed": "CK",
+    "value": 95,
+    "unit": "",
+    "low": null,
+    "high": 171,
+    "asPrinted": {
+     "value": "95",
+     "unit": "",
+     "low": null,
+     "high": 171,
+     "range": "<171"
+    }
+   },
+   {
+    "slug": "lipase",
+    "printed": "Lipase",
+    "value": 37,
+    "unit": "U/L",
+    "low": null,
+    "high": 60,
+    "asPrinted": {
+     "value": "37",
+     "unit": "U/L",
+     "low": null,
+     "high": 60,
+     "range": "<60"
+    }
+   },
+   {
+    "slug": "total-bilirubin",
+    "printed": "Bilirubin gesamt",
+    "value": 0.68,
+    "unit": "mg/dL",
+    "low": null,
+    "high": 1,
+    "asPrinted": {
+     "value": "0.68",
+     "unit": "mg/dL",
+     "low": null,
+     "high": 1,
+     "range": "<1.00"
+    }
+   },
+   {
+    "slug": "total-cholesterol",
+    "printed": "Cholesterin gesamt",
+    "value": 196,
+    "unit": "mg/dL",
+    "low": null,
+    "high": 200,
+    "asPrinted": {
+     "value": "196",
+     "unit": "mg/dL",
+     "low": null,
+     "high": 200,
+     "range": "<200"
+    }
+   },
+   {
+    "slug": "hdl-cholesterol",
+    "printed": "HDL-Cholesterin",
+    "value": 65,
+    "unit": "mg/dL",
+    "low": 35,
+    "high": null,
+    "asPrinted": {
+     "value": "65",
+     "unit": "mg/dL",
+     "low": 35,
+     "high": null,
+     "range": ">35.0"
+    }
+   },
+   {
+    "slug": "ldl-cholesterol",
+    "printed": "LDL-Cholesterin",
+    "value": 108,
+    "unit": "mg/dL",
+    "low": null,
+    "high": 155,
+    "asPrinted": {
+     "value": "108",
+     "unit": "mg/dL",
+     "low": null,
+     "high": 155,
+     "range": "<155"
+    }
+   },
+   {
+    "slug": "triglycerides",
+    "printed": "Triglyzeride",
+    "value": 117,
+    "unit": "mg/dL",
+    "low": null,
+    "high": 150,
+    "asPrinted": {
+     "value": "117",
+     "unit": "mg/dL",
+     "low": null,
+     "high": 150,
+     "range": "<150"
+    }
+   },
+   {
+    "slug": "glucose-fasting",
+    "printed": "Glucose",
+    "value": 90,
+    "unit": "mg/dL",
+    "low": 60,
+    "high": 100,
+    "asPrinted": {
+     "value": "90",
+     "unit": "mg/dL",
+     "low": 60,
+     "high": 100,
+     "range": "60-100"
+    }
+   },
+   {
+    "slug": "blood-urea-nitrogen",
+    "printed": "BUN",
+    "value": 10.3,
+    "unit": "mg/dL",
+    "low": 6,
+    "high": 25,
+    "asPrinted": {
+     "value": "10.3",
+     "unit": "mg/dL",
+     "low": 6,
+     "high": 25,
+     "range": "6-25"
+    }
+   },
+   {
+    "slug": "creatinine-serum",
+    "printed": "Kreatinin",
+    "value": 0.98,
+    "unit": "mg/dL",
+    "low": 0.5,
+    "high": 1.2,
+    "asPrinted": {
+     "value": "0.98",
+     "unit": "mg/dL",
+     "low": 0.5,
+     "high": 1.2,
+     "range": "0.50-1.20"
+    }
+   },
+   {
+    "slug": "uric-acid",
+    "printed": "Harnsaure",
+    "value": 6.7,
+    "unit": "mg/dL",
+    "low": 3.5,
+    "high": 7,
+    "asPrinted": {
+     "value": "6.7",
+     "unit": "mg/dL",
+     "low": 3.5,
+     "high": 7,
+     "range": "3.5-7.0"
+    }
+   },
+   {
+    "slug": "serum-iron",
+    "printed": "Eisen",
+    "value": 74,
+    "unit": "µg/dL",
+    "low": 60,
+    "high": 160,
+    "asPrinted": {
+     "value": "74",
+     "unit": "pg/dL",
+     "low": 60,
+     "high": 160,
+     "range": "60-160"
+    }
+   },
+   {
+    "slug": "transferrin",
+    "printed": "Transferrin",
+    "value": 272,
+    "unit": "mg/dL",
+    "low": 200,
+    "high": 380,
+    "asPrinted": {
+     "value": "272",
+     "unit": "mg/dL",
+     "low": 200,
+     "high": 380,
+     "range": "200.0-380.0"
+    }
+   },
+   {
+    "slug": "ferritin",
+    "printed": "Ferritin",
+    "value": 229,
+    "unit": "ng/mL",
+    "low": 30,
+    "high": 400,
+    "asPrinted": {
+     "value": "229",
+     "unit": "ng/mL",
+     "low": 30,
+     "high": 400,
+     "range": "30.00-400.00"
+    }
+   },
+   {
+    "slug": "sodium-serum",
+    "printed": "Natrium",
+    "value": 138,
+    "unit": "mmol/L",
+    "low": 135,
+    "high": 150,
+    "asPrinted": {
+     "value": "138",
+     "unit": "mmol/L",
+     "low": 135,
+     "high": 150,
+     "range": "135-150"
+    }
+   },
+   {
+    "slug": "potassium-serum",
+    "printed": "Kalium",
+    "value": 3.7,
+    "unit": "mmol/L",
+    "low": 3.5,
+    "high": 55,
+    "asPrinted": {
+     "value": "3.7",
+     "unit": "mmol/L",
+     "low": 3.5,
+     "high": 55,
+     "range": "3.5-55"
+    }
+   },
+   {
+    "slug": "chloride-serum",
+    "printed": "Chloride",
+    "value": 95,
+    "unit": "mmol/L",
+    "low": 95,
+    "high": 110,
+    "asPrinted": {
+     "value": "95",
+     "unit": "mmol/L",
+     "low": 95,
+     "high": 110,
+     "range": "95-110"
+    }
+   },
+   {
+    "slug": "calcium-total",
+    "printed": "Calcium",
+    "value": 10.5,
+    "unit": "mg/dL",
+    "low": 8.42,
+    "high": 10.8,
+    "asPrinted": {
+     "value": "2.62",
+     "unit": "mmol/L",
+     "low": 2.1,
+     "high": 2.7,
+     "range": "2.10-2.70"
+    }
+   },
+   {
+    "slug": "magnesium-serum",
+    "printed": "Magnesium",
+    "value": 2.09,
+    "unit": "mg/dL",
+    "low": 1.7,
+    "high": 2.43,
+    "asPrinted": {
+     "value": "0.86",
+     "unit": "mmol/L",
+     "low": 0.7,
+     "high": 1,
+     "range": "0.70-1.00"
+    }
+   },
+   {
+    "slug": "crp",
+    "printed": "CRP",
+    "value": 1,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "1",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "aptt",
+    "printed": "aPTT",
+    "value": 36.5,
+    "unit": "",
+    "low": 32,
+    "high": 40,
+    "asPrinted": {
+     "value": "36.5",
+     "unit": "",
+     "low": 32,
+     "high": 40,
+     "range": "32.0-40.0"
+    }
+   },
+   {
+    "slug": "thrombin-time",
+    "printed": "Thrombinzeit",
+    "value": 16.5,
+    "unit": "",
+    "low": 16,
+    "high": 20,
+    "asPrinted": {
+     "value": "16.5",
+     "unit": "",
+     "low": 16,
+     "high": 20,
+     "range": "16.0-20.0"
+    }
+   },
+   {
+    "slug": "rbc",
+    "printed": "Erythrozyten",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "1+",
+    "expect": "Negative"
+   },
+   {
+    "slug": "hemoglobin",
+    "printed": "Hamoglobin",
+    "value": 16.9,
+    "unit": "g/dL",
+    "low": 13,
+    "high": 17,
+    "asPrinted": {
+     "value": "16.9",
+     "unit": "g/dL",
+     "low": 13,
+     "high": 17,
+     "range": "13.0-17.0"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hamatokrit",
+    "value": 46.8,
+    "unit": "%",
+    "low": 43,
+    "high": 50,
+    "asPrinted": {
+     "value": "46.8",
+     "unit": "%",
+     "low": 43,
+     "high": 50,
+     "range": "43.0-50.0"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "MCV",
+    "value": 83.7,
+    "unit": "fL",
+    "low": 80,
+    "high": 96,
+    "asPrinted": {
+     "value": "83.7",
+     "unit": "fL",
+     "low": 80,
+     "high": 96,
+     "range": "80.0-96.0"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "MCH",
+    "value": 30.2,
+    "unit": "pg",
+    "low": 28,
+    "high": 33,
+    "asPrinted": {
+     "value": "30.2",
+     "unit": "pg",
+     "low": 28,
+     "high": 33,
+     "range": "28.0-33.0"
+    }
+   },
+   {
+    "slug": "mchc",
+    "printed": "MCHC",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "1+",
+    "expect": "Negative"
+   },
+   {
+    "slug": "rdw-cv",
+    "printed": "RDW-CV",
+    "value": 12.9,
+    "unit": "%",
+    "low": 11.5,
+    "high": 17,
+    "asPrinted": {
+     "value": "12.9",
+     "unit": "%",
+     "low": 11.5,
+     "high": 17,
+     "range": "11.5-17"
+    }
+   },
+   {
+    "slug": "reticulocyte-percent",
+    "printed": "Retikulozyten %",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "1+",
+    "expect": "Negative"
+   },
+   {
+    "slug": "wbc",
+    "printed": "Leukozyten",
+    "value": 8.69,
+    "unit": "g/L",
+    "low": 4,
+    "high": 10,
+    "asPrinted": {
+     "value": "8.69",
+     "unit": "g/L",
+     "low": 4,
+     "high": 10,
+     "range": "4.00-10.00"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Thrombozyten",
+    "value": 285,
+    "unit": "g/L",
+    "low": 150,
+    "high": 360,
+    "asPrinted": {
+     "value": "285",
+     "unit": "g/L",
+     "low": 150,
+     "high": 360,
+     "range": "150-360"
+    }
+   },
+   {
+    "slug": "monocytes-percent",
+    "printed": "Monozyten %",
+    "value": 8,
+    "unit": "%",
+    "low": 2,
+    "high": 10,
+    "asPrinted": {
+     "value": "8",
+     "unit": "%",
+     "low": 2,
+     "high": 10,
+     "range": "2-10"
+    }
+   },
+   {
+    "slug": "eosinophils-percent",
+    "printed": "Eosinophile %",
+    "value": 1,
+    "unit": "%",
+    "low": 1,
+    "high": 4,
+    "asPrinted": {
+     "value": "1",
+     "unit": "%",
+     "low": 1,
+     "high": 4,
+     "range": "1-4"
+    }
+   },
+   {
+    "slug": "basophils-percent",
+    "printed": "Basophile %",
+    "value": 0,
+    "unit": "%",
+    "low": 0,
+    "high": 1,
+    "asPrinted": {
+     "value": "0",
+     "unit": "%",
+     "low": 0,
+     "high": 1,
+     "range": "0-1"
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "lgm-hamburg": {
+  "rows": [
+   {
+    "slug": "wbc",
+    "printed": "Leukozyten",
+    "value": 5.3,
+    "unit": "",
+    "low": 3.9,
+    "high": 10,
+    "asPrinted": {
+     "value": "5.3",
+     "unit": "",
+     "low": 3.9,
+     "high": 10,
+     "range": "3.9-10.0"
+    }
+   },
+   {
+    "slug": "rbc",
+    "printed": "Erythrozyten",
+    "value": 4.5,
+    "unit": "",
+    "low": 4.5,
+    "high": 5.9,
+    "asPrinted": {
+     "value": "4.5",
+     "unit": "",
+     "low": 4.5,
+     "high": 5.9,
+     "range": "4.5-5.9"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hamatokrit",
+    "value": 0.42,
+    "unit": "",
+    "low": 40,
+    "high": 52,
+    "asPrinted": {
+     "value": "0.42",
+     "unit": "",
+     "low": 40,
+     "high": 52,
+     "range": "040-052"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "MCV",
+    "value": 90,
+    "unit": "fL",
+    "low": 82,
+    "high": 98,
+    "asPrinted": {
+     "value": "90",
+     "unit": "fL",
+     "low": 82,
+     "high": 98,
+     "range": "82-98"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "MCH",
+    "value": 32,
+    "unit": "pg",
+    "low": 28,
+    "high": 32,
+    "asPrinted": {
+     "value": "32",
+     "unit": "pg",
+     "low": 28,
+     "high": 32,
+     "range": "28-32"
+    }
+   },
+   {
+    "slug": "mchc",
+    "printed": "MCHC",
+    "value": 33,
+    "unit": "g/dL",
+    "low": 32,
+    "high": 36,
+    "asPrinted": {
+     "value": "33",
+     "unit": "g/dL",
+     "low": 32,
+     "high": 36,
+     "range": "32-36"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Thrombozyten",
+    "value": 350,
+    "unit": "/nl",
+    "low": 140,
+    "high": 440,
+    "asPrinted": {
+     "value": "350",
+     "unit": "/nl",
+     "low": 140,
+     "high": 440,
+     "range": "140-440"
+    }
+   },
+   {
+    "slug": "potassium-serum",
+    "printed": "Kalium",
+    "value": 4.5,
+    "unit": "mmol/L",
+    "low": 3.5,
+    "high": 5.1,
+    "asPrinted": {
+     "value": "45",
+     "unit": "mmol/L",
+     "low": 3.5,
+     "high": 5.1,
+     "range": "3.5-5.1"
+    }
+   },
+   {
+    "slug": "sodium-serum",
+    "printed": "Natrium",
+    "value": 141,
+    "unit": "mmol/L",
+    "low": 136,
+    "high": 145,
+    "asPrinted": {
+     "value": "141",
+     "unit": "mmol/L",
+     "low": 136,
+     "high": 145,
+     "range": "136-145"
+    }
+   },
+   {
+    "slug": "calcium-total",
+    "printed": "Calcium",
+    "value": 9.58,
+    "unit": "mg/dL",
+    "low": 882,
+    "high": 1062,
+    "asPrinted": {
+     "value": "2.39",
+     "unit": "mmol/L",
+     "low": 220,
+     "high": 265,
+     "range": "220-265"
+    }
+   },
+   {
+    "slug": "magnesium-serum",
+    "printed": "Magnesium",
+    "value": 2.5,
+    "unit": "mg/dL",
+    "low": 1.58,
+    "high": 2.6,
+    "asPrinted": {
+     "value": "1.03",
+     "unit": "mmol/L",
+     "low": 0.65,
+     "high": 1.07,
+     "range": "0.65-1.07"
+    }
+   },
+   {
+    "slug": "serum-iron",
+    "printed": "Eisen",
+    "value": 44.7,
+    "unit": "mcg/dL",
+    "low": 55.9,
+    "high": 140,
+    "asPrinted": {
+     "value": "8",
+     "unit": "pmol/L",
+     "low": 10,
+     "high": 25,
+     "range": "10-25"
+    }
+   },
+   {
+    "slug": "copper",
+    "printed": "Kupfer",
+    "value": 12,
+    "unit": "",
+    "low": 11,
+    "high": 220,
+    "asPrinted": {
+     "value": "12",
+     "unit": "",
+     "low": 11,
+     "high": 220,
+     "range": "11.0-220"
+    }
+   },
+   {
+    "slug": "total-bilirubin",
+    "printed": "Bilirubin",
+    "value": 0.9,
+    "unit": "mg/dL",
+    "low": 0.2,
+    "high": 1.1,
+    "asPrinted": {
+     "value": "0.9",
+     "unit": "mg/dL",
+     "low": 0.2,
+     "high": 1.1,
+     "range": "0.2-1.1"
+    }
+   },
+   {
+    "slug": "ggt",
+    "printed": "Gamma-GT",
+    "value": 34,
+    "unit": "",
+    "low": null,
+    "high": 60,
+    "asPrinted": {
+     "value": "34",
+     "unit": "",
+     "low": null,
+     "high": 60,
+     "range": "<60"
+    }
+   },
+   {
+    "slug": "ast",
+    "printed": "GOT",
+    "value": 26,
+    "unit": "",
+    "low": 10,
+    "high": 50,
+    "asPrinted": {
+     "value": "26",
+     "unit": "",
+     "low": 10,
+     "high": 50,
+     "range": "10-50"
+    }
+   },
+   {
+    "slug": "alt",
+    "printed": "GPT",
+    "value": 24,
+    "unit": "",
+    "low": 10,
+    "high": 50,
+    "asPrinted": {
+     "value": "24",
+     "unit": "",
+     "low": 10,
+     "high": 50,
+     "range": "10-50"
+    }
+   },
+   {
+    "slug": "ldh",
+    "printed": "LDH",
+    "value": 105,
+    "unit": "",
+    "low": 100,
+    "high": 250,
+    "asPrinted": {
+     "value": "105",
+     "unit": "",
+     "low": 100,
+     "high": 250,
+     "range": "100-250"
+    }
+   },
+   {
+    "slug": "amylase",
+    "printed": "Amylase",
+    "value": 89,
+    "unit": "",
+    "low": 20,
+    "high": 104,
+    "asPrinted": {
+     "value": "89",
+     "unit": "",
+     "low": 20,
+     "high": 104,
+     "range": "20-104"
+    }
+   },
+   {
+    "slug": "lipase",
+    "printed": "Lipase",
+    "value": 25,
+    "unit": "",
+    "low": 11,
+    "high": 70,
+    "asPrinted": {
+     "value": "25",
+     "unit": "",
+     "low": 11,
+     "high": 70,
+     "range": "11-70"
+    }
+   },
+   {
+    "slug": "hba1c",
+    "printed": "HbA1c",
+    "value": 5.3,
+    "unit": "%",
+    "low": 4.1,
+    "high": 6.1,
+    "asPrinted": {
+     "value": "5.3",
+     "unit": "%",
+     "low": 4.1,
+     "high": 6.1,
+     "range": "4.1-6.1"
+    }
+   },
+   {
+    "slug": "glucose-fasting",
+    "printed": "Glukose",
+    "value": 89,
+    "unit": "mg/dL",
+    "low": 60,
+    "high": 115,
+    "asPrinted": {
+     "value": "89",
+     "unit": "mg/dL",
+     "low": 60,
+     "high": 115,
+     "range": "60-115"
+    }
+   },
+   {
+    "slug": "eag",
+    "printed": "EAG (durchschn. BZ)",
+    "value": 105,
+    "unit": "mg/dL",
+    "low": 60,
+    "high": 126,
+    "asPrinted": {
+     "value": "105",
+     "unit": "mg/dL",
+     "low": 60,
+     "high": 126,
+     "range": "60-126"
+    }
+   },
+   {
+    "slug": "ck-total",
+    "printed": "CK",
+    "value": 56,
+    "unit": "U/L",
+    "low": null,
+    "high": 190,
+    "asPrinted": {
+     "value": "56",
+     "unit": "U/L",
+     "low": null,
+     "high": 190,
+     "range": "<190"
+    }
+   },
+   {
+    "slug": "ck-mb",
+    "printed": "CK-MB",
+    "value": 4,
+    "unit": "",
+    "low": null,
+    "high": 25,
+    "asPrinted": {
+     "value": "4",
+     "unit": "",
+     "low": null,
+     "high": 25,
+     "range": "<25"
+    }
+   },
+   {
+    "slug": "triglycerides",
+    "printed": "Triglyceride",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "1+",
+    "expect": "Negative"
+   },
+   {
+    "slug": "hdl-cholesterol",
+    "printed": "HDL-Cholesterin",
+    "value": 69,
+    "unit": "mg/dL",
+    "low": 55,
+    "high": null,
+    "asPrinted": {
+     "value": "69",
+     "unit": "mg/dL",
+     "low": 55,
+     "high": null,
+     "range": "> 55"
+    }
+   },
+   {
+    "slug": "ldl-cholesterol",
+    "printed": "LDL",
+    "value": 115,
+    "unit": "mg/dL",
+    "low": null,
+    "high": 150,
+    "asPrinted": {
+     "value": "115",
+     "unit": "mg/dL",
+     "low": null,
+     "high": 150,
+     "range": "<150"
+    }
+   },
+   {
+    "slug": "urea",
+    "printed": "Harnstoff",
+    "value": 26,
+    "unit": "mg/dL",
+    "low": 13,
+    "high": 43,
+    "asPrinted": {
+     "value": "26",
+     "unit": "mg/dL",
+     "low": 13,
+     "high": 43,
+     "range": "13-43"
+    }
+   },
+   {
+    "slug": "creatinine-serum",
+    "printed": "Kreatinin",
+    "value": 0.9,
+    "unit": "mg/dL",
+    "low": 0.5,
+    "high": 1.2,
+    "asPrinted": {
+     "value": "0.9",
+     "unit": "mg/dL",
+     "low": 0.5,
+     "high": 1.2,
+     "range": "0.5-1.2"
+    }
+   },
+   {
+    "slug": "tsh",
+    "printed": "TSH (hypersensitiv)",
+    "value": 0.98,
+    "unit": "",
+    "low": 0.35,
+    "high": 250,
+    "asPrinted": {
+     "value": "0.98",
+     "unit": "",
+     "low": 0.35,
+     "high": 250,
+     "range": "0.35-250"
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "praxisdd-blutbild": {
+  "rows": [
+   {
+    "slug": "wbc",
+    "printed": "Leukozyten",
+    "value": 5.2,
+    "unit": "",
+    "low": 3.9,
+    "high": 10,
+    "asPrinted": {
+     "value": "5.2",
+     "unit": "",
+     "low": 3.9,
+     "high": 10,
+     "range": "3.9-10.0"
+    }
+   },
+   {
+    "slug": "rbc",
+    "printed": "Erythrozyten",
+    "value": 4.9,
+    "unit": "",
+    "low": 4.5,
+    "high": 5.9,
+    "asPrinted": {
+     "value": "4.9",
+     "unit": "",
+     "low": 4.5,
+     "high": 5.9,
+     "range": "4.5-5.9"
+    }
+   },
+   {
+    "slug": "hemoglobin",
+    "printed": "Hamoglobin",
+    "value": 14.9,
+    "unit": "g/dL",
+    "low": 13,
+    "high": 18,
+    "asPrinted": {
+     "value": "14.9",
+     "unit": "g/dL",
+     "low": 13,
+     "high": 18,
+     "range": "13.0-18.0"
+    }
+   },
+   {
+    "slug": "hematocrit",
+    "printed": "Hamatokrit",
+    "value": 0.45,
+    "unit": "",
+    "low": 40,
+    "high": 52,
+    "asPrinted": {
+     "value": "0.45",
+     "unit": "",
+     "low": 40,
+     "high": 52,
+     "range": "040-052"
+    }
+   },
+   {
+    "slug": "mcv",
+    "printed": "MCV",
+    "value": 91,
+    "unit": "fL",
+    "low": 82,
+    "high": 98,
+    "asPrinted": {
+     "value": "91",
+     "unit": "fL",
+     "low": 82,
+     "high": 98,
+     "range": "82-98"
+    }
+   },
+   {
+    "slug": "mch",
+    "printed": "MCH",
+    "value": 30,
+    "unit": "pg",
+    "low": 28,
+    "high": 32,
+    "asPrinted": {
+     "value": "30",
+     "unit": "pg",
+     "low": 28,
+     "high": 32,
+     "range": "28-32"
+    }
+   },
+   {
+    "slug": "mchc",
+    "printed": "MCHC",
+    "value": 33,
+    "unit": "g/dL",
+    "low": 32,
+    "high": 36,
+    "asPrinted": {
+     "value": "33",
+     "unit": "g/dL",
+     "low": 32,
+     "high": 36,
+     "range": "32-36"
+    }
+   },
+   {
+    "slug": "platelet-count",
+    "printed": "Thrombozyten",
+    "value": 297,
+    "unit": "/nl",
+    "low": 140,
+    "high": 440,
+    "asPrinted": {
+     "value": "297",
+     "unit": "/nl",
+     "low": 140,
+     "high": 440,
+     "range": "140-440"
+    }
+   },
+   {
+    "slug": "potassium-serum",
+    "printed": "Kalium",
+    "value": 4.2,
+    "unit": "mmol/L",
+    "low": 3.5,
+    "high": 5.1,
+    "asPrinted": {
+     "value": "4.2",
+     "unit": "mmol/L",
+     "low": 3.5,
+     "high": 5.1,
+     "range": "3.5-5.1"
+    }
+   },
+   {
+    "slug": "sodium-serum",
+    "printed": "Natrium",
+    "value": 139,
+    "unit": "mmol/L",
+    "low": 136,
+    "high": 145,
+    "asPrinted": {
+     "value": "139",
+     "unit": "mmol/L",
+     "low": 136,
+     "high": 145,
+     "range": "136-145"
+    }
+   },
+   {
+    "slug": "calcium-total",
+    "printed": "Calcium",
+    "value": 9.94,
+    "unit": "mg/dL",
+    "low": 882,
+    "high": 1062,
+    "asPrinted": {
+     "value": "2.48",
+     "unit": "mmol/L",
+     "low": 220,
+     "high": 265,
+     "range": "220-265"
+    }
+   },
+   {
+    "slug": "magnesium-serum",
+    "printed": "Magnesium",
+    "value": 1.94,
+    "unit": "mg/dL",
+    "low": 1.58,
+    "high": 2.6,
+    "asPrinted": {
+     "value": "0.8",
+     "unit": "mmol/L",
+     "low": 0.65,
+     "high": 1.07,
+     "range": "0.65-1.07"
+    }
+   },
+   {
+    "slug": "chloride-serum",
+    "printed": "Chlorid",
+    "value": 103,
+    "unit": "mmol/L",
+    "low": 98,
+    "high": 107,
+    "asPrinted": {
+     "value": "103",
+     "unit": "mmol/L",
+     "low": 98,
+     "high": 107,
+     "range": "98-107"
+    }
+   },
+   {
+    "slug": "ferritin",
+    "printed": "Ferritin",
+    "value": 62,
+    "unit": "ng/mL",
+    "low": 33,
+    "high": 266,
+    "asPrinted": {
+     "value": "62",
+     "unit": "ng/mL",
+     "low": 33,
+     "high": 266,
+     "range": "33-266"
+    }
+   },
+   {
+    "slug": "transferrin",
+    "printed": "Transferrin",
+    "value": 2.67,
+    "unit": "g/L",
+    "low": 200,
+    "high": 360,
+    "asPrinted": {
+     "value": "2.67",
+     "unit": "g/L",
+     "low": 200,
+     "high": 360,
+     "range": "200-360"
+    }
+   },
+   {
+    "slug": "serum-iron",
+    "printed": "Eisen",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "1+",
+    "expect": "Negative"
+   },
+   {
+    "slug": "copper",
+    "printed": "Kupfer",
+    "value": 13.4,
+    "unit": "pmol/L",
+    "low": 11,
+    "high": 220,
+    "asPrinted": {
+     "value": "13.4",
+     "unit": "pmol/L",
+     "low": 11,
+     "high": 220,
+     "range": "11.0-220"
+    }
+   },
+   {
+    "slug": "zinc",
+    "printed": "Zink",
+    "value": 88,
+    "unit": "",
+    "low": 60,
+    "high": 120,
+    "asPrinted": {
+     "value": "88",
+     "unit": "",
+     "low": 60,
+     "high": 120,
+     "range": "60-120"
+    }
+   },
+   {
+    "slug": "selenium",
+    "printed": "Selen",
+    "value": 96.8,
+    "unit": "ug/L",
+    "low": 740,
+    "high": 1390,
+    "asPrinted": {
+     "value": "96.8",
+     "unit": "ug/L",
+     "low": 740,
+     "high": 1390,
+     "range": "740-1390"
+    }
+   },
+   {
+    "slug": "total-bilirubin",
+    "printed": "Bilirubin",
+    "value": 0.7,
+    "unit": "mg/dL",
+    "low": 0.2,
+    "high": 1.1,
+    "asPrinted": {
+     "value": "0.7",
+     "unit": "mg/dL",
+     "low": 0.2,
+     "high": 1.1,
+     "range": "0.2-1.1"
+    }
+   },
+   {
+    "slug": "ggt",
+    "printed": "Gamma-GT",
+    "value": 19,
+    "unit": "",
+    "low": null,
+    "high": 60,
+    "asPrinted": {
+     "value": "19",
+     "unit": "",
+     "low": null,
+     "high": 60,
+     "range": "<60"
+    }
+   },
+   {
+    "slug": "ast",
+    "printed": "GOT",
+    "value": 21,
+    "unit": "",
+    "low": 10,
+    "high": 50,
+    "flag": "L",
+    "asPrinted": {
+     "value": "21",
+     "unit": "",
+     "low": 10,
+     "high": 50,
+     "range": "10-50"
+    }
+   },
+   {
+    "slug": "alt",
+    "printed": "GPT",
+    "value": 20,
+    "unit": "",
+    "low": 10,
+    "high": 50,
+    "asPrinted": {
+     "value": "20",
+     "unit": "",
+     "low": 10,
+     "high": 50,
+     "range": "10-50"
+    }
+   },
+   {
+    "slug": "ldh",
+    "printed": "LDH",
+    "value": 158,
+    "unit": "",
+    "low": 100,
+    "high": 250,
+    "asPrinted": {
+     "value": "158",
+     "unit": "",
+     "low": 100,
+     "high": 250,
+     "range": "100-250"
+    }
+   },
+   {
+    "slug": "amylase",
+    "printed": "Amylase",
+    "value": 35,
+    "unit": "",
+    "low": 20,
+    "high": 104,
+    "asPrinted": {
+     "value": "35",
+     "unit": "",
+     "low": 20,
+     "high": 104,
+     "range": "20-104"
+    }
+   },
+   {
+    "slug": "lipase",
+    "printed": "Lipase",
+    "value": 43,
+    "unit": "",
+    "low": 11,
+    "high": 70,
+    "asPrinted": {
+     "value": "43",
+     "unit": "",
+     "low": 11,
+     "high": 70,
+     "range": "11-70"
+    }
+   },
+   {
+    "slug": "hba1c",
+    "printed": "HbA1c",
+    "value": 5.6,
+    "unit": "%",
+    "low": 4.1,
+    "high": 6.1,
+    "flag": "L",
+    "asPrinted": {
+     "value": "5.6",
+     "unit": "%",
+     "low": 4.1,
+     "high": 6.1,
+     "range": "4.1-6.1"
+    }
+   },
+   {
+    "slug": "glucose-fasting",
+    "printed": "Glukose",
+    "value": 94,
+    "unit": "mg/dL",
+    "low": 60,
+    "high": 115,
+    "asPrinted": {
+     "value": "94",
+     "unit": "mg/dL",
+     "low": 60,
+     "high": 115,
+     "range": "60-115"
+    }
+   },
+   {
+    "slug": "eag",
+    "printed": "EAG (durchschn. BZ)",
+    "value": 114,
+    "unit": "mg/dL",
+    "low": 60,
+    "high": 126,
+    "asPrinted": {
+     "value": "114",
+     "unit": "mg/dL",
+     "low": 60,
+     "high": 126,
+     "range": "60-126"
+    }
+   },
+   {
+    "slug": "ck-total",
+    "printed": "CK",
+    "value": 129,
+    "unit": "",
+    "low": null,
+    "high": 190,
+    "asPrinted": {
+     "value": "129",
+     "unit": "",
+     "low": null,
+     "high": 190,
+     "range": "< 190"
+    }
+   },
+   {
+    "slug": "ck-mb",
+    "printed": "CK-MB",
+    "value": 15,
+    "unit": "",
+    "low": null,
+    "high": 25,
+    "asPrinted": {
+     "value": "15",
+     "unit": "",
+     "low": null,
+     "high": 25,
+     "range": "<25"
+    }
+   },
+   {
+    "slug": "triglycerides",
+    "printed": "Triglyceride",
+    "value": 76,
+    "unit": "mg/dL",
+    "low": 40,
+    "high": 175,
+    "asPrinted": {
+     "value": "76",
+     "unit": "mg/dL",
+     "low": 40,
+     "high": 175,
+     "range": "40-175"
+    }
+   },
+   {
+    "slug": "hdl-cholesterol",
+    "printed": "HDL-Cholesterin",
+    "value": 59,
+    "unit": "mg/dL",
+    "low": 55,
+    "high": null,
+    "asPrinted": {
+     "value": "59",
+     "unit": "mg/dL",
+     "low": 55,
+     "high": null,
+     "range": "> 55"
+    }
+   },
+   {
+    "slug": "ldl-cholesterol",
+    "printed": "LDL",
+    "value": 111,
+    "unit": "",
+    "low": null,
+    "high": 150,
+    "asPrinted": {
+     "value": "111",
+     "unit": "",
+     "low": null,
+     "high": 150,
+     "range": "< 150"
+    }
+   },
+   {
+    "slug": "uric-acid",
+    "printed": "Harnsaure",
+    "value": 45,
+    "unit": "mg/dL",
+    "low": 3.5,
+    "high": 7.2,
+    "flag": "H",
+    "asPrinted": {
+     "value": "45",
+     "unit": "mg/dL",
+     "low": 3.5,
+     "high": 7.2,
+     "range": "3.5-7.2"
+    }
+   },
+   {
+    "slug": "zonulin-stool",
+    "printed": "Zonulin",
+    "value": 345,
+    "unit": "ng/mL",
+    "low": 200,
+    "high": 330,
+    "asPrinted": {
+     "value": "345",
+     "unit": "ng/mL",
+     "low": 200,
+     "high": 330,
+     "range": "200-330"
+    }
+   },
+   {
+    "slug": "vitamin-b12",
+    "printed": "Vitamin B12",
+    "value": 0,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "text": "1+",
+    "expect": "Negative"
+   },
+   {
+    "slug": "urea",
+    "printed": "Harnstoff",
+    "value": 36,
+    "unit": "mg/dL",
+    "low": 13,
+    "high": 43,
+    "flag": "L",
+    "asPrinted": {
+     "value": "36",
+     "unit": "mg/dL",
+     "low": 13,
+     "high": 43,
+     "range": "13-43"
+    }
+   },
+   {
+    "slug": "creatinine-serum",
+    "printed": "Kreatinin",
+    "value": 0.8,
+    "unit": "mg/dL",
+    "low": 0.5,
+    "high": 1.2,
+    "asPrinted": {
+     "value": "0.8",
+     "unit": "mg/dL",
+     "low": 0.5,
+     "high": 1.2,
+     "range": "0.5-1.2"
+    }
+   },
+   {
+    "slug": "iga",
+    "printed": "Immunglobulin A",
+    "value": 2.6,
+    "unit": "g/L",
+    "low": 0.7,
+    "high": 4,
+    "asPrinted": {
+     "value": "2.6",
+     "unit": "g/L",
+     "low": 0.7,
+     "high": 4,
+     "range": "0.7-4.0"
+    }
+   },
+   {
+    "slug": "igg",
+    "printed": "Immunglobulin G",
+    "value": 11.39,
+    "unit": "g/L",
+    "low": 7,
+    "high": 16,
+    "asPrinted": {
+     "value": "11.39",
+     "unit": "g/L",
+     "low": 7,
+     "high": 16,
+     "range": "7.00-16.00"
+    }
+   },
+   {
+    "slug": "igm",
+    "printed": "Immunglobulin M",
+    "value": 0.58,
+    "unit": "g/L",
+    "low": 40,
+    "high": 230,
+    "asPrinted": {
+     "value": "0.58",
+     "unit": "g/L",
+     "low": 40,
+     "high": 230,
+     "range": "040-230"
+    }
+   },
+   {
+    "slug": "crp",
+    "printed": "CRP",
+    "value": 0.6,
+    "unit": "mg/L",
+    "low": null,
+    "high": 5,
+    "asPrinted": {
+     "value": "0.6",
+     "unit": "mg/L",
+     "low": null,
+     "high": 5,
+     "range": "<5.0"
+    }
+   },
+   {
+    "slug": "rheumatoid-factor",
+    "printed": "Rheumafaktor",
+    "value": 5,
+    "unit": "IU/mL",
+    "low": null,
+    "high": 14,
+    "asPrinted": {
+     "value": "<5",
+     "unit": "IU/mL",
+     "low": null,
+     "high": 14,
+     "range": "<14"
+    }
+   },
+   {
+    "slug": "tsh",
+    "printed": "TSH (hypersensitiv)",
+    "value": 1.57,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "1.57",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "free-t3",
+    "printed": "Freies T3 (fT3)",
+    "value": 3.2,
+    "unit": "pg/mL",
+    "low": 2,
+    "high": 4.2,
+    "asPrinted": {
+     "value": "3.2",
+     "unit": "pg/mL",
+     "low": 2,
+     "high": 4.2,
+     "range": "2.0-4.2"
+    }
+   }
+  ],
+  "takenISO": null
+ },
+ "wisplinghoff-allergy": {
+  "rows": [
+   {
+    "slug": "total-t3",
+    "printed": "t3",
+    "value": 5,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "5",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   },
+   {
+    "slug": "estrone-e1",
+    "printed": "e1",
+    "value": 5,
+    "unit": "",
+    "low": null,
+    "high": null,
+    "asPrinted": {
+     "value": "5",
+     "unit": "",
+     "low": null,
+     "high": null,
+     "range": ""
+    }
+   }
+  ],
+  "takenISO": null
+ }
+}

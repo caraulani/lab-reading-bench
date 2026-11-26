@@ -1,0 +1,34 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv
+1 | COMPLETE BLOOD COUNT (CBC) | Hemoglobin | 13.5 | g/dl | 12 - 15 | | hemoglobin | |
+1 | COMPLETE BLOOD COUNT (CBC) | Total Leukocyte Count | 5,000 | cumm | 4,000 - 11,000 | | wbc | | 5.0
+1 | Differential Leucocyte Count | Neutrophils | 50 | % | 40 - 80 | | | |
+1 | Differential Leucocyte Count | Lymphocyte | 45 | % | 20 - 40 | H | | |
+1 | Differential Leucocyte Count | Eosinophils | 02 | % | 1 - 6 | | | |
+1 | Differential Leucocyte Count | Monocytes | 03 | % | 2 - 10 | | | watermark crosses the value |
+1 | Differential Leucocyte Count | Basophils | 00 | % | < 2 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | Platelet Count | 2.35 | lakhs/cumm | 1.5 - 4.5 | | platelet-count | | 235
+1 | COMPLETE BLOOD COUNT (CBC) | Total RBC Count | 4.0 | million/cumm | 3.9 - 4.8 | | rbc | |
+1 | COMPLETE BLOOD COUNT (CBC) | Hematocrit Value, Hct | 40 | % | 36 - 46 | | hematocrit | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Corpuscular Volume, MCV | 100.0 | fL | 83 - 101 | | mcv | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Cell Haemoglobin, MCH | 33.8 | Pg | 27 - 32 | H | mch | |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Cell Haemoglobin CON, MCHC | 33.8 | % | 31.5 - 34.5 | | mchc | MCHC printed in % |
+1 | COMPLETE BLOOD COUNT (CBC) | Mean Platelet Volume, MPV | 7.0 | fL | 6.5 - 12 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | R.D.W. - SD | 42 | fL | 39 - 46 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | R.D.W. - CV | 12.1 | % | 11.6 - 14 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | P-LCR | 22 | % | 19.7 - 42.4 | | | |
+1 | COMPLETE BLOOD COUNT (CBC) | P.D.W. | 11.5 | fL | 9.6 - 15.2 | | | |
+1 | | Bleeding Time | 3.0 | min | 2 - 7 | | | |
+1 | | Clotting Time | 5.2 | min | 4 - 9 | | | |
+2 | KIDNEY FUNCTION TEST (KFT) | BUN | 7.01 | mg/dl | 7.9 - 20 | L | blood-urea-nitrogen | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Urea | 15 | mg/dl | 13 - 40 | | | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Creatinine | 0.9 | mg/dl | 0.5 - 0.8 | H | creatinine-serum | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Calcium | 9.0 | mg/dl | 8.8 - 10.6 | | calcium-total | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Potassium | 3.8 | mmol/L | 3.5 - 5.1 | | potassium-serum | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Sodium | 137 | mmol/L | 136 - 146 | | sodium-serum | |
+2 | KIDNEY FUNCTION TEST (KFT) | Serum Uric Acid | 7.0 | mg/dl | 2.6 - 6 | H | uric-acid | |
+2 | KIDNEY FUNCTION TEST (KFT) | Urea / Creatinine Ratio | 16.67 | | | | | |
+2 | KIDNEY FUNCTION TEST (KFT) | BUN / Creatinine Ratio | 7.79 | | | | | |
+2 | | Random Blood Sugar | 97 | mg/dl | 60 - 160 | | glucose-fasting | random (non-fasting) glucose; the catalog has one glucose marker |
+4 | Urine Routine Examination | Quantity | 30 | ml | | | | urine |
+4 | Urine Routine Examination | Specific Gravity | 1.020 | | 1.005 - 1.03 | | | urine |
+4 | Urine Routine Examination | pH | 6.0 | | 5 - 7 | | | urine |

@@ -1,0 +1,17 @@
+[
+  { "id": "labcorp-1724", "source": "labcorp-1724", "pages": [1, 2], "locale": "en-US" },
+  { "id": "labcorp-273-normal", "source": "labcorp-273", "pages": [1], "locale": "en-US" },
+  { "id": "labcorp-273-abnormal", "source": "labcorp-273", "pages": [2], "locale": "en-US" },
+  { "id": "lifeext-lcx00001", "source": "lifeext-lcx00001", "pages": [1, 2, 3, 4], "locale": "en-US" },
+  { "id": "quest-drpws", "source": "quest-drpws", "pages": [1, 2, 3], "locale": "en-US" },
+  { "id": "quest-vitd-in", "source": "quest-vitd-in", "pages": [1], "locale": "en-US" },
+  { "id": "quest-vitd-out", "source": "quest-vitd-out", "pages": [1], "locale": "en-US" },
+  { "id": "testingcom-cbc", "source": "testingcom-cbc", "pages": [1], "locale": "en-US" },
+  { "id": "labsmart-cbc", "source": "labsmart-cbc", "pages": [1], "locale": "en-IN" },
+  { "id": "labsmart-preop", "source": "labsmart-preop", "pages": [1, 2, 3, 4], "locale": "en-IN" },
+  { "id": "labsmart-sample1", "source": "labsmart-sample1", "pages": [1, 2, 3, 4, 5, 6, 7, 8], "locale": "en-IN" },
+  { "id": "gesundheit-at", "source": "gesundheit-at", "pages": [1, 2, 3], "locale": "de-AT" },
+  { "id": "lgm-hamburg", "source": "lgm-hamburg", "pages": [1, 2, 3], "locale": "de-DE" },
+  { "id": "praxisdd-blutbild", "source": "praxisdd-blutbild", "pages": [1, 2, 3, 4], "locale": "de-DE" },
+  { "id": "wisplinghoff-allergy", "source": "wisplinghoff-allergy", "pages": [1, 2, 3], "locale": "de-DE" }
+]

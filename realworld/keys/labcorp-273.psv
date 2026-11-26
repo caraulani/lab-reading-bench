@@ -1,0 +1,3 @@
+# page | section | analyte | value | unit | ref | flag | slug | note
+1 | NORMAL REPORT | Leukocyte Alkaline Phos Score | 50 | | 25 - 130 | | | page 1 is the 'NORMAL REPORT', no unit printed
+2 | ABNORMAL REPORT | Leukocyte Alkaline Phos Score | 150 | | 25 - 130 | High | | page 2 is a separate 'ABNORMAL REPORT' for the same sample patient

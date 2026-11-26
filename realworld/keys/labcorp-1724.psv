@@ -1,0 +1,27 @@
+# page | section | analyte | value | unit | ref | flag | slug | note
+1 | CD4/CD8 Ratio Profile | Absolute CD 4 Helper | 987 | /uL | 359-1519 | | |
+1 | CD4/CD8 Ratio Profile | % CD 4 Pos. Lymph. | 42.9 | % | 30.8-58.5 | | |
+1 | CD4/CD8 Ratio Profile | Abs. CD 8 Suppressor | 1024 | /uL | 109-897 | High | | orange triangle in margin
+1 | CD4/CD8 Ratio Profile | % CD 8 Pos. Lymph. | 44.5 | % | 12.0-35.5 | High | |
+1 | CD4/CD8 Ratio Profile | CD4/CD8 Ratio | 0.96 | | 0.92-3.72 | | |
+1 | CD4/CD8 Ratio Profile | WBC | 5.4 | x10E3/uL | 3.4-10.8 | | wbc |
+1 | CD4/CD8 Ratio Profile | RBC | 4.96 | x10E6/uL | 3.77-5.28 | | rbc |
+1 | CD4/CD8 Ratio Profile | Hemoglobin | 14.9 | g/dL | 11.1-15.9 | | hemoglobin |
+1 | CD4/CD8 Ratio Profile | Hematocrit | 45.8 | % | 34.0-46.6 | | hematocrit |
+1 | CD4/CD8 Ratio Profile | MCV | 92 | fL | 79-97 | | mcv |
+1 | CD4/CD8 Ratio Profile | MCH | 30.0 | pg | 26.6-33.0 | | mch |
+1 | CD4/CD8 Ratio Profile | MCHC | 32.5 | g/dL | 31.5-35.7 | | mchc |
+1 | CD4/CD8 Ratio Profile | RDW | 12.7 | % | 11.7-15.4 | | |
+1 | CD4/CD8 Ratio Profile | Platelets | 232 | x10E3/uL | 150-450 | | platelet-count |
+1 | CD4/CD8 Ratio Profile | Neutrophils | 47 | % | Not Estab. | | |
+1 | CD4/CD8 Ratio Profile | Lymphs | 42 | % | Not Estab. | | |
+1 | CD4/CD8 Ratio Profile | Monocytes | 7 | % | Not Estab. | | |
+1 | CD4/CD8 Ratio Profile | Eos | 3 | % | Not Estab. | | |
+1 | CD4/CD8 Ratio Profile | Basos | 1 | % | Not Estab. | | |
+1 | CD4/CD8 Ratio Profile | Neutrophils (Absolute) | 2.5 | x10E3/uL | 1.4-7.0 | | |
+1 | CD4/CD8 Ratio Profile | Lymphs (Absolute) | 2.3 | x10E3/uL | 0.7-3.1 | | |
+1 | CD4/CD8 Ratio Profile | Monocytes(Absolute) | 0.4 | x10E3/uL | 0.1-0.9 | | |
+1 | CD4/CD8 Ratio Profile | Eos (Absolute) | 0.1 | x10E3/uL | 0.0-0.4 | | |
+1 | CD4/CD8 Ratio Profile | Baso (Absolute) | 0.1 | x10E3/uL | 0.0-0.2 | | |
+1 | CD4/CD8 Ratio Profile | Immature Granulocytes | 0 | % | | | | no range; 'Available upon request' printed below the row
+1 | CD4/CD8 Ratio Profile | Immature Grans (Abs) | 0.0 | x10E3/uL | 0.0-0.1 | | |

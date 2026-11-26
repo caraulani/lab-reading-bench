@@ -1,0 +1,9 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv
+1 | Allergenspezifisches IgE | g6 Lieschgras | <0.10 | kU/l | | | | no per-row reference; class table printed below |
+1 | Allergenspezifisches IgE | g12 Roggen | <0.10 | kU/l | | | | |
+1 | Allergenspezifisches IgE | t3 Birke | 5.00 | kU/l | | | | |
+1 | Allergenspezifisches IgE | w6 Beifuß | 12.00 | kU/l | | | | |
+1 | Allergenspezifisches IgE | e1 Katzenschuppen | 5.00 | kU/l | | | | |
+1 | Allergenspezifisches IgE | e5 Hundeschuppen | 2.00 | kU/l | | | | |
+1 | Allergenspezifisches IgE | m2 Cladosporium herbarum | 2.00 | kU/l | | | | |
+1 | Allergenspezifisches IgE | d1 Dermatophagoides pteroniss. | 52.00 | kU/l | | | | |

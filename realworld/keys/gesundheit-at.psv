@@ -1,0 +1,54 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv
+1 | KLINISCHE CHEMIE / SERUM | GOT | 23 | U/l | <35 | | ast | |
+1 | KLINISCHE CHEMIE / SERUM | GPT | 35 | U/l | <45 | | alt | |
+1 | KLINISCHE CHEMIE / SERUM | GGT | 27 | U/l | <55 | | ggt | |
+1 | KLINISCHE CHEMIE / SERUM | Alk. Phosphatase | 98 | U/l | 0.-129 | | alp | range printed '0.-129' |
+1 | KLINISCHE CHEMIE / SERUM | Cholinesterase | 10835 | U/l | 5400-13200 | | | |
+1 | KLINISCHE CHEMIE / SERUM | LDH | 181 | U/l | 125-248 | | | |
+1 | KLINISCHE CHEMIE / SERUM | CK | 95 | U/l | <171 | | | |
+1 | KLINISCHE CHEMIE / SERUM | Alpha-Amylase | 65 | U/l | 28-100 | | | |
+1 | KLINISCHE CHEMIE / SERUM | Lipase | 37 | U/l | <60 | | | |
+1 | KLINISCHE CHEMIE / SERUM | Bilirubin gesamt | 0.68 | mg/dl | <1.00 | | total-bilirubin | |
+1 | KLINISCHE CHEMIE / SERUM | Cholesterin gesamt | 196 | mg/dl | <200 | | total-cholesterol | |
+1 | KLINISCHE CHEMIE / SERUM | HDL-Cholesterin | 65.0 | mg/dl | >35.0 | | hdl-cholesterol | |
+1 | KLINISCHE CHEMIE / SERUM | LDL-Cholesterin | 108 | mg/dl | <155 | | ldl-cholesterol | |
+1 | KLINISCHE CHEMIE / SERUM | Triglyzeride | 117 | mg/dl | <150 | | triglycerides | |
+1 | KLINISCHE CHEMIE / SERUM | Glucose | 90 | mg/dl | 60-100 | | glucose-fasting | fasting state not printed |
+1 | KLINISCHE CHEMIE / SERUM | BUN | 10.3 | mg/dl | 6-25 | | blood-urea-nitrogen | |
+1 | KLINISCHE CHEMIE / SERUM | Kreatinin | 0.98 | mg/dl | 0.50-1.20 | | creatinine-serum | |
+1 | KLINISCHE CHEMIE / SERUM | Harnsäure | 6.7 | mg/dl | 3.5-7.0 | | uric-acid | |
+1 | KLINISCHE CHEMIE / SERUM | Gesamteiweiß | 8.2 | g/dl | 6.0-8.0 | + | total-protein | '+' printed before the value means above range |
+1 | KLINISCHE CHEMIE / SERUM | Eisen | 74 | µg/dl | 60-160 | | serum-iron | |
+1 | KLINISCHE CHEMIE / SERUM | Transferrin | 272.0 | mg/dl | 200.0-380.0 | | | |
+1 | KLINISCHE CHEMIE / SERUM | Ferritin | 229.00 | ng/ml | 30.00-400.00 | | ferritin | |
+1 | KLINISCHE CHEMIE / SERUM | Natrium | 138 | mmol/l | 135-150 | | sodium-serum | |
+1 | KLINISCHE CHEMIE / SERUM | Kalium | 3.7 | mmol/l | 3.5-5.5 | | potassium-serum | |
+1 | KLINISCHE CHEMIE / SERUM | Chloride | 95 | mmol/l | 95-110 | | chloride-serum | |
+1 | KLINISCHE CHEMIE / SERUM | Calcium | 2.62 | mmol/l | 2.10-2.70 | | calcium-total | SI unit |
+1 | KLINISCHE CHEMIE / SERUM | Magnesium | 0.86 | mmol/l | 0.70-1.00 | | magnesium-serum | SI unit |
+1 | KLINISCHE CHEMIE / SERUM | Phosphor | 1.1 | mmol/l | 0.8-1.6 | | phosphorus-serum | SI unit |
+1 | KLINISCHE CHEMIE / SERUM | CRP | 1 | mg/l | <12 | | hs-crp | plain CRP, not high-sensitivity; the catalog has one CRP marker |
+1 | GERINNUNG | Normotest | 107 | % | 70-130 | | | |
+1 | GERINNUNG | aPTT | 36.5 | sec | 32.0-40.0 | | | |
+1 | GERINNUNG | Thrombinzeit | 16.5 | sec | 16.0-20.0 | | | |
+2 | ROTES BLUTBILD | Erythrozyten | 5.59 | T/l | 4.50-5.50 | + | rbc | |
+2 | ROTES BLUTBILD | Hämoglobin | 16.9 | g/dl | 13.0-17.0 | | hemoglobin | |
+2 | ROTES BLUTBILD | Hämatokrit | 46.8 | % | 43.0-50.0 | | hematocrit | |
+2 | ROTES BLUTBILD | MCV | 83.7 | fl | 80.0-96.0 | | mcv | |
+2 | ROTES BLUTBILD | MCH | 30.2 | pg | 28.0-33.0 | | mch | |
+2 | ROTES BLUTBILD | MCHC | 36.1 | g/dl | 33.0-36.0 | + | mchc | |
+2 | ROTES BLUTBILD | RDW-CV | 12.9 | % | 11.5-17 | | | |
+2 | ROTES BLUTBILD | Retikulozyten % | 1.52 | % | 0.50-1.50 | + | | |
+2 | WEISSES BLUTBILD | Leukozyten | 8.69 | g/l | 4.00-10.00 | | wbc | 'g/l' here means G/l (10^9/l), not grams |
+2 | THROMBOZYTEN | Thrombozyten | 285 | g/l | 150-360 | | platelet-count | 'g/l' = G/l |
+2 | DIFFERENTIALBLUTBILD | Segmentkernige% | 60 | % | 50-70 | | | |
+2 | DIFFERENTIALBLUTBILD | Lymphozyten% | 30 | % | 20-40 | | | |
+2 | DIFFERENTIALBLUTBILD | Monozyten % | 8 | % | 2-10 | | | |
+2 | DIFFERENTIALBLUTBILD | Eosinophile % | 1 | % | 1-4 | | | |
+2 | DIFFERENTIALBLUTBILD | Basophile % | 0 | % | 0-1 | | | |
+2 | DIFFERENTIALBLUTBILD | Segmentkernige | 5.24 | g/l | 1.90-8.00 | | | absolute count, G/l |
+2 | DIFFERENTIALBLUTBILD | Lymphozyten | 2.64 | g/l | 0.80-3.50 | | | |
+2 | DIFFERENTIALBLUTBILD | Monozyten | 0.67 | g/l | 0.20-0.70 | | | |
+2 | DIFFERENTIALBLUTBILD | Eosinophile | 0.11 | g/l | 0.00-0.40 | | | |
+2 | DIFFERENTIALBLUTBILD | Basophile | 0.0 | g/l | 0.0-0.2 | | | |
+3 | HORMONE | Thyroidea Stimulierendes Hormo | 3.22 | µIU/ml | 0.35-4.94 | | tsh | name truncated as printed |

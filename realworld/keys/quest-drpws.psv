@@ -1,0 +1,9 @@
+# page | section | analyte | value | unit | ref | flag | slug | note
+2 | Test values | Glucose | 115 | mg/dL | 65-99 mg/dL | H | glucose-fasting | unit printed inside the range column; also shown on page 1 as '115 mg/dL' on a risk bar
+2 | Test values | Hemoglobin A1c | 6.1 | % of total Hgb | <5.7 % of total Hgb | H | hba1c | also on page 1 bar
+2 | Test values | Total Cholesterol | 164 | mg/dL | 125-200 mg/dL | | total-cholesterol |
+2 | Test values | HDL Cholesterol | 81 | mg/dL | > OR = 46 mg/dL | | hdl-cholesterol |
+2 | Test values | Triglycerides | 45 | mg/dL | <150 mg/dL | | triglycerides |
+2 | Test values | LDL Cholesterol (Calculated) | 74 | mg/dL | <130 mg/dL (calc) | | ldl-cholesterol |
+2 | Test values | Non-HDL Cholesterol | 83 | mg/dL | | | | range column holds only 'mg/dL (calc)'
+2 | Test values | Cholesterol/HDL Ratio (Calculated) | 2.0 | | < OR = 5.0 (calc) | | |

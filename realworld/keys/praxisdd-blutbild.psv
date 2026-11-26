@@ -1,0 +1,84 @@
+# page | section | analyte | value | unit | ref | flag | slug | note | value_conv
+1 | BLUTBILD | Leukozyten | 5.2 | /nl | 3.9-10.0 | | wbc | |
+1 | BLUTBILD | Erythrozyten | 4.9 | /pl | 4.5-5.9 | | rbc | |
+1 | BLUTBILD | Hämoglobin | 14.9 | g/dl | 13.0-18.0 | | hemoglobin | |
+1 | BLUTBILD | Hämatokrit | 0.45 | l/l | 0.40-0.52 | | hematocrit | SI fraction | 45
+1 | BLUTBILD | MCV | 91 | fl | 82-98 | | mcv | |
+1 | BLUTBILD | MCH | 30 | pg | 28-32 | | mch | |
+1 | BLUTBILD | MCHC | 33 | g/dl | 32-36 | | mchc | |
+1 | BLUTBILD | Thrombozyten | 297 | /nl | 140-440 | | platelet-count | |
+1 | BLUTBILD | Seg. Granulozyten | 54.0 | % | 50.0-70.0 | | | |
+1 | BLUTBILD | Lymphozyten | 34.6 | % | 25.0-40.0 | | | |
+1 | BLUTBILD | Eosinophile Gran. | 1.7 | % | 1.0-5.0 | | | |
+1 | BLUTBILD | Basophile Gran. | 1.0 | % | 0.1-3.0 | | | |
+1 | BLUTBILD | Monozyten | 6.0 | % | 2.0-8.0 | | | |
+1 | BLUTBILD | Seg. Granulozyten abs. | 2.8 | /nl | 1.9-7.0 | | | |
+1 | BLUTBILD | Lymphozyten abs. | 1.8 | /nl | 1.0-4.0 | | | |
+1 | BLUTBILD | Eosinophile Gran. abs. | 0.1 | /nl | 0.0-0.5 | | | |
+1 | BLUTBILD | Basophile Gran. abs. | 0.1 | /nl | 0.0-0.3 | | | |
+1 | BLUTBILD | Monozyten abs. | 0.3 | /nl | 0.1-0.8 | | | |
+2 | BIOCHEMIE | Kalium | 4.2 | mmol/l | 3.5-5.1 | | potassium-serum | |
+2 | BIOCHEMIE | Natrium | 139 | mmol/l | 136-145 | | sodium-serum | |
+2 | BIOCHEMIE | Calcium | 2.48 | mmol/l | 2.20-2.65 | | calcium-total | SI unit |
+2 | BIOCHEMIE | Magnesium | 0.80 | mmol/l | 0.65-1.07 | | magnesium-serum | SI unit |
+2 | BIOCHEMIE | Phosphor anorg. | 1.28 | mmol/l | 0.87-1.45 | | phosphorus-serum | SI unit |
+2 | BIOCHEMIE | Chlorid | 103 | mmol/l | 98-107 | | chloride-serum | |
+2 | BIOCHEMIE | Ferritin | 62 | ng/ml | 33-266 | | ferritin | |
+2 | BIOCHEMIE | Transferrin | 2.67 | g/l | 2.00-3.60 | | | |
+2 | BIOCHEMIE | Transferrin Sättigungsgrad | 42 | % | 16-45 | | transferrin-saturation | |
+2 | BIOCHEMIE | Eisen | 29 | µmol/l | 10-25 | + | serum-iron | SI unit; '+' before the value, value in red |
+2 | BIOCHEMIE | Kupfer | 13.4 | µmol/l | 11.0-22.0 | | | |
+2 | BIOCHEMIE | Fe/Cu Quotient | 2.1 | | 0.6-1.4 | + | | |
+2 | BIOCHEMIE | Zink im Serum | 88 | µg/dl | 60-120 | | | |
+2 | BIOCHEMIE | Selen im Serum | 96.8 | µg/l | 74.0-139.0 | | | |
+2 | STOFFWECHSEL | Bilirubin ges. | 0.7 | mg/dl | 0.2-1.1 | | total-bilirubin | |
+2 | STOFFWECHSEL | Gamma-GT | 19 | U/l | < 60 | | ggt | |
+2 | STOFFWECHSEL | GOT | 21 | U/l | 10-50 | | ast | |
+2 | STOFFWECHSEL | GPT | 20 | U/l | 10-50 | | alt | |
+2 | STOFFWECHSEL | Cholinesterase | 9.21 | U/ml | 4.62-11.50 | | | |
+2 | STOFFWECHSEL | Alk.Phosphatase | 62 | U/l | 25-124 | | alp | |
+2 | STOFFWECHSEL | GLDH | 1.4 | U/l | < 6.4 | | | |
+2 | STOFFWECHSEL | LDH | 158 | U/l | 100-250 | | | |
+2 | STOFFWECHSEL | Amylase | 35 | U/l | 20-104 | | | |
+2 | STOFFWECHSEL | Lipase | 43 | U/l | 11-70 | | | |
+2 | STOFFWECHSEL | HbA1c | 5.6 | % | 4.1-6.1 | | hba1c | |
+2 | STOFFWECHSEL | HbA1c (mol) | 38 | mmol/mol | 20-44 | | | same HbA1c in IFCC units; the catalog slug goes to the % row |
+2 | STOFFWECHSEL | Glukose im Serum | 94 | mg/dl | 60-115 | | glucose-fasting | fasting state not printed |
+2 | STOFFWECHSEL | EAG (durchschn. BZ) | 114 | mg/dl | 60-126 | | | |
+2 | STOFFWECHSEL | HBDH | 93 | U/l | 72-182 | | | |
+3 | STOFFWECHSEL | CK gesamt (CK-NAC) | 129 | U/l | < 190 | | | |
+3 | STOFFWECHSEL | CK-MB | 15 | U/l | < 25 | | | |
+3 | STOFFWECHSEL | Triglyceride | 76 | mg/dl | 40-175 | | triglycerides | |
+3 | STOFFWECHSEL | Cholesterin | 185 | mg/dl | 150-280 | | total-cholesterol | |
+3 | STOFFWECHSEL | HDL-Cholesterin | 59 | mg/dl | > 55 | | hdl-cholesterol | |
+3 | STOFFWECHSEL | LDL-Chol.rech | 111 | mg/dl | < 150 | | ldl-cholesterol | |
+3 | STOFFWECHSEL | Harnsäure | 4.5 | mg/dl | 3.5-7.2 | | uric-acid | |
+3 | STOFFWECHSEL | Zonulin im Serum | 34.5 | ng/ml | 20.0-38.0 | | | |
+3 | VITAMINE | Folsäure | 8.9 | ng/ml | 2.0-16.0 | | folate-serum | |
+3 | VITAMINE | Vitamin B12 | 1509 | pg/ml | 400-970 | + | vitamin-b12 | |
+3 | VITAMINE | Glutathion gesamt | 984 | µmol/l | 869-1271 | | | |
+3 | VITAMINE | Glutathion oxi. | 224 | µmol/l | 41-227 | | | |
+3 | VITAMINE | Glutathion red. | 537 | µmol/l | 570-1011 | - | | |
+3 | VITAMINE | Glut.red./Glut.ges. | 55 | % | 55-70 | | | |
+3 | NIERE | Harnstoff | 36 | mg/dl | 13-43 | | | urea, not urea nitrogen |
+3 | NIERE | Kreatinin | 0.8 | mg/dl | 0.5-1.2 | | creatinine-serum | |
+3 | NIERE | Cystatin C im Serum | 0.97 | mg/l | 0.53-1.05 | | | |
+3 | NIERE | Glom. Filtrationsrate (CKD-Epi) | 86 | ml/min | 80-160 | | egfr | printed unit is ml/min (no /1.73m2) |
+3 | PLASMA-PROTEINE | Ges.Eiweiß | 7.5 | g/dl | 6.4-8.3 | | total-protein | |
+3 | IMMUNSYSTEM | Immunglobulin E gesamt | 142 | kU/l | < 87 | + | | |
+3 | IMMUNSYSTEM | Immunglobulin A | 2.6 | g/l | 0.7-4.0 | | | |
+3 | IMMUNSYSTEM | Immunglobulin G | 11.39 | g/l | 7.00-16.00 | | | |
+3 | IMMUNSYSTEM | Immunglobulin M | 0.58 | g/l | 0.40-2.30 | | | |
+3 | IMMUNSYSTEM | CRP | 0.6 | mg/l | < 5.0 | | hs-crp | plain CRP; the catalog has one CRP marker |
+4 | RHEUMAFAKTOREN | Antistreptolysintiter | 234 | IE/ml | < 200 | + | | |
+4 | RHEUMAFAKTOREN | Rheumafaktor | <5 | IU/ml | < 14 | | | |
+4 | SCHILDDRÜSE | TSH (hypersensitiv) | 1.57 | µIU/ml | 0.35-2.50 | | tsh | |
+4 | SCHILDDRÜSE | Freies T3 (fT3) | 3.2 | pg/ml | 2.0-4.2 | | free-t3 | |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT | Kalium (Vollblut) | 1636 | mg/l | 1549-1715 | | | whole blood, not serum potassium |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT | Natrium (Vollblut) | 2040 | mg/l | 1618-1822 | + | | whole blood, not serum sodium |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT | Calcium (Vollblut) | 75.8 | mg/l | 67.6-79.6 | | | whole blood |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT | Magnesium (Vollblut) | 30.0 | mg/l | 30.4-36.4 | - | | whole blood |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT, hämatokritkorreliert | K (HCT-korr.) | 1656 | mg/l | 1549-1715 | | | |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT, hämatokritkorreliert | Na (HCT-korr.) | 2019 | mg/l | 1618-1822 | + | | |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT, hämatokritkorreliert | Ca (HCT-korr.) | 75.1 | mg/l | 67.6-79.6 | | | |
+4 | MIKRONÄHRSTOFFE IM VOLLBLUT, hämatokritkorreliert | Mg (HCT-korr.) | 29.7 | mg/l | 30.4-36.4 | - | | |
