@@ -9,6 +9,7 @@
     "corpus:test": "tsx corpus/tests/run.mts"
   },
   "devDependencies": {
+    "@lifefrom/units": "1.0.0",
     "pdfjs-dist": "^6.1.200",
     "playwright": "^1.65.1",
     "sharp": "^0.35.5",

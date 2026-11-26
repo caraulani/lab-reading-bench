@@ -20,3 +20,15 @@ export default async function read(r: Report): Promise<Parsed> {
 
 `empty.mts` is the smallest valid reader (it reads nothing, so it scores every row as missed). It shows the harness running.
 The LifeFrom reader measured in `results/` is not in this repository.
+
+## Added after the preregistered test (26 Nov 2026, exploratory)
+- `openrouter.mts` now writes `<report id>.meta.json` beside each new reply (OpenRouter response id, the model that
+  answered, the provider, usage and cost). Earlier replies have no meta file and are read as before. `PROMPT=printed`
+  asks for every value exactly as printed (no conversion); `CACHE_TAG=…` gives an independent repeat its own cache
+  directory; corpus page pictures (`Report.files`) are sent as images with `INPUT=image`.
+- `convert.mts` wraps a reader that returns values as printed and converts them in code with `@lifefrom/units` 1.0.0
+  ("the model reads, code converts").
+- `printed-oracle.mts` returns exactly what is printed; it checks `convert.mts` and the as-printed scoring.
+- `parse-reply.mts` is the reply parser `openrouter.mts` has always used, split out so scripts can share it.
+
+The runs that use them are in `exploratory/run-all.sh`.

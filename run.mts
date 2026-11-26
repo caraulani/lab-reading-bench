@@ -29,7 +29,7 @@ const only = arg("only")?.split("=");
 const DIR = import.meta.dirname;
 const READER = arg("reader");
 if (!READER) { console.error("usage: npx tsx run.mts --reader readers/<name>.mts"); process.exit(2); }
-const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (arg("corpus") ? `-corpus-${arg("split", "test")}-${arg("input", "text")}` : "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "") + (arg("format") ? `-${arg("format")}` : "");
+const NAME = basename(READER).replace(/\.[cm]?[tj]s$/, "") + (arg("corpus") ? `-corpus-${arg("split", "test")}-${arg("input", "text")}` : "") + (process.env.MODEL ? "-" + process.env.MODEL.replace(/\//g, "_") : "") + (process.env.INPUT === "image" ? `-${process.env.IMAGE_STYLE ?? "clean"}` : "") + (process.env.PROMPT ? `-${process.env.PROMPT}` : "") + (process.env.CACHE_TAG ? `-${process.env.CACHE_TAG}` : "") + (process.env.UNITS_FIX === "1" ? "-unitsfix" : "") + (arg("format") ? `-${arg("format")}` : "");
 const reader = (await import(pathToFileURL(resolve(READER)).href)).default as (r: Report) => Parsed | Promise<Parsed>;
 
 const unitKey = (u: string) => u.toLowerCase().replace(/[µμ]/g, "u").replace(/mcg/g, "ug").replace(/×/g, "x").replace(/\s/g, "");
@@ -86,6 +86,7 @@ const clusters = new Map<string, { n: number; examples: string[] }>();
 const cluster = (key: string, example: string) => { const c = clusters.get(key) ?? { n: 0, examples: [] }; c.n++; if (c.examples.length < SHOW && !c.examples.includes(example)) c.examples.push(example); clusters.set(key, c); };
 const crit = { truth: 0, caught: 0, missedRow: 0, misread: 0, falseAlarm: 0 };
 let phantom = 0, rowsRead = 0, crashed = 0, wrongN = 0, wrongConverted = 0; // wrong values, and how many were printed in a unit that needs converting
+const rowsOut: string[] = []; // --rows-out FILE: every scored row as JSON lines (report, marker, outcome), for comparing runs
 const t0 = performance.now();
 
 // read every report first, several at a time (--concurrency), then score in order
@@ -114,6 +115,7 @@ for (const r of reports) {
     const row = p.rows.find((x) => x.slug === t.slug);
     const s = scoreRow(t, row);
     bump(total, s.outcome);
+    if (arg("rows-out")) rowsOut.push(JSON.stringify({ id: r.id, slug: t.slug, outcome: s.outcome, converted: t.converted, value: row && row.text === undefined ? row.value : null }));
     if (s.outcome === "wrong") { wrongN++; if (t.converted) wrongConverted++; }
     if (r.tags.group) { const k = `${r.tags.group}|${t.slug}`; const caught = !!row && row.text === undefined && isCritical(t.slug, row.value); (inv.get(k) ?? inv.set(k, []).get(k)!).push({ ok: s.outcome === "ok", critical: t.critical, caught }); }
     for (const [k, v] of tagList) bump(((slices[k] ??= {})[v] ??= {}), s.outcome);
@@ -137,6 +139,7 @@ for (const r of reports) {
   if (r.takenISO) { const d = p.takenISO === r.takenISO ? "ok" : p.takenISO ? "wrong" : "missed"; bump(dates, d); if (d !== "ok") cluster(`date ${d} | ${r.tags.locale} ${r.kind}`, `${r.id}  want ${r.takenISO} read ${p.takenISO}`); }
 }
 const ms = performance.now() - t0;
+if (arg("rows-out")) writeFileSync(arg("rows-out")!, rowsOut.join("\n") + "\n");
 
 /* ---------- report ---------- */
 const rows = Object.values(total).reduce((a, b) => a + b, 0);

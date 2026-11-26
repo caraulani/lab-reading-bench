@@ -10,23 +10,38 @@
    Spend is counted from OpenRouter's reported cost per call. Past BUDGET_USD, or when the account's balance falls below
    MIN_BALANCE_USD (default 5), every further report fails fast and is left out of the scores (counted as a crash).
    Temperature 0, one retry. Every reply is kept in cache/<model>[-<image style>]/<report id>.txt: a re-run reads the reply
-   instead of paying for it again, and anyone can check what the model said. */
+   instead of paying for it again, and anyone can check what the model said.
+
+   Added 26 Nov 2026, after the preregistered runs (exploratory; the preregistered prompt and settings are unchanged):
+     - every new call also writes cache/<dir>/<report id>.meta.json: OpenRouter's response id, the model that answered
+       (the response's `model` field), the `provider` that served it, the usage (tokens and cost) and the time. Replies
+       cached before this have no .meta.json and are read as before.
+     - PROMPT=printed asks for every value, range and unit exactly as printed, with no conversion (readers/convert.mts
+       converts them in code afterwards). Its replies go to cache/<model>[-<image style>]-printed/.
+     - CACHE_TAG=rep2 keeps a run's replies in cache/<model>[...]-rep2/: an independent repeat that never reads another
+       run's replies.
+     - a corpus report (run.mts --corpus … --input photo, corpus/score.mts) sends each page picture in Report.files.
+       INPUT=image IMAGE_STYLE=corpus-photo (or corpus-scan_clean …) names its cache directory. */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ANALYTES, type Report } from "../generate.mts";
-import type { Parsed, ReadRow } from "../run.mts";
+import type { Parsed } from "../run.mts";
+import { parseReply } from "./parse-reply.mts";
 
 const KEY = process.env.OPENROUTER_API_KEY;
 const MODEL = process.env.MODEL;
 const BUDGET = Number(process.env.BUDGET_USD ?? "1");
 const MIN_BALANCE = Number(process.env.MIN_BALANCE_USD ?? "5");
 const IMAGE = process.env.INPUT === "image" ? process.env.IMAGE_STYLE ?? "clean" : null;
+const PRINTED = process.env.PROMPT === "printed";
+if (process.env.PROMPT && !PRINTED) throw new Error("PROMPT is unset (the preregistered prompt) or printed");
+const TAG = process.env.CACHE_TAG ?? "";
 if (!KEY || !MODEL) throw new Error("set OPENROUTER_API_KEY and MODEL");
 let spent = 0, calls = 0, stopped = "";
 process.on("exit", () => console.error(`[${MODEL}${IMAGE ? ` ${IMAGE}` : ""}] ${calls} calls, $${spent.toFixed(3)}${stopped ? ` (stopped: ${stopped})` : ""}`));
 
 const ROOT = join(import.meta.dirname, "..");
-const CACHE = join(ROOT, "cache", MODEL.replace(/\//g, "_") + (IMAGE ? `-${IMAGE}` : ""));
+const CACHE = join(ROOT, "cache", MODEL.replace(/\//g, "_") + (IMAGE ? `-${IMAGE}` : "") + (PRINTED ? "-printed" : "") + (TAG ? `-${TAG}` : ""));
 mkdirSync(CACHE, { recursive: true });
 
 const CATALOG = ANALYTES.map((a) => `${a.slug}: ${a.names.US[a.names.US.length - 1]} (report in ${a.unit})`).join("\n");
@@ -42,6 +57,21 @@ ${CATALOG}
 - takenISO: the date the sample was collected, if printed.
 Return nothing but the JSON object.`;
 
+// the reading-only variant (exploratory, 26 Nov 2026): the same task with every conversion taken out
+const CATALOG_PRINTED = ANALYTES.map((a) => `${a.slug}: ${a.names.US[a.names.US.length - 1]}`).join("\n");
+const SYSTEM_PRINTED = `You read laboratory reports. Extract every test result printed on the report.
+
+Return only JSON: {"takenISO": "YYYY-MM-DD" or null, "rows": [{"slug": string, "value": number, "unit": string, "low": number|null, "high": number|null, "flag": "H"|"L"|null}]}
+
+- slug: the matching id from this list. Skip results that match none of them.
+${CATALOG_PRINTED}
+- value, low, high: the result and the lab's reference range exactly as printed, in the unit the lab printed. Do not convert anything. Read decimal commas correctly (a German "2,24" is 2.24; a US "2,240" is 2240). low or high is null when the range has no such bound.
+- unit: the unit exactly as the lab printed it for this result (copy its spelling), or "" if none is printed.
+- flag: the lab's own printed flag, H or L, only if the lab printed one with a direction (H, HIGH, ↑, + mean H; L, LOW, ↓, - mean L). A star alone has no direction: then use the range. Otherwise null.
+- takenISO: the date the sample was collected, if printed.
+Return nothing but the JSON object.`;
+
+const dataUrl = (f: string) => `data:image/${f.endsWith(".png") ? "png" : "jpeg"};base64,${readFileSync(f).toString("base64")}`;
 const imageUrl = (id: string) => {
   const png = join(ROOT, "images", IMAGE!, `${id}.png`), jpg = join(ROOT, "images", IMAGE!, `${id}.jpg`);
   const f = existsSync(png) ? png : jpg;
@@ -58,23 +88,28 @@ async function balanceOk(): Promise<boolean> {
   } catch { return true; }
 }
 
-async function call(r: Report): Promise<string> {
+type Meta = { id?: string; model?: string; provider?: string; created?: number; usage?: Record<string, unknown> };
+async function call(r: Report & { files?: string[] }): Promise<{ text: string; meta: Meta }> {
+  if (!IMAGE && r.files?.some((f) => /\.(png|jpe?g)$/i.test(f))) throw new Error("page pictures need INPUT=image (otherwise the transcript would be sent)");
   if (stopped) throw new Error(stopped);
   if (spent >= BUDGET) { stopped = "budget reached"; throw new Error(stopped); }
   if (calls % 20 === 0 && !(await balanceOk())) { stopped = `account balance below $${MIN_BALANCE}`; throw new Error(stopped); }
+  const pages = IMAGE && r.files?.length ? r.files.filter((f) => /\.(png|jpe?g)$/i.test(f)) : null;
   const user = IMAGE
-    ? [{ type: "text", text: "The lab report:" }, { type: "image_url", image_url: { url: imageUrl(r.id) } }]
+    ? pages?.length
+      ? [{ type: "text", text: pages.length > 1 ? `The lab report (${pages.length} pages, in order):` : "The lab report:" }, ...pages.map((f) => ({ type: "image_url", image_url: { url: dataUrl(f) } }))]
+      : [{ type: "text", text: "The lab report:" }, { type: "image_url", image_url: { url: imageUrl(r.id) } }]
     : textOf(r);
   const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST", signal: AbortSignal.timeout(240_000),
     headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json", "X-Title": "lab-reading-bench" },
-    body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 8000, usage: { include: true }, messages: [{ role: "system", content: SYSTEM }, { role: "user", content: user }] }),
+    body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 8000, usage: { include: true }, messages: [{ role: "system", content: PRINTED ? SYSTEM_PRINTED : SYSTEM }, { role: "user", content: user }] }),
   });
-  const j = (await res.json()) as { choices?: { message?: { content?: string } }[]; usage?: { cost?: number }; error?: { message?: string } };
+  const j = (await res.json()) as Meta & { choices?: { message?: { content?: string } }[]; usage?: { cost?: number }; error?: { message?: string } };
   calls++;
   spent += j.usage?.cost ?? 0;
   if (!res.ok || j.error) throw new Error(`http ${res.status}: ${j.error?.message ?? ""}`.slice(0, 120));
-  return j.choices?.[0]?.message?.content ?? "";
+  return { text: j.choices?.[0]?.message?.content ?? "", meta: { id: j.id, model: j.model, provider: j.provider, created: j.created, usage: j.usage } };
 }
 
 export default async function read(r: Report): Promise<Parsed> {
@@ -85,18 +120,14 @@ export default async function read(r: Report): Promise<Parsed> {
   if (!cached && process.env.OFFLINE) throw new Error("not in the cache (offline)");
   if (text === EMPTY) text = "";
   else if (!cached) for (let attempt = 0; attempt < 2; attempt++) {
-    try { text = await call(r); writeFileSync(file, text || EMPTY); break; } catch (e) { if (attempt || stopped) throw e; }
+    try {
+      const got = await call(r);
+      text = got.text;
+      writeFileSync(file, text || EMPTY);
+      writeFileSync(join(CACHE, `${r.id}.meta.json`), JSON.stringify({ requested: MODEL, prompt: PRINTED ? "printed" : "preregistered", ...got.meta, saved: new Date().toISOString() }, null, 1) + "\n");
+      break;
+    } catch (e) { if (attempt || stopped) throw e; }
   }
   // a reply with no usable JSON reads nothing: every result on the report counts as missed (not left out of the scores)
-  const m = text.match(/\{[\s\S]*\}/);
-  let j: { takenISO?: string | null; rows?: Partial<ReadRow>[] } = {};
-  try { if (m) j = JSON.parse(m[0]); } catch { j = {}; }
-  const n = (x: unknown) => (typeof x === "number" && Number.isFinite(x) ? x : typeof x === "string" && x.trim() && Number.isFinite(Number(x)) ? Number(x) : null);
-  const rows: ReadRow[] = (j.rows ?? []).filter((x) => x && typeof x.slug === "string" && n(x.value) !== null).map((x) => ({
-    slug: x.slug!, printed: x.slug!, value: n(x.value)!, unit: String(x.unit ?? ""), low: n(x.low), high: n(x.high),
-    ...(x.flag === "H" || x.flag === "L" ? { flag: x.flag } : {}),
-  }));
-  // a marker returned twice: the first wins, as in the rule-based reader
-  const seen = new Set<string>();
-  return { rows: rows.filter((x) => (seen.has(x.slug) ? false : (seen.add(x.slug), true))), takenISO: j.takenISO ?? null };
+  return parseReply(text);
 }
