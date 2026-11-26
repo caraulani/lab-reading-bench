@@ -1,6 +1,6 @@
 # lab-reading-bench
 
-*By [Julian Caraulani](https://github.com/caraulani) ([ORCID 0009-0006-3889-3563](https://orcid.org/0009-0006-3889-3563)), November 2026. Code MIT, results and write-up CC BY 4.0 ([LICENSING.md](LICENSING.md)). The model tests are preregistered: [PREREGISTRATION.md](PREREGISTRATION.md), committed before any model read the test reports. Its OpenTimestamps proof (`PREREGISTRATION.md.ots`) holds only pending calendar attestations: it has not been upgraded to a Bitcoin attestation (the `ots` client was not available when this was checked on 25 Nov 2026), so for now the git commit date is the evidence of when it was written. Deviations from it are listed under "Deviations from the preregistration" below.*
+*By [Julian Caraulani](https://github.com/caraulani) ([ORCID 0009-0006-3889-3563](https://orcid.org/0009-0006-3889-3563)), November 2026. Code MIT, results and write-up CC BY 4.0 ([LICENSING.md](LICENSING.md)). The model tests are preregistered: [PREREGISTRATION.md](PREREGISTRATION.md), committed before any model read the test reports. Its OpenTimestamps proof (`PREREGISTRATION.md.ots`) was upgraded on 26 Nov 2026 to Bitcoin attestations: the file's SHA-256 is committed in blocks 976320, 976325 and 976355, the earliest mined at 20:48 UTC on 17 Nov 2026, before the first seed-5 model run on 18 Nov (`ots verify` needs a Bitcoin node; the three blocks' Merkle roots were checked against a public block explorer). Deviations from it are listed under "Deviations from the preregistration" below.*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24341108.svg)](https://doi.org/10.5281/zenodo.24341108) [![CI](https://github.com/caraulani/lab-reading-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/caraulani/lab-reading-bench/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/code-MIT-black.svg)](LICENSE) [![Results: CC BY 4.0](https://img.shields.io/badge/results-CC%20BY%204.0-black.svg)](LICENSE-CC-BY-4.0)
 
@@ -59,7 +59,7 @@ Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% → 81.3% (�
 
 **Deviations from the preregistration.**
 - **The rule-based reader was changed after its seed-5 errors were seen.** Its OCR unit handling ("µmol/L" read as "pmol/L") was fixed after the seed-5 image results showed the error, and the seed-5 image numbers for the rule-based reader in the tables are from the fixed reader. The preregistration named this reader as a reference point tuned on the seed-5 image set, but the fix itself came after those images were scored, so the rule-based reader's seed-5 image results, and the H3 comparison that uses them, are not a preregistered test of that reader. The repository history does not show whether the seed-6 images were read before or after the fix, so the seed-6 rule-based numbers should not be counted as held out either.
-- **Steps 2 and 3 were cut by budget:** Qwen 3.5 stopped after 50 of 300 reports, Gemini 3.8 Flash stopped before finishing text and images, and Sonnet 5.5 was not run on images (as reported above).
+- **Steps 2 and 3 were cut by budget:** Qwen 3.5 stopped after 50 of 300 reports; Gemini 3.8 Flash read 143 of the 150 step-3 text reports, 87 of 97 clean and 84 of 97 photo images on seed 5, and about half of the seed-6 images, so its 100% is over what it read, not over the full set; Sonnet 5.5 was not run on images (as reported above). Unread reports are reported, not imputed.
 
 **What we changed in our own product because of it.** The image tier showed that LifeFrom's photo path read "µmol/L" as "pmol/L". A creatinine of 149 µmol/L then stayed unconverted and raised a false critical alarm. We fixed the OCR unit handling, which took wrong values on clean images from 2.7% to 0.6% and false critical alarms from 10 to 1. The 80% clean-image accuracy above is after that fix.
 
@@ -69,13 +69,29 @@ Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% → 81.3% (�
 |---|---|---|---|---|---|---|---|
 | Rule-based reader (same 150 reports) | 100.0% | 0 | 45/45 | 99.8% | 80.0% | 75.4% | none |
 | Claude Sonnet 5.5 | 100% | 0 | 45/45 | 100% | (not run) | (not run) | $2.27 |
-| Gemini 3.8 Flash | 100% | 0 | 45/45 | 100% | 100% (0 wrong) | 100% (0 wrong) | $4.21 |
+| Gemini 3.8 Flash (read 143 of 150 text reports, 87 of 97 clean and 84 of 97 photo images) | 100% of what it read | 0 | 45/45 | 100% | 100% (0 wrong) | 100% (0 wrong) | $4.21 |
 
 Gemini 3.8 Flash's preregistered caps stopped it before it finished: 7 of 150 text reports, 10 of 97 clean and 13 of 97 photo images (seed 5), and about half of the held-out seed-6 images were not read. These are reported, not imputed. Everything it did read was correct, including all 30 critical values in the images it read. Sonnet on images was cut from the plan for cost.
 
 **Hypotheses, updated with step 3.** H2 is **not supported for Sonnet 5.5 and Gemini 3.8 Flash.** Both were at 100% against the rules' 99.8% on the same reports, so they matched or beat the rules, though the intervals overlap. H3 holds for Gemini (photo minus clean: 0 points). H1 and H4 are unchanged: neither model made a wrong value or missed a critical one.
 
 Not tested: frontier models (GPT-5.6 Sol and Terra, Claude Opus).
+
+## Statistics
+Two kinds of interval are used, and they answer different questions.
+
+- **Wilson and Newcombe (row-level).** Every rate in `results/*.md` carries a Wilson 95% interval, and every difference quoted above (for example photo minus clean, −4.6 points, 95% CI −7.3 to −1.9) is Newcombe's hybrid score interval (method 10), built from the two Wilson intervals. Both treat each result as an independent draw and the two arms of a difference as independent samples. `npx tsx stats/differences.mts` recomputes every one of them from the counts in `results/` (after re-scoring the cached replies offline and checking they give the published totals); all reproduce.
+- **Cluster bootstrap (set-level).** Results on one report are not independent, and the five printings of one set of results share its values. `stats/bootstrap.mts` resamples whole sets of results (10,000 resamples, seed 20261126, percentile intervals), pairing the arms of each comparison; [results/cluster-bootstrap.md](results/cluster-bootstrap.md) has every interval, with report-level ones beside them. Headline set-level intervals, seed 5 text:
+
+| Reader | Correct | Wrong | Same answer in all 5 printings |
+|---|---|---|---|
+| Rule-based reader | 99.92% (99.81 to 100.00) | 0 | 99.6% (99.1 to 100.0) |
+| Claude Haiku 5.5 | 99.90% (99.80 to 99.98) | 0.081% (0.019 to 0.166) | 99.5% (99.0 to 99.9) |
+| GPT-5.6 Luna | 99.64% (99.48 to 99.79) | 0.36% (0.21 to 0.52) | 98.2% (97.4 to 98.9) |
+| Llama 4 Maverick | 97.50% (96.93 to 97.99) | 2.44% (1.97 to 2.98) | 88.5% (86.2 to 90.6) |
+| DeepSeek V4 Flash | 86.4% (81.7 to 91.0) | 0.53% (0.22 to 0.93) | 48.6% (36.1 to 62.5) |
+
+  Format invariance, model minus rules: Haiku −0.1 points (−0.6 to +0.5), Luna −1.4 (−2.3 to −0.5), Llama −11.1 (−13.3 to −9.1), DeepSeek −51.0 (−63.5 to −37.1). Photo minus clean, seed 5: Haiku +0.06 (0.00 to +0.19), Luna +0.22 (−0.27 to +0.66), Llama −0.61 (−1.56 to +0.39). The conclusions above do not change; DeepSeek's intervals widen most, because its empty replies take out whole reports. A rate of 0 or 100% has no bootstrap spread; for those the Wilson interval is the one to use. The rule-based reader's image runs (OCR + rules) cannot be bootstrapped: its code is not in this repository, and today's LifeFrom code does not re-make those 17-18 Nov runs, so only their published totals and Newcombe intervals exist.
 
 ## What the reports vary
 - **Five lab styles:** US, UK, German, Spanish and Romanian, with their own marker names, column orders and headers (patient lines, dates, phone numbers and notes full of numbers that aren't results).
@@ -87,7 +103,7 @@ Not tested: frontier models (GPT-5.6 Sol and Terra, Claude Opus).
 - **Formats:** printed text lines, CSV exports (comma or semicolon, quoted cells, separate low/high columns), FHIR R4 bundles (LOINC and UCUM, with or without the text name), and HL7 v2.5.1 ORU^R01 messages (`--format hl7`), the format lab systems send results to EHRs in: OBX value, unit, range and flag, coded in LOINC on most messages and with a lab's local codes on the rest.
 - **The truth:** 41 common markers. About 70% of values are in range, 25% outside, and 5% at critical levels, kept clear of the threshold so rounding can't move them across it.
 
-Everything is drawn from one seeded generator, so a seed always gives the same reports. Conversion factors are the published ones, written out in `generate.mts`, so a reader with a wrong factor produces wrong values here.
+Everything is drawn from one seeded generator, so a seed always gives the same reports. Conversion factors are the published ones, written out in `generate.mts`, so a reader with a wrong factor produces wrong values here. Each factor is listed with a source in [docs/conversion-factors.md](docs/conversion-factors.md).
 
 ## What it scores
 For every row on every report:
@@ -100,7 +116,7 @@ For every row on every report:
 | unit | the right number, but the unit not recognised |
 | unconverted | an SI value left in SI where the reader normally converts |
 
-It also scores the lab's flag, the reference range, the collection date, and rows read that are not on the report. Most important of all is **critical-value recall**: whether a value at a level a lab phones through (`critical.mts`) is still critical after reading. Rates carry Wilson 95% intervals. `thresholds.json` holds the gates used as launch criteria.
+It also scores the lab's flag, the reference range, the collection date, and rows read that are not on the report. Most important of all is **critical-value recall**: whether a value at a level a lab phones through (`critical.mts`; thresholds and their source in [docs/critical-values.md](docs/critical-values.md)) is still critical after reading. Rates carry Wilson 95% intervals (see "Statistics" below for intervals that allow for clustering). `thresholds.json` holds the gates used as launch criteria.
 
 ```
 npm i
@@ -165,6 +181,8 @@ Models on HL7 (seed 4, 80 messages, exploratory, not preregistered):
 - **The v0.4.x generator draws each value independently.** Results that are tied in real reports are not tied here: a creatinine of 149 µmol/L can be printed beside an eGFR of 107, a transferrin saturation does not follow from iron and TIBC, and total cholesterol does not follow from LDL, HDL and triglycerides. Reference intervals are not sex-specific, so a female report can carry the male testosterone interval. This does not affect the reading scores (the key is computed from what is printed) but the reports are not clinically plausible as a whole. The corpus generator fixes this (corpus/METHODS.md §5).
 - **Lab names in the v0.4.x reports** ("Riverside Pathology", "Summit Diagnostics" and others) are invented but sound like real laboratories, and the US test names follow common US commercial-lab printouts. They are kept unchanged so that published results stay reproducible. Corpus reports use unmistakably invented names and print "SYNTHETIC — not a real lab" on every page.
 - 41 markers and five lab styles. Real reports carry hundreds of markers and many more formats.
+- **The rule-based reader is closed.** Its code is part of the LifeFrom app and is not in this repository, so others cannot re-run it; treat it as a closed baseline. Its text results re-make exactly from the LifeFrom code of 26 Nov 2026 (`readers/lifefrom-local.mts`); its image results do not (see Statistics). Every model result can be re-scored from `cache/` without calling a model.
+- **One run per model.** Each model read each report once, at temperature 0. Run-to-run variation is not measured for the preregistered test; the seed-4 GPT-5.6 Luna repeat above (8 and then 4 wrong values) shows it exists.
 
 ## lab-report-corpus (v1.0.0 of the corpus, 25 Nov 2026)
 `corpus/` extends the generator into a document-AI and OCR dataset: 4,000 fictional reports in US, UK, German, Spanish,
@@ -173,6 +191,9 @@ with perspective, blur, shadow and JPEG), multi-page and cumulative reports, int
 key with boxes and tagged hard cases. See [corpus/README.md](corpus/README.md) and [corpus/METHODS.md](corpus/METHODS.md). The full corpus is on Hugging Face: https://huggingface.co/datasets/lifefrom/lab-report-corpus.
 `run.mts --corpus` scores a corpus split with this harness; `corpus/score.mts` scores the full key, including abstention
 and reading separately from unit conversion. The reports above are unchanged (checked by hash in `corpus/tests/run.mts`).
+
+## Competing interests
+The author builds LifeFrom: both the rule-based reader measured here and the product it is part of, which reads people's lab reports. The benchmark, its generator and that reader's fixes were written by the same team.
 
 ## Related work
 - Synthetic laboratory measurements for evaluating LLM reference-range classification (JMIR preprint, 2026): https://preprints.jmir.org/preprint/113569
