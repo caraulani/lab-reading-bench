@@ -48,6 +48,8 @@ DeepSeek V4 Flash returned 17 empty replies out of 300. As preregistered, each c
 
 Held-out seed 6 (43 reports) points the same way: OCR + rules 83.4% → 81.3% (−2.1 points, CI −5.8 to +1.6); Haiku, Luna and Llama within ±0.4 points. On images, most wrong values are still conversions (Luna 10 of 10 clean, 4 of 6 photo; Llama 57 of 59 and 62 of 69). The photo adds the first real misreads of printed numbers.
 
+**Correction (26 Nov 2026): what the rule-based image rows measure.** The OCR + rules rows above fed the rules Tesseract's own text output, split by line. LifeFrom's app did not read photos that way: it rebuilt lines from word positions, and on tilted photos that put a test name and the next row's value on one line. Re-run with the app's path as it was, the same 97 photos gave 751 values right (not 1,351), 350 wrong and 33 false critical alarms; clean images were unaffected. The published rows therefore describe a harness pipeline, not the app at the time. The app now builds photo lines from Tesseract's line grouping with the tilt removed (1,366 right, 64 wrong, 4 false alarms on the same photos). Model rows are unaffected. Details and both pipelines: `results/cluster-bootstrap.md` and the reader notes in `readers/`.
+
 **Hypotheses**
 
 | | Prediction | Result |
