@@ -283,7 +283,10 @@ with the matrix that made it. The PDF's text layer comes from the same layout.
 studies (condition, severity, layout, language); abstention. Not for: clinical decisions, estimating how common any
 result is, or validating a medical device on its own.
 
-**Distribution.** Built locally; not yet published anywhere. Licence CC BY 4.0 (data), MIT (code).
+**Distribution.** The built corpus (PDFs, page pictures, answer keys and tables) is on Hugging Face:
+https://huggingface.co/datasets/lifefrom/lab-report-corpus. Its generator, this card and the baseline results are archived
+with lab-reading-bench v0.5.0 on Zenodo (doi:10.5281/zenodo.24543314); that archive holds the code, not the built files,
+and `corpus/scripts/build.sh` rebuilds the corpus from it. Licence CC BY 4.0 (data), MIT (code).
 
 **Maintenance.** LifeFrom. Errors found in the key will be fixed in a new version with a changelog entry; versions are
 never overwritten.
@@ -301,6 +304,8 @@ never overwritten.
   conditions. They are plausible and internally consistent, not a sample of any population. Reference intervals are
   printed for realism; they are not offered as reference intervals.
 - **60 markers**, blood and spot urine. Real reports carry hundreds (hormones, serology, coagulation, urinalysis text).
+- **French, Spanish, Romanian and German wording** was written by us and has not been reviewed by a native-speaking
+  laboratory professional.
 - **The test key is separate, not secret:** the test PDFs have a text layer. For a held-out leaderboard, generate an
   unreleased seed.
 - **Fonts:** pictures and boxes were rendered on macOS fonts; a rebuild elsewhere gives the same key and slightly
@@ -311,6 +316,8 @@ never overwritten.
 ## Citation
 
 LifeFrom and Julian Caraulani (2026). lab-report-corpus: synthetic laboratory reports with a computed answer key for
-document AI and OCR. Version 1.0.0. CC BY 4.0. (No DOI yet.)
+document AI and OCR. Version 1.0.0. CC BY 4.0. https://huggingface.co/datasets/lifefrom/lab-report-corpus. Released with
+lab-reading-bench v0.5.0, doi:10.5281/zenodo.24543314 (all versions: doi:10.5281/zenodo.24341108); the corpus has no DOI
+of its own.
 
 Built on: Caraulani J. lab-reading-bench v0.4.1. doi:10.5281/zenodo.24350904.

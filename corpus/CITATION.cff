@@ -8,6 +8,16 @@ date-released: 2026-11-25
 license:
   - CC-BY-4.0
   - MIT
+url: "https://huggingface.co/datasets/lifefrom/lab-report-corpus"
+repository-artifact: "https://huggingface.co/datasets/lifefrom/lab-report-corpus"
+repository-code: "https://github.com/caraulani/lab-reading-bench/tree/main/corpus"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24543314
+    description: "lab-reading-bench v0.5.0 on Zenodo, which archives this corpus's generator, card and baseline results (the built files are on Hugging Face). The corpus has no DOI of its own."
+  - type: url
+    value: "https://huggingface.co/datasets/lifefrom/lab-report-corpus"
+    description: "The built corpus (PDFs, page pictures, answer keys, tables)"
 authors:
   - name: LifeFrom
     website: "https://lifefrom.ai"
