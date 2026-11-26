@@ -3,9 +3,9 @@ cff-version: 1.2.0
 type: software
 message: "If you use this benchmark, its generator or its results, please cite it as below."
 title: "lab-reading-bench: synthetic lab reports with a computed answer key for measuring rule-based and AI readers"
-abstract: "A generator of synthetic laboratory reports printed in five national lab styles, conventional and SI units, decimal points and commas, varied flag and range conventions, as text, CSV, FHIR, PDF, page images and phone-style photos, each with an exact answer key; a harness that scores any reader on value accuracy, silent wrong values, critical-value recall and format invariance (the same results printed several ways); and results for a rule-based reader and current LLMs."
-version: 0.4.1
-date-released: 2026-11-18
+abstract: "A generator of synthetic laboratory reports printed in five national lab styles, conventional and SI units, decimal points and commas, varied flag and range conventions, as text, CSV, FHIR, PDF, page images and phone-style photos, each with an exact answer key; a harness that scores any reader on value accuracy, silent wrong values, critical-value recall and format invariance (the same results printed several ways); results for a rule-based reader and current LLMs; and, from v0.5.0, lab-report-corpus, 4,000 synthetic reports as PDFs, scans and phone photos with a full answer key (data on Hugging Face: lifefrom/lab-report-corpus)."
+version: 0.5.0
+date-released: 2026-11-25
 # Two licences, by path (LICENSING.md): code (generate.mts, run.mts, images.mts, critical.mts, readers/, corpus/*.mts,
 # corpus/*.py, corpus/scripts/, corpus/tests/) is MIT; data and reports (generated reports, pdf/, images/, results/,
 # cache/, the built corpus, PREREGISTRATION.md, README.md and other write-ups) are CC BY 4.0. The same split is stated in
@@ -13,10 +13,17 @@ date-released: 2026-11-18
 license:
   - MIT
   - CC-BY-4.0
+doi: 10.5281/zenodo.24543314
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.24543314
+    description: "DOI of release v0.5.0 (this version)"
+  - type: doi
     value: 10.5281/zenodo.24341108
-    description: "Concept DOI, resolves to the latest release archived on Zenodo"
+    description: "Concept DOI for all versions; resolves to the latest release archived on Zenodo"
+  - type: doi
+    value: 10.5281/zenodo.24350904
+    description: "DOI of release v0.4.1"
   - type: doi
     value: 10.5281/zenodo.24341109
     description: "DOI of release v0.3.0"
