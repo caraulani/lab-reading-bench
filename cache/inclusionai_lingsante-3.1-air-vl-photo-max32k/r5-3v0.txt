@@ -1,0 +1,17 @@
+{
+  "takenISO": "2026-03-27",
+  "rows": [
+    {"slug": "total-bilirubin", "value": 0.4, "unit": "mg/dL", "low": 0.2, "high": 1.2, "flag": null},
+    {"slug": "alt", "value": 43.0, "unit": "U/L", "low": 7.0, "high": 56.0, "flag": null},
+    {"slug": "ast", "value": 26.0, "unit": "U/L", "low": 10.0, "high": 40.0, "flag": null},
+    {"slug": "alp", "value": 68.0, "unit": "U/L", "low": 44.0, "high": 147.0, "flag": null},
+    {"slug": "ggt", "value": 5.0, "unit": "U/L", "low": 8.0, "high": 61.0, "flag": "L"},
+    {"slug": "total-cholesterol", "value": 98.0, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "hdl-cholesterol", "value": 61.0, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "triglycerides", "value": 97.0, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "vitamin-d-25-oh", "value": 77.0, "unit": "ng/mL", "low": 30.0, "high": 100.0, "flag": null},
+    {"slug": "vitamin-b12", "value": 411.0, "unit": "pg/mL", "low": 200.0, "high": 900.0, "flag": null},
+    {"slug": "folate-serum", "value": 9.4, "unit": "ng/mL", "low": 3.0, "high": 20.0, "flag": null},
+    {"slug": "testosterone-total", "value": 1011.0, "unit": "ng/dL", "low": 264.0, "high": 916.0, "flag": "H"}
+  ]
+}

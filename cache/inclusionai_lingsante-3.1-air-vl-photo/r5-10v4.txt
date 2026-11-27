@@ -1,0 +1,33 @@
+{
+  "takenISO": "2026-08-07",
+  "rows": [
+    {"slug": "glucose-fasting", "value": 67.00, "unit": "mg/dL", "low": 70.00, "high": 99.00, "flag": "L"},
+    {"slug": "hba1c", "value": 5.500, "unit": "%", "low": 4.000, "high": 5.600, "flag": null},
+    {"slug": "blood-urea-nitrogen", "value": 18.00, "unit": "mg/dL", "low": 7.00, "high": 25.00, "flag": null},
+    {"slug": "egfr", "value": 81.00, "unit": "mL/min/1.73m2", "low": null, "high": null, "flag": null},
+    {"slug": "uric-acid", "value": 1.400, "unit": "mg/dL", "low": 2.500, "high": 7.000, "flag": "L"},
+    {"slug": "sodium-serum", "value": 149.00, "unit": "mmol/L", "low": 135.00, "high": 145.00, "flag": "H"},
+    {"slug": "potassium-serum", "value": 4.200, "unit": "mmol/L", "low": 3.500, "high": 5.100, "flag": null},
+    {"slug": "chloride-serum", "value": 103.00, "unit": "mmol/L", "low": 98.00, "high": 107.00, "flag": null},
+    {"slug": "calcium-total", "value": 9.400, "unit": "mg/dL", "low": 8.600, "high": 10.300, "flag": null},
+    {"slug": "magnesium-serum", "value": 1.800, "unit": "mg/dL", "low": 1.700, "high": 2.400, "flag": null},
+    {"slug": "phosphorus-serum", "value": 3.000, "unit": "mg/dL", "low": 2.500, "high": 4.500, "flag": null},
+    {"slug": "total-protein", "value": 7.100, "unit": "g/dL", "low": 6.000, "high": 8.300, "flag": null},
+    {"slug": "albumin-serum", "value": 2.500, "unit": "g/dL", "low": 3.500, "high": 5.000, "flag": "L"},
+    {"slug": "hs-crp", "value": 2.400, "unit": "mg/L", "low": null, "high": null, "flag": null},
+    {"slug": "alt", "value": 27.00, "unit": "U/L", "low": 7.00, "high": 56.00, "flag": null},
+    {"slug": "alp", "value": 143.00, "unit": "U/L", "low": 44.00, "high": 147.00, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 60.00, "unit": "mg/dL", "low": null, "high": 100.00, "flag": null},
+    {"slug": "hdl-cholesterol", "value": 49.00, "unit": "mg/dL", "low": 40.00, "high": null, "flag": null},
+    {"slug": "triglycerides", "value": 169.00, "unit": "mg/dL", "low": null, "high": 150.00, "flag": "H"},
+    {"slug": "wbc", "value": 5.900, "unit": "Thousand/uL", "low": 4.000, "high": 11.000, "flag": null},
+    {"slug": "rbc", "value": 3.6500, "unit": "Million/uL", "low": 4.2000, "high": 5.9000, "flag": "L"},
+    {"slug": "hemoglobin", "value": 14.000, "unit": "g/dL", "low": 12.000, "high": 17.500, "flag": null},
+    {"slug": "mchc", "value": 29.100, "unit": "g/dL", "low": 32.000, "high": 36.000, "flag": "L"},
+    {"slug": "platelet-count", "value": 395.00, "unit": "Thousand/uL", "low": 150.00, "high": 400.00, "flag": null},
+    {"slug": "vitamin-d-25-oh", "value": 38.00, "unit": "ng/mL", "low": 30.00, "high": 100.00, "flag": null},
+    {"slug": "vitamin-b12", "value": 679.00, "unit": "pg/mL", "low": 200.00, "high": 900.00, "flag": null},
+    {"slug": "folate-serum", "value": 3.600, "unit": "ng/mL", "low": 3.000, "high": 20.000, "flag": null},
+    {"slug": "testosterone-total", "value": 638.00, "unit": "ng/dL", "low": 264.00, "high": 916.00, "flag": null}
+  ]
+}

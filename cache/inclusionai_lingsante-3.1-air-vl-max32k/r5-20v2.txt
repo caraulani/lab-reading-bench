@@ -1,0 +1,61 @@
+{
+  "takenISO": "2026-09-21",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 4.0,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 5.2,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 1.6,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 2.6,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 1.40,
+      "unit": "mmol/L",
+      "low": 1.03,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "triglycerides",
+      "value": 1.56,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 1.69,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 1.85,
+      "unit": "mIU/L",
+      "low": 0.4,
+      "high": 4,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 22.0,
+      "unit": "pmol/L",
+      "low": 10.3,
+      "high": 23.2,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 2.08,
+      "unit": "pg/mL",
+      "low": 2.28,
+      "high": 4.23,
+      "flag": null
+    }
+  ]
+}

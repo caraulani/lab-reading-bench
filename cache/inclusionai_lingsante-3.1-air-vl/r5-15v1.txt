@@ -1,0 +1,61 @@
+{
+  "takenISO": "2026-08-21",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.7,
+      "unit": "mg/dL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 27,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 77,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 94,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": "H"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 42.9,
+      "unit": "ng/mL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 566.7,
+      "unit": "pg/mL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 2.3,
+      "unit": "ng/mL",
+      "low": 3.0,
+      "high": 20.0,
+      "flag": "L"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "takenISO": "2026-06-11",
+  "rows": [
+    {"slug": "total-bilirubin", "value": 0.4, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "alt", "value": 28, "unit": "U/L", "low": null, "high": null, "flag": null},
+    {"slug": "ast", "value": 14, "unit": "U/L", "low": null, "high": null, "flag": null},
+    {"slug": "alp", "value": 94, "unit": "U/L", "low": null, "high": null, "flag": null},
+    {"slug": "ggt", "value": 48, "unit": "U/L", "low": null, "high": null, "flag": null},
+    {"slug": "tsh", "value": 0.32, "unit": "mIU/L", "low": null, "high": null, "flag": "L"},
+    {"slug": "free-t4", "value": 1.0, "unit": "ng/dL", "low": null, "high": null, "flag": null},
+    {"slug": "free-t3", "value": 2.9, "unit": "pg/mL", "low": null, "high": null, "flag": null},
+    {"slug": "vitamin-d-25-oh", "value": 84, "unit": "ng/mL", "low": null, "high": null, "flag": null},
+    {"slug": "vitamin-b12", "value": 315, "unit": "pg/mL", "low": null, "high": null, "flag": null},
+    {"slug": "folate-serum", "value": 13.7, "unit": "ng/mL", "low": null, "high": null, "flag": null},
+    {"slug": "testosterone-total", "value": 849, "unit": "ng/dL", "low": null, "high": null, "flag": null}
+  ]
+}

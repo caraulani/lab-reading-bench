@@ -1,0 +1,6 @@
+{
+  "takenISO": "2026-08-06",
+  "rows": [
+    { "slug": "alt", "value": 5.0, "unit": "U/L", "low": null, "high": 56.0, "flag": "L" },
+    { "slug": "ast", "value": 35.0, "unit": "U/L", "low": 10.0, "high": 40.0, "flag": null },
+    { "slug": "ggt", "value": 21.0, "unit": "U/L

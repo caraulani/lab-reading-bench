@@ -1,0 +1,28 @@
+{
+  "takenISO": null,
+  "rows": [
+    { "slug": "hba1c", "value": 5.2, "unit": "%", "low": null, "high": null, "flag": null },
+    { "slug": "creatinine-serum", "value": 0.64, "unit": "mg/dL", "low": null, "high": null, "flag": null },
+    { "slug": "blood-urea-nitrogen", "value": 17.0, "unit": "mg/dL", "low": null, "high": null, "flag": null },
+    { "slug": "egfr", "value": 109.0, "unit": "mL/min/1.73m2", "low": null, "high": null, "flag": null },
+    { "slug": "uric-acid", "value": 7.4, "unit": "mg/dL", "low": null, "high": null, "flag": "H" },
+    { "slug": "sodium-serum", "value": 140.0, "unit": "mmol/L", "low": null, "high": null, "flag": null },
+    { "slug": "chloride-serum", "value": 103.0, "unit": "mmol/L", "low": null, "high": null, "flag": null },
+    { "slug": "magnesium-serum", "value": 3.4, "unit": "mg/dL", "low": null, "high": null, "flag": "H" },
+    { "slug": "phosphorus-serum", "value": 4.2, "unit": "mg/dL", "low": null, "high": null, "flag": null },
+    { "slug": "total-protein", "value": 5.0, "unit": "g/dL", "low": null, "high": null, "flag": "L" },
+    { "slug": "albumin-serum", "value": 7.2, "unit": "g/dL", "low": null, "high": null, "flag": "H" },
+    { "slug": "hs-crp", "value": 3.2, "unit": "mg/L", "low": null, "high": 3.0, "flag": "H" },
+    { "slug": "total-bilirubin", "value": 1.9, "unit": "mg/dL", "low": null, "high": null, "flag": "H" },
+    { "slug": "alt", "value": 19.0, "unit": "U/L", "low": null, "high": null, "flag": null },
+    { "slug": "ast", "value": 35.0, "unit": "U/L", "low": null, "high": null, "flag": null },
+    { "slug": "alp", "value": 73.0, "unit": "U/L", "low": null, "high": null, "flag": null },
+    { "slug": "total-cholesterol", "value": 197.0, "unit": "mg/dL", "low": null, "high": null, "flag": null },
+    { "slug": "hdl-cholesterol", "value": 65.0, "unit": "mg/dL", "low": null, "high": null, "flag": null },
+    { "slug": "triglycerides", "value": 129.0, "unit": "mg/dL", "low": null, "high": null, "flag": null },
+    { "slug": "vitamin-d-25-oh", "value": 41.0, "unit": "ng/mL", "low": null, "high": null, "flag": null },
+    { "slug": "vitamin-b12", "value": 241.0, "unit": "pg/mL", "low": null, "high": null, "flag": null },
+    { "slug": "folate-serum", "value": 12.8, "unit": "ng/mL", "low": null, "high": null, "flag": null },
+    { "slug": "testosterone-total", "value": 850.0, "unit": "ng/dL", "low": null, "high": null, "flag": null }
+  ]
+}

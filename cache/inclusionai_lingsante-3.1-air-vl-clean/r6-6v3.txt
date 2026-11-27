@@ -1,0 +1,27 @@
+{
+  "takenISO": "2026-09-24",
+  "rows": [
+    {"slug": "glucose-fasting", "value": 67.0, "unit": "mg/dL", "low": 70.0, "high": 99.0, "flag": null},
+    {"slug": "hba1c", "value": 4.30, "unit": "%", "low": 4.00, "high": 5.60, "flag": null},
+    {"slug": "creatinine-serum", "value": 1.120, "unit": "mg/dL", "low": 0.600, "high": 1.300, "flag": null},
+    {"slug": "blood-urea-nitrogen", "value": 20.0, "unit": "mg/dL", "low": 7.0, "high": 25.0, "flag": null},
+    {"slug": "egfr", "value": 104.0, "unit": "mL/min/1.73m2", "low": null, "high": null, "flag": null},
+    {"slug": "uric-acid", "value": 3.80, "unit": "mg/dL", "low": 2.50, "high": 7.00, "flag": null},
+    {"slug": "sodium-serum", "value": 133.0, "unit": "mmol/L", "low": 135.0, "high": 145.0, "flag": null},
+    {"slug": "potassium-serum", "value": 3.90, "unit": "mmol/L", "low": 3.50, "high": 5.10, "flag": null},
+    {"slug": "chloride-serum", "value": 105.0, "unit": "mmol/L", "low": 98.0, "high": 107.0, "flag": null},
+    {"slug": "calcium-total", "value": 8.80, "unit": "mg/dL", "low": 8.60, "high": 10.30, "flag": null},
+    {"slug": "magnesium-serum", "value": 2.00, "unit": "mg/dL", "low": 1.70, "high": 2.40, "flag": null},
+    {"slug": "phosphorus-serum", "value": 2.90, "unit": "mg/dL", "low": 2.50, "high": 4.50, "flag": null},
+    {"slug": "total-protein", "value": 6.50, "unit": "g/dL", "low": 6.00, "high": 8.30, "flag": null},
+    {"slug": "albumin-serum", "value": 5.90, "unit": "g/dL", "low": 3.50, "high": 5.00, "flag": null},
+    {"slug": "hs-crp", "value": 2.10, "unit": "mg/L", "low": null, "high": 3.00, "flag": null},
+    {"slug": "total-cholesterol", "value": 118.0, "unit": "mg/dL", "low": null, "high": 200.0, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 86.0, "unit": "mg/dL", "low": null, "high": 100.0, "flag": null},
+    {"slug": "hdl-cholesterol", "value": 57.0, "unit": "mg/dL", "low": 40.0, "high": null, "flag": null},
+    {"slug": "triglycerides", "value": 137.0, "unit": "mg/dL", "low": null, "high": 150.0, "flag": null},
+    {"slug": "tsh", "value": 1.210, "unit": "mIU/L", "low": 0.400, "high": 4.000, "flag": null},
+    {"slug": "free-t4", "value": 1.310, "unit": "ng/dL", "low": 0.800, "high": 1.800, "flag": null},
+    {"slug": "free-t3", "value": 1.80, "unit": "pg/mL", "low": 2.30, "high": 4.20, "flag": null}
+  ]
+}

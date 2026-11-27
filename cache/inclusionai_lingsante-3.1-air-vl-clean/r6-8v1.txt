@@ -1,0 +1,17 @@
+{
+  "takenISO": "2026-03-08",
+  "rows": [
+    {"slug": "alt", "value": 5, "unit": "U/L", "low": 7, "high": 56, "flag": "L"},
+    {"slug": "ast", "value": 32, "unit": "U/L", "low": 10, "high": 40, "flag": null},
+    {"slug": "ggt", "value": 44, "unit": "U/L", "low": 8, "high": 61, "flag": null},
+    {"slug": "wbc", "value": 7.2, "unit": "Thousand/uL", "low": 4.0, "high": 11.0, "flag": null},
+    {"slug": "rbc", "value": 4.80, "unit": "Million/uL", "low": 4.20, "high": 5.90, "flag": null},
+    {"slug": "hemoglobin", "value": 16.0, "unit": "g/dL", "low": 12.0, "high": 17.5, "flag": null},
+    {"slug": "mch", "value": 32.2, "unit": "pg", "low": 27.0, "high": 33.0, "flag": null},
+    {"slug": "mchc", "value": 32.9, "unit": "g/dL", "low": 32.0, "high": 36.0, "flag": null},
+    {"slug": "platelet-count", "value": 98, "unit": "Thousand/uL", "low": 150, "high": 400, "flag": "L"},
+    {"slug": "tsh", "value": 2.860, "unit": "mIU/L", "low": 0.40, "high": 4.00, "flag": null},
+    {"slug": "free-t4", "value": 1.57, "unit": "ng/dL", "low": 0.80, "high": 1.80, "flag": null},
+    {"slug": "free-t3", "value": 3.0, "unit": "pg/mL", "low": 2.3, "high": 4.2, "flag": null}
+  ]
+}

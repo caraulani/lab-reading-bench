@@ -1,0 +1,125 @@
+{
+  "takenISO": "2026-08-03",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 14,
+      "unit": "µmol/L",
+      "low": 3,
+      "high": 21,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 6,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": "L"
+    },
+    {
+      "slug": "ast",
+      "value": 19,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 49,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 60,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 4.7,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 5.2,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 2.3,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 2.6,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 0.65,
+      "unit": "mmol/L",
+      "low": 1.03,
+      "high": null,
+      "flag": "L"
+    },
+    {
+      "slug": "triglycerides",
+      "value": 1.26,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 1.69,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 2.55,
+      "unit": "mIU/L",
+      "low": 0.40,
+      "high": 4.00,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 32.6,
+      "unit": "pmol/L",
+      "low": 10.3,
+      "high": 23.2,
+      "flag": "H"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 152,
+      "unit": "nmol/L",
+      "low": 75,
+      "high": 250,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 359,
+      "unit": "pmol/L",
+      "low": 148,
+      "high": 664,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 11.3,
+      "unit": "nmol/L",
+      "low": 6.8,
+      "high": 45.3,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 44.3,
+      "unit": "nmol/L",
+      "low": 9.2,
+      "high": 31.8,
+      "flag": "H"
+    }
+  ]
+}

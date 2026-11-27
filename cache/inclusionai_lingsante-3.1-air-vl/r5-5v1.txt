@@ -1,0 +1,21 @@
+{
+  "takenISO": "2026-02-20",
+  "rows": [
+    {"slug": "total-bilirubin", "value": 0.5, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "alt", "value": 16, "unit": "U/L", "low": null, "high": null, "flag": null},
+    {"slug": "alp", "value": 97, "unit": "U/L", "low": null, "high": null, "flag": null},
+    {"slug": "ggt", "value": 7, "unit": "U/L", "low": null, "high": null, "flag": "L"},
+    {"slug": "wbc", "value": 19.0, "unit": "thousand/uL", "low": null, "high": null, "flag": "H"},
+    {"slug": "hemoglobin", "value": 21.6, "unit": "g/dL", "low": null, "high": null, "flag": "H"},
+    {"slug": "hematocrit", "value": 49.8, "unit": "%", "low": null, "high": null, "flag": null},
+    {"slug": "mcv", "value": 145.6, "unit": "fL", "low": null, "high": null, "flag": "H"},
+    {"slug": "mchc", "value": 18.3, "unit": "g/dL", "low": null, "high": null, "flag": "L"},
+    {"slug": "platelet-count", "value": 394, "unit": "thousand/uL", "low": null, "high": null, "flag": null},
+    {"slug": "tsh", "value": 0.29, "unit": "mIU/L", "low": null, "high": null, "flag": "L"},
+    {"slug": "free-t4", "value": 1.28, "unit": "ng/dL", "low": null, "high": null, "flag": null},
+    {"slug": "free-t3", "value": 4.8, "unit": "pg/mL", "low": null, "high": null, "flag": "H"},
+    {"slug": "vitamin-d-25-oh", "value": 84, "unit": "ng/mL", "low": null, "high": null, "flag": null},
+    {"slug": "vitamin-b12", "value": 801, "unit": "pg/mL", "low": null, "high": null, "flag": null},
+    {"slug": "testosterone-total", "value": 497, "unit": "ng/dL", "low": null, "high": null, "flag": null}
+  ]
+}

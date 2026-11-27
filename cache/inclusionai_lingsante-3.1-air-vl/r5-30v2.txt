@@ -1,0 +1,141 @@
+{
+  "takenISO": "2026-01-15",
+  "rows": [
+    {
+      "slug": "ldl-cholesterol",
+      "value": 2.28,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 2.60,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 0.853,
+      "unit": "mmol/L",
+      "low": 1.030,
+      "high": null,
+      "flag": "L"
+    },
+    {
+      "slug": "triglycerides",
+      "value": 1.344,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 1.690,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 30.60,
+      "unit": "Thousand/uL",
+      "low": 4.00,
+      "high": 11.00,
+      "flag": "H"
+    },
+    {
+      "slug": "rbc",
+      "value": 5.450,
+      "unit": "Million/uL",
+      "low": 4.200,
+      "high": 5.900,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 12.3,
+      "unit": "g/dL",
+      "low": 12.0,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 29.6,
+      "unit": "%",
+      "low": 36.0,
+      "high": 50.0,
+      "flag": "L"
+    },
+    {
+      "slug": "mcv",
+      "value": 97.60,
+      "unit": "fL",
+      "low": 80.00,
+      "high": 100.00,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 31.00,
+      "unit": "pg",
+      "low": 27.00,
+      "high": 33.00,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 34.2,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 476.0,
+      "unit": "Thousand/uL",
+      "low": 150.0,
+      "high": 400.0,
+      "flag": "H"
+    },
+    {
+      "slug": "tsh",
+      "value": 0.370,
+      "unit": "mIU/L",
+      "low": 0.400,
+      "high": 4.000,
+      "flag": "L"
+    },
+    {
+      "slug": "free-t3",
+      "value": 4.15,
+      "unit": "pmol/L",
+      "low": 3.50,
+      "high": 6.50,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 187.2,
+      "unit": "ng/mL",
+      "low": 75.0,
+      "high": 250.0,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 138.0,
+      "unit": "pmol/L",
+      "low": 148.0,
+      "high": 664.0,
+      "flag": "L"
+    },
+    {
+      "slug": "folate-serum",
+      "value": 17.67,
+      "unit": "nmol/L",
+      "low": 6.80,
+      "high": 45.30,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 368.2868,
+      "unit": "ng/dL",
+      "low": 9.20,
+      "high": 31.80,
+      "flag": null
+    }
+  ]
+}

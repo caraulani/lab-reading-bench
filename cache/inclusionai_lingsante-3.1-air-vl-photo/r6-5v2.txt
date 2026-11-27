@@ -1,0 +1,22 @@
+{
+  "takenISO": "2026-11-07",
+  "rows": [
+    {"slug": "glucose-fasting", "value": 484, "unit": "mg/dL", "low": 70, "high": 99, "flag": "H"},
+    {"slug": "creatinine-serum", "value": 0.77, "unit": "mg/dL", "low": 0.60, "high": 1.30, "flag": null},
+    {"slug": "blood-urea-nitrogen", "value": 14, "unit": "mg/dL", "low": 7, "high": 25, "flag": null},
+    {"slug": "uric-acid", "value": 3.1, "unit": "mg/dL", "low": 2.5, "high": 7.0, "flag": null},
+    {"slug": "sodium-serum", "value": 142, "unit": "mmol/L", "low": 135, "high": 145, "flag": null},
+    {"slug": "potassium-serum", "value": 5.6, "unit": "mmol/L", "low": 3.5, "high": 5.1, "flag": "H"},
+    {"slug": "chloride-serum", "value": 66, "unit": "mmol/L", "low": 98, "high": 107, "flag": "L"},
+    {"slug": "calcium-total", "value": 9.2, "unit": "mg/dL", "low": 8.6, "high": 10.3, "flag": null},
+    {"slug": "phosphorus-serum", "value": 3.6, "unit": "mg/dL", "low": 2.5, "high": 4.5, "flag": null},
+    {"slug": "total-protein", "value": 4.5, "unit": "g/dL", "low": 6.0, "high": 8.3, "flag": "L"},
+    {"slug": "albumin-serum", "value": 4.4, "unit": "g/dL", "low": 3.5, "high": 5.0, "flag": null},
+    {"slug": "hs-crp", "value": 1.9, "unit": "mg/L", "low": null, "high": 3.0, "flag": null},
+    {"slug": "total-cholesterol", "value": 163, "unit": "mg/dL", "low": null, "high": 200, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 128, "unit": "mg/dL", "low": null, "high": 100, "flag": "H"},
+    {"slug": "serum-iron", "value": 33, "unit": "mcg/dL", "low": 50, "high": 170, "flag": "L"},
+    {"slug": "ferritin", "value": 81, "unit": "ng/mL", "low": 30, "high": 300, "flag": null},
+    {"slug": "transferrin-saturation", "value": 48, "unit": "%", "low": 20, "high": 50, "flag": null}
+  ]
+}

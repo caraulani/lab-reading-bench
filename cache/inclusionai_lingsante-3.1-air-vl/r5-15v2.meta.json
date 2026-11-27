@@ -1,0 +1,32 @@
+{
+ "requested": "inclusionai/lingsante-3.1-air-vl",
+ "prompt": "preregistered",
+ "id": "gen-1795808391-W2IOtInJzOqLLJUfbGL3",
+ "model": "inclusionai/lingsante-3.1-air-vl",
+ "provider": "DeepInfra",
+ "created": 1795808391,
+ "usage": {
+  "prompt_tokens": 1220,
+  "completion_tokens": 997,
+  "total_tokens": 2217,
+  "cost": 0.00020658,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 960,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00020658,
+   "upstream_inference_prompt_cost": 0.00002712,
+   "upstream_inference_completions_cost": 0.00017946
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 545,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "saved": "2026-11-27T19:39:59.066Z"
+}

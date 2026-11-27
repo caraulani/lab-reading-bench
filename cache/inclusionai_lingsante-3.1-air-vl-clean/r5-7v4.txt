@@ -1,0 +1,30 @@
+{
+  "takenISO": "2026-08-23",
+  "rows": [
+    {"slug": "glucose-fasting", "value": 72, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "hba1c", "value": 4.1, "unit": "%", "low": null, "high": null, "flag": null},
+    {"slug": "creatinine-serum", "value": 0.62, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "blood-urea-nitrogen", "value": 20, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "uric-acid", "value": 3.2, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "sodium-serum", "value": 130, "unit": "mmol/L", "low": null, "high": null, "flag": "L"},
+    {"slug": "potassium-serum", "value": 4.6, "unit": "mmol/L", "low": null, "high": null, "flag": null},
+    {"slug": "chloride-serum", "value": 102, "unit": "mmol/L", "low": null, "high": null, "flag": null},
+    {"slug": "calcium-total", "value": 9.3, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "magnesium-serum", "value": 1.8, "unit": "mg/dL", "low": null, "high": null, "flag": null},
+    {"slug": "total-protein", "value": 12.6, "unit": "g/dL", "low": null, "high": null, "flag": "H"},
+    {"slug": "albumin-serum", "value": 3.6, "unit": "g/dL", "low": null, "high": null, "flag": null},
+    {"slug": "hs-crp", "value": 2.6, "unit": "mg/L", "low": null, "high": null, "flag": null},
+    {"slug": "wbc", "value": 10.8, "unit": "thousand/uL", "low": null, "high": null, "flag": null},
+    {"slug": "rbc", "value": 4.33, "unit": "Million/uL", "low": null, "high": null, "flag": null},
+    {"slug": "hemoglobin", "value": 16.6, "unit": "g/dL", "low": null, "high": null, "flag": null},
+    {"slug": "hematocrit", "value": 49.4, "unit": "%", "low": null, "high": null, "flag": null},
+    {"slug": "mch", "value": 35.9, "unit": "pg", "low": null, "high": null, "flag": "H"},
+    {"slug": "platelet-count", "value": 455, "unit": "thousand/uL", "low": null, "high": null, "flag": "H"},
+    {"slug": "tsh", "value": 0.73, "unit": "mIU/L", "low": null, "high": null, "flag": null},
+    {"slug": "free-t4", "value": 1.56, "unit": "ng/dL", "low": null, "high": null, "flag": null},
+    {"slug": "free-t3", "value": 2.4, "unit": "pg/mL", "low": null, "high": null, "flag": null},
+    {"slug": "vitamin-b12", "value": 1053, "unit": "pg/mL", "low": null, "high": null, "flag": "H"},
+    {"slug": "folate-serum", "value": 13.0, "unit": "ng/mL", "low": null, "high": null, "flag": null},
+    {"slug": "testosterone-total", "value": 399, "unit": "ng/dL", "low": null, "high": null, "flag": null}
+  ]
+}

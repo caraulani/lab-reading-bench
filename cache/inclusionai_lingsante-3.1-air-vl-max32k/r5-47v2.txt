@@ -1,0 +1,29 @@
+{
+  "takenISO": "2026-10-13",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 6.2,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 5.2,
+      "flag": "H"
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 4.0,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 2.6,
+      "flag": "H"
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 1.37,
+      "unit": "mmol/L",
+      "low": 1.03,
+      "high": null,
+      "flag": null
+    }
+  ]
+}

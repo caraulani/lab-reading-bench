@@ -1,0 +1,229 @@
+{
+  "takenISO": "2026-04-02",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 93.6,
+      "unit": "mg/dL",
+      "low": 70.2,
+      "high": 99.0,
+      "flag": null
+    },
+    {
+      "slug": "hba1c",
+      "value": 4.5,
+      "unit": "%",
+      "low": 4.0,
+      "high": 5.6,
+      "flag": null
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 0.81,
+      "unit": "mg/dL",
+      "low": 0.6,
+      "high": 1.3,
+      "flag": null
+    },
+    {
+      "slug": "blood-urea-nitrogen",
+      "value": 23,
+      "unit": "mg/dL",
+      "low": 7,
+      "high": 25,
+      "flag": null
+    },
+    {
+      "slug": "egfr",
+      "value": 70,
+      "unit": "mL/min/1.73m2",
+      "low": 60,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "uric-acid",
+      "value": 4.0,
+      "unit": "mg/dL",
+      "low": 2.5,
+      "high": 7.0,
+      "flag": null
+    },
+    {
+      "slug": "sodium-serum",
+      "value": 137,
+      "unit": "mmol/L",
+      "low": 135,
+      "high": 145,
+      "flag": null
+    },
+    {
+      "slug": "potassium-serum",
+      "value": 4.5,
+      "unit": "mmol/L",
+      "low": 3.5,
+      "high": 5.1,
+      "flag": null
+    },
+    {
+      "slug": "calcium-total",
+      "value": 8.8,
+      "unit": "mg/dL",
+      "low": 8.6,
+      "high": 10.3,
+      "flag": null
+    },
+    {
+      "slug": "magnesium-serum",
+      "value": 1.8,
+      "unit": "mg/dL",
+      "low": 1.7,
+      "high": 2.4,
+      "flag": null
+    },
+    {
+      "slug": "phosphorus-serum",
+      "value": 2.0,
+      "unit": "mg/dL",
+      "low": 2.5,
+      "high": 4.5,
+      "flag": "L"
+    },
+    {
+      "slug": "albumin-serum",
+      "value": 4.5,
+      "unit": "g/dL",
+      "low": 3.5,
+      "high": 5.0,
+      "flag": null
+    },
+    {
+      "slug": "hs-crp",
+      "value": 1.6,
+      "unit": "mg/L",
+      "low": null,
+      "high": 3,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 50,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 23,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 28,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": "L"
+    },
+    {
+      "slug": "ggt",
+      "value": 4,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": "L"
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 16.6,
+      "unit": "g/dL",
+      "low": 12.0,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 94.5,
+      "unit": "fL",
+      "low": 80,
+      "high": 100,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 35.4,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 368,
+      "unit": "Thousand/uL",
+      "low": 150,
+      "high": 400,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 2.7,
+      "unit": "mIU/L",
+      "low": 0.4,
+      "high": 4,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.2,
+      "unit": "ng/dL",
+      "low": 0.8,
+      "high": 1.8,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.1,
+      "unit": "pg/mL",
+      "low": 2.3,
+      "high": 4.2,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 22,
+      "unit": "ng/mL",
+      "low": 30,
+      "high": 100,
+      "flag": "L"
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 491,
+      "unit": "pg/mL",
+      "low": 201,
+      "high": 900,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 4.5,
+      "unit": "ng/mL",
+      "low": 3.0,
+      "high": 20.0,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 557,
+      "unit": "ng/dL",
+      "low": 265,
+      "high": 917,
+      "flag": null
+    }
+  ]
+}

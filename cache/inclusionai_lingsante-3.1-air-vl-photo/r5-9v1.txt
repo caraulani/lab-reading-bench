@@ -1,0 +1,4 @@
+{
+  "takenISO": "2026-03-14",
+  "rows": [
+    { "slug": "glucose-fasting", "value": 81, "unit": "

@@ -1,0 +1,69 @@
+{
+  "takenISO": "2026-02-26",
+  "rows": [
+    {
+      "slug": "rbc",
+      "value": 6.31,
+      "unit": "Million/uL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 13.9,
+      "unit": "g/dL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 40.5,
+      "unit": "%",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 58.6,
+      "unit": "fL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 28.7,
+      "unit": "pg",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 32.3,
+      "unit": "g/dL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 259,
+      "unit": "thousand/uL",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.2,
+      "unit": "pg/mL",
+      "low": null,
+      "high": null,
+      "flag": null
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "takenISO": "2026-04-13",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.800,
+      "unit": "mg/dL",
+      "low": 0.2,
+      "high": 1.2,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 9.00,
+      "unit": "U/L",
+      "low": 7.0,
+      "high": 56.0,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 37.00,
+      "unit": "U/L",
+      "low": 10.0,
+      "high": 40.0,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 205.00,
+      "unit": "U/L",
+      "low": 44.0,
+      "high": 147.0,
+      "flag": "H"
+    },
+    {
+      "slug": "ggt",
+      "value": 6.00,
+      "unit": "U/L",
+      "low": 8.0,
+      "high": 61.0,
+      "flag": "L"
+    },
+    {
+      "slug": "wbc",
+      "value": 7.600,
+      "unit": "thousand/uL",
+      "low": 4.0,
+      "high": 11.0,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.8600,
+      "unit": "Million/uL",
+      "low": 4.2,
+      "high": 5.9,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 5.100,
+      "unit": "g/dL",
+      "low": 12.0,
+      "high": 17.5,
+      "flag": "L"
+    },
+    {
+      "slug": "hematocrit",
+      "value": 37.700,
+      "unit": "%",
+      "low": 36.0,
+      "high": 50.0,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 82.600,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 31.100,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 45.100,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": "H"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 78.00,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 983.00,
+      "unit": "pg/mL",
+      "low": 200.0,
+      "high": 900.0,
+      "flag": "H"
+    },
+    {
+      "slug": "folate-serum",
+      "value": 3.900,
+      "unit": "ng/mL",
+      "low": 3.0,
+      "high": 20.0,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 278.00,
+      "unit": "ng/dL",
+      "low": 264.0,
+      "high": 916.0,
+      "flag": null
+    }
+  ]
+}

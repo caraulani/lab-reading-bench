@@ -1,0 +1,85 @@
+{
+  "takenISO": "2026-10-23",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 1.00,
+      "unit": "mg/dL",
+      "low": 0.20,
+      "high": 1.20,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 5.0,
+      "unit": "U/L",
+      "low": 7.0,
+      "high": 56.0,
+      "flag": "L"
+    },
+    {
+      "slug": "ast",
+      "value": 22.0,
+      "unit": "U/L",
+      "low": 10.0,
+      "high": 40.0,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 42.0,
+      "unit": "U/L",
+      "low": 8.0,
+      "high": 61.0,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 79.0,
+      "unit": "mcg/dL",
+      "low": 50.0,
+      "high": 170.0,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 395.0,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 300.0,
+      "flag": "H"
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 31.0,
+      "unit": "%",
+      "low": 20.0,
+      "high": 50.0,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 2.64,
+      "unit": "mIU/L",
+      "low": 0.400,
+      "high": 4.000,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.06,
+      "unit": "ng/dL",
+      "low": 0.800,
+      "high": 1.800,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 6.10,
+      "unit": "pg/mL",
+      "low": 2.30,
+      "high": 4.20,
+      "flag": "H"
+    }
+  ]
+}

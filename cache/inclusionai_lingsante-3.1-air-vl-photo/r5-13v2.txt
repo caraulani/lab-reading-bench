@@ -1,0 +1,55 @@
+{
+  "takenISO": "2026-11-18",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 30.6,
+      "unit": "mg/dL",
+      "low": 70.2,
+      "high": 99.1,
+      "flag": "L"
+    },
+    {
+      "slug": "hba1c",
+      "value": 3.6,
+      "unit": "%",
+      "low": 3.98,
+      "high": 5.63,
+      "flag": "L"
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 2.45,
+      "unit": "mg/dL",
+      "low": 0.6,
+      "high": 1.3,
+      "flag": "H"
+    },
+    {
+      "slug": "blood-urea-nitrogen",
+      "value": 5,
+      "unit": "mg/dL",
+      "low": 7,
+      "high": 25,
+      "flag": "L"
+    },
+    {
+      "slug": "egfr",
+      "value": 101,
+      "unit": "mL/min/1.73m2",
+      "low": 60,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "uric-acid",
+      "value": 4.89,
+      "unit": "mg/dL",
+      "low": 2.5,
+      "high": 6.99,
+      "flag": null
+    },
+    {
+      "slug": "sodium-serum",
+      "value": 140,
+      "unit":

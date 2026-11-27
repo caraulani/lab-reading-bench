@@ -1,0 +1,22 @@
+{
+  "takenISO": "2026-08-15",
+  "rows": [
+    {"slug": "total-cholesterol", "value": 166.28, "unit": "mg/dL", "low": null, "high": 201.08, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 81.21, "unit": "mg/dL", "low": null, "high": 100.53, "flag": null},
+    {"slug": "hdl-cholesterol", "value": 66.13, "unit": "mg/dL", "low": 39.82, "high": null, "flag": null},
+    {"slug": "triglycerides", "value": 111.51, "unit": "mg/dL", "low": null, "high": 149.57, "flag": null},
+    {"slug": "wbc", "value": 8.6, "unit": "thousand/uL", "low": 4.0, "high": 11.0, "flag": null},
+    {"slug": "rbc", "value": 4.57, "unit": "million/uL", "low": 4.2, "high": 5.9, "flag": null},
+    {"slug": "hematocrit", "value": 43.0, "unit": "%", "low": 36.0, "high": 50.0, "flag": null},
+    {"slug": "mcv", "value": 99.8, "unit": "fL", "low": 80.0, "high": 100.0, "flag": null},
+    {"slug": "mch", "value": 31.1, "unit": "pg", "low": 27.0, "high": 33.0, "flag": null},
+    {"slug": "mchc", "value": 46.7, "unit": "g/dL", "low": 32.0, "high": 36.0, "flag": "H"},
+    {"slug": "platelet-count", "value": 557, "unit": "thousand/uL", "low": 150, "high": 400, "flag": "H"},
+    {"slug": "tsh", "value": 1.57, "unit": "mIU/L", "low": 0.4, "high": 4.0, "flag": null},
+    {"slug": "free-t3", "value": 2.67, "unit": "pg/mL", "low": 2.28, "high": 4.23, "flag": null},
+    {"slug": "vitamin-d-25-oh", "value": 18.83, "unit": "ng/mL", "low": 30.05, "high": 100.16, "flag": "L"},
+    {"slug": "vitamin-b12", "value": 654.64, "unit": "pg/mL", "low": 200.59, "high": 899.97, "flag": null},
+    {"slug": "folate-serum", "value": 17.92, "unit": "ng/mL", "low": 3.0, "high": 20.0, "flag": null},
+    {"slug": "testosterone-total", "value": 873.92, "unit": "ng/dL", "low": 265.35, "high": 917.19, "flag": null}
+  ]
+}

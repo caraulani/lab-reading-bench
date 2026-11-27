@@ -1,0 +1,85 @@
+{
+  "takenISO": "2026-09-28",
+  "rows": [
+    {
+      "slug": "wbc",
+      "value": 10.4,
+      "unit": "Thousand/uL",
+      "low": 4.0,
+      "high": 11.0,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.02,
+      "unit": "Million/uL",
+      "low": 4.2,
+      "high": 5.9,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 12.9,
+      "unit": "g/dL",
+      "low": 12.0,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 152.3,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": "H"
+    },
+    {
+      "slug": "mch",
+      "value": 39.0,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": "H"
+    },
+    {
+      "slug": "mchc",
+      "value": 46.0,
+      "unit": "g/dL",
+      "low": 32.0,
+      "high": 36.0,
+      "flag": "H"
+    },
+    {
+      "slug": "platelet-count",
+      "value": 114,
+      "unit": "Thousand/uL",
+      "low": 150,
+      "high": 400,
+      "flag": "L"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 46,
+      "unit": "ng/mL",
+      "low": 30,
+      "high": 100,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 1067,
+      "unit": "pg/mL",
+      "low": 200,
+      "high": 900,
+      "flag": "H"
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 619,
+      "unit": "ng/dL",
+      "low": 264,
+      "high": 916,
+      "flag": null
+    }
+  ]
+}

@@ -103,7 +103,7 @@ async function call(r: Report & { files?: string[] }): Promise<{ text: string; m
   const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST", signal: AbortSignal.timeout(240_000),
     headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json", "X-Title": "lab-reading-bench" },
-    body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 8000, usage: { include: true }, messages: [{ role: "system", content: PRINTED ? SYSTEM_PRINTED : SYSTEM }, { role: "user", content: user }] }),
+    body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: Number(process.env.MAX_TOKENS ?? 8000), usage: { include: true }, messages: [{ role: "system", content: PRINTED ? SYSTEM_PRINTED : SYSTEM }, { role: "user", content: user }] }),
   });
   const j = (await res.json()) as Meta & { choices?: { message?: { content?: string } }[]; usage?: { cost?: number }; error?: { message?: string } };
   calls++;

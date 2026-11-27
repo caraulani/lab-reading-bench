@@ -1,0 +1,77 @@
+{
+  "takenISO": "2026-11-22",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.99,
+      "unit": "mg/dL",
+      "low": 0.18,
+      "high": 1.23,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 25,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 8,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": null
+    },
+    {
+      "slug": "alp",
+      "value": 87,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 41,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 9.4,
+      "unit": "g/dL",
+      "low": 12,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 32,
+      "unit": "%",
+      "low": 36,
+      "high": 50,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 67.4,
+      "unit": "fL",
+      "low": 80,
+      "high": 100,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 31.5,
+      "unit": "pg",
+      "low": 27,
+      "high": 33,
+      "flag": null
+    }
+  ]
+}

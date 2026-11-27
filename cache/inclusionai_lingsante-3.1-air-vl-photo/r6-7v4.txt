@@ -1,0 +1,85 @@
+{
+  "takenISO": "2026-08-06",
+  "rows": [
+    {
+      "slug": "alt",
+      "value": 5.00,
+      "unit": "U/L",
+      "low": 7.00,
+      "high": 56.00,
+      "flag": "L"
+    },
+    {
+      "slug": "ast",
+      "value": 35.00,
+      "unit": "U/L",
+      "low": 10.00,
+      "high": 40.00,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 21.00,
+      "unit": "U/L",
+      "low": 8.00,
+      "high": 61.00,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 128.00,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 200.00,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 63.00,
+      "unit": "mg/dL",
+      "low": 40.00,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 98.00,
+      "unit": "mcg/dL",
+      "low": 50.00,
+      "high": 170.00,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 440.00,
+      "unit": "ng/mL",
+      "low": 30.00,
+      "high": 300.00,
+      "flag": "H"
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 39.00,
+      "unit": "%",
+      "low": 20.00,
+      "high": 50.00,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.69,
+      "unit": "ng/dL",
+      "low": 0.80,
+      "high": 1.80,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.00,
+      "unit": "pg/mL",
+      "low": 2.30,
+      "high": 4.20,
+      "flag": null
+    }
+  ]
+}

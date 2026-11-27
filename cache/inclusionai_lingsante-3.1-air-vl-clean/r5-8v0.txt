@@ -1,0 +1,9 @@
+{
+  "takenISO": "2026-05-11",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 135.0,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201

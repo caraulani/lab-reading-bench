@@ -1,0 +1,53 @@
+{
+  "takenISO": "2026-11-16",
+  "rows": [
+    {
+      "slug": "alt",
+      "value": 44,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 47,
+      "unit": "U/L",
+      "low": 10,
+      "high": 40,
+      "flag": "H"
+    },
+    {
+      "slug": "alp",
+      "value": 124,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 2.25,
+      "unit": "mIU/L",
+      "low": 0.40,
+      "high": 4.00,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 13.4,
+      "unit": "pmol/L",
+      "low": 10.3,
+      "high": 23.2,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 4.8,
+      "unit": "pmol/L",
+      "low": 3.5,
+      "high": 6.5,
+      "flag": null
+    }
+  ]
+}

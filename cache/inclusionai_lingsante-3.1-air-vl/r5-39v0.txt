@@ -1,0 +1,24 @@
+{
+  "takenISO": "2026-06-07",
+  "rows": [
+    {"slug": "alt", "value": 54.0, "unit": "U/L", "low": 7.0, "high": 56.0, "flag": null},
+    {"slug": "alp", "value": 68.0, "unit": "U/L", "low": 44.0, "high": 147.0, "flag": null},
+    {"slug": "ggt", "value": 32.0, "unit": "U/L", "low": 8.0, "high": 61.0, "flag": null},
+    {"slug": "total-cholesterol", "value": 188.0, "unit": "mg/dL", "low": null, "high": 200.0, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 124.0, "unit": "mg/dL", "low": 0.0, "high": 100.0, "flag": "H"},
+    {"slug": "hdl-cholesterol", "value": 48.0, "unit": "mg/dL", "low": 40.0, "high": null, "flag": null},
+    {"slug": "wbc", "value": 4.80, "unit": "Thousand/uL", "low": 4.00, "high": 11.00, "flag": null},
+    {"slug": "rbc", "value": 5.860, "unit": "Million/uL", "low": 4.200, "high": 5.900, "flag": null},
+    {"slug": "hemoglobin", "value": 21.00, "unit": "g/dL", "low": 12.00, "high": 17.50, "flag": "H"},
+    {"slug": "hematocrit", "value": 45.50, "unit": "%", "low": 36.00, "high": 50.00, "flag": null},
+    {"slug": "mch", "value": 31.10, "unit": "pg", "low": 27.00, "high": 33.00, "flag": null},
+    {"slug": "mchc", "value": 32.20, "unit": "g/dL", "low": 32.00, "high": 36.00, "flag": null},
+    {"slug": "serum-iron", "value": 219.0, "unit": "mcg/dL", "low": 50.0, "high": 170.0, "flag": "H"},
+    {"slug": "ferritin", "value": 256.0, "unit": "ng/mL", "low": 30.0, "high": 300.0, "flag": null},
+    {"slug": "transferrin-saturation", "value": 37.0, "unit": "%", "low": 20.0, "high": 50.0, "flag": null},
+    {"slug": "vitamin-d-25-oh", "value": 60.0, "unit": "ng/mL", "low": 30.0, "high": 100.0, "flag": null},
+    {"slug": "vitamin-b12", "value": 421.0, "unit": "pg/mL", "low": 200.0, "high": 900.0, "flag": null},
+    {"slug": "folate-serum", "value": 21.60, "unit": "ng/mL", "low": 3.00, "high": 20.00, "flag": "H"},
+    {"slug": "testosterone-total", "value": 510.0, "unit": "ng/dL", "low": 264.0, "high": 916.0, "flag": null}
+  ]
+}

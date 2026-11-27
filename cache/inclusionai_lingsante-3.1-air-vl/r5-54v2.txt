@@ -1,0 +1,21 @@
+{
+  "takenISO": null,
+  "rows": [
+    {
+      "slug": "serum-iron",
+      "value": 55.9,
+      "unit": "mcg/dL",
+      "low": 50.3,
+      "high": 169.8,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 182,
+      "unit": "ng/mL",
+      "low": 30,
+      "high": 300,
+      "flag": null
+    }
+  ]
+}

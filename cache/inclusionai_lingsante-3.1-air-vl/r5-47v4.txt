@@ -1,0 +1,1 @@
+{"takenISO": "2026-10-13", "rows": [{"slug": "total-cholesterol", "value": 240.0, "unit": "mg/dL", "low": null, "high": 200.0, "flag": "H"}, {"slug": "ldl-cholesterol", "value": 155.0, "unit": "mg/dL", "low": null, "high": 100.0, "flag": "H"}, {"slug": "hdl-cholesterol", "value": 53.0, "unit": "mg/dL", "low": 40.0, "high": null, "flag": null}]}

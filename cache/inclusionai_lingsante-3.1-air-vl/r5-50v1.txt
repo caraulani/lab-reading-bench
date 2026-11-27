@@ -1,0 +1,23 @@
+{
+  "takenISO": "2026-12-15",
+  "rows": [
+    {"slug": "alt", "value": 46.0, "unit": "U/L", "low": 7.0, "high": 56.0, "flag": null},
+    {"slug": "ast", "value": 14.0, "unit": "U/L", "low": 10.0, "high": 40.0, "flag": null},
+    {"slug": "alp", "value": 153.0, "unit": "U/L", "low": 44.0, "high": 147.0, "flag": "H"},
+    {"slug": "ggt", "value": 49.0, "unit": "U/L", "low": 8.0, "high": 61.0, "flag": null},
+    {"slug": "ldl-cholesterol", "value": 88.0, "unit": "mg/dL", "low": 0, "high": 100.0, "flag": null},
+    {"slug": "hdl-cholesterol", "value": 43.0, "unit": "mg/dL", "low": 40.0, "high": null, "flag": null},
+    {"slug": "wbc", "value": 9.50, "unit": "Thousand/uL", "low": 4.00, "high": 11.00, "flag": null},
+    {"slug": "hemoglobin", "value": 14.20, "unit": "g/dL", "low": 12.00, "high": 17.50, "flag": null},
+    {"slug": "mcv", "value": 95.80, "unit": "fL", "low": 80.00, "high": 100.00, "flag": null},
+    {"slug": "mch", "value": 31.10, "unit": "pg", "low": 27.00, "high": 33.00, "flag": null},
+    {"slug": "mchc", "value": 33.20, "unit": "g/dL", "low": 32.00, "high": 36.00, "flag": null},
+    {"slug": "platelet-count", "value": 311.0, "unit": "Thousand/uL", "low": 150.0, "high": 400.0, "flag": null},
+    {"slug": "serum-iron", "value": 115.0, "unit": "mcg/dL", "low": 50.0, "high": 170.0, "flag": null},
+    {"slug": "ferritin", "value": 255.0, "unit": "ng/mL", "low": 30.0, "high": 300.0, "flag": null},
+    {"slug": "transferrin-saturation", "value": 39.0, "unit": "%", "low": 20.0, "high": 50.0, "flag": null},
+    {"slug": "tsh", "value": 3.200, "unit": "mIU/L", "low": 0.400, "high": 4.000, "flag": null},
+    {"slug": "free-t4", "value": 0.900, "unit": "ng/dL", "low": 0.800, "high": 1.800, "flag": null},
+    {"slug": "free-t3", "value": 3.30, "unit": "pg/mL", "low": 2.30, "high": 4.20, "flag": null}
+  ]
+}

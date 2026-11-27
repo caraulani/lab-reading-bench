@@ -1,0 +1,125 @@
+{
+  "takenISO": "2026-05-06",
+  "rows": [
+    {
+      "slug": "wbc",
+      "value": 10.50,
+      "unit": "thousand/uL",
+      "low": 4.00,
+      "high": 11.00,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.760,
+      "unit": "Million/uL",
+      "low": 4.200,
+      "high": 5.900,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 14.70,
+      "unit": "g/dL",
+      "low": 12.00,
+      "high": 17.50,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 45.60,
+      "unit": "%",
+      "low": 36.00,
+      "high": 50.00,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 111.50,
+      "unit": "fL",
+      "low": 80.00,
+      "high": 100.00,
+      "flag": "H"
+    },
+    {
+      "slug": "mch",
+      "value": 30.20,
+      "unit": "pg",
+      "low": 27.00,
+      "high": 33.00,
+      "flag": null
+    },
+    {
+      "slug": "mchc",
+      "value": 32.70,
+      "unit": "g/dL",
+      "low": 32.00,
+      "high": 36.00,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 289.0,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 300.0,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 42.0,
+      "unit": "%",
+      "low": 20.0,
+      "high": 50.0,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 0.740,
+      "unit": "mIU/L",
+      "low": 0.400,
+      "high": 4.000,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 5.20,
+      "unit": "pg/mL",
+      "low": 2.30,
+      "high": 4.20,
+      "flag": "H"
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 46.0,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 149.0,
+      "unit": "pg/mL",
+      "low": 200.0,
+      "high": 900.0,
+      "flag": "L"
+    },
+    {
+      "slug": "folate-serum",
+      "value": 6.50,
+      "unit": "ng/mL",
+      "low": 3.00,
+      "high": 20.00,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 593.0,
+      "unit": "ng/dL",
+      "low": 264.0,
+      "high": 916.0,
+      "flag": null
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "takenISO": "2026-11-18",
+  "rows": [
+    {
+      "slug": "glucose-fasting",
+      "value": 30.6,
+      "unit": "mg/dL",
+      "low": 70.2,
+      "high": 99.0,
+      "flag": "L"
+    },
+    {
+      "slug": "hba1c",
+      "value": 3.61,
+      "unit": "%",
+      "low": 3.98,
+      "high": 5.57,
+      "flag": "L"
+    },
+    {
+      "slug": "creatinine-serum",
+      "value": 2.45,
+      "unit": "mg/dL",
+      "low": 0.6,
+      "high": 1.3,
+      "flag": "H"
+    },
+    {
+      "slug": "blood-urea-nitrogen",
+      "value": 5,
+      "unit": "mg/dL",
+      "low": 7,
+      "high": 25,
+      "flag": "L"
+    },
+    {
+      "slug": "egfr",
+      "value": 101,
+      "unit": "mL/min/1.73m2",
+      "low": null,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "uric-acid",
+      "value": 4.89,
+      "unit": "mg/dL",
+      "low": 2.51,
+      "high": 7.0,
+      "flag": null
+    },
+    {
+      "slug": "sodium-serum",
+      "value": 140,
+      "unit": "mmol/L",
+      "low": 135,
+      "high": 145,
+      "flag": null
+    },
+    {
+      "slug": "potassium-serum",
+      "value": 4.7,
+      "unit": "mmol/L",
+      "low": 3.5,
+      "high": 5.1,
+      "flag": null
+    },
+    {
+      "slug": "chloride-serum",
+      "value": 106,
+      "unit": "mmol/L",
+      "low": 98,
+      "high": 107,
+      "flag": null
+    },
+    {
+      "slug": "calcium-total",
+      "value": 15.11,
+      "unit": "mg/dL",
+      "low": 8.62,
+      "high": 10.3,
+      "flag": "H"
+    },
+    {
+      "slug": "magnesium-serum",
+      "value": 0.78,
+      "unit": "mmol/L",
+      "low": 0.7,
+      "high": 0.99,
+      "flag": null
+    },
+    {
+      "slug": "phosphorus-serum",
+      "value": 4.8,
+      "unit": "mg/dL",
+      "low": 2.51,
+      "high": 4.49,
+      "flag": "H"
+    },
+    {
+      "slug": "albumin-serum",
+      "value": 3.6,
+      "unit": "g/dL",
+      "low": 3.5,
+      "high": 5.0,
+      "flag": null
+    },
+    {
+      "slug": "hs-crp",
+      "value": 2.3,
+      "unit": "mg/L",
+      "low": null,
+      "high": 3.0,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 1.63,
+      "unit": "mIU/L",
+      "low": 0.4,
+      "high": 4.0,
+      "flag": null
+    },
+    {
+      "slug": "free-t4",
+      "value": 1.43,
+      "unit": "ng/dL",
+      "low": 0.8,
+      "high": 1.8,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 540.8,
+      "unit": "pg/mL",
+      "low": 200.6,
+      "high": 900.0,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 9.88,
+      "unit": "ng/mL",
+      "low": 3.0,
+      "high": 19.98,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 308.6,
+      "unit": "ng/dL",
+      "low": 265.3,
+      "high": 917.2,
+      "flag": null
+    }
+  ]
+}

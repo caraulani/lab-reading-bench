@@ -1,0 +1,93 @@
+{
+  "takenISO": "2026-12-12",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 7,
+      "unit": "µmol/L",
+      "low": 3,
+      "high": 21,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 662,
+      "unit": "U/L",
+      "low": 7,
+      "high": 56,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 52,
+      "unit": "U/L",
+      "low": 8,
+      "high": 61,
+      "flag": null
+    },
+    {
+      "slug": "total-cholesterol",
+      "value": 6.9,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 5.2,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 2.3,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 2.6,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 1.29,
+      "unit": "mmol/L",
+      "low": 1.03,
+      "high": null,
+      "flag": null
+    },
+    {
+      "slug": "triglycerides",
+      "value": 0.86,
+      "unit": "mmol/L",
+      "low": null,
+      "high": 1.69,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-d-25-oh",
+      "value": 55,
+      "unit": "nmol/L",
+      "low": 75,
+      "high": 250,
+      "flag": null
+    },
+    {
+      "slug": "vitamin-b12",
+      "value": 94,
+      "unit": "pmol/L",
+      "low": 148,
+      "high": 664,
+      "flag": null
+    },
+    {
+      "slug": "folate-serum",
+      "value": 47.4,
+      "unit": "nmol/L",
+      "low": 6.8,
+      "high": 45.3,
+      "flag": null
+    },
+    {
+      "slug": "testosterone-total",
+      "value": 15.0,
+      "unit": "nmol/L",
+      "low": 9.2,
+      "high": 31.8,
+      "flag": null
+    }
+  ]
+}

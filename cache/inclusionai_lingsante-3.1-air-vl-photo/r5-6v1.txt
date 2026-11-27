@@ -1,0 +1,17 @@
+{
+  "takenISO": "2026-08-01",
+  "rows": [
+    {"slug": "wbc", "value": 10.1, "unit": "thousand/uL", "low": null, "high": null, "flag": null},
+    {"slug": "rbc", "value": 5.69, "unit": "Million/uL", "low": null, "high": null, "flag": null},
+    {"slug": "hemoglobin", "value": 24.8, "unit": "g/dL", "low": null, "high": null, "flag": "H"},
+    {"slug": "hematocrit", "value": 58.3, "unit": "%", "low": null, "high": null, "flag": "H"},
+    {"slug": "mcv", "value": 83.4, "unit": "fL", "low": null, "high": null, "flag": null},
+    {"slug": "mch", "value": 27.2, "unit": "pg", "low": null, "high": null, "flag": null},
+    {"slug": "mchc", "value": 35.9, "unit": "g/dL", "low": null, "high": null, "flag": null},
+    {"slug": "platelet-count", "value": 276, "unit": "Thousand/uL", "low": null, "high": null, "flag": null},
+    {"slug": "vitamin-d-25-oh", "value": 21, "unit": "ng/mL", "low": null, "high": null, "flag": "L"},
+    {"slug": "vitamin-b12", "value": 1128, "unit": "pg/mL", "low": null, "high": null, "flag": "H"},
+    {"slug": "folate-serum", "value": 18.1, "unit": "ng/mL", "low": null, "high": null, "flag": null},
+    {"slug": "testosterone-total", "value": 183, "unit": "ng/dL", "low": null, "high": null, "flag": "L"}
+  ]
+}

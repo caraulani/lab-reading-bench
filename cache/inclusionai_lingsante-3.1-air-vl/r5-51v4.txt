@@ -1,0 +1,133 @@
+{
+  "takenISO": "2026-12-09",
+  "rows": [
+    {
+      "slug": "total-bilirubin",
+      "value": 0.4,
+      "unit": "mg/dL",
+      "low": 0.2,
+      "high": 1.2,
+      "flag": null
+    },
+    {
+      "slug": "alt",
+      "value": 4.0,
+      "unit": "U/L",
+      "low": 7.0,
+      "high": 56.0,
+      "flag": null
+    },
+    {
+      "slug": "ast",
+      "value": 5.0,
+      "unit": "U/L",
+      "low": 10.0,
+      "high": 40.0,
+      "flag": null
+    },
+    {
+      "slug": "ggt",
+      "value": 23.0,
+      "unit": "U/L",
+      "low": 8.0,
+      "high": 61.0,
+      "flag": null
+    },
+    {
+      "slug": "wbc",
+      "value": 7.2,
+      "unit": "thousand/uL",
+      "low": 4.0,
+      "high": 11.0,
+      "flag": null
+    },
+    {
+      "slug": "rbc",
+      "value": 5.18,
+      "unit": "Million/uL",
+      "low": 4.2,
+      "high": 5.9,
+      "flag": null
+    },
+    {
+      "slug": "hemoglobin",
+      "value": 15.3,
+      "unit": "g/dL",
+      "low": 12.0,
+      "high": 17.5,
+      "flag": null
+    },
+    {
+      "slug": "hematocrit",
+      "value": 28.2,
+      "unit": "%",
+      "low": 36.0,
+      "high": 50.0,
+      "flag": null
+    },
+    {
+      "slug": "mcv",
+      "value": 104.4,
+      "unit": "fL",
+      "low": 80.0,
+      "high": 100.0,
+      "flag": null
+    },
+    {
+      "slug": "mch",
+      "value": 30.0,
+      "unit": "pg",
+      "low": 27.0,
+      "high": 33.0,
+      "flag": null
+    },
+    {
+      "slug": "platelet-count",
+      "value": 46.0,
+      "unit": "thousand/uL",
+      "low": 150.0,
+      "high": 400.0,
+      "flag": null
+    },
+    {
+      "slug": "serum-iron",
+      "value": 79.0,
+      "unit": "mcg/dL",
+      "low": 50.0,
+      "high": 170.0,
+      "flag": null
+    },
+    {
+      "slug": "ferritin",
+      "value": 23.0,
+      "unit": "ng/mL",
+      "low": 30.0,
+      "high": 300.0,
+      "flag": null
+    },
+    {
+      "slug": "transferrin-saturation",
+      "value": 24.0,
+      "unit": "%",
+      "low": 20.0,
+      "high": 50.0,
+      "flag": null
+    },
+    {
+      "slug": "tsh",
+      "value": 1.33,
+      "unit": "mIU/L",
+      "low": 0.4,
+      "high": 4.0,
+      "flag": null
+    },
+    {
+      "slug": "free-t3",
+      "value": 3.6,
+      "unit": "pg/mL",
+      "low": 2.3,
+      "high": 4.2,
+      "flag": null
+    }
+  ]
+}

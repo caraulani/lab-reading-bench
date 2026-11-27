@@ -1,0 +1,29 @@
+{
+  "takenISO": "2026-10-13",
+  "rows": [
+    {
+      "slug": "total-cholesterol",
+      "value": 239.99,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 201.08,
+      "flag": null
+    },
+    {
+      "slug": "ldl-cholesterol",
+      "value": 154.99,
+      "unit": "mg/dL",
+      "low": null,
+      "high": 100.54,
+      "flag": null
+    },
+    {
+      "slug": "hdl-cholesterol",
+      "value": 53.0,
+      "unit": "mg/dL",
+      "low": 39.83,
+      "high": null,
+      "flag": null
+    }
+  ]
+}

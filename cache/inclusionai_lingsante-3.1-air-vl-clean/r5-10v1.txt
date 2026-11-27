@@ -1,0 +1,13 @@
+{
+  "takenISO": "2026-08-07",
+  "rows": [
+    { "slug": "glucose-fasting", "value": 66.6, "unit": "mg/dL", "low": 70.2, "high": 99, "flag": "L" },
+    { "slug": "hba1c", "value": 5.54, "unit": "%", "low": 3.98, "high": 5.63, "flag": null },
+    { "slug": "blood-urea-nitrogen", "value": 18, "unit": "mg/dL", "low": 7, "high": 25, "flag": null },
+    { "slug": "egfr", "value": 81, "unit": "mL/min/1.73m2", "low": null, "high": null, "flag": null },
+    { "slug": "uric-acid", "value": 0.14, "unit": "mg/dL", "low": 0.25, "high": 0.7, "flag": "L" },
+    { "slug": "sodium-serum", "value": 149, "unit": "mmol/L", "low": 135, "high": 145, "flag": "H" },
+    { "slug": "potassium-serum", "value": 4.2, "unit": "mmol/L", "low": 3.5, "high": 5.1, "flag": null },
+    { "slug": "chloride-serum", "value": 103, "unit": "mmol/L", "low": 98, "high": 107, "flag": null },
+    { "slug": "calcium-total", "value": 9.4, "unit": "mg/dL", "low": 8.6, "high": 10.28, "flag": null },
+    { "slug": "magnesium-serum", "value": 1.8, "unit": "mg
